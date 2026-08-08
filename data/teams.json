@@ -1,0 +1,187 @@
+{
+ "早稲田大学": {
+  "team": "早稲田大学",
+  "slug": "waseda",
+  "block": "1部 Aブロック"
+ },
+ "慶應義塾大学": {
+  "team": "慶應義塾大学",
+  "slug": "keio",
+  "block": "1部 Aブロック"
+ },
+ "中央大学": {
+  "team": "中央大学",
+  "slug": "chuo",
+  "block": "1部 Aブロック"
+ },
+ "明治大学": {
+  "team": "明治大学",
+  "slug": "meiji",
+  "block": "1部 Aブロック"
+ },
+ "成蹊大学": {
+  "team": "成蹊大学",
+  "slug": "seikei",
+  "block": "1部 Aブロック"
+ },
+ "獨協大学": {
+  "team": "獨協大学",
+  "slug": "dokkyo",
+  "block": "1部 Aブロック"
+ },
+ "法政大学": {
+  "team": "法政大学",
+  "slug": "hosei",
+  "block": "1部 Bブロック"
+ },
+ "明治学院大学": {
+  "team": "明治学院大学",
+  "slug": "meijigakuin",
+  "block": "1部 Bブロック"
+ },
+ "学習院大学": {
+  "team": "学習院大学",
+  "slug": "gakushuin",
+  "block": "1部 Bブロック"
+ },
+ "青山学院大学": {
+  "team": "青山学院大学",
+  "slug": "aoyamagakuin",
+  "block": "1部 Bブロック"
+ },
+ "日本体育大学": {
+  "team": "日本体育大学",
+  "slug": "nittaidai",
+  "block": "1部 Bブロック"
+ },
+ "一橋大学": {
+  "team": "一橋大学",
+  "slug": "hitotsubashi",
+  "block": "1部 Bブロック"
+ },
+ "成城大学": {
+  "team": "成城大学",
+  "slug": "seijo",
+  "block": "2部 Aブロック"
+ },
+ "東京農業大学": {
+  "team": "東京農業大学",
+  "slug": "tokyo-nodai",
+  "block": "2部 Aブロック"
+ },
+ "東京大学": {
+  "team": "東京大学",
+  "slug": "tokyo",
+  "block": "2部 Aブロック"
+ },
+ "東洋大学": {
+  "team": "東洋大学",
+  "slug": "toyo",
+  "block": "2部 Aブロック"
+ },
+ "千葉大学": {
+  "team": "千葉大学",
+  "slug": "chiba",
+  "block": "2部 Aブロック"
+ },
+ "帝京大学": {
+  "team": "帝京大学",
+  "slug": "teikyo",
+  "block": "2部 Aブロック"
+ },
+ "武蔵大学": {
+  "team": "武蔵大学",
+  "slug": "musashi",
+  "block": "2部 Bブロック"
+ },
+ "横浜国立大学": {
+  "team": "横浜国立大学",
+  "slug": "yokohama-kokudai",
+  "block": "2部 Bブロック"
+ },
+ "立教大学": {
+  "team": "立教大学",
+  "slug": "rikkyo",
+  "block": "2部 Bブロック"
+ },
+ "東海大学": {
+  "team": "東海大学",
+  "slug": "tokai",
+  "block": "2部 Bブロック"
+ },
+ "国士舘大学": {
+  "team": "国士舘大学",
+  "slug": "kokushikan",
+  "block": "2部 Bブロック"
+ },
+ "東京学芸大学": {
+  "team": "東京学芸大学",
+  "slug": "tokyo-gakugei",
+  "block": "2部 Bブロック"
+ },
+ "神奈川大学": {
+  "team": "神奈川大学",
+  "slug": "kanagawa",
+  "block": "3部 Aブロック"
+ },
+ "東京理科大学": {
+  "team": "東京理科大学",
+  "slug": "tokyo-rika",
+  "block": "3部 Aブロック"
+ },
+ "上智大学": {
+  "team": "上智大学",
+  "slug": "sophia",
+  "block": "3部 Aブロック"
+ },
+ "埼玉大学": {
+  "team": "埼玉大学",
+  "slug": "saitama",
+  "block": "3部 Aブロック"
+ },
+ "慶應義塾高校": {
+  "team": "慶應義塾高校",
+  "slug": "keio-hs",
+  "block": "3部 Aブロック"
+ },
+ "筑波大学": {
+  "team": "筑波大学",
+  "slug": "tsukuba",
+  "block": "3部 Aブロック"
+ },
+ "明星大学": {
+  "team": "明星大学",
+  "slug": "meisei",
+  "block": "3部 Bブロック"
+ },
+ "東京経済大学": {
+  "team": "東京経済大学",
+  "slug": "tokyo-keizai",
+  "block": "3部 Bブロック"
+ },
+ "大東文化大学": {
+  "team": "大東文化大学",
+  "slug": "daitobunka",
+  "block": "3部 Bブロック"
+ },
+ "専修大学": {
+  "team": "専修大学",
+  "slug": "senshu",
+  "block": "3部 Bブロック"
+ },
+ "駒澤大学": {
+  "team": "駒澤大学",
+  "slug": "komazawa",
+  "block": "3部 Bブロック"
+ },
+ "城西・関東学院": {
+  "team": "城西・関東学院",
+  "slug": "josai-kantogakuin",
+  "block": "3部 Bブロック"
+ },
+ "日本大学": {
+  "team": "日本大学",
+  "slug": "nihon",
+  "block": "3部 Bブロック"
+ }
+}

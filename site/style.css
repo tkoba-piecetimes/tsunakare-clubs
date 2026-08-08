@@ -1,0 +1,33 @@
+
+:root { --ink:#1c2733; --sub:#5b6b7b; --line:#dde4ea; --accent:#0f6f5c; --bg:#f7f9fa; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+  color:var(--ink); background:var(--bg); line-height:1.7; }
+.site-header { background:#fff; border-bottom:1px solid var(--line); padding:.7rem 1rem; }
+.brand { font-weight:700; color:var(--ink); text-decoration:none; font-size:1.05rem; }
+.brand .by { font-size:.75rem; color:var(--accent); margin-left:.5em; font-weight:600; }
+main { max-width:860px; margin:0 auto; padding:1rem 1rem 3rem; }
+h1 { font-size:1.35rem; line-height:1.4; }
+h2 { font-size:1.05rem; border-left:4px solid var(--accent); padding-left:.5em; margin-top:2.2em; }
+h3 { font-size:.95rem; margin-top:1.6em; }
+section > table, table.detail { width:100%; border-collapse:collapse; background:#fff;
+  font-size:.85rem; }
+th, td { border:1px solid var(--line); padding:.45em .6em; text-align:left; }
+thead th { background:#eef2f5; font-weight:600; white-space:nowrap; }
+td.score { white-space:nowrap; font-weight:700; }
+td.venue { color:var(--sub); font-size:.8rem; }
+a { color:var(--accent); }
+.breadcrumb { font-size:.8rem; color:var(--sub); }
+.club-lead { color:var(--sub); }
+.stat-row { display:flex; gap:.8rem; flex-wrap:wrap; }
+.stat { background:#fff; border:1px solid var(--line); border-radius:8px;
+  padding:.6rem 1rem; font-size:.75rem; color:var(--sub); min-width:96px; text-align:center; }
+.stat .num { display:block; font-size:1.3rem; font-weight:700; color:var(--ink); }
+.report { background:#fff; border:1px solid var(--line); border-radius:8px; padding:1rem; }
+.placeholder .todo, .sponsor .todo { color:var(--sub); background:#fff;
+  border:1px dashed var(--line); border-radius:8px; padding:.8rem; font-size:.85rem; }
+.sponsor .cta { font-weight:700; }
+.site-footer { border-top:1px solid var(--line); color:var(--sub); font-size:.75rem;
+  padding:1rem; max-width:860px; margin:0 auto; }
+table { display:block; overflow-x:auto; }
+@media (min-width:700px){ table { display:table; overflow:visible; } }
