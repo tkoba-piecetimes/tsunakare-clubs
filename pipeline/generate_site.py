@@ -278,8 +278,11 @@ def league_subnav(lg, L):
 
 
 def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="website",
-         subnav=""):
-    _sitemap_paths.append(path)
+         subnav="", sitemap=True):
+    if sitemap:
+        _sitemap_paths.append(path)
+    else:
+        extra_head = '<meta name="robots" content="noindex, nofollow">\n' + extra_head
     desc = desc or "大学ラクロスの試合結果・日程・順位表・チーム戦績を毎日更新する情報メディア。全国7地区の学生リーグを掲載。"
     url = SITE_BASE + path
     og_image = ""
@@ -841,6 +844,83 @@ def build_glossary(meta):
                     desc="フェイスオフ、クリア、ライド、FOGOなどラクロスの用語を分野別に解説。観戦・新入生・保護者向けの用語集。"))
 
 
+DASHBOARD_PATH = "dash-lm-ops"  # 非公開運用ダッシュボード（noindex・sitemap非掲載）
+
+
+def build_dashboard(leagues, articles, meta):
+    from datetime import datetime, timedelta
+    rel = "../"
+    today = date.today()
+    week_ago = (today - timedelta(days=7)).isoformat()
+
+    total_teams = sum(len(lg["teams"]) for lg in leagues)
+    total_matches = sum(len(lg["matches"]) for lg in leagues)
+    total_played = sum(1 for lg in leagues for m in lg["matches"] if m["status"] == "played")
+    recent_results = sum(1 for lg in leagues for m in lg["matches"]
+                         if m["status"] == "played" and m["date"] and m["date"] >= week_ago)
+    gfile = ROOT / "content" / "glossary.json"
+    n_terms = len(json.loads(gfile.read_text(encoding="utf-8"))) if gfile.exists() else 0
+    vfile = DATA / "videos.json"
+    n_videos = len(json.loads(vfile.read_text(encoding="utf-8"))) if vfile.exists() else 0
+
+    body = ('<h1>運営ダッシュボード</h1>'
+            f'<p class="lead">ラクロスマニアの定点観測。毎朝の自動更新で最新化されます。'
+            f'ビルド: {today.isoformat()} / データ取得: {escape(meta["fetched_at"][:16].replace("T", " "))}</p>')
+
+    body += ('<section><h2>サイト全体</h2><div class="stat-row">'
+             f'<div class="stat"><span class="num">{len(_sitemap_paths)}</span>公開ページ</div>'
+             f'<div class="stat"><span class="num">{len(leagues)}</span>リーグ</div>'
+             f'<div class="stat"><span class="num">{total_teams}</span>チーム</div>'
+             f'<div class="stat"><span class="num">{total_played}/{total_matches}</span>消化試合</div>'
+             f'<div class="stat"><span class="num">{recent_results}</span>直近7日の結果</div>'
+             '</div></section>')
+
+    rows = ""
+    for lg in leagues:
+        played = sum(1 for m in lg["matches"] if m["status"] == "played")
+        total = len(lg["matches"])
+        pct = round(played / total * 100) if total else 0
+        upd = lg["meta"]["source_updated_at"] or "—"
+        stale = ""
+        try:
+            days = (today - date.fromisoformat(upd)).days
+            if days > 21:
+                stale = f' <span class="mk mk-l">⚠{days}日前</span>'
+            elif days > 10:
+                stale = f' <span class="mk mk-d">{days}日前</span>'
+            else:
+                stale = f' <span class="mk mk-w">{days}日前</span>'
+        except ValueError:
+            pass
+        rows += (f'<tr><td><a href="{rel}{lg["code"]}/index.html">{escape(lg["label"])}</a></td>'
+                 f'<td>{len(lg["teams"])}</td><td>{played}/{total}（{pct}%）</td>'
+                 f'<td>{escape(upd)}{stale}</td></tr>')
+    body += ('<section><h2>リーグ別の状況</h2>'
+             '<div class="tbl"><table><thead><tr><th>リーグ</th><th>チーム</th>'
+             '<th>消化試合</th><th>連盟データ更新</th></tr></thead>'
+             f'<tbody>{rows}</tbody></table></div>'
+             '<p class="note">連盟データ更新が3週間以上止まっているリーグは⚠表示（シーズンオフの可能性もあり）。</p></section>')
+
+    body += ('<section><h2>コンテンツ資産</h2><div class="stat-row">'
+             f'<div class="stat"><span class="num">{len(articles)}</span>記事</div>'
+             f'<div class="stat"><span class="num">{n_terms}</span>用語辞典</div>'
+             f'<div class="stat"><span class="num">{n_videos}</span>動画リンク</div>'
+             '</div></section>')
+
+    body += ('<section><h2>外部ツール（クリックで開く）</h2><ul>'
+             '<li><a href="https://search.google.com/search-console?resource_id=sc-domain:lacrossemania.jp">'
+             'Search Console ― 検索流入・表示回数・インデックス状況</a></li>'
+             '<li><a href="https://analytics.google.com/">GA4 ― アクセス数・リアルタイム（プロパティ: ラクロスマニア）</a></li>'
+             '<li><a href="https://github.com/tsunakereoff/tsunakare-clubs/actions">GitHub Actions ― 自動更新の実行履歴</a></li>'
+             '</ul>'
+             '<p class="note">検索クエリ・PVの数値をこのページに直接埋め込む対応（API連携）は拡張予定。</p></section>')
+
+    write_page(DASHBOARD_PATH,
+               page(rel, "運営ダッシュボード | ラクロスマニア", body, meta,
+                    path=f"{DASHBOARD_PATH}/", desc="運営用の内部ダッシュボード。",
+                    sitemap=False))
+
+
 # ---------------------------------------------------------------- misc output
 
 def write_redirects(leagues):
@@ -1036,6 +1116,7 @@ def main():
     build_articles(articles, global_meta)
     build_videos(global_meta)
     build_glossary(global_meta)
+    build_dashboard(leagues, articles, global_meta)
     n_redirects = write_redirects(leagues)
     write_sitemap_and_robots()
 
