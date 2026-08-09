@@ -23,7 +23,7 @@ SITE = ROOT / "site"
 ASSETS = ROOT / "assets"
 CONTENT = ROOT / "content" / "articles"
 
-SITE_BASE = "https://tsunakereoff.github.io/tsunakare-clubs/"  # 独自ドメイン移行時にここを変更
+SITE_BASE = "https://lacrossemania.jp/"
 GA_MEASUREMENT_ID = ""  # GA4のG-XXXXXXXXXXを設定すると計測タグが入る
 
 WEEKDAYS_JP = ["月", "火", "水", "木", "金", "土", "日"]
