@@ -28,9 +28,13 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install dependencies
-        run: pip install pykakasi
+        run: pip install pykakasi google-auth requests
       - name: Fetch JLA data
         run: python pipeline/fetch_jla.py
+      - name: Fetch metrics (GA4 / Search Console)
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+        run: python pipeline/fetch_metrics.py
       - name: Generate site
         run: python pipeline/generate_site.py
       - name: Commit updated data & site

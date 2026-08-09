@@ -875,6 +875,50 @@ def build_dashboard(leagues, articles, meta):
              f'<div class="stat"><span class="num">{recent_results}</span>直近7日の結果</div>'
              '</div></section>')
 
+    mfile = DATA / "metrics.json"
+    if mfile.exists():
+        mx = json.loads(mfile.read_text(encoding="utf-8"))
+        ga = mx.get("ga", {})
+        gsc = mx.get("gsc", {})
+        body += (f'<section><h2>リリース後の実績（{escape(mx.get("release_date", ""))}〜）</h2>'
+                 '<div class="stat-row">'
+                 f'<div class="stat"><span class="num">{ga.get("total_users", "—")}</span>ユーザー</div>'
+                 f'<div class="stat"><span class="num">{ga.get("total_pageviews", "—")}</span>ページビュー</div>'
+                 f'<div class="stat"><span class="num">{ga.get("total_sessions", "—")}</span>セッション</div>'
+                 f'<div class="stat"><span class="num">{gsc.get("total_clicks", "—")}</span>検索クリック</div>'
+                 f'<div class="stat"><span class="num">{gsc.get("total_impressions", "—")}</span>検索表示回数</div>'
+                 '</div>')
+        ga_by_date = {d["date"][:4] + "-" + d["date"][4:6] + "-" + d["date"][6:]: d
+                      for d in ga.get("daily", []) if len(d.get("date", "")) == 8}
+        gsc_by_date = {d["date"]: d for d in gsc.get("daily", [])}
+        all_dates = sorted(set(ga_by_date) | set(gsc_by_date), reverse=True)[:14]
+        if all_dates:
+            rows = ""
+            for dt in all_dates:
+                g = ga_by_date.get(dt, {})
+                s = gsc_by_date.get(dt, {})
+                rows += (f'<tr><td>{escape(dt)}</td><td>{g.get("users", "—")}</td>'
+                         f'<td>{g.get("pageviews", "—")}</td>'
+                         f'<td>{s.get("clicks", "—")}</td>'
+                         f'<td>{s.get("impressions", "—")}</td></tr>')
+            body += ('<div class="tbl"><table><thead><tr><th>日付</th><th>ユーザー</th>'
+                     '<th>PV</th><th>検索クリック</th><th>検索表示</th></tr></thead>'
+                     f'<tbody>{rows}</tbody></table></div>')
+        tq = gsc.get("top_queries", [])
+        if tq:
+            rows = "".join(
+                f'<tr><td>{escape(q["query"])}</td><td>{q["clicks"]}</td>'
+                f'<td>{q["impressions"]}</td></tr>' for q in tq)
+            body += ('<h3>検索クエリ TOP10</h3>'
+                     '<div class="tbl"><table><thead><tr><th>クエリ</th><th>クリック</th>'
+                     f'<th>表示</th></tr></thead><tbody>{rows}</tbody></table></div>')
+        body += (f'<p class="note">GA4・Search Console APIから自動取得（最終取得: {escape(mx.get("updated_at", ""))}）。'
+                 'GSCのデータは2〜3日遅れで反映されます。</p></section>')
+    else:
+        body += ('<section><h2>リリース後の実績</h2>'
+                 '<p class="note">GA4/Search Console API未連携（GCP_SA_KEY未設定）。'
+                 '連携が完了すると、ユーザー数・PV・検索クリック数がここに表示されます。</p></section>')
+
     rows = ""
     for lg in leagues:
         played = sum(1 for m in lg["matches"] if m["status"] == "played")
