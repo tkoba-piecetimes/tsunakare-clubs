@@ -182,6 +182,8 @@ NAV_ITEMS = [
     ("standings/index.html", "順位表"),
     ("teams/index.html", "チーム"),
     ("articles/index.html", "読みもの"),
+    ("records/index.html", "記録室"),
+    ("glossary/index.html", "用語辞典"),
     ("videos/index.html", "動画"),
 ]
 
@@ -537,6 +539,131 @@ def build_videos(meta):
         encoding="utf-8")
 
 
+def build_records(matches_by_year, hist, standings, teams, meta):
+    rel = "../"
+    all_played = [(y, m) for y, ms in matches_by_year for m in ms if m["status"] == "played"]
+    total_goals = sum(m["home_score"] + m["away_score"] for _, m in all_played)
+
+    def match_label(m):
+        return f'{m["home"]} {m["home_score"]} - {m["away_score"]} {m["away"]}'
+
+    body = ('<h1>記録室</h1>'
+            f'<p class="lead">関東学生ラクロスリーグ（男子）の過去{len(matches_by_year)}シーズン分・'
+            f'全{len(all_played)}試合（総得点{total_goals}）のデータから記録を自動集計しています。</p>')
+
+    high = sorted(all_played, key=lambda ym: ym[1]["home_score"] + ym[1]["away_score"], reverse=True)[:5]
+    rows = "".join(
+        f'<tr><td>{y}年</td><td>{date_jp(m["date"])}</td><td>{escape(m["category"])}</td>'
+        f'<td>{escape(match_label(m))}</td><td class="score">{m["home_score"] + m["away_score"]}</td></tr>'
+        for y, m in high)
+    body += ('<section><h2>最多合計得点試合 TOP5</h2>'
+             '<div class="tbl"><table><thead><tr><th>年度</th><th>日付</th><th>カテゴリ</th>'
+             f'<th>試合</th><th>合計</th></tr></thead><tbody>{rows}</tbody></table></div></section>')
+
+    blow = sorted(all_played, key=lambda ym: abs(ym[1]["home_score"] - ym[1]["away_score"]), reverse=True)[:5]
+    rows = "".join(
+        f'<tr><td>{y}年</td><td>{date_jp(m["date"])}</td><td>{escape(m["category"])}</td>'
+        f'<td>{escape(match_label(m))}</td><td class="score">{abs(m["home_score"] - m["away_score"])}</td></tr>'
+        for y, m in blow)
+    body += ('<section><h2>最大得点差試合 TOP5</h2>'
+             '<div class="tbl"><table><thead><tr><th>年度</th><th>日付</th><th>カテゴリ</th>'
+             f'<th>試合</th><th>点差</th></tr></thead><tbody>{rows}</tbody></table></div></section>')
+
+    rec: dict[str, dict] = {}
+    for _, m in all_played:
+        for team, gf, ga in ((m["home"], m["home_score"], m["away_score"]),
+                             (m["away"], m["away_score"], m["home_score"])):
+            e = rec.setdefault(team, {"games": 0, "wins": 0, "draws": 0, "losses": 0,
+                                      "gf": 0, "ga": 0})
+            e["games"] += 1
+            e["gf"] += gf
+            e["ga"] += ga
+            if gf > ga:
+                e["wins"] += 1
+            elif gf == ga:
+                e["draws"] += 1
+            else:
+                e["losses"] += 1
+    ranked = sorted(
+        ((t, e) for t, e in rec.items() if e["games"] >= 10),
+        key=lambda te: te[1]["wins"] / te[1]["games"], reverse=True)[:15]
+    rows = ""
+    for i, (t, e) in enumerate(ranked, 1):
+        name = (f'<a href="{rel}clubs/{teams[t]["slug"]}/index.html">{escape(t)}</a>'
+                if t in teams else escape(t))
+        rows += (f'<tr><td class="rank">{i}</td><td>{name}</td><td>{e["games"]}</td>'
+                 f'<td>{e["wins"]}-{e["draws"]}-{e["losses"]}</td>'
+                 f'<td><strong>{e["wins"] / e["games"]:.3f}</strong></td>'
+                 f'<td>{e["gf"]} - {e["ga"]}</td></tr>')
+    body += ('<section><h2>通算勝率ランキング（10試合以上）</h2>'
+             '<div class="tbl"><table><thead><tr><th>#</th><th>チーム</th><th>試合</th>'
+             '<th>勝-分-敗</th><th>勝率</th><th>総得点-総失点</th></tr></thead>'
+             f'<tbody>{rows}</tbody></table></div></section>')
+
+    rows = ""
+    for h in hist:
+        for block, entries in h["standings"].items():
+            top = next((e for e in entries if e["rank"] == 1), None)
+            if top:
+                name = (f'<a href="{rel}clubs/{teams[top["team"]]["slug"]}/index.html">{escape(top["team"])}</a>'
+                        if top["team"] in teams else escape(top["team"]))
+                rows += (f'<tr><td>{h["year"]}年</td><td>{escape(block)}</td><td>{name}</td>'
+                         f'<td>{top["wins"]}-{top["draws"]}-{top["losses"]}</td></tr>')
+    body += ('<section><h2>年度別ブロック1位</h2>'
+             '<div class="tbl"><table><thead><tr><th>年度</th><th>ブロック</th><th>チーム</th>'
+             f'<th>成績</th></tr></thead><tbody>{rows}</tbody></table></div>'
+             '<p class="note">※順位はブロック内リーグ戦の結果からの自動算出（参考値）。'
+             'プレーオフ・入替戦の結果は含みません。公式記録は'
+             '<a href="https://www.lacrosse.gr.jp/">日本ラクロス協会</a>をご確認ください。</p></section>')
+
+    rows = "".join(
+        f'<tr><td>{escape(block)}</td>'
+        f'<td><a href="{rel}clubs/{entries[0]["slug"]}/index.html">{escape(entries[0]["team"])}</a></td>'
+        f'<td>{entries[0]["points"]}</td></tr>'
+        for block, entries in standings.items() if entries)
+    body += ('<section><h2>今シーズンの首位（進行中）</h2>'
+             '<div class="tbl"><table><thead><tr><th>ブロック</th><th>首位</th><th>勝点</th></tr></thead>'
+             f'<tbody>{rows}</tbody></table></div></section>')
+
+    out = SITE / "records" / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(
+        page(rel, "記録室（歴代記録・通算成績） | ラクロスマニア", body, meta,
+             path="records/",
+             desc="関東学生ラクロスリーグ男子の歴代記録。最多得点試合、通算勝率ランキング、年度別ブロック1位を試合データから自動集計。"),
+        encoding="utf-8")
+
+
+def build_glossary(meta):
+    rel = "../"
+    gfile = ROOT / "content" / "glossary.json"
+    if not gfile.exists():
+        return
+    terms = json.loads(gfile.read_text(encoding="utf-8"))
+    cats: dict[str, list] = {}
+    for t in terms:
+        cats.setdefault(t["category"], []).append(t)
+    body = ('<h1>ラクロス用語辞典</h1>'
+            f'<p class="lead">試合観戦や部活動で使われるラクロス用語{len(terms)}語を分野別にまとめました。</p>')
+    for cat, items in cats.items():
+        rows = "".join(
+            f'<tr><th>{escape(t["term"])}</th><td>{escape(t["def"])}</td></tr>'
+            for t in items)
+        body += (f'<section><h2>{escape(cat)}</h2>'
+                 f'<div class="tbl"><table class="detail"><tbody>{rows}</tbody></table></div></section>')
+    body += ('<p class="note">用語の定義・ルールの詳細は'
+             '<a href="https://worldlacrosse.sport/">World Lacrosse</a>および'
+             '<a href="https://www.lacrosse.gr.jp/">日本ラクロス協会</a>の公表情報に基づきます。'
+             'ルールは年度により改定される場合があります。</p>')
+    out = SITE / "glossary" / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(
+        page(rel, "ラクロス用語辞典（ルール・ポジション・技術用語） | ラクロスマニア", body, meta,
+             path="glossary/",
+             desc="フェイスオフ、クリア、ライド、FOGOなどラクロスの用語を分野別に解説。観戦・新入生・保護者向けの用語集。"),
+        encoding="utf-8")
+
+
 def build_club_pages(matches, standings, teams, meta, hist, articles):
     rel = "../../"
     for team, info in teams.items():
@@ -794,6 +921,8 @@ def main():
     build_teams_page(teams, standings, meta)
     build_articles(articles, meta)
     build_videos(meta)
+    build_records(matches_by_year, hist, standings, teams, meta)
+    build_glossary(meta)
     build_club_pages(matches, standings, teams, meta, hist, articles)
     build_match_pages(matches, standings, meta, matches_by_year)
     write_sitemap_and_robots()
