@@ -33,7 +33,7 @@ small = ImageFont.truetype(FONT, 28)
 
 d.text((130, 195), "ラクロスマニア", font=title, fill=WHITE)
 d.text((132, 345), "関東学生ラクロスの試合結果・日程・順位表", font=sub, fill=GRAY)
-d.text((132, 420), "毎日自動更新　|　全37チームの戦績・過去の対戦データ", font=small, fill=GRAY)
+d.text((132, 420), "毎日更新　|　全37チームの戦績・過去の対戦データ", font=small, fill=GRAY)
 
 # 下部バー
 d.rectangle([0, H - 14, W, H], fill=ORANGE)

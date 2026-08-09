@@ -293,7 +293,7 @@ def article_card(a, rel) -> str:
 
 def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="website"):
     _sitemap_paths.append(path)
-    desc = desc or "関東学生ラクロスリーグの試合結果・日程・順位表・チーム戦績を毎日自動更新する大学ラクロス情報メディア。"
+    desc = desc or "関東学生ラクロスリーグの試合結果・日程・順位表・チーム戦績を毎日更新する大学ラクロス情報メディア。"
     url = SITE_BASE + path
     og_image = ""
     if (ASSETS / "ogp.png").exists():
@@ -338,8 +338,8 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
     <nav class="footer-nav">{nav}</nav>
     <p>運営: <a href="https://piecetimes.jp">PieceTimes</a>　|　関連サービス: <a href="https://tunakare.jp">ツナカレ（大学部活×企業マッチング）</a></p>
     <p>試合データ出典: <a href="{escape(meta['source_url'])}">{escape(meta['source'])}</a>
-    （連盟データ更新日: {escape(meta['source_updated_at'])} / 本サイト自動更新: {escape(meta['fetched_at'][:10])}）</p>
-    <p>ラクロスマニアは大学ラクロスの情報メディアです。試合結果は自動収集のため、確定情報は連盟公式をご確認ください。順位・成績の集計値は試合結果からの自動算出です。</p>
+    （連盟データ更新日: {escape(meta['source_updated_at'])} / 情報更新日: {escape(meta['fetched_at'][:10])}）</p>
+    <p>ラクロスマニアは大学ラクロスの情報メディアです。掲載の順位・成績の集計値は編集部の集計によるものです。確定情報は連盟公式の発表をご確認ください。</p>
   </div>
 </footer>
 </body>
@@ -383,7 +383,7 @@ def build_index(matches, standings, meta, articles):
 
     body = ('<div class="hero"><div class="hero-inner">'
             f'<p class="hero-kicker">{escape(meta["league"])}</p>'
-            '<h1>関東学生ラクロスの試合結果・日程・順位を毎日自動更新</h1>'
+            '<h1>関東学生ラクロスの試合結果・日程・順位を毎日更新</h1>'
             f'<p class="hero-sub">全37チームの戦績・過去の対戦データ・試合プレビューを掲載　|　最終更新 {escape(meta["fetched_at"][:10])}</p>'
             '</div></div>')
     body += '<section><h2>最新の試合結果</h2>' + MATCH_TABLE
@@ -409,7 +409,7 @@ def build_index(matches, standings, meta, articles):
                  + f'</div><p class="more"><a class="cta" href="{rel}articles/index.html">読みもの一覧へ →</a></p></section>')
     (SITE / "index.html").write_text(
         page(rel, "ラクロスマニア | 関東学生ラクロスの試合結果・日程・順位表", body, meta,
-             path="", desc=f'{meta["league"]}の試合結果・日程・順位表・チーム戦績を毎日自動更新。過去の対戦データと試合プレビューも掲載。'),
+             path="", desc=f'{meta["league"]}の試合結果・日程・順位表・チーム戦績を毎日更新。過去の対戦データと試合プレビューも掲載。'),
         encoding="utf-8")
 
 
@@ -449,7 +449,7 @@ def build_standings_page(standings, meta):
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(
         page(rel, f'順位表（全ブロック） | ラクロスマニア', body, meta,
-             path="standings/", desc=f'{meta["league"]}の全6ブロックの順位表。勝点・得失点差を毎日自動更新。'),
+             path="standings/", desc=f'{meta["league"]}の全6ブロックの順位表。勝点・得失点差を毎日更新。'),
         encoding="utf-8")
 
 
@@ -549,7 +549,7 @@ def build_records(matches_by_year, hist, standings, teams, meta):
 
     body = ('<h1>記録室</h1>'
             f'<p class="lead">関東学生ラクロスリーグ（男子）の過去{len(matches_by_year)}シーズン分・'
-            f'全{len(all_played)}試合（総得点{total_goals}）のデータから記録を自動集計しています。</p>')
+            f'全{len(all_played)}試合（総得点{total_goals}）のデータから記録を集計しています。</p>')
 
     high = sorted(all_played, key=lambda ym: ym[1]["home_score"] + ym[1]["away_score"], reverse=True)[:5]
     rows = "".join(
@@ -612,7 +612,7 @@ def build_records(matches_by_year, hist, standings, teams, meta):
     body += ('<section><h2>年度別ブロック1位</h2>'
              '<div class="tbl"><table><thead><tr><th>年度</th><th>ブロック</th><th>チーム</th>'
              f'<th>成績</th></tr></thead><tbody>{rows}</tbody></table></div>'
-             '<p class="note">※順位はブロック内リーグ戦の結果からの自動算出（参考値）。'
+             '<p class="note">※順位はブロック内リーグ戦の結果から編集部が算出した参考値です。'
              'プレーオフ・入替戦の結果は含みません。公式記録は'
              '<a href="https://www.lacrosse.gr.jp/">日本ラクロス協会</a>をご確認ください。</p></section>')
 
@@ -630,7 +630,7 @@ def build_records(matches_by_year, hist, standings, teams, meta):
     out.write_text(
         page(rel, "記録室（歴代記録・通算成績） | ラクロスマニア", body, meta,
              path="records/",
-             desc="関東学生ラクロスリーグ男子の歴代記録。最多得点試合、通算勝率ランキング、年度別ブロック1位を試合データから自動集計。"),
+             desc="関東学生ラクロスリーグ男子の歴代記録。最多得点試合、通算勝率ランキング、年度別ブロック1位を試合データから集計。"),
         encoding="utf-8")
 
 
@@ -707,7 +707,7 @@ def build_club_pages(matches, standings, teams, meta, hist, articles):
                      '<div class="tbl"><table><thead><tr><th>年度</th><th>所属</th><th>順位</th>'
                      '<th>勝-分-敗</th><th>総得点-総失点</th></tr></thead>'
                      f'<tbody>{season_rows}</tbody></table></div>'
-                     '<p class="note">※順位はブロック内リーグ戦の結果から自動算出した参考値です。</p></section>')
+                     '<p class="note">※順位はブロック内リーグ戦の結果から編集部が算出した参考値です。</p></section>')
         if articles:
             art_links = "".join(
                 f'<li><a href="{rel}articles/{a["slug"]}/index.html">{escape(a["title"])}</a></li>'
