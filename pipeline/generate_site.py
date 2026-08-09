@@ -71,6 +71,89 @@ def match_report(m, standings) -> str:
     return base + result + ctx
 
 
+def load_history():
+    """data/history/*.json を新しい年度順に読み込む。"""
+    hdir = DATA / "history"
+    if not hdir.exists():
+        return []
+    return [json.loads(f.read_text(encoding="utf-8"))
+            for f in sorted(hdir.glob("*.json"), reverse=True)]
+
+
+def h2h_list(a: str, b: str, matches_by_year):
+    """全年度から2チームの直接対決（結果確定分）を新しい順に返す。"""
+    out = []
+    for year, ms in matches_by_year:
+        for m in ms:
+            if m["status"] == "played" and {m["home"], m["away"]} == {a, b}:
+                out.append((year, m))
+    out.sort(key=lambda ym: ym[1]["date"] or "", reverse=True)
+    return out
+
+
+def recent_results(team: str, matches, n: int = 3):
+    """今季の直近n試合（結果確定分）を新しい順に返す。"""
+    ms = [m for m in matches
+          if m["status"] == "played" and team in (m["home"], m["away"])]
+    return list(reversed(ms))[:n]
+
+
+def result_mark(m, team: str) -> str:
+    gf = m["home_score"] if m["home"] == team else m["away_score"]
+    ga = m["away_score"] if m["home"] == team else m["home_score"]
+    return "○" if gf > ga else ("△" if gf == ga else "●")
+
+
+def h2h_section(m, matches_by_year, rel: str) -> str:
+    pair = [(y, x) for y, x in h2h_list(m["home"], m["away"], matches_by_year)
+            if x["id"] != m["id"]]
+    if not pair:
+        return ""
+    a = m["home"]
+    wins = sum(1 for _, x in pair if result_mark(x, a) == "○")
+    draws = sum(1 for _, x in pair if result_mark(x, a) == "△")
+    losses = len(pair) - wins - draws
+    rows = "".join(
+        f'<tr><td>{y}年</td><td>{date_jp(x["date"])}</td>'
+        f'<td>{escape(x["home"])} {x["home_score"]} - {x["away_score"]} {escape(x["away"])}</td>'
+        f'<td>{result_mark(x, a)}</td></tr>'
+        for y, x in pair[:6])
+    return ('<section><h2>過去の対戦</h2>'
+            f'<p>直近の直接対決は{escape(a)}から見て'
+            f'<strong>{wins}勝{draws}分{losses}敗</strong>（過去{len(pair)}試合）。</p>'
+            '<table><thead><tr><th>年度</th><th>日付</th><th>結果</th>'
+            f'<th>{escape(a)}</th></tr></thead><tbody>{rows}</tbody></table></section>')
+
+
+def preview_sections(m, matches, standings) -> str:
+    """未実施試合向けの分析セクション（今季成績・直近の試合）。"""
+    body = ""
+    rows = ""
+    for t in (m["home"], m["away"]):
+        e = next((x for x in standings.get(m["category"], []) if x["team"] == t), None)
+        if e:
+            rows += (f'<tr><td>{escape(t)}</td><td>{e["rank"]}位</td>'
+                     f'<td>{e["points"]}</td><td>{e["wins"]}-{e["draws"]}-{e["losses"]}</td>'
+                     f'<td>{escape(str(e["goal_diff"]))}</td></tr>')
+    if rows:
+        body += ('<section><h2>両チームの今季成績</h2>'
+                 '<table><thead><tr><th>チーム</th><th>順位</th><th>勝点</th>'
+                 '<th>勝-分-敗</th><th>得失</th></tr></thead>'
+                 f'<tbody>{rows}</tbody></table></section>')
+    for t in (m["home"], m["away"]):
+        rec = recent_results(t, matches)
+        if not rec:
+            continue
+        rows = "".join(
+            f'<tr><td>{date_jp(x["date"])}</td><td>{result_mark(x, t)}</td>'
+            f'<td>{escape(x["home"])} {x["home_score"]} - {x["away_score"]} {escape(x["away"])}</td></tr>'
+            for x in rec)
+        body += (f'<section><h2>{escape(t)}の直近の試合</h2>'
+                 '<table><thead><tr><th>日付</th><th>勝敗</th><th>結果</th></tr></thead>'
+                 f'<tbody>{rows}</tbody></table></section>')
+    return body
+
+
 def jsonld_sports_event(m) -> str:
     data = {
         "@context": "https://schema.org",
@@ -98,7 +181,7 @@ def page(rel: str, title: str, body: str, meta, extra_head: str = "") -> str:
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="{rel}index.html">関東学生ラクロス情報<span class="by">by ツナカレ</span></a>
+  <a class="brand" href="{rel}index.html">ラクロスマニア<span class="by">関東学生ラクロス情報</span></a>
 </header>
 <main>
 {body}
@@ -106,7 +189,7 @@ def page(rel: str, title: str, body: str, meta, extra_head: str = "") -> str:
 <footer class="site-footer">
   <p>試合データ出典: <a href="{escape(meta['source_url'])}">{escape(meta['source'])}</a>
   （連盟データ更新日: {escape(meta['source_updated_at'])} / 本サイト自動更新: {escape(meta['fetched_at'][:10])}）</p>
-  <p>本サイトはツナカレが運営する大学部活動情報メディアです。試合結果は自動収集のため、確定情報は連盟公式をご確認ください。</p>
+  <p>ラクロスマニアは大学ラクロスの情報メディアです。試合結果は自動収集のため、確定情報は連盟公式をご確認ください。順位・成績の集計値は試合結果からの自動算出です。</p>
 </footer>
 </body>
 </html>"""
@@ -166,11 +249,11 @@ def build_index(matches, standings, meta):
         body += standings_table(block, entries, rel)
     body += "</section>"
     (SITE / "index.html").write_text(
-        page(rel, f'{meta["league"]} 試合結果・日程 | ツナカレ', body, meta),
+        page(rel, f'{meta["league"]} 試合結果・日程 | ラクロスマニア', body, meta),
         encoding="utf-8")
 
 
-def build_club_pages(matches, standings, teams, meta):
+def build_club_pages(matches, standings, teams, meta, hist):
     rel = "../../"
     for team, info in teams.items():
         slug, block = info["slug"], info["block"]
@@ -199,8 +282,23 @@ def build_club_pages(matches, standings, teams, meta):
             body += '<section><h2>今後の日程</h2>' + MATCH_TABLE_HEAD
             body += "".join(match_row(m, rel) for m in my_upcoming)
             body += "</tbody></table></section>"
-        body += ('<section class="placeholder"><h2>ツナカレメディアの関連記事</h2>'
-                 '<p class="todo">（ツナカレメディアの当部活取材記事への内部リンクをここに配置）</p></section>')
+        season_rows = ""
+        for h in hist:
+            for hblock, entries in h["standings"].items():
+                e = next((x for x in entries if x["team"] == team), None)
+                if e:
+                    season_rows += (f'<tr><td>{h["year"]}年</td><td>{escape(hblock)}</td>'
+                                    f'<td>{e["rank"]}位</td>'
+                                    f'<td>{e["wins"]}-{e["draws"]}-{e["losses"]}</td>'
+                                    f'<td>{e["gf"]} - {e["ga"]}</td></tr>')
+        if season_rows:
+            body += ('<section><h2>年度別成績</h2>'
+                     '<table><thead><tr><th>年度</th><th>所属</th><th>順位</th>'
+                     '<th>勝-分-敗</th><th>総得点-総失点</th></tr></thead>'
+                     f'<tbody>{season_rows}</tbody></table>'
+                     '<p class="club-lead">※順位はブロック内リーグ戦の結果から自動算出した参考値です。</p></section>')
+        body += ('<section class="placeholder"><h2>関連記事</h2>'
+                 '<p class="todo">（取材記事・特集記事への内部リンクをここに配置）</p></section>')
         body += ('<section class="placeholder"><h2>Instagram</h2>'
                  '<p class="todo">（部活公式アカウントの公開投稿の公式埋め込みをここに配置）</p></section>')
         body += ('<section class="sponsor"><h2>この部活を応援する企業</h2>'
@@ -209,17 +307,20 @@ def build_club_pages(matches, standings, teams, meta):
 
         out = SITE / "clubs" / slug / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
-        title = f'{club_name} 試合結果・日程・戦績 | 関東学生ラクロス情報'
+        title = f'{club_name} 試合結果・日程・戦績 | ラクロスマニア'
         out.write_text(page(rel, title, body, meta), encoding="utf-8")
 
 
-def build_match_pages(matches, standings, meta):
+def build_match_pages(matches, standings, meta, matches_by_year):
     rel = "../../"
     for m in matches:
         body = (f'<p class="breadcrumb"><a href="{rel}index.html">リーグトップ</a> › '
                 f'{escape(m["category"])}</p>')
         body += f'<h1>{escape(match_headline(m))}</h1>'
         body += f'<p class="report">{escape(match_report(m, standings))}</p>'
+        if m["status"] == "scheduled":
+            body += preview_sections(m, matches, standings)
+        body += h2h_section(m, matches_by_year, rel)
         body += ('<table class="detail"><tbody>'
                  f'<tr><th>日付</th><td>{date_jp(m["date"], with_year=True)}</td></tr>'
                  f'<tr><th>時間</th><td>{escape(m["time"])}</td></tr>'
@@ -232,7 +333,7 @@ def build_match_pages(matches, standings, meta):
                  f'<a href="{rel}clubs/{m["away_slug"]}/index.html">{escape(m["away"])}のページ</a></p>')
         out = SITE / "matches" / m["id"] / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
-        title = match_headline(m) + " | 関東学生ラクロス情報"
+        title = match_headline(m) + " | ラクロスマニア"
         out.write_text(
             page(rel, title, body, meta, extra_head=jsonld_sports_event(m)),
             encoding="utf-8")
@@ -283,10 +384,14 @@ def main():
     teams = load("teams")
     meta = load("meta")
 
+    hist = load_history()
+    matches_by_year = ([(meta["season_year"], matches)]
+                       + [(h["year"], h["matches"]) for h in hist])
+
     (SITE / "style.css").write_text(STYLE, encoding="utf-8")
     build_index(matches, standings, meta)
-    build_club_pages(matches, standings, teams, meta)
-    build_match_pages(matches, standings, meta)
+    build_club_pages(matches, standings, teams, meta, hist)
+    build_match_pages(matches, standings, meta, matches_by_year)
 
     n_pages = 1 + len(teams) + len(matches)
     print(f"OK: {n_pages} pages generated in {SITE}")

@@ -61,6 +61,10 @@ TEAM_SLUGS = {
     "駒澤大学": "komazawa",
     "城西・関東学院": "josai-kantogakuin",
     "日本大学": "nihon",
+    # 過去年度のみ登場するチーム
+    "城西大学": "josai",
+    "関東学院大学": "kantogakuin",
+    "玉川・関東学院・淑徳": "tamagawa-kantogakuin-shukutoku",
 }
 
 SCORE_RE = re.compile(r"^(\d+)\s*[-−]\s*(\d+)$")
