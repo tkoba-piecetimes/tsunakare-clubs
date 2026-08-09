@@ -1,40 +1,54 @@
 # -*- coding: utf-8 -*-
-"""data/ の正規化JSONから静的サイト（site/）を生成する。
+"""data/ の正規化JSONから静的サイト「ラクロスマニア」（site/）を生成する。
 
 生成物:
-  site/index.html                リーグトップ（星取表・最新結果・今後の日程）
-  site/clubs/<slug>/index.html   部活ページ（戦績・日程・協賛枠・メディア記事枠）
-  site/matches/<id>/index.html   試合ページ（自動生成レポート + schema.org構造化データ）
+  site/index.html                トップ（最新結果・今後の試合・順位ダイジェスト）
+  site/schedule/index.html       全試合の日程・結果
+  site/standings/index.html      全ブロック順位表
+  site/teams/index.html          チーム一覧
+  site/clubs/<slug>/index.html   チームページ（戦績・年度別成績・日程）
+  site/matches/<id>/index.html   試合ページ（レポート/プレビュー・過去の対戦）
+  site/sitemap.xml, robots.txt, assets/
 """
 import json
 import shutil
+from datetime import date
 from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 SITE = ROOT / "site"
+ASSETS = ROOT / "assets"
+
+SITE_BASE = "https://tsunakereoff.github.io/tsunakare-clubs/"  # 独自ドメイン移行時にここを変更
+GA_MEASUREMENT_ID = ""  # GA4のG-XXXXXXXXXXを設定すると計測タグが入る
 
 WEEKDAYS_JP = ["月", "火", "水", "木", "金", "土", "日"]
+
+_sitemap_paths: list[str] = []
 
 
 def load(name):
     return json.loads((DATA / f"{name}.json").read_text(encoding="utf-8"))
 
 
+def load_history():
+    hdir = DATA / "history"
+    if not hdir.exists():
+        return []
+    return [json.loads(f.read_text(encoding="utf-8"))
+            for f in sorted(hdir.glob("*.json"), reverse=True)]
+
+
 def date_jp(iso: str, with_year: bool = False) -> str:
-    from datetime import date
     d = date.fromisoformat(iso)
     wd = WEEKDAYS_JP[d.weekday()]
-    if with_year:
-        return f"{d.year}年{d.month}月{d.day}日（{wd}）"
-    return f"{d.month}月{d.day}日（{wd}）"
+    return (f"{d.year}年" if with_year else "") + f"{d.month}月{d.day}日（{wd}）"
 
 
 def score_str(m) -> str:
-    if m["status"] == "played":
-        return f'{m["home_score"]} - {m["away_score"]}'
-    return "—"
+    return f'{m["home_score"]} - {m["away_score"]}' if m["status"] == "played" else "—"
 
 
 def match_headline(m) -> str:
@@ -48,7 +62,6 @@ def match_headline(m) -> str:
 
 
 def match_report(m, standings) -> str:
-    """事実ベースの短文レポートを生成（テンプレート方式・LLM不使用）。"""
     d = date_jp(m["date"], with_year=True)
     if m["status"] != "played":
         t = f'、{m["time"]}フェイスオフ予定' if m["time"] != "未定" else ""
@@ -62,26 +75,15 @@ def match_report(m, standings) -> str:
     else:
         winner = m["home"] if hs > as_ else m["away"]
         loser = m["away"] if hs > as_ else m["home"]
-        ws, ls = max(hs, as_), min(hs, as_)
-        result = f'試合は{winner}が{ws}-{ls}で{loser}を下しました。'
+        result = f'試合は{winner}が{max(hs, as_)}-{min(hs, as_)}で{loser}を下しました。'
     ctx = ""
     for e in standings.get(m["category"], []):
-        if m["status"] == "played" and hs != as_ and e["team"] == (m["home"] if hs > as_ else m["away"]):
+        if hs != as_ and e["team"] == (m["home"] if hs > as_ else m["away"]):
             ctx = f'この結果、{e["team"]}は{m["category"]}で{e["rank"]}位（勝ち点{e["points"]}）につけています。'
     return base + result + ctx
 
 
-def load_history():
-    """data/history/*.json を新しい年度順に読み込む。"""
-    hdir = DATA / "history"
-    if not hdir.exists():
-        return []
-    return [json.loads(f.read_text(encoding="utf-8"))
-            for f in sorted(hdir.glob("*.json"), reverse=True)]
-
-
-def h2h_list(a: str, b: str, matches_by_year):
-    """全年度から2チームの直接対決（結果確定分）を新しい順に返す。"""
+def h2h_list(a, b, matches_by_year):
     out = []
     for year, ms in matches_by_year:
         for m in ms:
@@ -91,20 +93,24 @@ def h2h_list(a: str, b: str, matches_by_year):
     return out
 
 
-def recent_results(team: str, matches, n: int = 3):
-    """今季の直近n試合（結果確定分）を新しい順に返す。"""
+def recent_results(team, matches, n=3):
     ms = [m for m in matches
           if m["status"] == "played" and team in (m["home"], m["away"])]
     return list(reversed(ms))[:n]
 
 
-def result_mark(m, team: str) -> str:
+def result_mark(m, team):
     gf = m["home_score"] if m["home"] == team else m["away_score"]
     ga = m["away_score"] if m["home"] == team else m["home_score"]
     return "○" if gf > ga else ("△" if gf == ga else "●")
 
 
-def h2h_section(m, matches_by_year, rel: str) -> str:
+def badge(mark: str) -> str:
+    cls = {"○": "w", "△": "d", "●": "l"}[mark]
+    return f'<span class="mk mk-{cls}">{mark}</span>'
+
+
+def h2h_section(m, matches_by_year) -> str:
     pair = [(y, x) for y, x in h2h_list(m["home"], m["away"], matches_by_year)
             if x["id"] != m["id"]]
     if not pair:
@@ -116,17 +122,16 @@ def h2h_section(m, matches_by_year, rel: str) -> str:
     rows = "".join(
         f'<tr><td>{y}年</td><td>{date_jp(x["date"])}</td>'
         f'<td>{escape(x["home"])} {x["home_score"]} - {x["away_score"]} {escape(x["away"])}</td>'
-        f'<td>{result_mark(x, a)}</td></tr>'
+        f'<td>{badge(result_mark(x, a))}</td></tr>'
         for y, x in pair[:6])
     return ('<section><h2>過去の対戦</h2>'
             f'<p>直近の直接対決は{escape(a)}から見て'
             f'<strong>{wins}勝{draws}分{losses}敗</strong>（過去{len(pair)}試合）。</p>'
-            '<table><thead><tr><th>年度</th><th>日付</th><th>結果</th>'
-            f'<th>{escape(a)}</th></tr></thead><tbody>{rows}</tbody></table></section>')
+            '<div class="tbl"><table><thead><tr><th>年度</th><th>日付</th><th>結果</th>'
+            f'<th>{escape(a)}</th></tr></thead><tbody>{rows}</tbody></table></div></section>')
 
 
 def preview_sections(m, matches, standings) -> str:
-    """未実施試合向けの分析セクション（今季成績・直近の試合）。"""
     body = ""
     rows = ""
     for t in (m["home"], m["away"]):
@@ -137,20 +142,20 @@ def preview_sections(m, matches, standings) -> str:
                      f'<td>{escape(str(e["goal_diff"]))}</td></tr>')
     if rows:
         body += ('<section><h2>両チームの今季成績</h2>'
-                 '<table><thead><tr><th>チーム</th><th>順位</th><th>勝点</th>'
+                 '<div class="tbl"><table><thead><tr><th>チーム</th><th>順位</th><th>勝点</th>'
                  '<th>勝-分-敗</th><th>得失</th></tr></thead>'
-                 f'<tbody>{rows}</tbody></table></section>')
+                 f'<tbody>{rows}</tbody></table></div></section>')
     for t in (m["home"], m["away"]):
         rec = recent_results(t, matches)
         if not rec:
             continue
         rows = "".join(
-            f'<tr><td>{date_jp(x["date"])}</td><td>{result_mark(x, t)}</td>'
+            f'<tr><td>{date_jp(x["date"])}</td><td>{badge(result_mark(x, t))}</td>'
             f'<td>{escape(x["home"])} {x["home_score"]} - {x["away_score"]} {escape(x["away"])}</td></tr>'
             for x in rec)
         body += (f'<section><h2>{escape(t)}の直近の試合</h2>'
-                 '<table><thead><tr><th>日付</th><th>勝敗</th><th>結果</th></tr></thead>'
-                 f'<tbody>{rows}</tbody></table></section>')
+                 '<div class="tbl"><table><thead><tr><th>日付</th><th>勝敗</th><th>結果</th></tr></thead>'
+                 f'<tbody>{rows}</tbody></table></div></section>')
     return body
 
 
@@ -169,87 +174,188 @@ def jsonld_sports_event(m) -> str:
             + json.dumps(data, ensure_ascii=False) + "</script>")
 
 
-def page(rel: str, title: str, body: str, meta, extra_head: str = "") -> str:
+NAV_ITEMS = [
+    ("index.html", "トップ"),
+    ("schedule/index.html", "日程・結果"),
+    ("standings/index.html", "順位表"),
+    ("teams/index.html", "チーム"),
+]
+
+
+def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="website"):
+    _sitemap_paths.append(path)
+    desc = desc or "関東学生ラクロスリーグの試合結果・日程・順位表・チーム戦績を毎日自動更新する大学ラクロス情報メディア。"
+    url = SITE_BASE + path
+    og_image = ""
+    if (ASSETS / "ogp.png").exists():
+        og_image = (f'<meta property="og:image" content="{SITE_BASE}assets/ogp.png">\n'
+                    '<meta name="twitter:card" content="summary_large_image">\n')
+    ga = ""
+    if GA_MEASUREMENT_ID:
+        ga = (f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>'
+              '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
+              f"gtag('js',new Date());gtag('config','{GA_MEASUREMENT_ID}');</script>")
+    nav = "".join(f'<a href="{rel}{href}">{label}</a>' for href, label in NAV_ITEMS)
     return f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)}</title>
-{extra_head}
+<meta name="description" content="{escape(desc)}">
+<meta property="og:title" content="{escape(title)}">
+<meta property="og:description" content="{escape(desc)}">
+<meta property="og:type" content="{og_type}">
+<meta property="og:url" content="{escape(url)}">
+<meta property="og:site_name" content="ラクロスマニア">
+{og_image}<link rel="icon" href="{rel}assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="{escape(url)}">
+{extra_head}{ga}
 <link rel="stylesheet" href="{rel}style.css">
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="{rel}index.html">ラクロスマニア<span class="by">関東学生ラクロス情報</span></a>
+  <div class="header-inner">
+    <a class="brand" href="{rel}index.html"><span class="brand-tick"></span>ラクロスマニア<span class="brand-sub">KANTO LACROSSE MEDIA</span></a>
+    <nav class="global-nav">{nav}</nav>
+  </div>
 </header>
 <main>
 {body}
 </main>
 <footer class="site-footer">
-  <p>試合データ出典: <a href="{escape(meta['source_url'])}">{escape(meta['source'])}</a>
-  （連盟データ更新日: {escape(meta['source_updated_at'])} / 本サイト自動更新: {escape(meta['fetched_at'][:10])}）</p>
-  <p>ラクロスマニアは大学ラクロスの情報メディアです。試合結果は自動収集のため、確定情報は連盟公式をご確認ください。順位・成績の集計値は試合結果からの自動算出です。</p>
+  <div class="footer-inner">
+    <p class="footer-brand">ラクロスマニア</p>
+    <nav class="footer-nav">{nav}</nav>
+    <p>試合データ出典: <a href="{escape(meta['source_url'])}">{escape(meta['source'])}</a>
+    （連盟データ更新日: {escape(meta['source_updated_at'])} / 本サイト自動更新: {escape(meta['fetched_at'][:10])}）</p>
+    <p>ラクロスマニアは大学ラクロスの情報メディアです。試合結果は自動収集のため、確定情報は連盟公式をご確認ください。順位・成績の集計値は試合結果からの自動算出です。</p>
+  </div>
 </footer>
 </body>
 </html>"""
 
 
-def match_row(m, rel: str, hide_team: str | None = None) -> str:
+def match_row(m, rel) -> str:
     link = f'{rel}matches/{m["id"]}/index.html'
-    label = f'{m["home"]} vs {m["away"]}'
     return (f'<tr><td>{date_jp(m["date"])}</td><td>{escape(m["time"])}</td>'
-            f'<td>{escape(m["category"])}</td>'
-            f'<td><a href="{link}">{escape(label)}</a></td>'
+            f'<td><span class="cat">{escape(m["category"])}</span></td>'
+            f'<td><a href="{link}">{escape(m["home"])} vs {escape(m["away"])}</a></td>'
             f'<td class="score">{score_str(m)}</td>'
             f'<td class="venue">{escape(m["venue"])}</td></tr>')
 
 
-MATCH_TABLE_HEAD = ('<table><thead><tr><th>日付</th><th>時間</th><th>カテゴリ</th>'
-                    '<th>対戦</th><th>スコア</th><th>会場</th></tr></thead><tbody>')
+MATCH_TABLE = ('<div class="tbl"><table><thead><tr><th>日付</th><th>時間</th><th>カテゴリ</th>'
+               '<th>対戦</th><th>スコア</th><th>会場</th></tr></thead><tbody>')
 
 
-def standings_table(block: str, entries, rel: str) -> str:
+def standings_table(block, entries, rel) -> str:
     rows = "".join(
-        f'<tr><td>{e["rank"]}</td>'
+        f'<tr><td class="rank">{e["rank"]}</td>'
         f'<td><a href="{rel}clubs/{e["slug"]}/index.html">{escape(e["team"])}</a></td>'
-        f'<td>{e["points"]}</td><td>{e["games"]}</td>'
+        f'<td><strong>{e["points"]}</strong></td><td>{e["games"]}</td>'
         f'<td>{e["wins"]}-{e["draws"]}-{e["losses"]}</td>'
         f'<td>{escape(str(e["goal_diff"]))}</td></tr>'
         for e in entries)
     return (f'<h3>{escape(block)}</h3>'
-            '<table><thead><tr><th>順位</th><th>チーム</th><th>勝点</th>'
+            '<div class="tbl"><table><thead><tr><th>順位</th><th>チーム</th><th>勝点</th>'
             '<th>試合</th><th>勝-分-敗</th><th>得失</th></tr></thead>'
-            f'<tbody>{rows}</tbody></table>')
+            f'<tbody>{rows}</tbody></table></div>')
 
 
 def build_index(matches, standings, meta):
-    from datetime import date
-    today = date.today().isoformat()
     rel = ""
+    today = date.today().isoformat()
     played = [m for m in matches if m["status"] == "played"]
     scheduled = [m for m in matches if m["status"] == "scheduled"]
-    upcoming = [m for m in scheduled if m["date"] and m["date"] >= today][:10]
-    awaiting = [m for m in scheduled if m["date"] and m["date"] < today]
-    recent = list(reversed(played))[:10]
+    upcoming = [m for m in scheduled if m["date"] and m["date"] >= today][:8]
+    recent = list(reversed(played))[:8]
 
-    body = f'<h1>{escape(meta["league"])}</h1>'
-    body += '<section><h2>最新の試合結果</h2>' + MATCH_TABLE_HEAD
-    body += "".join(match_row(m, rel) for m in recent) + "</tbody></table></section>"
-    body += '<section><h2>今後の試合日程</h2>' + MATCH_TABLE_HEAD
-    body += "".join(match_row(m, rel) for m in upcoming) + "</tbody></table></section>"
+    body = ('<div class="hero"><div class="hero-inner">'
+            f'<p class="hero-kicker">{escape(meta["league"])}</p>'
+            '<h1>関東学生ラクロスの試合結果・日程・順位を毎日自動更新</h1>'
+            f'<p class="hero-sub">全37チームの戦績・過去の対戦データ・試合プレビューを掲載　|　最終更新 {escape(meta["fetched_at"][:10])}</p>'
+            '</div></div>')
+    body += '<section><h2>最新の試合結果</h2>' + MATCH_TABLE
+    body += "".join(match_row(m, rel) for m in recent) + "</tbody></table></div>"
+    body += f'<p class="more"><a class="cta" href="{rel}schedule/index.html">全試合の日程・結果を見る →</a></p></section>'
+    body += '<section><h2>今後の試合</h2>' + MATCH_TABLE
+    body += "".join(match_row(m, rel) for m in upcoming) + "</tbody></table></div>"
+    body += '<p class="note">試合ページでは両チームの今季成績・直近試合・過去の対戦をプレビューできます。</p></section>'
+    body += '<section><h2>順位表ダイジェスト</h2><div class="digest">'
+    for block, entries in standings.items():
+        rows = "".join(
+            f'<tr><td class="rank">{e["rank"]}</td>'
+            f'<td><a href="{rel}clubs/{e["slug"]}/index.html">{escape(e["team"])}</a></td>'
+            f'<td>{e["points"]}</td></tr>'
+            for e in entries[:3])
+        body += (f'<div class="digest-card"><h3>{escape(block)}</h3>'
+                 '<div class="tbl"><table><thead><tr><th>順位</th><th>チーム</th><th>勝点</th></tr></thead>'
+                 f'<tbody>{rows}</tbody></table></div></div>')
+    body += (f'</div><p class="more"><a class="cta" href="{rel}standings/index.html">全ブロックの順位表を見る →</a></p></section>')
+    (SITE / "index.html").write_text(
+        page(rel, "ラクロスマニア | 関東学生ラクロスの試合結果・日程・順位表", body, meta,
+             path="", desc=f'{meta["league"]}の試合結果・日程・順位表・チーム戦績を毎日自動更新。過去の対戦データと試合プレビューも掲載。'),
+        encoding="utf-8")
+
+
+def build_schedule(matches, meta):
+    rel = "../"
+    today = date.today().isoformat()
+    played = [m for m in matches if m["status"] == "played"]
+    scheduled = [m for m in matches if m["status"] == "scheduled"]
+    upcoming = [m for m in scheduled if m["date"] and m["date"] >= today]
+    awaiting = [m for m in scheduled if m["date"] and m["date"] < today]
+
+    body = '<h1>試合日程・結果</h1>'
+    body += '<section><h2>今後の試合</h2>' + MATCH_TABLE
+    body += "".join(match_row(m, rel) for m in upcoming) + "</tbody></table></div></section>"
+    body += '<section><h2>試合結果</h2>' + MATCH_TABLE
+    body += "".join(match_row(m, rel) for m in reversed(played)) + "</tbody></table></div></section>"
     if awaiting:
         body += ('<section><h2>結果反映待ちの試合</h2>'
-                 '<p class="club-lead">連盟データにまだスコアが入力されていない実施済み日程（延期の可能性あり）。</p>'
-                 + MATCH_TABLE_HEAD
+                 '<p class="note">連盟データにまだスコアが入力されていない実施済み日程（延期の可能性あり）。</p>'
+                 + MATCH_TABLE
                  + "".join(match_row(m, rel) for m in awaiting)
-                 + "</tbody></table></section>")
-    body += '<section><h2>星取表</h2>'
+                 + "</tbody></table></div></section>")
+    out = SITE / "schedule" / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(
+        page(rel, f'試合日程・結果 | ラクロスマニア', body, meta,
+             path="schedule/", desc=f'{meta["league"]}の全試合日程と結果の一覧。'),
+        encoding="utf-8")
+
+
+def build_standings_page(standings, meta):
+    rel = "../"
+    body = '<h1>順位表</h1>'
     for block, entries in standings.items():
         body += standings_table(block, entries, rel)
-    body += "</section>"
-    (SITE / "index.html").write_text(
-        page(rel, f'{meta["league"]} 試合結果・日程 | ラクロスマニア', body, meta),
+    out = SITE / "standings" / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(
+        page(rel, f'順位表（全ブロック） | ラクロスマニア', body, meta,
+             path="standings/", desc=f'{meta["league"]}の全6ブロックの順位表。勝点・得失点差を毎日自動更新。'),
+        encoding="utf-8")
+
+
+def build_teams_page(teams, standings, meta):
+    rel = "../"
+    body = '<h1>チーム一覧</h1><div class="digest">'
+    blocks: dict[str, list] = {}
+    for info in teams.values():
+        blocks.setdefault(info["block"], []).append(info)
+    for block in sorted(blocks):
+        links = "".join(
+            f'<li><a href="{rel}clubs/{t["slug"]}/index.html">{escape(t["team"])}</a></li>'
+            for t in sorted(blocks[block], key=lambda x: x["team"]))
+        body += f'<div class="digest-card"><h3>{escape(block)}</h3><ul class="team-list">{links}</ul></div>'
+    body += "</div>"
+    out = SITE / "teams" / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(
+        page(rel, f'チーム一覧 | ラクロスマニア', body, meta,
+             path="teams/", desc=f'{meta["league"]}参加全チームの一覧。各チームの戦績・日程・年度別成績はチームページで。'),
         encoding="utf-8")
 
 
@@ -264,9 +370,9 @@ def build_club_pages(matches, standings, teams, meta, hist):
         my_upcoming = [m for m in my_matches if m["status"] == "scheduled"]
         entry = next((e for e in standings.get(block, []) if e["team"] == team), None)
 
-        body = f'<p class="breadcrumb"><a href="{rel}index.html">リーグトップ</a> › {escape(club_name)}</p>'
+        body = f'<p class="breadcrumb"><a href="{rel}index.html">トップ</a> › <a href="{rel}teams/index.html">チーム</a> › {escape(club_name)}</p>'
         body += f'<h1>{escape(club_name)}</h1>'
-        body += f'<p class="club-lead">第38回関東学生ラクロスリーグ戦 {escape(block)} 所属。</p>'
+        body += f'<p class="lead">第38回関東学生ラクロスリーグ戦 {escape(block)} 所属。</p>'
         if entry:
             body += ('<section><h2>現在の戦績</h2><div class="stat-row">'
                      f'<div class="stat"><span class="num">{entry["rank"]}</span>位</div>'
@@ -275,13 +381,13 @@ def build_club_pages(matches, standings, teams, meta, hist):
                      f'<div class="stat"><span class="num">{escape(str(entry["goal_diff"]))}</span>得失点差</div>'
                      '</div></section>')
         if my_played:
-            body += '<section><h2>試合結果</h2>' + MATCH_TABLE_HEAD
+            body += '<section><h2>試合結果</h2>' + MATCH_TABLE
             body += "".join(match_row(m, rel) for m in reversed(my_played))
-            body += "</tbody></table></section>"
+            body += "</tbody></table></div></section>"
         if my_upcoming:
-            body += '<section><h2>今後の日程</h2>' + MATCH_TABLE_HEAD
+            body += '<section><h2>今後の日程</h2>' + MATCH_TABLE
             body += "".join(match_row(m, rel) for m in my_upcoming)
-            body += "</tbody></table></section>"
+            body += "</tbody></table></div></section>"
         season_rows = ""
         for h in hist:
             for hblock, entries in h["standings"].items():
@@ -293,10 +399,10 @@ def build_club_pages(matches, standings, teams, meta, hist):
                                     f'<td>{e["gf"]} - {e["ga"]}</td></tr>')
         if season_rows:
             body += ('<section><h2>年度別成績</h2>'
-                     '<table><thead><tr><th>年度</th><th>所属</th><th>順位</th>'
+                     '<div class="tbl"><table><thead><tr><th>年度</th><th>所属</th><th>順位</th>'
                      '<th>勝-分-敗</th><th>総得点-総失点</th></tr></thead>'
-                     f'<tbody>{season_rows}</tbody></table>'
-                     '<p class="club-lead">※順位はブロック内リーグ戦の結果から自動算出した参考値です。</p></section>')
+                     f'<tbody>{season_rows}</tbody></table></div>'
+                     '<p class="note">※順位はブロック内リーグ戦の結果から自動算出した参考値です。</p></section>')
         body += ('<section class="placeholder"><h2>関連記事</h2>'
                  '<p class="todo">（取材記事・特集記事への内部リンクをここに配置）</p></section>')
         body += ('<section class="placeholder"><h2>Instagram</h2>'
@@ -307,71 +413,160 @@ def build_club_pages(matches, standings, teams, meta, hist):
 
         out = SITE / "clubs" / slug / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
-        title = f'{club_name} 試合結果・日程・戦績 | ラクロスマニア'
-        out.write_text(page(rel, title, body, meta), encoding="utf-8")
+        out.write_text(
+            page(rel, f'{club_name} 試合結果・日程・戦績 | ラクロスマニア', body, meta,
+                 path=f"clubs/{slug}/",
+                 desc=f'{club_name}の試合結果・今後の日程・年度別成績・過去の対戦データ。{block}所属。'),
+            encoding="utf-8")
 
 
 def build_match_pages(matches, standings, meta, matches_by_year):
     rel = "../../"
     for m in matches:
-        body = (f'<p class="breadcrumb"><a href="{rel}index.html">リーグトップ</a> › '
-                f'{escape(m["category"])}</p>')
+        report = match_report(m, standings)
+        body = (f'<p class="breadcrumb"><a href="{rel}index.html">トップ</a> › '
+                f'<a href="{rel}schedule/index.html">日程・結果</a> › {escape(m["category"])}</p>')
         body += f'<h1>{escape(match_headline(m))}</h1>'
-        body += f'<p class="report">{escape(match_report(m, standings))}</p>'
+        body += f'<p class="report">{escape(report)}</p>'
         if m["status"] == "scheduled":
             body += preview_sections(m, matches, standings)
-        body += h2h_section(m, matches_by_year, rel)
-        body += ('<table class="detail"><tbody>'
+        body += h2h_section(m, matches_by_year)
+        body += ('<div class="tbl"><table class="detail"><tbody>'
                  f'<tr><th>日付</th><td>{date_jp(m["date"], with_year=True)}</td></tr>'
                  f'<tr><th>時間</th><td>{escape(m["time"])}</td></tr>'
                  f'<tr><th>カテゴリ</th><td>{escape(m["category"])}</td></tr>'
                  f'<tr><th>会場</th><td>{escape(m["venue"])}</td></tr>'
                  f'<tr><th>スコア</th><td>{score_str(m)}</td></tr>'
-                 '</tbody></table>')
+                 '</tbody></table></div>')
         body += ('<p class="links">'
                  f'<a href="{rel}clubs/{m["home_slug"]}/index.html">{escape(m["home"])}のページ</a> / '
                  f'<a href="{rel}clubs/{m["away_slug"]}/index.html">{escape(m["away"])}のページ</a></p>')
         out = SITE / "matches" / m["id"] / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
-        title = match_headline(m) + " | ラクロスマニア"
         out.write_text(
-            page(rel, title, body, meta, extra_head=jsonld_sports_event(m)),
+            page(rel, match_headline(m) + " | ラクロスマニア", body, meta,
+                 path=f'matches/{m["id"]}/', desc=report[:120], og_type="article",
+                 extra_head=jsonld_sports_event(m)),
             encoding="utf-8")
 
 
+def write_sitemap_and_robots():
+    today = date.today().isoformat()
+    urls = "".join(
+        f"<url><loc>{SITE_BASE}{p}</loc><lastmod>{today}</lastmod></url>"
+        for p in _sitemap_paths)
+    (SITE / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+        + urls + "</urlset>", encoding="utf-8")
+    (SITE / "robots.txt").write_text(
+        f"User-agent: *\nAllow: /\n\nSitemap: {SITE_BASE}sitemap.xml\n", encoding="utf-8")
+
+
+FAVICON = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<rect width="64" height="64" rx="14" fill="#16283f"/>
+<rect x="10" y="40" width="44" height="8" rx="4" fill="#f97316"/>
+<text x="32" y="36" font-family="Arial, sans-serif" font-size="26" font-weight="bold"
+ fill="#ffffff" text-anchor="middle">LM</text>
+</svg>
+"""
+
 STYLE = """
-:root { --ink:#1c2733; --sub:#5b6b7b; --line:#dde4ea; --accent:#0f6f5c; --bg:#f7f9fa; }
+:root {
+  --ink:#1a2433; --sub:#5b6b7b; --line:#dfe5ec; --bg:#f5f7f9; --surface:#fff;
+  --navy:#16283f; --navy-2:#1f3a5c; --accent:#f97316; --accent-dark:#c2570b;
+  --win:#15803d; --draw:#b45309; --loss:#b91c1c;
+}
 * { box-sizing:border-box; }
 body { margin:0; font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
   color:var(--ink); background:var(--bg); line-height:1.7; }
-.site-header { background:#fff; border-bottom:1px solid var(--line); padding:.7rem 1rem; }
-.brand { font-weight:700; color:var(--ink); text-decoration:none; font-size:1.05rem; }
-.brand .by { font-size:.75rem; color:var(--accent); margin-left:.5em; font-weight:600; }
-main { max-width:860px; margin:0 auto; padding:1rem 1rem 3rem; }
-h1 { font-size:1.35rem; line-height:1.4; }
-h2 { font-size:1.05rem; border-left:4px solid var(--accent); padding-left:.5em; margin-top:2.2em; }
+a { color:var(--navy-2); }
+a:hover { color:var(--accent-dark); }
+
+.site-header { background:var(--navy); }
+.header-inner { max-width:960px; margin:0 auto; padding:.7rem 1rem .5rem;
+  display:flex; flex-wrap:wrap; align-items:center; gap:.3rem 1.5rem; }
+.brand { display:flex; align-items:baseline; gap:.5rem; font-weight:800;
+  color:#fff; text-decoration:none; font-size:1.25rem; letter-spacing:.02em; }
+.brand-tick { width:.55em; height:.55em; background:var(--accent);
+  border-radius:2px; align-self:center; }
+.brand-sub { font-size:.6rem; color:#9fb2c8; font-weight:600; letter-spacing:.18em; }
+.global-nav { display:flex; gap:.2rem; overflow-x:auto; margin-left:auto; }
+.global-nav a { color:#d7e0ea; text-decoration:none; font-size:.85rem; font-weight:600;
+  padding:.35em .7em; border-radius:6px; white-space:nowrap; }
+.global-nav a:hover { background:var(--navy-2); color:#fff; }
+
+.hero { background:linear-gradient(120deg, var(--navy) 0%, var(--navy-2) 70%, #2c4e78 100%);
+  color:#fff; margin:0 -1rem; }
+.hero-inner { max-width:960px; margin:0 auto; padding:2.2rem 1rem 2.4rem; }
+.hero-kicker { color:var(--accent); font-weight:700; font-size:.85rem; margin:0 0 .4rem; }
+.hero h1 { font-size:1.5rem; line-height:1.45; margin:0 0 .6rem; }
+.hero-sub { color:#c3d1e0; font-size:.85rem; margin:0; }
+
+main { max-width:960px; margin:0 auto; padding:0 1rem 3rem; }
+h1 { font-size:1.35rem; line-height:1.45; }
+h2 { font-size:1.08rem; border-left:4px solid var(--accent); padding-left:.55em;
+  margin-top:2.4em; }
 h3 { font-size:.95rem; margin-top:1.6em; }
-section > table, table.detail { width:100%; border-collapse:collapse; background:#fff;
-  font-size:.85rem; }
-th, td { border:1px solid var(--line); padding:.45em .6em; text-align:left; }
-thead th { background:#eef2f5; font-weight:600; white-space:nowrap; }
-td.score { white-space:nowrap; font-weight:700; }
-td.venue { color:var(--sub); font-size:.8rem; }
-a { color:var(--accent); }
-.breadcrumb { font-size:.8rem; color:var(--sub); }
-.club-lead { color:var(--sub); }
+
+.tbl { overflow-x:auto; background:var(--surface); border:1px solid var(--line);
+  border-radius:10px; }
+table { width:100%; border-collapse:collapse; font-size:.85rem; }
+th, td { border-bottom:1px solid var(--line); padding:.5em .7em; text-align:left;
+  white-space:nowrap; }
+tbody tr:last-child td { border-bottom:none; }
+thead th { background:var(--navy); color:#fff; font-weight:600; font-size:.78rem; }
+tbody tr:nth-child(even) { background:#f8fafc; }
+td.score { font-weight:700; }
+td.venue { color:var(--sub); font-size:.78rem; max-width:16em; overflow:hidden;
+  text-overflow:ellipsis; }
+td.rank { font-weight:700; text-align:center; }
+.cat { background:#eaeff5; color:var(--navy-2); font-size:.72rem; font-weight:700;
+  padding:.15em .5em; border-radius:999px; }
+table.detail th { background:#eef2f6; color:var(--ink); width:7em; }
+
+.mk { font-weight:700; }
+.mk-w { color:var(--win); }
+.mk-d { color:var(--draw); }
+.mk-l { color:var(--loss); }
+
+.breadcrumb { font-size:.8rem; color:var(--sub); margin-top:1rem; }
+.breadcrumb a { color:var(--sub); }
+.lead { color:var(--sub); }
+.note { color:var(--sub); font-size:.8rem; }
+.more { margin:.9rem 0 0; }
+.cta { display:inline-block; background:var(--accent); color:#fff; font-weight:700;
+  font-size:.85rem; text-decoration:none; padding:.5em 1.1em; border-radius:8px; }
+.cta:hover { background:var(--accent-dark); color:#fff; }
+
 .stat-row { display:flex; gap:.8rem; flex-wrap:wrap; }
-.stat { background:#fff; border:1px solid var(--line); border-radius:8px;
-  padding:.6rem 1rem; font-size:.75rem; color:var(--sub); min-width:96px; text-align:center; }
-.stat .num { display:block; font-size:1.3rem; font-weight:700; color:var(--ink); }
-.report { background:#fff; border:1px solid var(--line); border-radius:8px; padding:1rem; }
-.placeholder .todo, .sponsor .todo { color:var(--sub); background:#fff;
-  border:1px dashed var(--line); border-radius:8px; padding:.8rem; font-size:.85rem; }
-.sponsor .cta { font-weight:700; }
-.site-footer { border-top:1px solid var(--line); color:var(--sub); font-size:.75rem;
-  padding:1rem; max-width:860px; margin:0 auto; }
-table { display:block; overflow-x:auto; }
-@media (min-width:700px){ table { display:table; overflow:visible; } }
+.stat { background:var(--surface); border:1px solid var(--line); border-radius:10px;
+  padding:.7rem 1.1rem; font-size:.75rem; color:var(--sub); min-width:100px;
+  text-align:center; }
+.stat .num { display:block; font-size:1.35rem; font-weight:800; color:var(--navy); }
+
+.report { background:var(--surface); border:1px solid var(--line);
+  border-left:4px solid var(--accent); border-radius:10px; padding:1rem 1.2rem; }
+
+.digest { display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr));
+  gap:1rem; }
+.digest-card { background:var(--surface); border:1px solid var(--line);
+  border-radius:10px; padding:.9rem 1rem 1rem; }
+.digest-card h3 { margin:.1em 0 .6em; }
+.digest-card .tbl { border:none; }
+.team-list { list-style:none; margin:0; padding:0; columns:2; font-size:.9rem; }
+.team-list li { margin:.25em 0; break-inside:avoid; }
+
+.placeholder .todo, .sponsor .todo { color:var(--sub); background:var(--surface);
+  border:1px dashed var(--line); border-radius:10px; padding:.8rem; font-size:.85rem; }
+
+.site-footer { background:var(--navy); color:#9fb2c8; font-size:.75rem;
+  margin-top:3rem; }
+.footer-inner { max-width:960px; margin:0 auto; padding:1.4rem 1rem 2rem; }
+.footer-brand { color:#fff; font-weight:800; font-size:.95rem; margin:0 0 .3rem; }
+.footer-nav { display:flex; gap:1rem; margin:.2rem 0 .8rem; }
+.footer-nav a { color:#c3d1e0; text-decoration:none; }
+.site-footer a { color:#c3d1e0; }
 """
 
 
@@ -379,22 +574,32 @@ def main():
     if SITE.exists():
         shutil.rmtree(SITE)
     SITE.mkdir(parents=True)
+    _sitemap_paths.clear()
+
     matches = load("matches")
     standings = load("standings")
     teams = load("teams")
     meta = load("meta")
-
     hist = load_history()
     matches_by_year = ([(meta["season_year"], matches)]
                        + [(h["year"], h["matches"]) for h in hist])
 
     (SITE / "style.css").write_text(STYLE, encoding="utf-8")
+    (SITE / "assets").mkdir()
+    (SITE / "assets" / "favicon.svg").write_text(FAVICON, encoding="utf-8")
+    if ASSETS.exists():
+        for f in ASSETS.iterdir():
+            shutil.copy(f, SITE / "assets" / f.name)
+
     build_index(matches, standings, meta)
+    build_schedule(matches, meta)
+    build_standings_page(standings, meta)
+    build_teams_page(teams, standings, meta)
     build_club_pages(matches, standings, teams, meta, hist)
     build_match_pages(matches, standings, meta, matches_by_year)
+    write_sitemap_and_robots()
 
-    n_pages = 1 + len(teams) + len(matches)
-    print(f"OK: {n_pages} pages generated in {SITE}")
+    print(f"OK: {len(_sitemap_paths)} pages generated in {SITE}")
 
 
 if __name__ == "__main__":

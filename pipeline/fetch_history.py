@@ -30,15 +30,29 @@ HISTORY = {
         "gid": "0",
         "fmt": "v2024",
     },
+    2023: {
+        "league": "第35回関東学生ラクロスリーグ戦（男子）",
+        "sheet": "1eFtUFUPBd_sy6P0vWmza_0jiQTAlMb2p8FjUIhlcJvs",
+        "gid": "0",
+        "fmt": "v2023",
+    },
 }
 
 BLOCK_RE = re.compile(r"^(\d)部\s*([A-C])(ブロック)?$")
 
 
-def fetch_csv(sheet_id: str, gid: str) -> list[list[str]]:
+def fetch_csv(sheet_id: str, gid: str, retries: int = 3) -> list[list[str]]:
+    import time
     url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
-    with urllib.request.urlopen(url, timeout=30) as res:
-        return list(csv.reader(io.StringIO(res.read().decode("utf-8"))))
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(url, timeout=30) as res:
+                return list(csv.reader(io.StringIO(res.read().decode("utf-8"))))
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            if attempt == retries - 1:
+                raise
+            print(f"[warn] fetch failed ({e}), retrying in {15 * (attempt + 1)}s...", file=sys.stderr)
+            time.sleep(15 * (attempt + 1))
 
 
 def norm_category(raw: str) -> str:
@@ -48,7 +62,29 @@ def norm_category(raw: str) -> str:
     return raw.strip()
 
 
+JUNK_TEAMS = {"雨天予備枠"}
+
+
+def normalize_team(name: str):
+    """年度による表記ゆれを正規化する（略称・注記・異体字・ダミー行）。"""
+    from fetch_jla import TEAM_SLUGS
+    n = re.sub(r"[（(].*?[）)]\s*$", "", name.strip()).strip()
+    if not n or n in JUNK_TEAMS:
+        return None
+    if n in TEAM_SLUGS:
+        return n
+    if n + "大学" in TEAM_SLUGS:
+        return n + "大学"
+    aliases = {"独協": "獨協大学", "国士館": "国士舘大学"}
+    if n in aliases:
+        return aliases[n]
+    return n
+
+
 def make_match(year, month, day, time, cat, home, away, venue, hs, as_, note):
+    home, away = normalize_team(home), normalize_team(away)
+    if not home or not away:
+        return None
     try:
         d = date(year, int(month), int(day)).isoformat()
     except (ValueError, TypeError):
@@ -78,26 +114,36 @@ def parse_v2025(rows, year):
             month = c[1]
         if not (c[2].isdigit() and c[7] and c[8] and month):
             continue
-        matches.append(make_match(year, month, c[2], c[4], c[5],
-                                  c[7], c[8], c[9], c[10], c[12], c[13]))
+        m = make_match(year, month, c[2], c[4], c[5],
+                       c[7], c[8], c[9], c[10], c[12], c[13])
+        if m:
+            matches.append(m)
     return matches
 
 
-def parse_v2024(rows, year):
-    """列: 1=月 2='/' 3=日 4=曜 5=時刻 6=ブロック 7=HOME 8=得点H 9='-' 10=得点A 11=AWAY 12=会場 14=備考"""
+def parse_v2024(rows, year, off=1):
+    """列(off=1): 1=月 2='/' 3=日 4=曜 5=時刻 6=ブロック 7=HOME 8=得点H 9='-' 10=得点A 11=AWAY 12=会場 14=備考
+    2023年は同形式で先頭の空列がないため off=0。"""
     matches, month = [], None
     for row in rows:
-        c = [x.strip() for x in row] + [""] * (15 - len(row))
-        if c[1].isdigit():
-            month = c[1]
-        if not (c[3].isdigit() and c[7] and c[11] and month):
+        c = [x.strip() for x in row] + [""] * (15 + off - len(row))
+        if c[off].isdigit():
+            month = c[off]
+        if not (c[off + 2].isdigit() and c[off + 6] and c[off + 10] and month):
             continue
-        matches.append(make_match(year, month, c[3], c[5], c[6],
-                                  c[7], c[11], c[12], c[8], c[10], c[14]))
+        m = make_match(year, month, c[off + 2], c[off + 4], c[off + 5],
+                       c[off + 6], c[off + 10], c[off + 11],
+                       c[off + 7], c[off + 9], c[off + 13])
+        if m:
+            matches.append(m)
     return matches
 
 
-PARSERS = {"v2025": parse_v2025, "v2024": parse_v2024}
+def parse_v2023(rows, year):
+    return parse_v2024(rows, year, off=0)
+
+
+PARSERS = {"v2025": parse_v2025, "v2024": parse_v2024, "v2023": parse_v2023}
 
 
 def compute_standings(matches):
@@ -139,7 +185,13 @@ def compute_standings(matches):
 def main():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     for year, src in HISTORY.items():
-        rows = fetch_csv(src["sheet"], src["gid"])
+        try:
+            rows = fetch_csv(src["sheet"], src["gid"])
+        except Exception as e:
+            if (DATA_DIR / f"{year}.json").exists():
+                print(f"{year}: fetch失敗のため既存データを維持 ({e})", file=sys.stderr)
+                continue
+            raise
         matches = PARSERS[src["fmt"]](rows, year)
         standings = compute_standings(matches)
         out = {

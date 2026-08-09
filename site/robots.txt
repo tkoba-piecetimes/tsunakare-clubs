@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tsunakereoff.github.io/tsunakare-clubs/sitemap.xml

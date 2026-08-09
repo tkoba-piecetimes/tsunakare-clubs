@@ -65,20 +65,28 @@ TEAM_SLUGS = {
     "城西大学": "josai",
     "関東学院大学": "kantogakuin",
     "玉川・関東学院・淑徳": "tamagawa-kantogakuin-shukutoku",
+    "玉川・群馬": "tamagawa-gunma",
 }
 
 SCORE_RE = re.compile(r"^(\d+)\s*[-−]\s*(\d+)$")
 DATE_RE = re.compile(r"^(\d{1,2})/(\d{1,2})")
 
 
-def fetch_csv(gid: str) -> list[list[str]]:
+def fetch_csv(gid: str, retries: int = 3) -> list[list[str]]:
+    import time
     url = (
         f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export"
         f"?format=csv&gid={gid}"
     )
-    with urllib.request.urlopen(url, timeout=30) as res:
-        text = res.read().decode("utf-8")
-    return list(csv.reader(io.StringIO(text)))
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(url, timeout=30) as res:
+                return list(csv.reader(io.StringIO(res.read().decode("utf-8"))))
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            if attempt == retries - 1:
+                raise
+            print(f"[warn] fetch failed ({e}), retrying in {15 * (attempt + 1)}s...", file=sys.stderr)
+            time.sleep(15 * (attempt + 1))
 
 
 def slug_for(team: str) -> str:
