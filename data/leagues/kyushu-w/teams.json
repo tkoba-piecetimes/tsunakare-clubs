@@ -1,0 +1,42 @@
+{
+ "九州大学": {
+  "team": "九州大学",
+  "slug": "kyushu-univ",
+  "block": "1部"
+ },
+ "福岡教育大学": {
+  "team": "福岡教育大学",
+  "slug": "fukuokakyouiku",
+  "block": "1部"
+ },
+ "中村学園大学・久留米大学合同チーム": {
+  "team": "中村学園大学・久留米大学合同チーム",
+  "slug": "nakamuragakuendaigaku-kurumedaigakugoudouchiimu",
+  "block": "2部"
+ },
+ "西南学院大学": {
+  "team": "西南学院大学",
+  "slug": "seinan-gakuin",
+  "block": "2部"
+ },
+ "福岡大学": {
+  "team": "福岡大学",
+  "slug": "fukuoka",
+  "block": "1部"
+ },
+ "北九州市立大学": {
+  "team": "北九州市立大学",
+  "slug": "kitakyushu",
+  "block": "1部"
+ },
+ "筑紫女学園大学": {
+  "team": "筑紫女学園大学",
+  "slug": "chikushijogakuen",
+  "block": "2部"
+ },
+ "福岡女学院大学": {
+  "team": "福岡女学院大学",
+  "slug": "fukuokajogakuin",
+  "block": "2部"
+ }
+}

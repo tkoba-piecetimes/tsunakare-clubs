@@ -1,0 +1,52 @@
+{
+ "愛知教育大学": {
+  "team": "愛知教育大学",
+  "slug": "aichikyouiku",
+  "block": "1部"
+ },
+ "名城大学": {
+  "team": "名城大学",
+  "slug": "meijo",
+  "block": "1部"
+ },
+ "岐阜大学": {
+  "team": "岐阜大学",
+  "slug": "gifu",
+  "block": "1部"
+ },
+ "名古屋大学": {
+  "team": "名古屋大学",
+  "slug": "nagoya",
+  "block": "1部"
+ },
+ "南山大学": {
+  "team": "南山大学",
+  "slug": "nanzan",
+  "block": "1部"
+ },
+ "中部大学": {
+  "team": "中部大学",
+  "slug": "chuubu",
+  "block": "2部"
+ },
+ "愛知大学": {
+  "team": "愛知大学",
+  "slug": "aichi",
+  "block": "2部"
+ },
+ "中京大学": {
+  "team": "中京大学",
+  "slug": "chukyo",
+  "block": "1部"
+ },
+ "滋賀大学": {
+  "team": "滋賀大学",
+  "slug": "shiga",
+  "block": "2部"
+ },
+ "信州大学": {
+  "team": "信州大学",
+  "slug": "shinshuu",
+  "block": "2部"
+ }
+}

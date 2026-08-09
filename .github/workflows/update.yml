@@ -27,6 +27,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install dependencies
+        run: pip install pykakasi
       - name: Fetch JLA data
         run: python pipeline/fetch_jla.py
       - name: Generate site

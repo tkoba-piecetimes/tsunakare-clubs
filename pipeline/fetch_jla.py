@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-"""JLA公式スプレッドシートから関東学生ラクロスリーグ（男子）の日程・結果・星取表を取得し、
-data/ 配下に正規化JSONとして保存する。
+"""JLA公式スプレッドシートから全国7地区×男女=14リーグの日程・結果を取得し、
+data/leagues/<code>/ に正規化JSONとして保存する。
 
 データ出典: 公益社団法人日本ラクロス協会 (https://www.lacrosse.gr.jp/)
-スプレッドシートは公開設定のCSVエクスポートを利用（スコア・日程は事実情報であり著作権の対象外）。
+全リーグが同一スプレッドシートの別タブ（gid違い・同一列構成）で管理されている。
+gid一覧の出典・検証記録は docs/data-sources.md を参照。
 """
 import csv
 import io
@@ -11,65 +12,37 @@ import json
 import re
 import sys
 import urllib.request
+from collections import Counter
 from datetime import date, datetime
 from pathlib import Path
 
+from team_slugs import slug_for
+
 SHEET_ID = "1k7Yxty0ylKVp7TbmlAMwcHOCVXprQRsHMDPD31MEGnw"
-GID_RESULTS = "1768695961"    # 男子 日程表&結果
-GID_STANDINGS = "508843350"   # 男子 星取表
 SEASON_YEAR = 2026
-LEAGUE_NAME = "第38回関東学生ラクロスリーグ戦（男子）"
+DATA_DIR = Path(__file__).resolve().parent.parent / "data" / "leagues"
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
-
-# チーム名 → URLスラッグ（部活ページのパスになる）
-TEAM_SLUGS = {
-    "早稲田大学": "waseda",
-    "慶應義塾大学": "keio",
-    "中央大学": "chuo",
-    "明治大学": "meiji",
-    "成蹊大学": "seikei",
-    "獨協大学": "dokkyo",
-    "法政大学": "hosei",
-    "明治学院大学": "meijigakuin",
-    "学習院大学": "gakushuin",
-    "青山学院大学": "aoyamagakuin",
-    "日本体育大学": "nittaidai",
-    "一橋大学": "hitotsubashi",
-    "成城大学": "seijo",
-    "東京農業大学": "tokyo-nodai",
-    "東京大学": "tokyo",
-    "東洋大学": "toyo",
-    "千葉大学": "chiba",
-    "帝京大学": "teikyo",
-    "武蔵大学": "musashi",
-    "横浜国立大学": "yokohama-kokudai",
-    "立教大学": "rikkyo",
-    "東海大学": "tokai",
-    "国士舘大学": "kokushikan",
-    "東京学芸大学": "tokyo-gakugei",
-    "神奈川大学": "kanagawa",
-    "東京理科大学": "tokyo-rika",
-    "上智大学": "sophia",
-    "埼玉大学": "saitama",
-    "慶應義塾高校": "keio-hs",
-    "筑波大学": "tsukuba",
-    "明星大学": "meisei",
-    "東京経済大学": "tokyo-keizai",
-    "大東文化大学": "daitobunka",
-    "専修大学": "senshu",
-    "駒澤大学": "komazawa",
-    "城西・関東学院": "josai-kantogakuin",
-    "日本大学": "nihon",
-    # 過去年度のみ登場するチーム
-    "城西大学": "josai",
-    "関東学院大学": "kantogakuin",
-    "玉川・関東学院・淑徳": "tamagawa-kantogakuin-shukutoku",
-    "玉川・群馬": "tamagawa-gunma",
+LEAGUES = {
+    "kanto-m":      {"region": "関東",   "gender": "男子", "gid": "1768695961"},
+    "kanto-w":      {"region": "関東",   "gender": "女子", "gid": "2122775238"},
+    "kansai-m":     {"region": "関西",   "gender": "男子", "gid": "215098765"},
+    "kansai-w":     {"region": "関西",   "gender": "女子", "gid": "228060780"},
+    "tokai-m":      {"region": "東海",   "gender": "男子", "gid": "853859232"},
+    "tokai-w":      {"region": "東海",   "gender": "女子", "gid": "1401747396"},
+    "hokkaido-m":   {"region": "北海道", "gender": "男子", "gid": "531041111"},
+    "hokkaido-w":   {"region": "北海道", "gender": "女子", "gid": "140891479"},
+    "tohoku-m":     {"region": "東北",   "gender": "男子", "gid": "1795521138"},
+    "tohoku-w":     {"region": "東北",   "gender": "女子", "gid": "47363138"},
+    "chushikoku-m": {"region": "中四国", "gender": "男子", "gid": "392009888"},
+    "chushikoku-w": {"region": "中四国", "gender": "女子", "gid": "2113993352"},
+    "kyushu-m":     {"region": "九州",   "gender": "男子", "gid": "2086821834"},
+    "kyushu-w":     {"region": "九州",   "gender": "女子", "gid": "1689984693"},
 }
 
 SCORE_RE = re.compile(r"^(\d+)\s*[-−]\s*(\d+)$")
 DATE_RE = re.compile(r"^(\d{1,2})/(\d{1,2})")
+# リーグ戦（総当たり）扱いするカテゴリ。決勝・プレーオフ・入替戦などは順位計算から除外
+BLOCK_RE = re.compile(r"^(\d部( [A-C]ブロック)?|リーグ|レギュラー)$")
 
 
 def fetch_csv(gid: str, retries: int = 3) -> list[list[str]]:
@@ -86,19 +59,23 @@ def fetch_csv(gid: str, retries: int = 3) -> list[list[str]]:
             if attempt == retries - 1:
                 raise
             print(f"[warn] fetch failed ({e}), retrying in {15 * (attempt + 1)}s...", file=sys.stderr)
-            time.sleep(15 * (attempt + 1))
+            import time as _t
+            _t.sleep(15 * (attempt + 1))
 
 
-def slug_for(team: str) -> str:
-    if team not in TEAM_SLUGS:
-        # 未知チーム（合同チーム再編等）はビルドを止めず警告してフォールバック
-        print(f"[warn] 未登録のチーム名: {team}", file=sys.stderr)
-        return f"team-{abs(hash(team)) % 10**8}"
-    return TEAM_SLUGS[team]
+def norm_category(raw: str) -> str:
+    """「1部A」「1部 Aブロック」「1部」等の表記ゆれを正規化する。"""
+    s = raw.strip()
+    m = re.match(r"^(\d)部\s*([A-C])(ブロック)?$", s)
+    if m:
+        return f"{m.group(1)}部 {m.group(2)}ブロック"
+    return s
 
 
-def parse_results(rows: list[list[str]]) -> tuple[list[dict], str]:
+def parse_results(rows: list[list[str]]) -> tuple[list[dict], str, str]:
+    """日程表&結果タブをパースし (試合リスト, リーグ名, 連盟更新日) を返す。"""
     matches = []
+    league_title = ""
     updated_at = ""
     current_date = None
     in_body = False
@@ -108,101 +85,143 @@ def parse_results(rows: list[list[str]]) -> tuple[list[dict], str]:
             cells += [""] * (10 - len(cells))
         _, d, t, category, _, home, away, venue, score, note = cells[:10]
 
+        joined = ",".join(cells)
+        if not league_title:
+            for c in cells:
+                if re.search(r"第\d+回.+リーグ戦", c):
+                    league_title = re.sub(r"[\s　]+", " ", c).strip()
+                    break
+        m_upd = re.search(r"更新日：(\d{4})年(\d{1,2})月(\d{1,2})日", joined)
+        if m_upd:
+            updated_at = f"{m_upd.group(1)}-{int(m_upd.group(2)):02d}-{int(m_upd.group(3)):02d}"
+
         if d == "日付" and home == "HOMEチーム":
             in_body = True
             continue
-        m_upd = re.search(r"更新日：(\d{4})年(\d{1,2})月(\d{1,2})日", ",".join(cells))
-        if m_upd:
-            updated_at = f"{m_upd.group(1)}-{int(m_upd.group(2)):02d}-{int(m_upd.group(3)):02d}"
         if not in_body or not (home and away):
             continue
 
         m_date = DATE_RE.match(d)
         if m_date:
-            current_date = date(SEASON_YEAR, int(m_date.group(1)), int(m_date.group(2)))
-
+            try:
+                current_date = date(SEASON_YEAR, int(m_date.group(1)), int(m_date.group(2)))
+            except ValueError:
+                pass
         m_score = SCORE_RE.match(score)
-        status = "played" if m_score else "scheduled"
         matches.append({
             "id": f"{current_date.isoformat() if current_date else 'tbd'}-{slug_for(home)}-vs-{slug_for(away)}",
             "date": current_date.isoformat() if current_date else None,
             "time": t or "未定",
-            "category": category,          # 例: "1部 Bブロック"
+            "category": norm_category(category),
             "home": home,
             "away": away,
             "home_slug": slug_for(home),
             "away_slug": slug_for(away),
             "venue": venue or "未定",
-            "status": status,
+            "status": "played" if m_score else "scheduled",
             "home_score": int(m_score.group(1)) if m_score else None,
             "away_score": int(m_score.group(2)) if m_score else None,
             "note": note,
         })
-    return matches, updated_at
+    return matches, league_title, updated_at
 
 
-def parse_standings(rows: list[list[str]]) -> dict[str, list[dict]]:
-    blocks: dict[str, list[dict]] = {}
-    current_block = None
-    for row in rows:
-        cells = [c.strip() for c in row]
-        if len(cells) < 10:
-            cells += [""] * (10 - len(cells))
-        col1, col2 = cells[1], cells[2]
-        if re.match(r"^\d部\s*[A-C]ブロック$", col1):
-            current_block = col1
-            blocks[current_block] = []
+def compute_standings(matches: list[dict]) -> dict[str, list[dict]]:
+    """ブロック内リーグ戦の結果から順位表を算出する（未消化チームも0試合で掲載）。"""
+    blocks: dict[str, dict[str, dict]] = {}
+    for m in matches:
+        if not BLOCK_RE.match(m["category"]):
             continue
-        if current_block and col1.isdigit() and col2:
-            blocks[current_block].append({
-                "rank": int(col1),
-                "team": col2,
-                "slug": slug_for(col2),
-                "points": int(cells[3] or 0),
-                "games": int(cells[4] or 0),
-                "wins": int(cells[5] or 0),
-                "draws": int(cells[6] or 0),
-                "losses": int(cells[7] or 0),
-                "goal_diff": cells[8],
-                "goals_for": int(cells[9] or 0),
-            })
-    return blocks
+        b = blocks.setdefault(m["category"], {})
+        for team in (m["home"], m["away"]):
+            b.setdefault(team, {"team": team, "slug": slug_for(team), "points": 0,
+                                "games": 0, "wins": 0, "draws": 0, "losses": 0,
+                                "gf": 0, "ga": 0})
+        if m["status"] != "played":
+            continue
+        for team, gf, ga in ((m["home"], m["home_score"], m["away_score"]),
+                             (m["away"], m["away_score"], m["home_score"])):
+            e = b[team]
+            e["games"] += 1
+            e["gf"] += gf
+            e["ga"] += ga
+            if gf > ga:
+                e["wins"] += 1
+                e["points"] += 3
+            elif gf == ga:
+                e["draws"] += 1
+                e["points"] += 1
+            else:
+                e["losses"] += 1
+    result = {}
+    for block, teams in sorted(blocks.items()):
+        entries = sorted(teams.values(),
+                         key=lambda e: (-e["points"], -(e["gf"] - e["ga"]), -e["gf"]))
+        for i, e in enumerate(entries, 1):
+            e["rank"] = i
+            diff = e["gf"] - e["ga"]
+            e["goal_diff"] = f"+{diff}" if diff > 0 else str(diff)
+            e["goals_for"] = e["gf"]
+        result[block] = entries
+    return result
+
+
+def build_teams(matches: list[dict]) -> dict[str, dict]:
+    """全試合からチーム一覧を作る。所属ブロックは出場カテゴリの最頻値。"""
+    cats: dict[str, Counter] = {}
+    for m in matches:
+        for team in (m["home"], m["away"]):
+            if BLOCK_RE.match(m["category"]):
+                cats.setdefault(team, Counter())[m["category"]] += 1
+    return {
+        team: {"team": team, "slug": slug_for(team), "block": counter.most_common(1)[0][0]}
+        for team, counter in cats.items()
+    }
 
 
 def main() -> None:
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-
-    results_rows = fetch_csv(GID_RESULTS)
-    standings_rows = fetch_csv(GID_STANDINGS)
-
-    matches, updated_at = parse_results(results_rows)
-    standings = parse_standings(standings_rows)
-
-    teams = {}
-    for block, entries in standings.items():
-        for e in entries:
-            teams[e["team"]] = {"team": e["team"], "slug": e["slug"], "block": block}
-
-    meta = {
-        "league": LEAGUE_NAME,
-        "season_year": SEASON_YEAR,
-        "source": "公益社団法人日本ラクロス協会",
-        "source_url": "https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/",
-        "source_updated_at": updated_at,
-        "fetched_at": datetime.now().isoformat(timespec="seconds"),
-    }
-
-    (DATA_DIR / "matches.json").write_text(
-        json.dumps(matches, ensure_ascii=False, indent=1), encoding="utf-8")
-    (DATA_DIR / "standings.json").write_text(
-        json.dumps(standings, ensure_ascii=False, indent=1), encoding="utf-8")
-    (DATA_DIR / "teams.json").write_text(
-        json.dumps(teams, ensure_ascii=False, indent=1), encoding="utf-8")
-    (DATA_DIR / "meta.json").write_text(
-        json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
-
-    played = sum(1 for m in matches if m["status"] == "played")
-    print(f"OK: 試合 {len(matches)}件（結果あり {played}件）/ チーム {len(teams)} / 星取表 {len(standings)}ブロック / 連盟更新日 {updated_at}")
+    ok = 0
+    for code, cfg in LEAGUES.items():
+        out_dir = DATA_DIR / code
+        try:
+            rows = fetch_csv(cfg["gid"])
+            matches, league_title, updated_at = parse_results(rows)
+        except Exception as e:
+            if (out_dir / "matches.json").exists():
+                print(f"{code}: fetch失敗のため既存データを維持 ({e})", file=sys.stderr)
+                continue
+            print(f"{code}: fetch失敗・既存データなし ({e})", file=sys.stderr)
+            continue
+        if not matches:
+            print(f"{code}: 試合データ0件のためスキップ", file=sys.stderr)
+            continue
+        standings = compute_standings(matches)
+        teams = build_teams(matches)
+        meta = {
+            "code": code,
+            "region": cfg["region"],
+            "gender": cfg["gender"],
+            "league": league_title or f'{cfg["region"]}学生ラクロスリーグ戦（{cfg["gender"]}）',
+            "season_year": SEASON_YEAR,
+            "source": "公益社団法人日本ラクロス協会",
+            "source_url": "https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/",
+            "source_updated_at": updated_at,
+            "fetched_at": datetime.now().isoformat(timespec="seconds"),
+        }
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "matches.json").write_text(
+            json.dumps(matches, ensure_ascii=False, indent=1), encoding="utf-8")
+        (out_dir / "standings.json").write_text(
+            json.dumps(standings, ensure_ascii=False, indent=1), encoding="utf-8")
+        (out_dir / "teams.json").write_text(
+            json.dumps(teams, ensure_ascii=False, indent=1), encoding="utf-8")
+        (out_dir / "meta.json").write_text(
+            json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
+        played = sum(1 for m in matches if m["status"] == "played")
+        print(f"{code}: {meta['league']} 試合{len(matches)}件(結果{played}) "
+              f"チーム{len(teams)} ブロック{len(standings)} 更新{updated_at}")
+        ok += 1
+    print(f"done: {ok}/{len(LEAGUES)} leagues")
 
 
 if __name__ == "__main__":

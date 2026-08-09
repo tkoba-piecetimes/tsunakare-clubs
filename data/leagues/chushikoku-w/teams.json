@@ -1,0 +1,52 @@
+{
+ "広島大学": {
+  "team": "広島大学",
+  "slug": "hiroshima",
+  "block": "1部"
+ },
+ "岡山大学": {
+  "team": "岡山大学",
+  "slug": "okayama",
+  "block": "1部"
+ },
+ "安田女子大学": {
+  "team": "安田女子大学",
+  "slug": "yasudajoshi",
+  "block": "2部"
+ },
+ "山口県立大学": {
+  "team": "山口県立大学",
+  "slug": "yamaguchikenritsu",
+  "block": "2部"
+ },
+ "山口大学": {
+  "team": "山口大学",
+  "slug": "yamaguchi",
+  "block": "1部"
+ },
+ "修道": {
+  "team": "修道",
+  "slug": "shuudou",
+  "block": "1部"
+ },
+ "愛媛大学": {
+  "team": "愛媛大学",
+  "slug": "ehime",
+  "block": "2部"
+ },
+ "島根大学": {
+  "team": "島根大学",
+  "slug": "shimane",
+  "block": "2部"
+ },
+ "徳島大学": {
+  "team": "徳島大学",
+  "slug": "tokushima",
+  "block": "1部"
+ },
+ "松山高知": {
+  "team": "松山高知",
+  "slug": "matsuyamakouchi",
+  "block": "2部"
+ }
+}

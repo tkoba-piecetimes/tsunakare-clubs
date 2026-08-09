@@ -1,0 +1,118 @@
+{
+ "1部": [
+  {
+   "team": "福岡大学",
+   "slug": "fukuoka",
+   "points": 3,
+   "games": 1,
+   "wins": 1,
+   "draws": 0,
+   "losses": 0,
+   "gf": 12,
+   "ga": 7,
+   "rank": 1,
+   "goal_diff": "+5",
+   "goals_for": 12
+  },
+  {
+   "team": "九州大学",
+   "slug": "kyushu-univ",
+   "points": 3,
+   "games": 1,
+   "wins": 1,
+   "draws": 0,
+   "losses": 0,
+   "gf": 10,
+   "ga": 8,
+   "rank": 2,
+   "goal_diff": "+2",
+   "goals_for": 10
+  },
+  {
+   "team": "福岡教育大学",
+   "slug": "fukuokakyouiku",
+   "points": 0,
+   "games": 1,
+   "wins": 0,
+   "draws": 0,
+   "losses": 1,
+   "gf": 8,
+   "ga": 10,
+   "rank": 3,
+   "goal_diff": "-2",
+   "goals_for": 8
+  },
+  {
+   "team": "北九州市立大学",
+   "slug": "kitakyushu",
+   "points": 0,
+   "games": 1,
+   "wins": 0,
+   "draws": 0,
+   "losses": 1,
+   "gf": 7,
+   "ga": 12,
+   "rank": 4,
+   "goal_diff": "-5",
+   "goals_for": 7
+  }
+ ],
+ "2部": [
+  {
+   "team": "西南学院大学",
+   "slug": "seinan-gakuin",
+   "points": 3,
+   "games": 1,
+   "wins": 1,
+   "draws": 0,
+   "losses": 0,
+   "gf": 38,
+   "ga": 0,
+   "rank": 1,
+   "goal_diff": "+38",
+   "goals_for": 38
+  },
+  {
+   "team": "福岡女学院大学",
+   "slug": "fukuokajogakuin",
+   "points": 3,
+   "games": 1,
+   "wins": 1,
+   "draws": 0,
+   "losses": 0,
+   "gf": 22,
+   "ga": 8,
+   "rank": 2,
+   "goal_diff": "+14",
+   "goals_for": 22
+  },
+  {
+   "team": "筑紫女学園大学",
+   "slug": "chikushijogakuen",
+   "points": 0,
+   "games": 1,
+   "wins": 0,
+   "draws": 0,
+   "losses": 1,
+   "gf": 8,
+   "ga": 22,
+   "rank": 3,
+   "goal_diff": "-14",
+   "goals_for": 8
+  },
+  {
+   "team": "中村学園大学・久留米大学合同チーム",
+   "slug": "nakamuragakuendaigaku-kurumedaigakugoudouchiimu",
+   "points": 0,
+   "games": 1,
+   "wins": 0,
+   "draws": 0,
+   "losses": 1,
+   "gf": 0,
+   "ga": 38,
+   "rank": 4,
+   "goal_diff": "-38",
+   "goals_for": 0
+  }
+ ]
+}

@@ -13,9 +13,9 @@ import urllib.request
 from datetime import date
 from pathlib import Path
 
-from fetch_jla import slug_for
+from team_slugs import slug_for
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data" / "history"
+DATA_DIR = Path(__file__).resolve().parent.parent / "data" / "leagues" / "kanto-m" / "history"
 
 HISTORY = {
     2025: {
@@ -67,7 +67,7 @@ JUNK_TEAMS = {"雨天予備枠"}
 
 def normalize_team(name: str):
     """年度による表記ゆれを正規化する（略称・注記・異体字・ダミー行）。"""
-    from fetch_jla import TEAM_SLUGS
+    from team_slugs import TEAM_SLUGS
     n = re.sub(r"[（(].*?[）)]\s*$", "", name.strip()).strip()
     if not n or n in JUNK_TEAMS:
         return None

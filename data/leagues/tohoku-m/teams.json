@@ -1,0 +1,22 @@
+{
+ "東北大学": {
+  "team": "東北大学",
+  "slug": "tohoku-univ",
+  "block": "リーグ"
+ },
+ "福島大学": {
+  "team": "福島大学",
+  "slug": "fukushima",
+  "block": "リーグ"
+ },
+ "岩手大学": {
+  "team": "岩手大学",
+  "slug": "iwate",
+  "block": "リーグ"
+ },
+ "新潟大学": {
+  "team": "新潟大学",
+  "slug": "niigata",
+  "block": "リーグ"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "北海道大学": {
+  "team": "北海道大学",
+  "slug": "hokkaido",
+  "block": "リーグ"
+ },
+ "北星学園大学": {
+  "team": "北星学園大学",
+  "slug": "hokusei-gakuen",
+  "block": "リーグ"
+ },
+ "合同": {
+  "team": "合同",
+  "slug": "goudou",
+  "block": "リーグ"
+ },
+ "酪農学園大学": {
+  "team": "酪農学園大学",
+  "slug": "rakuno-gakuen",
+  "block": "リーグ"
+ },
+ "北海学園大学": {
+  "team": "北海学園大学",
+  "slug": "hokkai-gakuen",
+  "block": "リーグ"
+ },
+ "藤女子大学": {
+  "team": "藤女子大学",
+  "slug": "fuji-joshi",
+  "block": "リーグ"
+ }
+}

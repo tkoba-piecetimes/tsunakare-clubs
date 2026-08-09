@@ -1,0 +1,77 @@
+{
+ "関西学院大学": {
+  "team": "関西学院大学",
+  "slug": "kwansei-gakuin",
+  "block": "1部"
+ },
+ "立命館大学": {
+  "team": "立命館大学",
+  "slug": "ritsumeikan",
+  "block": "1部"
+ },
+ "同志社大学": {
+  "team": "同志社大学",
+  "slug": "doshisha",
+  "block": "1部"
+ },
+ "京都産業大学": {
+  "team": "京都産業大学",
+  "slug": "kyoto-sangyo",
+  "block": "1部"
+ },
+ "関西大学": {
+  "team": "関西大学",
+  "slug": "kansai",
+  "block": "1部"
+ },
+ "武庫川女子大学": {
+  "team": "武庫川女子大学",
+  "slug": "mukogawa-joshi",
+  "block": "1部"
+ },
+ "近畿大学": {
+  "team": "近畿大学",
+  "slug": "kindai",
+  "block": "1部"
+ },
+ "京都工芸繊維大学": {
+  "team": "京都工芸繊維大学",
+  "slug": "kyoutokougeisen-i",
+  "block": "2部"
+ },
+ "大阪教育大学": {
+  "team": "大阪教育大学",
+  "slug": "oosakakyouiku",
+  "block": "2部"
+ },
+ "神戸女学院大学": {
+  "team": "神戸女学院大学",
+  "slug": "kobe-jogakuin",
+  "block": "2部"
+ },
+ "神戸大学": {
+  "team": "神戸大学",
+  "slug": "kobe",
+  "block": "2部"
+ },
+ "大阪体育大学": {
+  "team": "大阪体育大学",
+  "slug": "oosakataiiku",
+  "block": "2部"
+ },
+ "京都女子大学": {
+  "team": "京都女子大学",
+  "slug": "kyoto-joshi",
+  "block": "2部"
+ },
+ "京都大学": {
+  "team": "京都大学",
+  "slug": "kyoto",
+  "block": "2部"
+ },
+ "神戸学院大学": {
+  "team": "神戸学院大学",
+  "slug": "koubegakuin",
+  "block": "2部"
+ }
+}

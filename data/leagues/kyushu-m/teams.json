@@ -1,0 +1,37 @@
+{
+ "福岡大学": {
+  "team": "福岡大学",
+  "slug": "fukuoka",
+  "block": "リーグ"
+ },
+ "九州大学": {
+  "team": "九州大学",
+  "slug": "kyushu-univ",
+  "block": "リーグ"
+ },
+ "西南学院大学": {
+  "team": "西南学院大学",
+  "slug": "seinan-gakuin",
+  "block": "リーグ"
+ },
+ "中村学園大学": {
+  "team": "中村学園大学",
+  "slug": "nakamuragakuen",
+  "block": "リーグ"
+ },
+ "久留米大学": {
+  "team": "久留米大学",
+  "slug": "kurume",
+  "block": "リーグ"
+ },
+ "立命館アジア太平洋大学": {
+  "team": "立命館アジア太平洋大学",
+  "slug": "ritsumeikanajiataiheiyou",
+  "block": "リーグ"
+ },
+ "北九州市立大学": {
+  "team": "北九州市立大学",
+  "slug": "kitakyushu",
+  "block": "リーグ"
+ }
+}

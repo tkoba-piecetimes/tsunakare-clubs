@@ -1,0 +1,132 @@
+{
+ "リーグ": [
+  {
+   "team": "西南学院大学",
+   "slug": "seinan-gakuin",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 1,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "中村学園大学",
+   "slug": "nakamuragakuen",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 2,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "久留米大学",
+   "slug": "kurume",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 3,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "福岡大学",
+   "slug": "fukuoka",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 4,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "立命館アジア太平洋大学",
+   "slug": "ritsumeikanajiataiheiyou",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 5,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "九州大学",
+   "slug": "kyushu-univ",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 6,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "北九州市立大学",
+   "slug": "kitakyushu",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 7,
+   "goal_diff": "0",
+   "goals_for": 0
+  }
+ ],
+ "レギュラー": [
+  {
+   "team": "九州大学",
+   "slug": "kyushu-univ",
+   "points": 3,
+   "games": 1,
+   "wins": 1,
+   "draws": 0,
+   "losses": 0,
+   "gf": 5,
+   "ga": 4,
+   "rank": 1,
+   "goal_diff": "+1",
+   "goals_for": 5
+  },
+  {
+   "team": "福岡大学",
+   "slug": "fukuoka",
+   "points": 0,
+   "games": 1,
+   "wins": 0,
+   "draws": 0,
+   "losses": 1,
+   "gf": 4,
+   "ga": 5,
+   "rank": 2,
+   "goal_diff": "-1",
+   "goals_for": 4
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "北海道大学": {
+  "team": "北海道大学",
+  "slug": "hokkaido",
+  "block": "リーグ"
+ },
+ "北海学園大学": {
+  "team": "北海学園大学",
+  "slug": "hokkai-gakuen",
+  "block": "リーグ"
+ },
+ "北星学園大学": {
+  "team": "北星学園大学",
+  "slug": "hokusei-gakuen",
+  "block": "リーグ"
+ },
+ "小樽商科大学": {
+  "team": "小樽商科大学",
+  "slug": "otaru-shoka",
+  "block": "リーグ"
+ },
+ "北海道科学大学": {
+  "team": "北海道科学大学",
+  "slug": "hokkaidoukagaku",
+  "block": "リーグ"
+ }
+}
