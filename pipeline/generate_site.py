@@ -24,7 +24,7 @@ ASSETS = ROOT / "assets"
 CONTENT = ROOT / "content" / "articles"
 
 SITE_BASE = "https://lacrossemania.jp/"
-GA_MEASUREMENT_ID = ""  # GA4のG-XXXXXXXXXXを設定すると計測タグが入る
+GA_MEASUREMENT_ID = "G-Y5MQZBL9RE"
 
 WEEKDAYS_JP = ["月", "火", "水", "木", "金", "土", "日"]
 LEAGUE_ORDER = [
