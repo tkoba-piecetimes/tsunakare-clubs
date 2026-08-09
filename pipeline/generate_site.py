@@ -227,6 +227,7 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
   <div class="footer-inner">
     <p class="footer-brand">ラクロスマニア</p>
     <nav class="footer-nav">{nav}</nav>
+    <p>運営: <a href="https://piecetimes.jp">PieceTimes</a>　|　関連サービス: <a href="https://tunakare.jp">ツナカレ（大学部活×企業マッチング）</a></p>
     <p>試合データ出典: <a href="{escape(meta['source_url'])}">{escape(meta['source'])}</a>
     （連盟データ更新日: {escape(meta['source_updated_at'])} / 本サイト自動更新: {escape(meta['fetched_at'][:10])}）</p>
     <p>ラクロスマニアは大学ラクロスの情報メディアです。試合結果は自動収集のため、確定情報は連盟公式をご確認ください。順位・成績の集計値は試合結果からの自動算出です。</p>
