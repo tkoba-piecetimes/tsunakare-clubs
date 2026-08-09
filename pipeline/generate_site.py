@@ -11,6 +11,7 @@
   site/sitemap.xml, robots.txt, assets/
 """
 import json
+import re
 import shutil
 from datetime import date
 from html import escape
@@ -20,6 +21,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 SITE = ROOT / "site"
 ASSETS = ROOT / "assets"
+CONTENT = ROOT / "content" / "articles"
 
 SITE_BASE = "https://tsunakereoff.github.io/tsunakare-clubs/"  # 独自ドメイン移行時にここを変更
 GA_MEASUREMENT_ID = ""  # GA4のG-XXXXXXXXXXを設定すると計測タグが入る
@@ -179,7 +181,112 @@ NAV_ITEMS = [
     ("schedule/index.html", "日程・結果"),
     ("standings/index.html", "順位表"),
     ("teams/index.html", "チーム"),
+    ("articles/index.html", "読みもの"),
+    ("videos/index.html", "動画"),
 ]
+
+
+def md_inline(s: str) -> str:
+    s = escape(s, quote=False)
+    s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', s)
+    s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+    return s
+
+
+def md_to_html(md: str) -> str:
+    """記事用の最小Markdownレンダラ（見出し・段落・リスト・表・強調・リンク）。"""
+    out, para = [], []
+    in_ul = in_ol = in_table = False
+
+    def close_blocks():
+        nonlocal in_ul, in_ol, in_table
+        if in_ul:
+            out.append("</ul>")
+            in_ul = False
+        if in_ol:
+            out.append("</ol>")
+            in_ol = False
+        if in_table:
+            out.append("</tbody></table></div>")
+            in_table = False
+
+    def flush_para():
+        nonlocal para
+        if para:
+            out.append("<p>" + md_inline(" ".join(para)) + "</p>")
+            para = []
+
+    for line in md.splitlines():
+        s = line.strip()
+        if s.startswith("|") and s.endswith("|") and len(s) > 1:
+            flush_para()
+            if in_ul or in_ol:
+                close_blocks()
+            cells = [c.strip() for c in s.strip("|").split("|")]
+            if all(re.fullmatch(r"[-: ]+", c) for c in cells):
+                continue
+            if not in_table:
+                out.append('<div class="tbl"><table><thead><tr>'
+                           + "".join(f"<th>{md_inline(c)}</th>" for c in cells)
+                           + "</tr></thead><tbody>")
+                in_table = True
+            else:
+                out.append("<tr>" + "".join(f"<td>{md_inline(c)}</td>" for c in cells) + "</tr>")
+            continue
+        if in_table:
+            out.append("</tbody></table></div>")
+            in_table = False
+        if not s:
+            flush_para()
+            close_blocks()
+        elif s.startswith("### "):
+            flush_para(); close_blocks()
+            out.append(f"<h3>{md_inline(s[4:])}</h3>")
+        elif s.startswith("## "):
+            flush_para(); close_blocks()
+            out.append(f"<h2>{md_inline(s[3:])}</h2>")
+        elif s.startswith("- "):
+            flush_para()
+            if not in_ul:
+                close_blocks()
+                out.append("<ul>")
+                in_ul = True
+            out.append(f"<li>{md_inline(s[2:])}</li>")
+        elif re.match(r"^\d+\.\s", s):
+            flush_para()
+            if not in_ol:
+                close_blocks()
+                out.append("<ol>")
+                in_ol = True
+            out.append(f"<li>{md_inline(re.sub(r'^\\d+\\.\\s', '', s))}</li>")
+        else:
+            para.append(s)
+    flush_para()
+    close_blocks()
+    return "\n".join(out)
+
+
+def load_articles():
+    if not CONTENT.exists():
+        return []
+    arts = []
+    for f in sorted(CONTENT.glob("*.md")):
+        raw = f.read_text(encoding="utf-8")
+        _, fm, body = raw.split("---", 2)
+        a = {"slug": f.stem, "body": body.strip()}
+        for line in fm.strip().splitlines():
+            k, _, v = line.partition(":")
+            a[k.strip()] = v.strip()
+        arts.append(a)
+    arts.sort(key=lambda a: (a.get("date", ""), a["slug"]), reverse=True)
+    return arts
+
+
+def article_card(a, rel) -> str:
+    return (f'<div class="digest-card"><p class="cat-line"><span class="cat">{escape(a["category"])}</span>'
+            f' <span class="note">{escape(a["date"])}</span></p>'
+            f'<h3><a href="{rel}articles/{a["slug"]}/index.html">{escape(a["title"])}</a></h3>'
+            f'<p class="note">{escape(a["description"])}</p></div>')
 
 
 def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="website"):
@@ -264,7 +371,7 @@ def standings_table(block, entries, rel) -> str:
             f'<tbody>{rows}</tbody></table></div>')
 
 
-def build_index(matches, standings, meta):
+def build_index(matches, standings, meta, articles):
     rel = ""
     today = date.today().isoformat()
     played = [m for m in matches if m["status"] == "played"]
@@ -294,6 +401,10 @@ def build_index(matches, standings, meta):
                  '<div class="tbl"><table><thead><tr><th>順位</th><th>チーム</th><th>勝点</th></tr></thead>'
                  f'<tbody>{rows}</tbody></table></div></div>')
     body += (f'</div><p class="more"><a class="cta" href="{rel}standings/index.html">全ブロックの順位表を見る →</a></p></section>')
+    if articles:
+        body += ('<section><h2>読みもの</h2><div class="digest">'
+                 + "".join(article_card(a, rel) for a in articles[:3])
+                 + f'</div><p class="more"><a class="cta" href="{rel}articles/index.html">読みもの一覧へ →</a></p></section>')
     (SITE / "index.html").write_text(
         page(rel, "ラクロスマニア | 関東学生ラクロスの試合結果・日程・順位表", body, meta,
              path="", desc=f'{meta["league"]}の試合結果・日程・順位表・チーム戦績を毎日自動更新。過去の対戦データと試合プレビューも掲載。'),
@@ -360,7 +471,73 @@ def build_teams_page(teams, standings, meta):
         encoding="utf-8")
 
 
-def build_club_pages(matches, standings, teams, meta, hist):
+def build_articles(articles, meta):
+    rel = "../"
+    cards = "".join(article_card(a, rel) for a in articles)
+    body = ('<h1>読みもの</h1>'
+            '<p class="lead">戦術・練習・チーム運営・分析 ― 大学ラクロスの現場で使える知見をまとめています。</p>'
+            f'<div class="digest">{cards}</div>')
+    out = SITE / "articles" / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(
+        page(rel, "読みもの（戦術・練習・チーム運営・分析） | ラクロスマニア", body, meta,
+             path="articles/",
+             desc="大学ラクロスの戦術・練習メニュー・チーム運営・映像分析の実践的なノウハウ記事。"),
+        encoding="utf-8")
+
+    rel = "../../"
+    for a in articles:
+        others = [x for x in articles if x["slug"] != a["slug"]][:3]
+        related = "".join(
+            f'<li><a href="../{x["slug"]}/index.html">{escape(x["title"])}</a></li>'
+            for x in others)
+        body = (f'<p class="breadcrumb"><a href="{rel}index.html">トップ</a> › '
+                f'<a href="{rel}articles/index.html">読みもの</a> › {escape(a["category"])}</p>')
+        body += (f'<p class="cat-line"><span class="cat">{escape(a["category"])}</span>'
+                 f' <span class="note">{escape(a["date"])}</span></p>')
+        body += f'<h1>{escape(a["title"])}</h1>'
+        body += f'<div class="article">{md_to_html(a["body"])}</div>'
+        body += f'<section><h2>あわせて読む</h2><ul>{related}</ul></section>'
+        out = SITE / "articles" / a["slug"] / "index.html"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(
+            page(rel, f'{a["title"]} | ラクロスマニア', body, meta,
+                 path=f'articles/{a["slug"]}/', desc=a["description"], og_type="article"),
+            encoding="utf-8")
+
+
+def build_videos(meta):
+    rel = "../"
+    vids = []
+    vfile = DATA / "videos.json"
+    if vfile.exists():
+        vids = json.loads(vfile.read_text(encoding="utf-8"))
+    cats: dict[str, list] = {}
+    for v in vids:
+        cats.setdefault(v["category"], []).append(v)
+    body = ('<h1>動画インデックス</h1>'
+            '<p class="lead">大学ラクロスの試合映像・配信を公式ソースから探せるリンク集です。'
+            '映像はすべて権利元の公式プラットフォーム上で視聴します。</p>')
+    for cat, items in cats.items():
+        cards = "".join(
+            f'<div class="digest-card"><h3><a href="{escape(v["url"])}">{escape(v["title"])}</a></h3>'
+            f'<p class="note">{escape(v["note"])}</p>'
+            f'<p class="cat-line"><span class="cat">{escape(v["source"])}</span></p></div>'
+            for v in items)
+        body += f'<h2>{escape(cat)}</h2><div class="digest">{cards}</div>'
+    body += ('<section><h2>自チームの映像分析に</h2>'
+             '<p>集めた映像をチーム強化に生かす方法は'
+             '<a href="../articles/video-analysis/index.html">試合映像の分析入門</a>で解説しています。</p></section>')
+    out = SITE / "videos" / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(
+        page(rel, "動画インデックス（試合映像・ライブ配信） | ラクロスマニア", body, meta,
+             path="videos/",
+             desc="大学ラクロスの試合映像・ライブ配信を公式ソース（JLA・Japan Lacrosse Live）から探せるリンク集。"),
+        encoding="utf-8")
+
+
+def build_club_pages(matches, standings, teams, meta, hist, articles):
     rel = "../../"
     for team, info in teams.items():
         slug, block = info["slug"], info["block"]
@@ -404,8 +581,12 @@ def build_club_pages(matches, standings, teams, meta, hist):
                      '<th>勝-分-敗</th><th>総得点-総失点</th></tr></thead>'
                      f'<tbody>{season_rows}</tbody></table></div>'
                      '<p class="note">※順位はブロック内リーグ戦の結果から自動算出した参考値です。</p></section>')
-        body += ('<section class="placeholder"><h2>関連記事</h2>'
-                 '<p class="todo">（取材記事・特集記事への内部リンクをここに配置）</p></section>')
+        if articles:
+            art_links = "".join(
+                f'<li><a href="{rel}articles/{a["slug"]}/index.html">{escape(a["title"])}</a></li>'
+                for a in articles[:3])
+            body += (f'<section><h2>読みもの</h2><ul>{art_links}</ul>'
+                     f'<p class="more"><a href="{rel}articles/index.html">読みもの一覧へ →</a></p></section>')
         body += ('<section class="placeholder"><h2>Instagram</h2>'
                  '<p class="todo">（部活公式アカウントの公開投稿の公式埋め込みをここに配置）</p></section>')
         body += ('<section class="sponsor"><h2>この部活を応援する企業</h2>'
@@ -442,6 +623,10 @@ def build_match_pages(matches, standings, meta, matches_by_year):
         body += ('<p class="links">'
                  f'<a href="{rel}clubs/{m["home_slug"]}/index.html">{escape(m["home"])}のページ</a> / '
                  f'<a href="{rel}clubs/{m["away_slug"]}/index.html">{escape(m["away"])}のページ</a></p>')
+        body += ('<p class="note">この試合の映像を探す: '
+                 '<a href="https://www.lacrosselive.jp/">Japan Lacrosse Live</a> / '
+                 '<a href="https://www.youtube.com/channel/UCpOxINAZ422HSX17E7T84aA">JLA公式YouTube</a>'
+                 f'　|　<a href="{rel}videos/index.html">動画インデックス</a></p>')
         out = SITE / "matches" / m["id"] / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(
@@ -561,6 +746,15 @@ table.detail th { background:#eef2f6; color:var(--ink); width:7em; }
 .placeholder .todo, .sponsor .todo { color:var(--sub); background:var(--surface);
   border:1px dashed var(--line); border-radius:10px; padding:.8rem; font-size:.85rem; }
 
+.cat-line { font-size:.8rem; margin:.4rem 0; }
+.article { background:var(--surface); border:1px solid var(--line); border-radius:10px;
+  padding:1.4rem 1.6rem 1.6rem; }
+.article h2 { margin-top:1.8em; }
+.article h2:first-child { margin-top:.4em; }
+.article li { margin:.3em 0; }
+.digest-card h3 a { text-decoration:none; color:var(--navy); }
+.digest-card h3 a:hover { color:var(--accent-dark); }
+
 .site-footer { background:var(--navy); color:#9fb2c8; font-size:.75rem;
   margin-top:3rem; }
 .footer-inner { max-width:960px; margin:0 auto; padding:1.4rem 1rem 2rem; }
@@ -592,11 +786,15 @@ def main():
         for f in ASSETS.iterdir():
             shutil.copy(f, SITE / "assets" / f.name)
 
-    build_index(matches, standings, meta)
+    articles = load_articles()
+
+    build_index(matches, standings, meta, articles)
     build_schedule(matches, meta)
     build_standings_page(standings, meta)
     build_teams_page(teams, standings, meta)
-    build_club_pages(matches, standings, teams, meta, hist)
+    build_articles(articles, meta)
+    build_videos(meta)
+    build_club_pages(matches, standings, teams, meta, hist, articles)
     build_match_pages(matches, standings, meta, matches_by_year)
     write_sitemap_and_robots()
 

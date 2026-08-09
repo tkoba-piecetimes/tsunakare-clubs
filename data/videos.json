@@ -1,0 +1,30 @@
+[
+ {
+  "title": "Japan Lacrosse Live by rtv",
+  "url": "https://www.lacrosselive.jp/",
+  "source": "rtv",
+  "category": "試合映像・ライブ配信",
+  "note": "学生リーグや全日本選手権などの試合ライブ配信・アーカイブ。日本語実況付きの試合も多数。"
+ },
+ {
+  "title": "新着動画一覧（Japan Lacrosse Live）",
+  "url": "https://www.lacrosselive.jp/playlist/2d64946428e94fc295f67afa92b9fe9c",
+  "source": "rtv",
+  "category": "試合映像・ライブ配信",
+  "note": "直近に公開された試合アーカイブのプレイリスト。"
+ },
+ {
+  "title": "日本ラクロス協会 公式YouTubeチャンネル",
+  "url": "https://www.youtube.com/channel/UCpOxINAZ422HSX17E7T84aA",
+  "source": "日本ラクロス協会（JLA）",
+  "category": "試合映像・ライブ配信",
+  "note": "全日本大学選手権のライブ配信、ハイライト、フル試合映像、日本代表関連の映像。"
+ },
+ {
+  "title": "JLA MOVIE Gallery",
+  "url": "https://www.lacrosse.gr.jp/news/8340/",
+  "source": "日本ラクロス協会（JLA）",
+  "category": "試合映像・ライブ配信",
+  "note": "協会が主催・配信する試合動画をまとめた公式ギャラリーページ。"
+ }
+]
