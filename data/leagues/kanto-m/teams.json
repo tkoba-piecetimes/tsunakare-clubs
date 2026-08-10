@@ -183,5 +183,10 @@
   "team": "駒澤大学",
   "slug": "komazawa",
   "block": "3部 Bブロック"
+ },
+ "国士館": {
+  "team": "国士館",
+  "slug": "kokushikan",
+  "block": "2部 Bブロック"
  }
 }

@@ -39,9 +39,9 @@
   "home_slug": "kurume",
   "away_slug": "fukuoka",
   "venue": "西南学院大学田尻グリーンフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 2,
+  "away_score": 16,
   "note": ""
  },
  {
@@ -69,9 +69,9 @@
   "home_slug": "kyushu-univ",
   "away_slug": "kitakyushu",
   "venue": "オクゼン不動産フットボールスタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 14,
+  "away_score": 0,
   "note": ""
  },
  {
@@ -84,9 +84,9 @@
   "home_slug": "kitakyushu",
   "away_slug": "ritsumeikanajiataiheiyou",
   "venue": "平和台陸上競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 8,
+  "away_score": 6,
   "note": ""
  },
  {
@@ -114,9 +114,9 @@
   "home_slug": "seinan-gakuin",
   "away_slug": "kyushu-univ",
   "venue": "西南学院大学田尻グリーンフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 5,
   "note": ""
  },
  {

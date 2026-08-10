@@ -168,5 +168,25 @@
   "team": "東京理科大学",
   "slug": "tokyo-rika",
   "block": "3部 Aブロック"
+ },
+ "玉川大学": {
+  "team": "玉川大学",
+  "slug": "tamagawa",
+  "block": "3部 Cブロック"
+ },
+ "獨協大学": {
+  "team": "獨協大学",
+  "slug": "dokkyo",
+  "block": "3部 Aブロック"
+ },
+ "筑波大学": {
+  "team": "筑波大学",
+  "slug": "tsukuba",
+  "block": "3部 Aブロック"
+ },
+ "大東文化大学": {
+  "team": "大東文化大学",
+  "slug": "daitobunka",
+  "block": "3部 Aブロック"
  }
 }

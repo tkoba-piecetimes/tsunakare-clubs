@@ -15,6 +15,20 @@
    "goals_for": 6
   },
   {
+   "team": "早稲田大学",
+   "slug": "waseda",
+   "points": 3,
+   "games": 2,
+   "wins": 1,
+   "draws": 0,
+   "losses": 1,
+   "gf": 10,
+   "ga": 8,
+   "rank": 2,
+   "goal_diff": "+2",
+   "goals_for": 10
+  },
+  {
    "team": "東海大学",
    "slug": "tokai",
    "points": 3,
@@ -24,7 +38,7 @@
    "losses": 0,
    "gf": 7,
    "ga": 6,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "+1",
    "goals_for": 7
   },
@@ -38,7 +52,7 @@
    "losses": 1,
    "gf": 11,
    "ga": 11,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "0",
    "goals_for": 11
   },
@@ -52,37 +66,23 @@
    "losses": 1,
    "gf": 9,
    "ga": 9,
-   "rank": 4,
+   "rank": 5,
    "goal_diff": "0",
    "goals_for": 9
-  },
-  {
-   "team": "早稲田大学",
-   "slug": "waseda",
-   "points": 0,
-   "games": 1,
-   "wins": 0,
-   "draws": 0,
-   "losses": 1,
-   "gf": 4,
-   "ga": 5,
-   "rank": 5,
-   "goal_diff": "-1",
-   "goals_for": 4
   },
   {
    "team": "東京大学",
    "slug": "tokyo",
    "points": 0,
-   "games": 1,
+   "games": 2,
    "wins": 0,
    "draws": 0,
-   "losses": 1,
-   "gf": 3,
-   "ga": 6,
+   "losses": 2,
+   "gf": 6,
+   "ga": 12,
    "rank": 6,
-   "goal_diff": "-3",
-   "goals_for": 3
+   "goal_diff": "-6",
+   "goals_for": 6
   }
  ],
  "1部 Bブロック": [
@@ -371,6 +371,48 @@
    "rank": 2,
    "goal_diff": "0",
    "goals_for": 0
+  },
+  {
+   "team": "獨協大学",
+   "slug": "dokkyo",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 3,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "筑波大学",
+   "slug": "tsukuba",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 4,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "大東文化大学",
+   "slug": "daitobunka",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 5,
+   "goal_diff": "0",
+   "goals_for": 0
   }
  ],
  "3部 Bブロック": [
@@ -485,6 +527,20 @@
    "gf": 0,
    "ga": 0,
    "rank": 4,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "玉川大学",
+   "slug": "tamagawa",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 5,
    "goal_diff": "0",
    "goals_for": 0
   }
