@@ -114,9 +114,9 @@
   "home_slug": "kansai",
   "away_slug": "kindai",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 5,
   "note": ""
  },
  {
@@ -129,9 +129,9 @@
   "home_slug": "kyoto",
   "away_slug": "kobe",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 2,
+  "away_score": 3,
   "note": ""
  },
  {
@@ -144,9 +144,9 @@
   "home_slug": "osaka-keizai",
   "away_slug": "kwansei-gakuin",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 0,
+  "away_score": 14,
   "note": ""
  },
  {
@@ -159,9 +159,9 @@
   "home_slug": "osaka",
   "away_slug": "ritsumeikan",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 10,
+  "away_score": 7,
   "note": ""
  },
  {
@@ -174,9 +174,9 @@
   "home_slug": "kyoto-sangyo",
   "away_slug": "koubegakuin",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 8,
+  "away_score": 5,
   "note": ""
  },
  {

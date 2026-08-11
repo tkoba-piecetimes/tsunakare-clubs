@@ -201,6 +201,20 @@
    "goals_for": 6
   },
   {
+   "team": "東洋大学",
+   "slug": "toyo",
+   "points": 3,
+   "games": 2,
+   "wins": 1,
+   "draws": 0,
+   "losses": 1,
+   "gf": 14,
+   "ga": 13,
+   "rank": 3,
+   "goal_diff": "+1",
+   "goals_for": 14
+  },
+  {
    "team": "成蹊大学",
    "slug": "seikei",
    "points": 1,
@@ -210,7 +224,7 @@
    "losses": 0,
    "gf": 5,
    "ga": 5,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "0",
    "goals_for": 5
   },
@@ -224,37 +238,23 @@
    "losses": 0,
    "gf": 5,
    "ga": 5,
-   "rank": 4,
+   "rank": 5,
    "goal_diff": "0",
    "goals_for": 5
-  },
-  {
-   "team": "東洋大学",
-   "slug": "toyo",
-   "points": 0,
-   "games": 1,
-   "wins": 0,
-   "draws": 0,
-   "losses": 1,
-   "gf": 3,
-   "ga": 6,
-   "rank": 5,
-   "goal_diff": "-3",
-   "goals_for": 3
   },
   {
    "team": "駒澤大学",
    "slug": "komazawa",
    "points": 0,
-   "games": 1,
+   "games": 2,
    "wins": 0,
    "draws": 0,
-   "losses": 1,
-   "gf": 4,
-   "ga": 19,
+   "losses": 2,
+   "gf": 11,
+   "ga": 30,
    "rank": 6,
-   "goal_diff": "-15",
-   "goals_for": 4
+   "goal_diff": "-19",
+   "goals_for": 11
   }
  ],
  "2部 Bブロック": [

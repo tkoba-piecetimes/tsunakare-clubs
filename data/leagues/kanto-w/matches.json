@@ -249,10 +249,10 @@
   "home_slug": "komazawa",
   "away_slug": "toyo",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
+  "status": "played",
+  "home_score": 7,
+  "away_score": 11,
+  "note": ""
  },
  {
   "id": "2026-08-09-chuo-vs-nittaidai",
