@@ -10,7 +10,7 @@ on:
 permissions:
   contents: write
   pages: write
-  id-token: write
+  id-token: write  # OIDC (Workload Identity連携) に必須
 
 concurrency:
   group: pages
@@ -31,9 +31,13 @@ jobs:
         run: pip install pykakasi google-auth requests
       - name: Fetch JLA data
         run: python pipeline/fetch_jla.py
+      - id: auth
+        name: Authenticate to Google Cloud (Workload Identity, keyless)
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: projects/204314315704/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions
+          service_account: lacrossemania-metrics-reader@planar-acronym-505101-h5.iam.gserviceaccount.com
       - name: Fetch metrics (GA4 / Search Console)
-        env:
-          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
         run: python pipeline/fetch_metrics.py
       - name: Generate site
         run: python pipeline/generate_site.py

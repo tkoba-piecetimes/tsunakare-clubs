@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """GA4とSearch Consoleからリリース後の実数を取得し data/metrics.json に保存する。
 
-認証: サービスアカウント。環境変数 GCP_SA_KEY にキーJSON（文字列）を設定する。
-未設定の場合はスキップして正常終了する（ダッシュボードは未連携表示になる）。
+認証: Workload Identity連携（鍵レス）。GitHub Actions上でのみ動作する。
+環境変数 GOOGLE_APPLICATION_CREDENTIALS に google-github-actions/auth が生成する
+一時クレデンシャルファイルのパスが入っている前提（未設定ならスキップして正常終了）。
 """
 import json
 import os
@@ -18,21 +19,17 @@ OUT = Path(__file__).resolve().parent.parent / "data" / "metrics.json"
 
 
 def main() -> None:
-    key_raw = os.environ.get("GCP_SA_KEY", "").strip()
-    if not key_raw:
-        print("GCP_SA_KEY未設定のためメトリクス取得をスキップ")
+    if not os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
+        print("GOOGLE_APPLICATION_CREDENTIALS未設定のためメトリクス取得をスキップ")
         return
 
-    from google.oauth2 import service_account
+    import google.auth
     from google.auth.transport.requests import AuthorizedSession
 
-    creds = service_account.Credentials.from_service_account_info(
-        json.loads(key_raw),
-        scopes=[
-            "https://www.googleapis.com/auth/analytics.readonly",
-            "https://www.googleapis.com/auth/webmasters.readonly",
-        ],
-    )
+    creds, _ = google.auth.default(scopes=[
+        "https://www.googleapis.com/auth/analytics.readonly",
+        "https://www.googleapis.com/auth/webmasters.readonly",
+    ])
     session = AuthorizedSession(creds)
     today = date.today().isoformat()
     metrics = {"updated_at": today, "release_date": RELEASE_DATE}
