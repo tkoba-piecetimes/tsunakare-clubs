@@ -30,36 +30,6 @@
   "note": ""
  },
  {
-  "id": "2026-06-27-gifu-vs-aichi-gakuin",
-  "date": "2026-06-27",
-  "time": "15:40",
-  "category": "1部",
-  "home": "岐阜大学",
-  "away": "愛知学院大学",
-  "home_slug": "gifu",
-  "away_slug": "aichi-gakuin",
-  "venue": "愛知大学豊橋グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
-  "id": "2026-06-27-gifu-vs-aichi-gakuin",
-  "date": "2026-06-27",
-  "time": "15:40",
-  "category": "1部",
-  "home": "岐阜大学",
-  "away": "愛知学院大学",
-  "home_slug": "gifu",
-  "away_slug": "aichi-gakuin",
-  "venue": "愛知大学豊橋グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-06-28-kinjo-gakuin-vs-nanzan",
   "date": "2026-06-28",
   "time": "10:00",
@@ -294,9 +264,9 @@
   "home_slug": "aichi",
   "away_slug": "meijo",
   "venue": "牧野ヶ池緑地",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 32,
+  "away_score": 2,
   "note": ""
  },
  {

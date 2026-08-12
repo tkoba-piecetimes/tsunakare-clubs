@@ -173,32 +173,32 @@
    "goals_for": 40
   },
   {
+   "team": "愛知大学",
+   "slug": "aichi",
+   "points": 3,
+   "games": 2,
+   "wins": 1,
+   "draws": 0,
+   "losses": 1,
+   "gf": 39,
+   "ga": 11,
+   "rank": 2,
+   "goal_diff": "+28",
+   "goals_for": 39
+  },
+  {
    "team": "名城大学",
    "slug": "meijo",
    "points": 3,
-   "games": 1,
+   "games": 2,
    "wins": 1,
    "draws": 0,
-   "losses": 0,
-   "gf": 9,
-   "ga": 8,
-   "rank": 2,
-   "goal_diff": "+1",
-   "goals_for": 9
-  },
-  {
-   "team": "愛知大学",
-   "slug": "aichi",
-   "points": 0,
-   "games": 1,
-   "wins": 0,
-   "draws": 0,
    "losses": 1,
-   "gf": 7,
-   "ga": 9,
+   "gf": 11,
+   "ga": 40,
    "rank": 3,
-   "goal_diff": "-2",
-   "goals_for": 7
+   "goal_diff": "-29",
+   "goals_for": 11
   },
   {
    "team": "至学館大学・日本福祉大学・滋賀大学合同チーム",
