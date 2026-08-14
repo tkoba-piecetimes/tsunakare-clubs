@@ -25,6 +25,7 @@ CONTENT = ROOT / "content" / "articles"
 
 SITE_BASE = "https://lacrossemania.jp/"
 GA_MEASUREMENT_ID = "G-Y5MQZBL9RE"
+SPONSOR_CTA_URL = "https://tunakare.jp/?utm_source=lacrossemania&utm_medium=referral&utm_campaign=sponsor"
 
 WEEKDAYS_JP = ["月", "火", "水", "木", "金", "土", "日"]
 LEAGUE_ORDER = [
@@ -617,7 +618,8 @@ def build_league(lg, articles):
                  '<p class="todo">（部活公式アカウントの公開投稿の公式埋め込みをここに配置）</p></section>')
         body += ('<section class="sponsor"><h2>この部活を応援する企業</h2>'
                  '<p class="todo">（協賛メニュー連携枠：スポンサー企業ロゴ・リンクをここに配置）</p>'
-                 '<p><a class="cta" href="#">協賛について問い合わせる →</a></p></section>')
+                 f'<p><a class="cta" href="{SPONSOR_CTA_URL}" target="_blank" rel="noopener" '
+                 'onclick="window.gtag&&gtag(\'event\',\'cv_sponsor_click\')">協賛について問い合わせる →</a></p></section>')
         write_page(f"{code}/clubs/{slug}",
                    page(R, f'{name} 試合結果・日程・戦績 | ラクロスマニア', body, meta,
                         path=f"{code}/clubs/{slug}/",
