@@ -33,13 +33,11 @@ jobs:
         run: python pipeline/fetch_jla.py
       - id: auth
         name: Authenticate to Google Cloud (Workload Identity, keyless)
-        continue-on-error: true  # 一時対応: GCP側WIFの許可リポジトリがtkoba-piecetimes移管に未対応のため。GCP更新後にこの行を削除
         uses: google-github-actions/auth@v2
         with:
           workload_identity_provider: projects/204314315704/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions
           service_account: lacrossemania-metrics-reader@planar-acronym-505101-h5.iam.gserviceaccount.com
       - name: Fetch metrics (GA4 / Search Console)
-        continue-on-error: true  # 一時対応: 上のauthと同時に削除
         run: python pipeline/fetch_metrics.py
       - name: Generate site
         run: python pipeline/generate_site.py
