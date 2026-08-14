@@ -956,7 +956,7 @@ def build_dashboard(leagues, articles, meta):
              '<li><a href="https://search.google.com/search-console?resource_id=sc-domain:lacrossemania.jp">'
              'Search Console ― 検索流入・表示回数・インデックス状況</a></li>'
              '<li><a href="https://analytics.google.com/">GA4 ― アクセス数・リアルタイム（プロパティ: ラクロスマニア）</a></li>'
-             '<li><a href="https://github.com/tsunakereoff/tsunakare-clubs/actions">GitHub Actions ― 自動更新の実行履歴</a></li>'
+             '<li><a href="https://github.com/tkoba-piecetimes/tsunakare-clubs/actions">GitHub Actions ― 自動更新の実行履歴</a></li>'
              '</ul>'
              '<p class="note">検索クエリ・PVの数値をこのページに直接埋め込む対応（API連携）は拡張予定。</p></section>')
 

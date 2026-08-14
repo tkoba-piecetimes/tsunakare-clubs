@@ -1,5 +1,7 @@
 # 独自ドメイン切替手順（lacrossemania.jp）
 
+※2026-08-14 GitHubリポジトリを tsunakereoff → tkoba-piecetimes へ移管済み。以下のコマンド・CNAME先は移管後の値に更新してある。
+
 ドメイン購入後、以下の順で切り替える。所要15分＋DNS浸透待ち。
 
 ## 1. ネームサーバー変更（お名前.com Navi）
@@ -17,24 +19,24 @@ ns1.xserver.jp / ns2.xserver.jp / ns3.xserver.jp / ns4.xserver.jp / ns5.xserver.
 | A | （空欄） | 185.199.109.153 |
 | A | （空欄） | 185.199.110.153 |
 | A | （空欄） | 185.199.111.153 |
-| CNAME | www | tsunakereoff.github.io |
+| CNAME | www | tkoba-piecetimes.github.io |
 
 ## 3. GitHub Pages側の設定（gh CLI）
 
 ```
-gh api -X PUT repos/tsunakereoff/tsunakare-clubs/pages -f cname=lacrossemania.jp
+gh api -X PUT repos/tkoba-piecetimes/tsunakare-clubs/pages -f cname=lacrossemania.jp
 ```
 
 HTTPS証明書は自動発行（数分〜1時間）。発行後に enforce_https を有効化:
 
 ```
-gh api -X PUT repos/tsunakereoff/tsunakare-clubs/pages -F https_enforced=true
+gh api -X PUT repos/tkoba-piecetimes/tsunakare-clubs/pages -F https_enforced=true
 ```
 
 ## 4. サイト側の切替
 
 - `pipeline/generate_site.py` の `SITE_BASE` を `https://lacrossemania.jp/` に変更
-- 再生成してコミット＆push（旧URL https://tsunakereoff.github.io/tsunakare-clubs/ からは自動で301される）
+- 再生成してコミット＆push（github.ioの素のURLからは自動で301される）
 
 ## 5. 事後作業
 

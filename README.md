@@ -4,7 +4,7 @@
 JLA（日本ラクロス協会）が公開しているリーグ戦スプレッドシートから
 試合日程・結果・星取表を自動取得し、静的サイトを生成する。
 
-- 公開URL: https://tsunakereoff.github.io/tsunakare-clubs/ （独自ドメイン移行予定）
+- 公開URL: https://lacrossemania.jp/ （GitHub Pages。リポジトリは tkoba-piecetimes/tsunakare-clubs）
 - 試合結果・順位表・チームページ（37チーム）・試合ページ（プレビュー/レポート・過去の対戦）
 - 過去3年分（2023〜2025）の対戦データ、読みもの（戦術・練習・運営・分析記事）、動画インデックス
 
