@@ -189,9 +189,9 @@
   "home_slug": "konan",
   "away_slug": "kyoutokougeisen-i",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 6,
+  "away_score": 4,
   "note": ""
  },
  {
