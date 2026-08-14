@@ -3,30 +3,16 @@
   {
    "team": "東北大学",
    "slug": "tohoku-univ",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
+   "points": 3,
+   "games": 1,
+   "wins": 1,
    "draws": 0,
    "losses": 0,
-   "gf": 0,
-   "ga": 0,
+   "gf": 21,
+   "ga": 4,
    "rank": 1,
-   "goal_diff": "0",
-   "goals_for": 0
-  },
-  {
-   "team": "福島大学",
-   "slug": "fukushima",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 2,
-   "goal_diff": "0",
-   "goals_for": 0
+   "goal_diff": "+17",
+   "goals_for": 21
   },
   {
    "team": "東北学院大学",
@@ -38,7 +24,7 @@
    "losses": 0,
    "gf": 0,
    "ga": 0,
-   "rank": 3,
+   "rank": 2,
    "goal_diff": "0",
    "goals_for": 0
   },
@@ -52,9 +38,23 @@
    "losses": 0,
    "gf": 0,
    "ga": 0,
-   "rank": 4,
+   "rank": 3,
    "goal_diff": "0",
    "goals_for": 0
+  },
+  {
+   "team": "福島大学",
+   "slug": "fukushima",
+   "points": 0,
+   "games": 1,
+   "wins": 0,
+   "draws": 0,
+   "losses": 1,
+   "gf": 4,
+   "ga": 21,
+   "rank": 4,
+   "goal_diff": "-17",
+   "goals_for": 4
   }
  ]
 }
