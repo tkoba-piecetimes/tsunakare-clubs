@@ -226,5 +226,35 @@
    "goal_diff": "-6",
    "goals_for": 4
   }
+ ],
+ "3部": [
+  {
+   "team": "大阪大学",
+   "slug": "osaka",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 1,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "追手門学院大学",
+   "slug": "ottemongakuin",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 2,
+   "goal_diff": "0",
+   "goals_for": 0
+  }
  ]
 }
