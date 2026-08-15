@@ -464,7 +464,7 @@ CTA_BANDS = {
     },
     "listing": {
         "title": "遠征費・運営資金にお悩みの主務・会計の方へ",
-        "text": "協賛募集はツナカレに無料で掲載できます。オープン協賛枠30万円の案件もあります。",
+        "text": "協賛募集はツナカレに無料で掲載できます。",
         "label": "協賛募集を掲載する（無料）",
         "url": TUNAKARE_LISTING_LP, "campaign": "listing", "event": "cv_listing_click",
     },
