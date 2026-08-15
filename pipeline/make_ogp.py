@@ -8,9 +8,9 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "assets" / "ogp.png"
 
-NAVY = (22, 40, 63)
+NAVY = (7, 26, 51)
 NAVY2 = (31, 58, 92)
-ORANGE = (249, 115, 22)
+LIME = (144, 180, 62)
 WHITE = (255, 255, 255)
 GRAY = (195, 209, 224)
 
@@ -22,10 +22,10 @@ d = ImageDraw.Draw(img)
 
 # 右上に斜めのアクセント帯
 d.polygon([(W - 320, 0), (W, 0), (W, 320)], fill=NAVY2)
-d.polygon([(W - 180, 0), (W, 0), (W, 180)], fill=ORANGE)
+d.polygon([(W - 180, 0), (W, 0), (W, 180)], fill=LIME)
 
 # 左のアクセントタブ
-d.rectangle([70, 205, 96, 305], fill=ORANGE)
+d.rectangle([70, 205, 96, 305], fill=LIME)
 
 title = ImageFont.truetype(FONT, 110)
 sub = ImageFont.truetype(FONT, 40)
@@ -36,8 +36,8 @@ d.text((132, 345), "大学ラクロスの試合結果・日程・順位表", fon
 d.text((132, 420), "毎日更新　|　全国7地区・男女14リーグの戦績データ", font=small, fill=GRAY)
 
 # 下部バー
-d.rectangle([0, H - 14, W, H], fill=ORANGE)
-d.text((132, H - 92), "KANTO  LACROSSE  MEDIA", font=small, fill=ORANGE)
+d.rectangle([0, H - 14, W, H], fill=LIME)
+d.text((132, H - 92), "KANTO  LACROSSE  MEDIA", font=small, fill=LIME)
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
 img.save(OUT, "PNG")
