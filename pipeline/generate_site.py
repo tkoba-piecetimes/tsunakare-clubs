@@ -29,7 +29,6 @@ GA_MEASUREMENT_ID = "G-Y5MQZBL9RE"
 # ---- ツナカレ接続導線（部活メディア→ツナカレPF接続設計 2026-08 参照）
 UTM_SOURCE = "lacrossemania"
 TUNAKARE_SPONSOR_SEARCH = "https://tunakare.jp/"
-TUNAKARE_SPONSORSHIP_PAGE = "https://tunakare.jp/sponsorship/search/p/{slug}"
 TUNAKARE_LISTING_LP = "https://lp.tunakare.jp/s01/"
 TUNAKARE_MEDIA_CONTACT = "https://media.tunakare.jp/contact/student/"
 TUNAKARE_SHUKATSU = "https://shukatsu.tunakare.jp/"
@@ -88,14 +87,6 @@ def load_leagues():
         lg["label"] = f'{lg["meta"]["region"]}・{lg["meta"]["gender"]}'
         leagues.append(lg)
     return leagues
-
-
-def load_tunakare_links():
-    """data/tunakare_links.json: {team_slug: {sponsorship_slug, community, title}}。無ければ空扱い。"""
-    p = DATA / "tunakare_links.json"
-    if not p.exists():
-        return {}
-    return json.loads(p.read_text(encoding="utf-8"))
 
 
 def load_articles():
@@ -415,31 +406,21 @@ def article_card(a, rel):
             f'<p class="note">{escape(a["description"])}</p></div>')
 
 
-def sponsor_block(slug, links, gender):
-    """チームページの応援ブロック（D2）。マッピング有無で3導線を出し分け、末尾に取材募集を共通表示する。
+def sponsor_block():
+    """チームページの応援ブロック（D2改訂版）。全チーム共通の汎用3導線を表示する。
 
-    tunakare_links.json はスラッグのみをキーとするため、同スラッグが男女で共存するリーグ
-    （例: kanto-m/kanto-w の chuo）では community 名の性別表記でこのページに合致するか判定する。
-    表記なし（性別を特定しないマッピング）はそのまま両リーグに適用する。
+    個別部活への協賛ページ直リンク・団体名表示は行わない（募集中の部活はツナカレに
+    遷移して初めてわかる設計。案件には締切・停止があり静的サイト側に募集状況を持つと
+    管理不能になるため）。
     """
-    entry = links.get(slug)
-    if entry:
-        community = entry.get("community", "")
-        marked_gender = "男子" if "男子" in community else ("女子" if "女子" in community else None)
-        if marked_gender and marked_gender != gender:
-            entry = None
     parts = ['<section class="sponsor"><h2>この部を応援する</h2>']
-    if entry:
-        label = f'{entry["community"]}の協賛募集を見る'
-        url = TUNAKARE_SPONSORSHIP_PAGE.format(slug=entry["sponsorship_slug"])
-        parts.append(f'<p>{tunakare_link(url, "sponsor", "cv_sponsor_click", label, cls="cta")}</p>')
-    else:
-        parts.append('<p>' + tunakare_link(TUNAKARE_SPONSOR_SEARCH, "sponsor", "cv_sponsor_click",
-                                            "応援できる部活を探す", cls="cta") + '</p>')
-        parts.append('<p class="note">この部の関係者の方へ: '
-                      + tunakare_link(TUNAKARE_LISTING_LP, "listing", "cv_listing_click",
-                                      "協賛募集を無料で掲載", cls="cta cta-outline")
-                      + '</p>')
+    parts.append('<p>この部活・競技を応援したい方へ: '
+                  + tunakare_link(TUNAKARE_SPONSOR_SEARCH, "sponsor", "cv_sponsor_click",
+                                  "ツナカレで協賛募集中の部活を探す", cls="cta") + '</p>')
+    parts.append('<p class="note">この部の関係者の方へ: '
+                  + tunakare_link(TUNAKARE_LISTING_LP, "listing", "cv_listing_click",
+                                  "協賛募集を無料で掲載", cls="cta cta-outline")
+                  + '</p>')
     parts.append('<p class="note">'
                   + tunakare_link(TUNAKARE_MEDIA_CONTACT, "media-pr", "cv_media_pr_click",
                                    "取材してほしい部活を募集しています", cls="cta cta-outline")
@@ -597,7 +578,7 @@ def build_portal(leagues, articles, meta):
 
 # ---------------------------------------------------------------- league pages
 
-def build_league(lg, articles, tunakare_links):
+def build_league(lg, articles):
     code = lg["code"]
     meta, matches, standings = lg["meta"], lg["matches"], lg["standings"]
     league_name = meta["league"]
@@ -737,7 +718,7 @@ def build_league(lg, articles, tunakare_links):
                      f'<p class="more"><a href="{R}articles/index.html">読みもの一覧へ →</a></p></section>')
         body += ('<section class="placeholder"><h2>Instagram</h2>'
                  '<p class="todo">（部活公式アカウントの公開投稿の公式埋め込みをここに配置）</p></section>')
-        body += sponsor_block(slug, tunakare_links, gender)
+        body += sponsor_block()
         write_page(f"{code}/clubs/{slug}",
                    page(R, f'{name} 試合結果・日程・戦績 | ラクロスマニア', body, meta,
                         path=f"{code}/clubs/{slug}/",
@@ -1273,7 +1254,6 @@ def main():
 
     leagues = load_leagues()
     articles = load_articles()
-    tunakare_links = load_tunakare_links()
     if not leagues:
         raise SystemExit("リーグデータがありません（fetch_jla.pyを先に実行）")
     global_meta = dict(leagues[0]["meta"])
@@ -1290,7 +1270,7 @@ def main():
 
     build_portal(leagues, articles, global_meta)
     for lg in leagues:
-        build_league(lg, articles, tunakare_links)
+        build_league(lg, articles)
     build_articles(articles, global_meta)
     build_videos(global_meta)
     build_glossary(global_meta)
