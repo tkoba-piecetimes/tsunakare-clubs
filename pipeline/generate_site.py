@@ -470,11 +470,11 @@ def article_cta_band(cta_key):
 def build_support_section():
     """トップページ支援セクション（D4）。リーグ一覧の下に3カードを設置。"""
     cards = [
-        ("部活を応援する", "気になる大学・チームへの協賛先をツナカレで探せます。",
+        ("部活を応援する", "気になる大学・チームを協賛で応援できます。",
          TUNAKARE_SPONSOR_SEARCH, "sponsor", "cv_sponsor_click", "応援できる部活を探す"),
-        ("協賛募集を無料で掲載する", "遠征費・運営資金にお悩みの部活の方へ。ツナカレに無料で掲載できます。",
+        ("自分の部活を強くする", "遠征費・運営資金の協賛募集を無料で掲載できます。",
          TUNAKARE_LISTING_LP, "listing", "cv_listing_click", "協賛募集を掲載する（無料）"),
-        ("取材してほしい部活を募集しています", "頑張っている部活・団体をツナカレメディアが取材でご紹介します。",
+        ("取材してほしい部活を募集中", "頑張っている部活・団体を取材でご紹介します。",
          TUNAKARE_MEDIA_CONTACT, "media-pr", "cv_media_pr_click", "取材を依頼する"),
     ]
     cards_html = "".join(
@@ -482,7 +482,7 @@ def build_support_section():
         f'<p class="note">{escape(desc)}</p>'
         f'<p>{tunakare_link(url, campaign, event, label, cls="cta")}</p></div>'
         for title, desc, url, campaign, event, label in cards)
-    return f'<section class="support"><h2>ツナカレとつながる</h2><div class="digest">{cards_html}</div></section>'
+    return f'<section class="support"><h2>部活を応援する・強くする</h2><div class="digest">{cards_html}</div></section>'
 
 
 def h2h_section(m, matches_by_year):
