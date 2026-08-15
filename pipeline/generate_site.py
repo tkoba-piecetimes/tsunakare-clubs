@@ -539,14 +539,14 @@ def preview_sections(m, matches, standings):
 def build_portal(leagues, articles, meta):
     rel = ""
     total_teams = sum(len(lg["teams"]) for lg in leagues)
-    body = ('<div class="hero"><div class="hero-inner">'
+    body = ('<div class="hero">'
+            '<img class="hero-img" src="assets/hero.jpg" alt="" width="1440" height="768">'
             '<div class="hero-text">'
             '<p class="hero-kicker">全国学生ラクロスリーグ</p>'
             '<h1>大学ラクロスの試合結果・データを全国7地区で毎日更新</h1>'
             f'<p class="hero-sub">男子・女子 全{len(leagues)}リーグ・{total_teams}チームの結果・順位・過去の対戦データを掲載　|　最終更新 {escape(meta["fetched_at"][:10])}</p>'
             '</div>'
-            '<div class="hero-media"><img src="assets/hero.jpg" alt=""></div>'
-            '</div></div>')
+            '</div>')
     for gender in ("男子", "女子"):
         cards = ""
         for lg in leagues:
@@ -1155,20 +1155,14 @@ a:hover { color:var(--accent-dark); }
   padding:.3em .6em; border-radius:6px; white-space:nowrap; }
 .league-nav a:hover { background:var(--accent); color:var(--navy); }
 
-.hero { background:var(--bg); margin:0 -1rem; overflow:hidden; }
-.hero-inner { max-width:960px; margin:0 auto; padding:2.2rem 1rem; min-height:300px;
-  display:flex; align-items:center; gap:2rem; }
-.hero-text { flex:1 1 320px; }
+.hero { max-width:960px; margin:0 auto; padding:1.6rem 1rem 0; }
+.hero-img { width:100%; height:auto; display:block; border-radius:12px; margin-bottom:1.1rem; }
+.hero-text { padding-bottom:1.8rem; }
 .hero-kicker { color:var(--accent); font-weight:700; font-size:.85rem;
   letter-spacing:.2em; text-transform:uppercase; margin:0 0 .4rem; }
 .hero h1 { font-size:1.5rem; line-height:1.45; margin:0 0 .6rem; color:var(--navy);
   font-weight:900; }
 .hero-sub { color:var(--sub); font-size:.85rem; margin:0; }
-.hero-media { position:relative; flex:0 0 260px; width:260px; height:260px;
-  border-radius:12px; overflow:hidden; }
-.hero-media img { width:100%; height:100%; object-fit:cover; display:block; }
-.hero-media::before { content:""; position:absolute; inset:0;
-  background:linear-gradient(90deg, var(--bg) 0%, transparent 40%); }
 
 main { max-width:960px; margin:0 auto; padding:0 1rem 3rem; }
 h1 { font-size:1.35rem; line-height:1.45; }
@@ -1262,8 +1256,7 @@ table.detail td { white-space:normal; }
 .site-footer a { color:#c3d1e0; }
 
 @media (max-width:768px) {
-  .hero-inner { flex-direction:column; align-items:stretch; min-height:0; padding:1.6rem 1rem; }
-  .hero-media { order:2; flex:none; width:100%; height:170px; }
+  .hero { padding:1.2rem 1rem 0; }
 }
 """
 
