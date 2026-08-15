@@ -204,9 +204,9 @@
   "home_slug": "ritsumeikan",
   "away_slug": "kyoto",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 1,
+  "away_score": 9,
   "note": ""
  },
  {
@@ -219,9 +219,9 @@
   "home_slug": "kindai",
   "away_slug": "ryukoku",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 4,
   "note": ""
  },
  {

@@ -279,10 +279,10 @@
   "home_slug": "aichi-gakuin",
   "away_slug": "kinjo-gakuin",
   "venue": "愛知学院大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "特定試合"
+  "status": "played",
+  "home_score": 19,
+  "away_score": 1,
+  "note": ""
  },
  {
   "id": "2026-08-15-aichi-shukutoku-vs-gifu",

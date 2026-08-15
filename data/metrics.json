@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-14",
+ "updated_at": "2026-08-15",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -29,14 +29,20 @@
    },
    {
     "date": "20260814",
-    "users": 12,
-    "pageviews": 18,
-    "sessions": 14
+    "users": 14,
+    "pageviews": 22,
+    "sessions": 16
+   },
+   {
+    "date": "20260815",
+    "users": 62,
+    "pageviews": 227,
+    "sessions": 82
    }
   ],
-  "total_users": 141,
-  "total_pageviews": 364,
-  "total_sessions": 151
+  "total_users": 205,
+  "total_pageviews": 595,
+  "total_sessions": 235
  },
  "gsc": {
   "daily": [
@@ -63,15 +69,21 @@
     "clicks": 16,
     "impressions": 179,
     "position": 13.0
+   },
+   {
+    "date": "2026-08-13",
+    "clicks": 11,
+    "impressions": 142,
+    "position": 14.6
    }
   ],
-  "total_clicks": 69,
-  "total_impressions": 692,
+  "total_clicks": 80,
+  "total_impressions": 834,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
     "clicks": 3,
-    "impressions": 20
+    "impressions": 22
    },
    {
     "query": "ラクロス用語",
@@ -84,14 +96,24 @@
     "impressions": 2
    },
    {
+    "query": "東北大学ラクロス部",
+    "clicks": 1,
+    "impressions": 1
+   },
+   {
+    "query": "rtv ラクロス",
+    "clicks": 0,
+    "impressions": 1
+   },
+   {
     "query": "ラクロス とは",
     "clicks": 0,
-    "impressions": 5
+    "impressions": 6
    },
    {
     "query": "ラクロス クリアとは",
     "clicks": 0,
-    "impressions": 6
+    "impressions": 7
    },
    {
     "query": "ラクロス ショットクロック",
@@ -106,17 +128,7 @@
    {
     "query": "ラクロス ブレイクとは",
     "clicks": 0,
-    "impressions": 3
-   },
-   {
-    "query": "ラクロス ライドとは",
-    "clicks": 0,
-    "impressions": 1
-   },
-   {
-    "query": "ラクロス ルール",
-    "clicks": 0,
-    "impressions": 6
+    "impressions": 4
    }
   ]
  }

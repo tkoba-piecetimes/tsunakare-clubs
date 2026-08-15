@@ -57,6 +57,20 @@
    "goals_for": 12
   },
   {
+   "team": "武庫川女子大学",
+   "slug": "mukogawa-joshi",
+   "points": 3,
+   "games": 3,
+   "wins": 1,
+   "draws": 0,
+   "losses": 2,
+   "gf": 13,
+   "ga": 34,
+   "rank": 5,
+   "goal_diff": "-21",
+   "goals_for": 13
+  },
+  {
    "team": "同志社大学",
    "slug": "doshisha",
    "points": 0,
@@ -66,7 +80,7 @@
    "losses": 2,
    "gf": 10,
    "ga": 12,
-   "rank": 5,
+   "rank": 6,
    "goal_diff": "-2",
    "goals_for": 10
   },
@@ -74,29 +88,15 @@
    "team": "近畿大学",
    "slug": "kindai",
    "points": 0,
-   "games": 1,
-   "wins": 0,
-   "draws": 0,
-   "losses": 1,
-   "gf": 6,
-   "ga": 17,
-   "rank": 6,
-   "goal_diff": "-11",
-   "goals_for": 6
-  },
-  {
-   "team": "武庫川女子大学",
-   "slug": "mukogawa-joshi",
-   "points": 0,
    "games": 2,
    "wins": 0,
    "draws": 0,
    "losses": 2,
-   "gf": 5,
-   "ga": 28,
+   "gf": 12,
+   "ga": 25,
    "rank": 7,
-   "goal_diff": "-23",
-   "goals_for": 5
+   "goal_diff": "-13",
+   "goals_for": 12
   }
  ],
  "2部": [
@@ -115,6 +115,20 @@
    "goals_for": 31
   },
   {
+   "team": "京都大学",
+   "slug": "kyoto",
+   "points": 3,
+   "games": 1,
+   "wins": 1,
+   "draws": 0,
+   "losses": 0,
+   "gf": 10,
+   "ga": 3,
+   "rank": 2,
+   "goal_diff": "+7",
+   "goals_for": 10
+  },
+  {
    "team": "大阪体育大学",
    "slug": "oosakataiiku",
    "points": 3,
@@ -124,37 +138,9 @@
    "losses": 0,
    "gf": 9,
    "ga": 8,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "+1",
    "goals_for": 9
-  },
-  {
-   "team": "京都女子大学",
-   "slug": "kyoto-joshi",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 3,
-   "goal_diff": "0",
-   "goals_for": 0
-  },
-  {
-   "team": "京都大学",
-   "slug": "kyoto",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 4,
-   "goal_diff": "0",
-   "goals_for": 0
   },
   {
    "team": "近畿大学",
@@ -166,7 +152,7 @@
    "losses": 0,
    "gf": 0,
    "ga": 0,
-   "rank": 5,
+   "rank": 4,
    "goal_diff": "0",
    "goals_for": 0
   },
@@ -180,7 +166,7 @@
    "losses": 0,
    "gf": 0,
    "ga": 0,
-   "rank": 6,
+   "rank": 5,
    "goal_diff": "0",
    "goals_for": 0
   },
@@ -194,7 +180,7 @@
    "losses": 1,
    "gf": 8,
    "ga": 9,
-   "rank": 7,
+   "rank": 6,
    "goal_diff": "-1",
    "goals_for": 8
   },
@@ -208,9 +194,23 @@
    "losses": 1,
    "gf": 4,
    "ga": 10,
-   "rank": 8,
+   "rank": 7,
    "goal_diff": "-6",
    "goals_for": 4
+  },
+  {
+   "team": "京都女子大学",
+   "slug": "kyoto-joshi",
+   "points": 0,
+   "games": 1,
+   "wins": 0,
+   "draws": 0,
+   "losses": 1,
+   "gf": 3,
+   "ga": 10,
+   "rank": 8,
+   "goal_diff": "-7",
+   "goals_for": 3
   },
   {
    "team": "神戸女学院大学",
