@@ -75,6 +75,13 @@ table.detail td { white-space:normal; }
 .cta { display:inline-block; background:var(--accent); color:#fff; font-weight:700;
   font-size:.85rem; text-decoration:none; padding:.5em 1.1em; border-radius:8px; }
 .cta:hover { background:var(--accent-dark); color:#fff; }
+.cta-outline { background:transparent; color:var(--navy-2); border:1.5px solid var(--navy-2); }
+.cta-outline:hover { background:var(--navy-2); color:#fff; }
+.pr-badge { display:inline-block; background:#eef2f6; color:var(--sub); font-size:.62rem;
+  font-weight:700; letter-spacing:.04em; padding:.1em .4em; border-radius:4px;
+  margin-right:.4em; vertical-align:.1em; }
+.cta .pr-badge { background:rgba(255,255,255,.25); color:#fff; }
+.cta-outline .pr-badge { background:transparent; color:var(--navy-2); border:1px solid var(--navy-2); }
 
 .stat-row { display:flex; gap:.8rem; flex-wrap:wrap; }
 .stat { background:var(--surface); border:1px solid var(--line); border-radius:10px;
@@ -96,8 +103,14 @@ table.detail td { white-space:normal; }
 .team-list { list-style:none; margin:0; padding:0; columns:2; font-size:.9rem; }
 .team-list li { margin:.25em 0; break-inside:avoid; }
 
-.placeholder .todo, .sponsor .todo { color:var(--sub); background:var(--surface);
+.placeholder .todo { color:var(--sub); background:var(--surface);
   border:1px dashed var(--line); border-radius:10px; padding:.8rem; font-size:.85rem; }
+.sponsor p { margin:.7em 0; }
+.article-cta { background:var(--surface); border:1px solid var(--line);
+  border-left:4px solid var(--navy-2); border-radius:10px; padding:1.1rem 1.3rem; margin-top:1.6rem; }
+.article-cta h2 { margin-top:0; border-left:none; padding-left:0; font-size:1rem; }
+.article-cta p:last-child { margin-bottom:0; }
+.support .digest-card p:last-of-type { margin-top:.8em; margin-bottom:0; }
 
 .cat-line { font-size:.8rem; margin:.4rem 0; }
 .article { background:var(--surface); border:1px solid var(--line); border-radius:10px;
