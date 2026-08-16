@@ -79,6 +79,16 @@
   "slug": "kyoto",
   "block": "2部"
  },
+ "龍谷大学": {
+  "team": "龍谷大学",
+  "slug": "ryukoku",
+  "block": "3部"
+ },
+ "同志社女子大学": {
+  "team": "同志社女子大学",
+  "slug": "doshisha-joshi",
+  "block": "3部"
+ },
  "神戸学院大学": {
   "team": "神戸学院大学",
   "slug": "koubegakuin",

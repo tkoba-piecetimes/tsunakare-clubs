@@ -294,9 +294,9 @@
   "home_slug": "aichi-shukutoku",
   "away_slug": "gifu",
   "venue": "テラスポ鶴舞ウエスト",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 19,
+  "away_score": 5,
   "note": ""
  },
  {
@@ -309,10 +309,10 @@
   "home_slug": "nanzan",
   "away_slug": "aichikyouiku",
   "venue": "美浜",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "特定試合"
+  "status": "played",
+  "home_score": 3,
+  "away_score": 10,
+  "note": ""
  },
  {
   "id": "2026-08-22-kinjo-gakuin-vs-nagoya",

@@ -234,9 +234,9 @@
   "home_slug": "kobe",
   "away_slug": "doshisha",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 3,
   "note": ""
  },
  {
@@ -249,9 +249,9 @@
   "home_slug": "koubegakuin",
   "away_slug": "kansai",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 5,
   "note": ""
  },
  {

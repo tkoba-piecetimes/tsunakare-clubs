@@ -3,16 +3,16 @@
   {
    "team": "関西学院大学",
    "slug": "kwansei-gakuin",
-   "points": 9,
-   "games": 3,
-   "wins": 3,
+   "points": 12,
+   "games": 4,
+   "wins": 4,
    "draws": 0,
    "losses": 0,
-   "gf": 42,
-   "ga": 13,
+   "gf": 53,
+   "ga": 20,
    "rank": 1,
-   "goal_diff": "+29",
-   "goals_for": 42
+   "goal_diff": "+33",
+   "goals_for": 53
   },
   {
    "team": "京都産業大学",
@@ -74,15 +74,15 @@
    "team": "同志社大学",
    "slug": "doshisha",
    "points": 0,
-   "games": 2,
+   "games": 3,
    "wins": 0,
    "draws": 0,
-   "losses": 2,
-   "gf": 10,
-   "ga": 12,
+   "losses": 3,
+   "gf": 17,
+   "ga": 23,
    "rank": 6,
-   "goal_diff": "-2",
-   "goals_for": 10
+   "goal_diff": "-6",
+   "goals_for": 17
   },
   {
    "team": "近畿大学",
@@ -115,6 +115,20 @@
    "goals_for": 31
   },
   {
+   "team": "神戸大学",
+   "slug": "kobe",
+   "points": 3,
+   "games": 2,
+   "wins": 1,
+   "draws": 0,
+   "losses": 1,
+   "gf": 27,
+   "ga": 16,
+   "rank": 2,
+   "goal_diff": "+11",
+   "goals_for": 27
+  },
+  {
    "team": "京都大学",
    "slug": "kyoto",
    "points": 3,
@@ -124,7 +138,7 @@
    "losses": 0,
    "gf": 10,
    "ga": 3,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "+7",
    "goals_for": 10
   },
@@ -138,7 +152,7 @@
    "losses": 0,
    "gf": 9,
    "ga": 8,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "+1",
    "goals_for": 9
   },
@@ -152,7 +166,7 @@
    "losses": 0,
    "gf": 0,
    "ga": 0,
-   "rank": 4,
+   "rank": 5,
    "goal_diff": "0",
    "goals_for": 0
   },
@@ -166,37 +180,9 @@
    "losses": 0,
    "gf": 0,
    "ga": 0,
-   "rank": 5,
+   "rank": 6,
    "goal_diff": "0",
    "goals_for": 0
-  },
-  {
-   "team": "神戸大学",
-   "slug": "kobe",
-   "points": 0,
-   "games": 1,
-   "wins": 0,
-   "draws": 0,
-   "losses": 1,
-   "gf": 8,
-   "ga": 9,
-   "rank": 6,
-   "goal_diff": "-1",
-   "goals_for": 8
-  },
-  {
-   "team": "京都工芸繊維大学",
-   "slug": "kyoutokougeisen-i",
-   "points": 0,
-   "games": 1,
-   "wins": 0,
-   "draws": 0,
-   "losses": 1,
-   "gf": 4,
-   "ga": 10,
-   "rank": 7,
-   "goal_diff": "-6",
-   "goals_for": 4
   },
   {
    "team": "京都女子大学",
@@ -208,7 +194,7 @@
    "losses": 1,
    "gf": 3,
    "ga": 10,
-   "rank": 8,
+   "rank": 7,
    "goal_diff": "-7",
    "goals_for": 3
   },
@@ -222,12 +208,40 @@
    "losses": 1,
    "gf": 4,
    "ga": 21,
-   "rank": 9,
+   "rank": 8,
    "goal_diff": "-17",
    "goals_for": 4
+  },
+  {
+   "team": "京都工芸繊維大学",
+   "slug": "kyoutokougeisen-i",
+   "points": 0,
+   "games": 2,
+   "wins": 0,
+   "draws": 0,
+   "losses": 2,
+   "gf": 11,
+   "ga": 29,
+   "rank": 9,
+   "goal_diff": "-18",
+   "goals_for": 11
   }
  ],
  "3部": [
+  {
+   "team": "同志社女子大学",
+   "slug": "doshisha-joshi",
+   "points": 3,
+   "games": 1,
+   "wins": 1,
+   "draws": 0,
+   "losses": 0,
+   "gf": 12,
+   "ga": 4,
+   "rank": 1,
+   "goal_diff": "+8",
+   "goals_for": 12
+  },
   {
    "team": "大阪大学",
    "slug": "osaka",
@@ -238,7 +252,7 @@
    "losses": 0,
    "gf": 13,
    "ga": 7,
-   "rank": 1,
+   "rank": 2,
    "goal_diff": "+6",
    "goals_for": 13
   },
@@ -252,9 +266,23 @@
    "losses": 1,
    "gf": 7,
    "ga": 13,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "-6",
    "goals_for": 7
+  },
+  {
+   "team": "龍谷大学",
+   "slug": "ryukoku",
+   "points": 0,
+   "games": 1,
+   "wins": 0,
+   "draws": 0,
+   "losses": 1,
+   "gf": 4,
+   "ga": 12,
+   "rank": 4,
+   "goal_diff": "-8",
+   "goals_for": 4
   }
  ]
 }
