@@ -39,6 +39,8 @@ jobs:
           service_account: lacrossemania-metrics-reader@planar-acronym-505101-h5.iam.gserviceaccount.com
       - name: Fetch metrics (GA4 / Search Console)
         run: python pipeline/fetch_metrics.py
+      - name: Generate articles (結果まとめ・シーズン記録、1回の実行で最大2件)
+        run: python pipeline/generate_articles.py
       - name: Generate site
         run: python pipeline/generate_site.py
       - name: Commit updated data & site
@@ -46,7 +48,7 @@ jobs:
         run: |
           git config user.name "tsunakare-bot"
           git config user.email "bot@piecetimes.jp"
-          git add data site
+          git add data content site
           git diff --cached --quiet || git commit -m "chore: auto-update league data"
           git push
       - uses: actions/configure-pages@v5
