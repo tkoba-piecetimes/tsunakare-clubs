@@ -375,6 +375,21 @@
   "note": ""
  },
  {
+  "id": "2026-08-21-goudou1-vs-osaka-metropolitan",
+  "date": "2026-08-21",
+  "time": "16:35",
+  "category": "3部",
+  "home": "合同1",
+  "away": "大阪公立大学",
+  "home_slug": "goudou1",
+  "away_slug": "osaka-metropolitan",
+  "venue": "鶴見緑地スタジアム",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-08-22-kansai-vs-ritsumeikan",
   "date": "2026-08-22",
   "time": "9:40",

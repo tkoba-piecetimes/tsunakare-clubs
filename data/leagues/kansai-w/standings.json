@@ -257,6 +257,34 @@
    "goals_for": 13
   },
   {
+   "team": "合同1",
+   "slug": "goudou1",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 3,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "大阪公立大学",
+   "slug": "osaka-metropolitan",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 4,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
    "team": "追手門学院大学",
    "slug": "ottemongakuin",
    "points": 0,
@@ -266,7 +294,7 @@
    "losses": 1,
    "gf": 7,
    "ga": 13,
-   "rank": 3,
+   "rank": 5,
    "goal_diff": "-6",
    "goals_for": 7
   },
@@ -280,7 +308,7 @@
    "losses": 1,
    "gf": 4,
    "ga": 12,
-   "rank": 4,
+   "rank": 6,
    "goal_diff": "-8",
    "goals_for": 4
   }

@@ -89,6 +89,16 @@
   "slug": "doshisha-joshi",
   "block": "3部"
  },
+ "合同1": {
+  "team": "合同1",
+  "slug": "goudou1",
+  "block": "3部"
+ },
+ "大阪公立大学": {
+  "team": "大阪公立大学",
+  "slug": "osaka-metropolitan",
+  "block": "3部"
+ },
  "神戸学院大学": {
   "team": "神戸学院大学",
   "slug": "koubegakuin",

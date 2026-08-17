@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-16",
+ "updated_at": "2026-08-17",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -41,14 +41,20 @@
    },
    {
     "date": "20260816",
-    "users": 41,
-    "pageviews": 155,
-    "sessions": 65
+    "users": 43,
+    "pageviews": 171,
+    "sessions": 67
+   },
+   {
+    "date": "20260817",
+    "users": 30,
+    "pageviews": 78,
+    "sessions": 40
    }
   ],
-  "total_users": 246,
-  "total_pageviews": 775,
-  "total_sessions": 303
+  "total_users": 278,
+  "total_pageviews": 869,
+  "total_sessions": 345
  },
  "gsc": {
   "daily": [
@@ -87,20 +93,26 @@
     "clicks": 32,
     "impressions": 268,
     "position": 8.4
+   },
+   {
+    "date": "2026-08-15",
+    "clicks": 37,
+    "impressions": 302,
+    "position": 8.5
    }
   ],
-  "total_clicks": 112,
-  "total_impressions": 1102,
+  "total_clicks": 149,
+  "total_impressions": 1404,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
-    "clicks": 5,
-    "impressions": 33
+    "clicks": 8,
+    "impressions": 46
    },
    {
     "query": "ラクロス用語",
     "clicks": 1,
-    "impressions": 1
+    "impressions": 2
    },
    {
     "query": "北海道大学 ラクロス 女子",
@@ -111,6 +123,11 @@
     "query": "東北大学ラクロス部",
     "clicks": 1,
     "impressions": 1
+   },
+   {
+    "query": "第38回関東学生ラクロスリーグ戦",
+    "clicks": 1,
+    "impressions": 4
    },
    {
     "query": "rtv ラクロス",
@@ -125,22 +142,17 @@
    {
     "query": "ラクロス とは",
     "clicks": 0,
-    "impressions": 8
+    "impressions": 10
    },
    {
     "query": "ラクロス クリアとは",
     "clicks": 0,
-    "impressions": 14
+    "impressions": 15
    },
    {
     "query": "ラクロス ショットクロック",
     "clicks": 0,
     "impressions": 2
-   },
-   {
-    "query": "ラクロス フェイスオフ",
-    "clicks": 0,
-    "impressions": 1
    }
   ]
  }

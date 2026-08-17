@@ -9,9 +9,9 @@
   "home_slug": "hokkaido",
   "away_slug": "hokkai-gakuen",
   "venue": "厚別公園主競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 17,
+  "away_score": 1,
   "note": ""
  },
  {
