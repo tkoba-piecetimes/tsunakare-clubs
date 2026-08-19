@@ -90,21 +90,6 @@
   "note": ""
  },
  {
-  "id": "2026-08-08-mukogawa-joshi-vs-kwansei-gakuin",
-  "date": "2026-08-08",
-  "time": "9:00",
-  "category": "1部",
-  "home": "武庫川女子大学",
-  "away": "関西学院大学",
-  "home_slug": "mukogawa-joshi",
-  "away_slug": "kwansei-gakuin",
-  "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-08-08-ritsumeikan-vs-doshisha",
   "date": "2026-08-08",
   "time": "11:15",
@@ -120,21 +105,6 @@
   "note": ""
  },
  {
-  "id": "2026-08-08-ritsumeikan-vs-doshisha",
-  "date": "2026-08-08",
-  "time": "11:15",
-  "category": "1部",
-  "home": "立命館大学",
-  "away": "同志社大学",
-  "home_slug": "ritsumeikan",
-  "away_slug": "doshisha",
-  "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-08-08-kobe-jogakuin-vs-oosakakyouiku",
   "date": "2026-08-08",
   "time": "16:35",
@@ -147,21 +117,6 @@
   "status": "played",
   "home_score": 4,
   "away_score": 21,
-  "note": ""
- },
- {
-  "id": "2026-08-08-kobe-jogakuin-vs-oosakakyouiku",
-  "date": "2026-08-08",
-  "time": "16:35",
-  "category": "2部",
-  "home": "神戸女学院大学",
-  "away": "大阪教育大学",
-  "home_slug": "kobe-jogakuin",
-  "away_slug": "oosakakyouiku",
-  "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
   "note": ""
  },
  {
@@ -195,21 +150,6 @@
   "note": ""
  },
  {
-  "id": "2026-08-11-kyoto-sangyo-vs-kansai",
-  "date": "2026-08-11",
-  "time": "9:40",
-  "category": "1部",
-  "home": "京都産業大学",
-  "away": "関西大学",
-  "home_slug": "kyoto-sangyo",
-  "away_slug": "kansai",
-  "venue": "宝ヶ池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-08-11-kobe-vs-oosakataiiku",
   "date": "2026-08-11",
   "time": "16:35",
@@ -222,21 +162,6 @@
   "status": "played",
   "home_score": 8,
   "away_score": 9,
-  "note": ""
- },
- {
-  "id": "2026-08-11-kobe-vs-oosakataiiku",
-  "date": "2026-08-11",
-  "time": "16:35",
-  "category": "2部",
-  "home": "神戸大学",
-  "away": "大阪体育大学",
-  "home_slug": "kobe",
-  "away_slug": "oosakataiiku",
-  "venue": "宝ヶ池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
   "note": ""
  },
  {
@@ -255,21 +180,6 @@
   "note": ""
  },
  {
-  "id": "2026-08-15-mukogawa-joshi-vs-kindai",
-  "date": "2026-08-15",
-  "time": "9:00",
-  "category": "1部",
-  "home": "武庫川女子大学",
-  "away": "近畿大学",
-  "home_slug": "mukogawa-joshi",
-  "away_slug": "kindai",
-  "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-08-15-kyoto-joshi-vs-kyoto",
   "date": "2026-08-15",
   "time": "16:35",
@@ -282,21 +192,6 @@
   "status": "played",
   "home_score": 3,
   "away_score": 10,
-  "note": ""
- },
- {
-  "id": "2026-08-15-kyoto-joshi-vs-kyoto",
-  "date": "2026-08-15",
-  "time": "16:35",
-  "category": "2部",
-  "home": "京都女子大学",
-  "away": "京都大学",
-  "home_slug": "kyoto-joshi",
-  "away_slug": "kyoto",
-  "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
   "note": ""
  },
  {
@@ -315,21 +210,6 @@
   "note": ""
  },
  {
-  "id": "2026-08-16-doshisha-vs-kwansei-gakuin",
-  "date": "2026-08-16",
-  "time": "9:40",
-  "category": "1部",
-  "home": "同志社大学",
-  "away": "関西学院大学",
-  "home_slug": "doshisha",
-  "away_slug": "kwansei-gakuin",
-  "venue": "宝ヶ池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-08-16-kyoutokougeisen-i-vs-kobe",
   "date": "2026-08-16",
   "time": "12:05",
@@ -342,21 +222,6 @@
   "status": "played",
   "home_score": 7,
   "away_score": 19,
-  "note": ""
- },
- {
-  "id": "2026-08-16-kyoutokougeisen-i-vs-kobe",
-  "date": "2026-08-16",
-  "time": "12:05",
-  "category": "2部",
-  "home": "京都工芸繊維大学",
-  "away": "神戸大学",
-  "home_slug": "kyoutokougeisen-i",
-  "away_slug": "kobe",
-  "venue": "宝ヶ池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
   "note": ""
  },
  {

@@ -24,9 +24,9 @@
   "slug": "yamaguchi",
   "block": "1部"
  },
- "修道": {
-  "team": "修道",
-  "slug": "shuudou",
+ "広島修道大学": {
+  "team": "広島修道大学",
+  "slug": "hiroshima-shudo",
   "block": "1部"
  },
  "愛媛大学": {
@@ -44,9 +44,9 @@
   "slug": "tokushima",
   "block": "1部"
  },
- "松山高知": {
-  "team": "松山高知",
-  "slug": "matsuyamakouchi",
+ "松山大学・高知大学合同チーム": {
+  "team": "松山大学・高知大学合同チーム",
+  "slug": "matsuyamadaigaku-kouchidaigakugoudouchiimu",
   "block": "2部"
  }
 }

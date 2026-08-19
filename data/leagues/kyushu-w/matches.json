@@ -75,21 +75,6 @@
   "note": ""
  },
  {
-  "id": "2026-08-11-seinan-gakuin-vs-fukuokajogakuin",
-  "date": "2026-08-11",
-  "time": "10:00",
-  "category": "2部",
-  "home": "西南学院大学",
-  "away": "福岡女学院大学",
-  "home_slug": "seinan-gakuin",
-  "away_slug": "fukuokajogakuin",
-  "venue": "オクゼン不動産フットボールスタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-08-11-fukuokakyouiku-vs-kitakyushu",
   "date": "2026-08-11",
   "time": "14:00",
@@ -102,21 +87,6 @@
   "status": "played",
   "home_score": 5,
   "away_score": 4,
-  "note": ""
- },
- {
-  "id": "2026-08-11-fukuokakyouiku-vs-kitakyushu",
-  "date": "2026-08-11",
-  "time": "14:00",
-  "category": "1部",
-  "home": "福岡教育大学",
-  "away": "北九州市立大学",
-  "home_slug": "fukuokakyouiku",
-  "away_slug": "kitakyushu",
-  "venue": "オクゼン不動産フットボールスタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
   "note": ""
  },
  {
