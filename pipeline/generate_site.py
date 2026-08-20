@@ -55,6 +55,7 @@ LEAGUE_ORDER = [
     "chushikoku-m", "chushikoku-w", "kyushu-m", "kyushu-w",
 ]
 RECORDS_MIN_PLAYED = 30  # 記録室を生成する最低試合数（データが薄いリーグは非表示）
+HIGHLIGHTS_MIN_PLAYED = 3  # 「今節の見どころ」をフル生成する最低消化試合数（未満は控えめな定型文）
 
 _sitemap_paths: list[str] = []
 
@@ -534,6 +535,171 @@ def preview_sections(m, matches, standings):
     return body
 
 
+# ---------------------------------------------------------------- matchday highlights
+#
+# 「今節の見どころ」= リーグトップページの順位表の上に置く3〜5文の解説ブロック。
+# LLMは使わず、その日のstandings/matches.jsonから機械的に文章を組み立てる（テンプレート生成）。
+# 対象は最上位ティア（例: 関東男子なら「1部」、A/Bブロック両方）のみに絞り、
+# 首位・勝ち点差・直近の注目結果・次節の上位対決という素材が揃う分だけ文を積む。
+# データが薄い（消化試合がHIGHLIGHTS_MIN_PLAYED未満）場合は無理に断定せず、
+# 開幕前/開幕直後向けの控えめな定型文にフォールバックする。書ける材料が何もなければ
+# ブロックごと省略する（空虚な文章は出さない）。ツナカレの協賛募集状況には一切触れない。
+
+def _tier_label(block):
+    """ブロック名の先頭トークンをティア名とみなす（例:「1部 Aブロック」→「1部」）。"""
+    return block.split(" ", 1)[0]
+
+
+def _block_suffix(block):
+    """ブロック名からティア名を除いた部分（例:「1部 Aブロック」→「Aブロック」、「1部」→""）。"""
+    parts = block.split(" ", 1)
+    return parts[1] if len(parts) > 1 else ""
+
+
+def _top_tier_blocks(standings):
+    """standings.jsonのキー順（連盟データの並び=上位ティアが先頭）から最上位ティアのブロック名一覧を返す。"""
+    blocks = list(standings.keys())
+    if not blocks:
+        return [], ""
+    top = _tier_label(blocks[0])
+    return [b for b in blocks if _tier_label(b) == top], top
+
+
+def _wdl_str(e):
+    if e.get("draws"):
+        return f'{e["wins"]}勝{e["draws"]}分{e["losses"]}敗'
+    return f'{e["wins"]}勝{e["losses"]}敗'
+
+
+def matchday_highlights(lg, today_iso):
+    standings, matches, teams = lg["standings"], lg["matches"], lg["teams"]
+    tier_blocks, top_tier = _top_tier_blocks(standings)
+    if not tier_blocks:
+        return ""
+    tier_disp = "" if top_tier == "リーグ" else top_tier
+    league_name = lg["meta"]["league"]
+    subject = f'{league_name}の{tier_disp}' if tier_disp else league_name
+    td = date.fromisoformat(today_iso)
+    today_label = f'{td.month}月{td.day}日'
+
+    def is_top_team(team, category):
+        e = next((x for x in standings.get(category, []) if x["team"] == team), None)
+        return bool(e) and e["rank"] <= 2 and e["games"] > 0
+
+    tier_matches = [m for m in matches if m["category"] in tier_blocks]
+    played_in_tier = [m for m in tier_matches if m["status"] == "played"]
+
+    leaders = [(b, standings[b][0]) for b in tier_blocks
+               if standings.get(b) and standings[b][0]["games"] > 0]
+    multi_display = len(leaders) > 1
+
+    def leader_clause(block, e):
+        prefix = f'{_block_suffix(block)}は' if multi_display and _block_suffix(block) else ''
+        return f'{prefix}{e["team"]}が{_wdl_str(e)}（勝ち点{e["points"]}）'
+
+    sentences = []
+
+    if len(played_in_tier) < HIGHLIGHTS_MIN_PLAYED:
+        if not leaders:
+            upcoming_real = sorted(
+                (m for m in tier_matches if m["status"] == "scheduled" and m["date"]
+                 and m["home"] in teams and m["away"] in teams),
+                key=lambda m: m["date"])
+            if not upcoming_real:
+                return ""
+            first = upcoming_real[0]
+            sentences = [
+                f'{today_label}時点、{subject}はまだシーズン開幕前です。',
+                f'{date_jp(first["date"])}に{first["home"]} vs {first["away"]}などの試合が予定されており、'
+                '開幕後は結果に応じて順位表・見どころを毎日更新します。',
+            ]
+        else:
+            parts = [leader_clause(b, e) for b, e in leaders]
+            sentences = [
+                f'{today_label}時点、{subject}は開幕から日が浅く、' + "、".join(parts)
+                + 'で暫定的に首位に立っています。',
+                f'ここまで{len(played_in_tier)}/{len(tier_matches)}試合が終了しています。',
+                '星取りはまだ浅く、今後の結果次第で順位が大きく動く可能性があります。',
+            ]
+    else:
+        parts = [leader_clause(b, e) for b, e in leaders]
+        if multi_display:
+            sentences.append(f'{today_label}時点、{subject}は、' + "、".join(parts)
+                              + 'で、それぞれ首位に立っています。')
+        else:
+            sentences.append(f'{today_label}時点、{subject}は{parts[0]}で首位に立っています。')
+
+        sentences.append(f'ここまで{len(played_in_tier)}/{len(tier_matches)}試合が終了しています。')
+
+        gap_parts = []
+        for block, top in leaders:
+            entries = standings.get(block, [])
+            if len(entries) < 2 or entries[1]["games"] <= 0:
+                continue
+            second = entries[1]
+            diff = top["points"] - second["points"]
+            prefix = f'{_block_suffix(block)}は' if multi_display and _block_suffix(block) else ''
+            if diff <= 0:
+                gap_parts.append(f'{prefix}2位の{second["team"]}と勝ち点で並んでおり、混戦模様です')
+            else:
+                gap_parts.append(f'{prefix}2位の{second["team"]}と勝ち点{diff}差です')
+        if gap_parts:
+            # 各要素は「〜です」で終わる完結節のため読点でなく句点でつなぐ
+            sentences.append("。".join(gap_parts) + "。")
+
+        dated = [m for m in played_in_tier if m["date"]]
+        if dated:
+            latest_date = max(m["date"] for m in dated)
+            candidates = [m for m in dated if m["date"] == latest_date]
+            topclashes = [m for m in candidates
+                          if is_top_team(m["home"], m["category"]) and is_top_team(m["away"], m["category"])]
+            if topclashes:
+                m = topclashes[0]
+                hs, as_ = m["home_score"], m["away_score"]
+                if hs == as_:
+                    sentences.append(f'{date_jp(m["date"])}には上位対決の{m["home"]} {hs}-{as_} '
+                                      f'{m["away"]}が引き分けに終わりました。')
+                else:
+                    winner = m["home"] if hs > as_ else m["away"]
+                    sentences.append(f'{date_jp(m["date"])}には上位対決となった{m["home"]} {hs}-{as_} '
+                                      f'{m["away"]}を{winner}が制しました。')
+            else:
+                m = max(candidates, key=lambda x: abs(x["home_score"] - x["away_score"]))
+                hs, as_ = m["home_score"], m["away_score"]
+                diff = abs(hs - as_)
+                if diff == 0:
+                    sentences.append(f'{date_jp(m["date"])}には{m["home"]} {hs}-{as_} '
+                                      f'{m["away"]}が引き分けに終わりました。')
+                else:
+                    winner = m["home"] if hs > as_ else m["away"]
+                    if diff >= 5:
+                        margin_phrase = f'{diff}点差で快勝しました'
+                    elif diff <= 2:
+                        margin_phrase = f'{diff}点差の接戦を制しました'
+                    else:
+                        margin_phrase = f'{diff}点差で勝利しました'
+                    sentences.append(f'{date_jp(m["date"])}には{m["home"]} {hs}-{as_} {m["away"]}の一戦があり、'
+                                      f'{winner}が{margin_phrase}。')
+
+        upcoming = sorted(
+            (m for m in tier_matches if m["status"] == "scheduled" and m["date"] and m["date"] >= today_iso
+             and m["home"] in teams and m["away"] in teams),
+            key=lambda m: m["date"])
+        if upcoming:
+            next_date = upcoming[0]["date"]
+            topclash_next = [m for m in upcoming if m["date"] == next_date
+                              and is_top_team(m["home"], m["category"]) and is_top_team(m["away"], m["category"])]
+            if topclash_next:
+                m = topclash_next[0]
+                sentences.append(f'次節は{date_jp(m["date"])}に上位対決となる{m["home"]} vs '
+                                  f'{m["away"]}が予定されています。')
+
+    if not sentences:
+        return ""
+    text = "".join(sentences)
+    return f'<section class="highlights"><h2>今節の見どころ</h2><p class="report">{escape(text)}</p></section>'
+
+
 # ---------------------------------------------------------------- portal
 
 def build_portal(leagues, articles, meta):
@@ -610,6 +776,7 @@ def build_league(lg, articles):
         body += ('<section><h2>結果反映待ちの試合</h2>'
                  '<p class="note">連盟の公表データにまだスコアが入っていない日程（延期の可能性あり）。</p>'
                  + match_table("".join(match_row(m, L) for m in awaiting)) + '</section>')
+    body += matchday_highlights(lg, today)
     body += '<section><h2>順位表ダイジェスト</h2><div class="digest">'
     for block, entries in standings.items():
         rows = "".join(
