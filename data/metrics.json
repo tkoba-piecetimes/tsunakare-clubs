@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-19",
+ "updated_at": "2026-08-20",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -59,14 +59,20 @@
    },
    {
     "date": "20260819",
+    "users": 13,
+    "pageviews": 83,
+    "sessions": 18
+   },
+   {
+    "date": "20260820",
     "users": 12,
-    "pageviews": 78,
-    "sessions": 17
+    "pageviews": 43,
+    "sessions": 14
    }
   ],
-  "total_users": 307,
-  "total_pageviews": 1029,
-  "total_sessions": 387
+  "total_users": 320,
+  "total_pageviews": 1077,
+  "total_sessions": 402
  },
  "gsc": {
   "daily": [
@@ -123,20 +129,26 @@
     "clicks": 13,
     "impressions": 131,
     "position": 15.2
+   },
+   {
+    "date": "2026-08-18",
+    "clicks": 8,
+    "impressions": 103,
+    "position": 14.2
    }
   ],
-  "total_clicks": 179,
-  "total_impressions": 1725,
+  "total_clicks": 187,
+  "total_impressions": 1828,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
     "clicks": 9,
-    "impressions": 57
+    "impressions": 63
    },
    {
     "query": "第38回関東学生ラクロスリーグ戦",
     "clicks": 2,
-    "impressions": 5
+    "impressions": 7
    },
    {
     "query": "ラクロス用語",
@@ -171,7 +183,7 @@
    {
     "query": "ラクロス とは",
     "clicks": 0,
-    "impressions": 15
+    "impressions": 17
    },
    {
     "query": "ラクロス クリア",
