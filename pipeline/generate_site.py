@@ -210,7 +210,7 @@ def md_inline(s):
 
 def md_to_html(md):
     out, para = [], []
-    in_ul = in_ol = in_table = False
+    in_ul = in_ol = in_table = in_raw = False
 
     def close_blocks():
         nonlocal in_ul, in_ol, in_table
@@ -232,6 +232,20 @@ def md_to_html(md):
 
     for line in md.splitlines():
         s = line.strip()
+        # raw HTML passthrough（インラインSVG図など）: 行頭が "<タグ" で始まる行から
+        # 空行までを未エスケープでそのまま出力する。既存記事は行頭"<"を使わないため
+        # 後方互換（記事本文中に "<" 始まりの行は元々存在しない）。
+        if in_raw:
+            if not s:
+                in_raw = False
+            else:
+                out.append(line)
+            continue
+        if re.match(r"^<[a-zA-Z]", s):
+            flush_para(); close_blocks()
+            out.append(line)
+            in_raw = True
+            continue
         if s.startswith("|") and s.endswith("|") and len(s) > 1:
             flush_para()
             if in_ul or in_ol:
@@ -1098,10 +1112,12 @@ def build_glossary(meta):
     for t in terms:
         cats.setdefault(t["category"], []).append(t)
     body = ('<h1>ラクロス用語辞典</h1>'
-            f'<p class="lead">試合観戦や部活動で使われるラクロス用語{len(terms)}語を分野別にまとめました。</p>')
+            f'<p class="lead">試合観戦や部活動で使われるラクロス用語{len(terms)}語を分野別にまとめました。'
+            'ルール全体の流れは<a href="../articles/lacrosse-rules-guide/index.html">'
+            'ラクロスのルール完全ガイド</a>でも図解つきで解説しています。</p>')
     for cat, items in cats.items():
         rows = "".join(
-            f'<tr><th>{escape(t["term"])}</th><td>{escape(t["def"])}</td></tr>'
+            f'<tr id="{escape(t["id"])}"><th>{escape(t["term"])}</th><td>{escape(t["def"])}</td></tr>'
             for t in items)
         body += (f'<section><h2>{escape(cat)}</h2>'
                  f'<div class="tbl"><table class="detail"><tbody>{rows}</tbody></table></div></section>')
@@ -1413,6 +1429,11 @@ table.detail td { white-space:normal; }
 .article h2 { margin-top:1.8em; }
 .article h2:first-child { margin-top:.4em; }
 .article li { margin:.3em 0; }
+.court-diagram { background:var(--surface); border:1px solid var(--line); border-radius:12px;
+  padding:1rem 1.2rem 1.2rem; margin:1.1rem 0 1.4rem; box-shadow:0 1px 3px rgba(7,26,51,.06); }
+.court-diagram svg { width:100%; height:auto; display:block; }
+.court-diagram figcaption { margin:.7rem 0 0; color:var(--sub); font-size:.78rem; line-height:1.6; }
+.court-diagram figcaption a { color:var(--navy-2); }
 
 .site-footer { background:var(--navy); color:#9fb2c8; font-size:.75rem;
   margin-top:3rem; }
