@@ -1,32 +1,32 @@
 {
  "1部": [
   {
+   "team": "九州大学",
+   "slug": "kyushu-univ",
+   "points": 6,
+   "games": 2,
+   "wins": 2,
+   "draws": 0,
+   "losses": 0,
+   "gf": 19,
+   "ga": 16,
+   "rank": 1,
+   "goal_diff": "+3",
+   "goals_for": 19
+  },
+  {
    "team": "福岡大学",
    "slug": "fukuoka",
    "points": 3,
-   "games": 1,
+   "games": 2,
    "wins": 1,
    "draws": 0,
-   "losses": 0,
-   "gf": 12,
-   "ga": 7,
-   "rank": 1,
-   "goal_diff": "+5",
-   "goals_for": 12
-  },
-  {
-   "team": "九州大学",
-   "slug": "kyushu-univ",
-   "points": 3,
-   "games": 1,
-   "wins": 1,
-   "draws": 0,
-   "losses": 0,
-   "gf": 10,
-   "ga": 8,
+   "losses": 1,
+   "gf": 20,
+   "ga": 16,
    "rank": 2,
-   "goal_diff": "+2",
-   "goals_for": 10
+   "goal_diff": "+4",
+   "goals_for": 20
   },
   {
    "team": "福岡教育大学",

@@ -264,9 +264,9 @@
   "home_slug": "kwansei-gakuin",
   "away_slug": "kyoto",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 6,
+  "away_score": 6,
   "note": ""
  },
  {
@@ -279,9 +279,9 @@
   "home_slug": "kansai",
   "away_slug": "kyoto-sangyo",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 6,
+  "away_score": 3,
   "note": ""
  },
  {
@@ -294,9 +294,9 @@
   "home_slug": "ottemongakuin",
   "away_slug": "oosakakyouiku",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 11,
+  "away_score": 3,
   "note": ""
  },
  {
