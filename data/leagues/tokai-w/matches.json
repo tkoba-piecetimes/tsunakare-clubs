@@ -354,10 +354,10 @@
   "home_slug": "chukyo",
   "away_slug": "chuubu",
   "venue": "美浜",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "特定試合"
+  "status": "played",
+  "home_score": 22,
+  "away_score": 2,
+  "note": ""
  },
  {
   "id": "2026-08-23-itagakkandaigaku-nipponfukushidaigaku-shigadaigakugoudouchiimu-vs-aichi",

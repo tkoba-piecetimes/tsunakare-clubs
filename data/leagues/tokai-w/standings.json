@@ -103,16 +103,16 @@
   {
    "team": "中京大学",
    "slug": "chukyo",
-   "points": 6,
-   "games": 2,
-   "wins": 2,
+   "points": 9,
+   "games": 3,
+   "wins": 3,
    "draws": 0,
    "losses": 0,
-   "gf": 47,
-   "ga": 8,
+   "gf": 69,
+   "ga": 10,
    "rank": 1,
-   "goal_diff": "+39",
-   "goals_for": 47
+   "goal_diff": "+59",
+   "goals_for": 69
   },
   {
    "team": "椙山女学園大学",
@@ -132,15 +132,15 @@
    "team": "中部大学",
    "slug": "chuubu",
    "points": 3,
-   "games": 2,
+   "games": 3,
    "wins": 1,
    "draws": 0,
-   "losses": 1,
-   "gf": 13,
-   "ga": 16,
+   "losses": 2,
+   "gf": 15,
+   "ga": 38,
    "rank": 3,
-   "goal_diff": "-3",
-   "goals_for": 13
+   "goal_diff": "-23",
+   "goals_for": 15
   },
   {
    "team": "名古屋外国語大学",

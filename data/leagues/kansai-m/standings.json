@@ -29,6 +29,20 @@
    "goals_for": 22
   },
   {
+   "team": "同志社大学",
+   "slug": "doshisha",
+   "points": 7,
+   "games": 4,
+   "wins": 2,
+   "draws": 1,
+   "losses": 1,
+   "gf": 20,
+   "ga": 13,
+   "rank": 3,
+   "goal_diff": "+7",
+   "goals_for": 20
+  },
+  {
    "team": "神戸大学",
    "slug": "kobe",
    "points": 6,
@@ -38,23 +52,9 @@
    "losses": 1,
    "gf": 8,
    "ga": 9,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "-1",
    "goals_for": 8
-  },
-  {
-   "team": "同志社大学",
-   "slug": "doshisha",
-   "points": 4,
-   "games": 3,
-   "wins": 1,
-   "draws": 1,
-   "losses": 1,
-   "gf": 15,
-   "ga": 12,
-   "rank": 4,
-   "goal_diff": "+3",
-   "goals_for": 15
   },
   {
    "team": "大阪大学",
@@ -74,15 +74,15 @@
    "team": "立命館大学",
    "slug": "ritsumeikan",
    "points": 3,
-   "games": 3,
+   "games": 4,
    "wins": 1,
    "draws": 0,
-   "losses": 2,
-   "gf": 14,
-   "ga": 23,
+   "losses": 3,
+   "gf": 15,
+   "ga": 28,
    "rank": 6,
-   "goal_diff": "-9",
-   "goals_for": 14
+   "goal_diff": "-13",
+   "goals_for": 15
   },
   {
    "team": "大阪経済大学",
@@ -115,6 +115,20 @@
    "goals_for": 16
   },
   {
+   "team": "近畿大学",
+   "slug": "kindai",
+   "points": 5,
+   "games": 3,
+   "wins": 1,
+   "draws": 2,
+   "losses": 0,
+   "gf": 21,
+   "ga": 11,
+   "rank": 2,
+   "goal_diff": "+10",
+   "goals_for": 21
+  },
+  {
    "team": "龍谷大学",
    "slug": "ryukoku",
    "points": 4,
@@ -124,7 +138,7 @@
    "losses": 0,
    "gf": 11,
    "ga": 10,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "+1",
    "goals_for": 11
   },
@@ -138,23 +152,9 @@
    "losses": 0,
    "gf": 6,
    "ga": 4,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "+2",
    "goals_for": 6
-  },
-  {
-   "team": "神戸学院大学",
-   "slug": "koubegakuin",
-   "points": 3,
-   "games": 3,
-   "wins": 1,
-   "draws": 0,
-   "losses": 2,
-   "gf": 16,
-   "ga": 16,
-   "rank": 4,
-   "goal_diff": "0",
-   "goals_for": 16
   },
   {
    "team": "京都産業大学",
@@ -171,18 +171,18 @@
    "goals_for": 17
   },
   {
-   "team": "近畿大学",
-   "slug": "kindai",
-   "points": 2,
-   "games": 2,
-   "wins": 0,
-   "draws": 2,
-   "losses": 0,
-   "gf": 9,
-   "ga": 9,
+   "team": "神戸学院大学",
+   "slug": "koubegakuin",
+   "points": 3,
+   "games": 4,
+   "wins": 1,
+   "draws": 0,
+   "losses": 3,
+   "gf": 18,
+   "ga": 28,
    "rank": 6,
-   "goal_diff": "0",
-   "goals_for": 9
+   "goal_diff": "-10",
+   "goals_for": 18
   },
   {
    "team": "京都工芸繊維大学",

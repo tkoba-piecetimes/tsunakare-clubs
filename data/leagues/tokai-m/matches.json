@@ -84,10 +84,10 @@
   "home_slug": "meijo",
   "away_slug": "nagoya",
   "venue": "名古屋大学予定",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "特定試合"
+  "status": "played",
+  "home_score": 6,
+  "away_score": 7,
+  "note": ""
  },
  {
   "id": "2026-08-09-nanzan-vs-gifu",
@@ -99,9 +99,9 @@
   "home_slug": "nanzan",
   "away_slug": "gifu",
   "venue": "名古屋大学予定",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 8,
+  "away_score": 5,
   "note": ""
  },
  {
@@ -114,10 +114,10 @@
   "home_slug": "nanzan",
   "away_slug": "aichikyouiku",
   "venue": "テラスポ鶴舞ウエスト",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "男女共催"
+  "status": "played",
+  "home_score": 11,
+  "away_score": 2,
+  "note": ""
  },
  {
   "id": "2026-08-15-chuubu-vs-shiga",
@@ -129,10 +129,10 @@
   "home_slug": "chuubu",
   "away_slug": "shiga",
   "venue": "テラスポ鶴舞ウエスト",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "特定試合"
+  "status": "played",
+  "home_score": 2,
+  "away_score": 6,
+  "note": ""
  },
  {
   "id": "2026-08-16-aichi-vs-shinshuu",
@@ -144,10 +144,10 @@
   "home_slug": "aichi",
   "away_slug": "shinshuu",
   "venue": "名古屋大学予定",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "特定試合"
+  "status": "played",
+  "home_score": 2,
+  "away_score": 11,
+  "note": ""
  },
  {
   "id": "2026-08-16-chukyo-vs-meijo",
@@ -159,9 +159,9 @@
   "home_slug": "chukyo",
   "away_slug": "meijo",
   "venue": "名古屋大学予定",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 3,
   "note": ""
  },
  {
@@ -189,10 +189,10 @@
   "home_slug": "nanzan",
   "away_slug": "chukyo",
   "venue": "名古屋大学予定",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "特定試合"
+  "status": "played",
+  "home_score": 4,
+  "away_score": 6,
+  "note": ""
  },
  {
   "id": "2026-08-23-shinshuu-vs-shiga",

@@ -309,9 +309,9 @@
   "home_slug": "doshisha",
   "away_slug": "ritsumeikan",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 1,
   "note": ""
  },
  {
@@ -324,9 +324,9 @@
   "home_slug": "kindai",
   "away_slug": "koubegakuin",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 12,
+  "away_score": 2,
   "note": ""
  },
  {
