@@ -3,30 +3,16 @@
   {
    "team": "東北大学",
    "slug": "tohoku-univ",
-   "points": 3,
-   "games": 1,
-   "wins": 1,
+   "points": 6,
+   "games": 2,
+   "wins": 2,
    "draws": 0,
    "losses": 0,
-   "gf": 21,
+   "gf": 50,
    "ga": 4,
    "rank": 1,
-   "goal_diff": "+17",
-   "goals_for": 21
-  },
-  {
-   "team": "東北学院大学",
-   "slug": "tohoku-gakuin",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 2,
-   "goal_diff": "0",
-   "goals_for": 0
+   "goal_diff": "+46",
+   "goals_for": 50
   },
   {
    "team": "岩手大学",
@@ -38,7 +24,7 @@
    "losses": 0,
    "gf": 0,
    "ga": 0,
-   "rank": 3,
+   "rank": 2,
    "goal_diff": "0",
    "goals_for": 0
   },
@@ -52,9 +38,23 @@
    "losses": 1,
    "gf": 4,
    "ga": 21,
-   "rank": 4,
+   "rank": 3,
    "goal_diff": "-17",
    "goals_for": 4
+  },
+  {
+   "team": "東北学院大学",
+   "slug": "tohoku-gakuin",
+   "points": 0,
+   "games": 1,
+   "wins": 0,
+   "draws": 0,
+   "losses": 1,
+   "gf": 0,
+   "ga": 29,
+   "rank": 4,
+   "goal_diff": "-29",
+   "goals_for": 0
   }
  ]
 }

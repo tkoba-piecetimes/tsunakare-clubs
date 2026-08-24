@@ -99,9 +99,9 @@
   "home_slug": "matsuyama",
   "away_slug": "ehime",
   "venue": "ピースリーホームバンブー総合運動公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 1,
+  "away_score": 20,
   "note": ""
  },
  {
@@ -114,9 +114,9 @@
   "home_slug": "yamaguchi",
   "away_slug": "okayama",
   "venue": "ピースリーホームバンブー総合運動公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 3,
+  "away_score": 17,
   "note": ""
  },
  {
@@ -129,9 +129,9 @@
   "home_slug": "hiroshima",
   "away_slug": "shimane",
   "venue": "広島広域公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 14,
+  "away_score": 0,
   "note": ""
  },
  {
@@ -144,9 +144,9 @@
   "home_slug": "hiroshima-shudo",
   "away_slug": "kagawa",
   "venue": "広島広域公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 0,
+  "away_score": 8,
   "note": ""
  },
  {
@@ -159,9 +159,9 @@
   "home_slug": "hiroshima",
   "away_slug": "okayama",
   "venue": "広島広域公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 5,
   "note": ""
  },
  {
@@ -174,9 +174,9 @@
   "home_slug": "kagawa",
   "away_slug": "ehime",
   "venue": "広島広域公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 10,
   "note": ""
  },
  {

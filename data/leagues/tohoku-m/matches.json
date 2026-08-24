@@ -24,9 +24,9 @@
   "home_slug": "iwate",
   "away_slug": "niigata",
   "venue": "七ヶ宿公園運動広場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 16,
+  "away_score": 0,
   "note": ""
  },
  {

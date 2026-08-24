@@ -24,9 +24,9 @@
   "home_slug": "hokusei-gakuen",
   "away_slug": "goudou",
   "venue": "NOPPORO ヤシマ商会スポーツパーク",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 9,
+  "away_score": 7,
   "note": ""
  },
  {

@@ -38,5 +38,10 @@
   "team": "福岡女学院大学",
   "slug": "fukuokajogakuin",
   "block": "2部"
+ },
+ "合同": {
+  "team": "合同",
+  "slug": "goudou",
+  "block": "2部"
  }
 }

@@ -24,9 +24,9 @@
   "home_slug": "tohoku-univ",
   "away_slug": "tohoku-gakuin",
   "venue": "東北大学川内キャンパス多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 29,
+  "away_score": 0,
   "note": ""
  },
  {

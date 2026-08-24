@@ -369,10 +369,10 @@
   "home_slug": "itagakkandaigaku-nipponfukushidaigaku-shigadaigakugoudouchiimu",
   "away_slug": "aichi",
   "venue": "美浜",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "特定試合"
+  "status": "played",
+  "home_score": 0,
+  "away_score": 34,
+  "note": ""
  },
  {
   "id": "2026-08-26-nagoyagaikokugo-vs-sugiyama",

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-23",
+ "updated_at": "2026-08-24",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -83,14 +83,20 @@
    },
    {
     "date": "20260823",
-    "users": 43,
-    "pageviews": 135,
-    "sessions": 54
+    "users": 45,
+    "pageviews": 151,
+    "sessions": 58
+   },
+   {
+    "date": "20260824",
+    "users": 24,
+    "pageviews": 73,
+    "sessions": 26
    }
   ],
-  "total_users": 406,
-  "total_pageviews": 1354,
-  "total_sessions": 515
+  "total_users": 432,
+  "total_pageviews": 1443,
+  "total_sessions": 545
  },
  "gsc": {
   "daily": [
@@ -171,10 +177,16 @@
     "clicks": 18,
     "impressions": 172,
     "position": 8.0
+   },
+   {
+    "date": "2026-08-22",
+    "clicks": 33,
+    "impressions": 253,
+    "position": 9.3
    }
   ],
-  "total_clicks": 219,
-  "total_impressions": 2194,
+  "total_clicks": 252,
+  "total_impressions": 2447,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
@@ -187,14 +199,29 @@
     "impressions": 8
    },
    {
+    "query": "ラクロス ショットクロック",
+    "clicks": 1,
+    "impressions": 3
+   },
+   {
+    "query": "ラクロス 大学 ランキング 関西",
+    "clicks": 1,
+    "impressions": 8
+   },
+   {
     "query": "ラクロス用語",
     "clicks": 1,
-    "impressions": 7
+    "impressions": 8
    },
    {
     "query": "北海道大学 ラクロス 女子",
     "clicks": 1,
     "impressions": 2
+   },
+   {
+    "query": "帝京大学 ラクロス部",
+    "clicks": 1,
+    "impressions": 3
    },
    {
     "query": "東北大学ラクロス部",
@@ -208,21 +235,6 @@
    },
    {
     "query": "コラプシングとは",
-    "clicks": 0,
-    "impressions": 1
-   },
-   {
-    "query": "ラクロス と は",
-    "clicks": 0,
-    "impressions": 1
-   },
-   {
-    "query": "ラクロス とは",
-    "clicks": 0,
-    "impressions": 20
-   },
-   {
-    "query": "ラクロス クリア",
     "clicks": 0,
     "impressions": 1
    }

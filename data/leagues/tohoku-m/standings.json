@@ -1,6 +1,20 @@
 {
  "リーグ": [
   {
+   "team": "岩手大学",
+   "slug": "iwate",
+   "points": 3,
+   "games": 1,
+   "wins": 1,
+   "draws": 0,
+   "losses": 0,
+   "gf": 16,
+   "ga": 0,
+   "rank": 1,
+   "goal_diff": "+16",
+   "goals_for": 16
+  },
+  {
    "team": "東北大学",
    "slug": "tohoku-univ",
    "points": 3,
@@ -10,37 +24,9 @@
    "losses": 0,
    "gf": 6,
    "ga": 3,
-   "rank": 1,
+   "rank": 2,
    "goal_diff": "+3",
    "goals_for": 6
-  },
-  {
-   "team": "岩手大学",
-   "slug": "iwate",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 2,
-   "goal_diff": "0",
-   "goals_for": 0
-  },
-  {
-   "team": "新潟大学",
-   "slug": "niigata",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 3,
-   "goal_diff": "0",
-   "goals_for": 0
   },
   {
    "team": "福島大学",
@@ -52,9 +38,23 @@
    "losses": 1,
    "gf": 3,
    "ga": 6,
-   "rank": 4,
+   "rank": 3,
    "goal_diff": "-3",
    "goals_for": 3
+  },
+  {
+   "team": "新潟大学",
+   "slug": "niigata",
+   "points": 0,
+   "games": 1,
+   "wins": 0,
+   "draws": 0,
+   "losses": 1,
+   "gf": 0,
+   "ga": 16,
+   "rank": 4,
+   "goal_diff": "-16",
+   "goals_for": 0
   }
  ]
 }

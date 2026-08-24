@@ -175,16 +175,16 @@
   {
    "team": "愛知大学",
    "slug": "aichi",
-   "points": 3,
-   "games": 2,
-   "wins": 1,
+   "points": 6,
+   "games": 3,
+   "wins": 2,
    "draws": 0,
    "losses": 1,
-   "gf": 39,
+   "gf": 73,
    "ga": 11,
    "rank": 2,
-   "goal_diff": "+28",
-   "goals_for": 39
+   "goal_diff": "+62",
+   "goals_for": 73
   },
   {
    "team": "名城大学",
@@ -204,14 +204,14 @@
    "team": "至学館大学・日本福祉大学・滋賀大学合同チーム",
    "slug": "itagakkandaigaku-nipponfukushidaigaku-shigadaigakugoudouchiimu",
    "points": 0,
-   "games": 2,
+   "games": 3,
    "wins": 0,
    "draws": 0,
-   "losses": 2,
+   "losses": 3,
    "gf": 10,
-   "ga": 40,
+   "ga": 74,
    "rank": 4,
-   "goal_diff": "-30",
+   "goal_diff": "-64",
    "goals_for": 10
   }
  ]
