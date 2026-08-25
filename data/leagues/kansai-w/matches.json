@@ -249,9 +249,9 @@
   "home_slug": "goudou1",
   "away_slug": "osaka-metropolitan",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 3,
+  "away_score": 16,
   "note": ""
  },
  {
@@ -264,9 +264,9 @@
   "home_slug": "kansai",
   "away_slug": "ritsumeikan",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 11,
+  "away_score": 9,
   "note": ""
  },
  {
@@ -279,9 +279,9 @@
   "home_slug": "kyoutokougeisen-i",
   "away_slug": "oosakataiiku",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 1,
+  "away_score": 18,
   "note": ""
  },
  {
@@ -294,9 +294,9 @@
   "home_slug": "kyoto-joshi",
   "away_slug": "oosakakyouiku",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 8,
+  "away_score": 8,
   "note": ""
  },
  {
@@ -309,10 +309,25 @@
   "home_slug": "kindai",
   "away_slug": "kyoto-sangyo",
   "venue": "太陽が丘球技場A",
+  "status": "played",
+  "home_score": 8,
+  "away_score": 17,
+  "note": ""
+ },
+ {
+  "id": "2026-08-23-goudou2-vs-ryukoku",
+  "date": "2026-08-23",
+  "time": "16:00",
+  "category": "3部",
+  "home": "合同2",
+  "away": "龍谷大学",
+  "home_slug": "goudou2",
+  "away_slug": "ryukoku",
+  "venue": "太陽が丘球技場A",
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": ""
+  "note": "雷のため中止・延期"
  },
  {
   "id": "2026-08-30-kobe-vs-kyoto-joshi",
@@ -323,21 +338,6 @@
   "away": "京都女子大学",
   "home_slug": "kobe",
   "away_slug": "kyoto-joshi",
-  "venue": "神戸総合運動公園球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
-  "id": "2026-08-30-kindai-vs-doshisha",
-  "date": "2026-08-30",
-  "time": "16:30",
-  "category": "1部",
-  "home": "近畿大学",
-  "away": "同志社大学",
-  "home_slug": "kindai",
-  "away_slug": "doshisha",
   "venue": "神戸総合運動公園球技場",
   "status": "scheduled",
   "home_score": null,

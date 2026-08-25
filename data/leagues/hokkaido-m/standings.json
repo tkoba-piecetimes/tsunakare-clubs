@@ -57,6 +57,20 @@
    "goals_for": 0
   },
   {
+   "team": "未定",
+   "slug": "mitei",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 5,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
    "team": "北海学園大学",
    "slug": "hokkai-gakuen",
    "points": 0,
@@ -66,7 +80,7 @@
    "losses": 1,
    "gf": 1,
    "ga": 17,
-   "rank": 5,
+   "rank": 6,
    "goal_diff": "-16",
    "goals_for": 1
   }

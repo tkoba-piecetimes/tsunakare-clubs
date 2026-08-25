@@ -99,6 +99,11 @@
   "slug": "osaka-metropolitan",
   "block": "3部"
  },
+ "合同2": {
+  "team": "合同2",
+  "slug": "goudou2",
+  "block": "3部"
+ },
  "神戸学院大学": {
   "team": "神戸学院大学",
   "slug": "koubegakuin",

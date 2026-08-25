@@ -148,5 +148,20 @@
   "home_score": null,
   "away_score": null,
   "note": ""
+ },
+ {
+  "id": "2026-10-17-mitei-vs-mitei",
+  "date": "2026-10-17",
+  "time": "未定",
+  "category": "リーグ",
+  "home": "未定",
+  "away": "未定",
+  "home_slug": "mitei",
+  "away_slug": "mitei",
+  "venue": "厚別公園主競技場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": "決勝（対戦カード未定）"
  }
 ]
