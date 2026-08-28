@@ -108,19 +108,19 @@
    {
     "date": "20260827",
     "users": 21,
-    "pageviews": 52,
+    "pageviews": 58,
     "sessions": 23
    },
    {
     "date": "20260828",
-    "users": 4,
-    "pageviews": 13,
-    "sessions": 4
+    "users": 24,
+    "pageviews": 76,
+    "sessions": 28
    }
   ],
-  "total_users": 493,
-  "total_pageviews": 1707,
-  "total_sessions": 620
+  "total_users": 513,
+  "total_pageviews": 1776,
+  "total_sessions": 644
  },
  "gsc": {
   "daily": [
@@ -225,10 +225,16 @@
     "clicks": 13,
     "impressions": 131,
     "position": 12.7
+   },
+   {
+    "date": "2026-08-26",
+    "clicks": 2,
+    "impressions": 119,
+    "position": 9.4
    }
   ],
-  "total_clicks": 310,
-  "total_impressions": 3005,
+  "total_clicks": 312,
+  "total_impressions": 3124,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
@@ -248,7 +254,7 @@
    {
     "query": "ラクロス 大学 ランキング 関西",
     "clicks": 1,
-    "impressions": 14
+    "impressions": 17
    },
    {
     "query": "ラクロス用語",
