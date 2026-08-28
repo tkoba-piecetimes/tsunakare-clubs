@@ -99,14 +99,29 @@
   "slug": "osaka-metropolitan",
   "block": "3部"
  },
- "合同2": {
-  "team": "合同2",
-  "slug": "goudou2",
+ "合同チーム2": {
+  "team": "合同チーム2",
+  "slug": "goudouchiimu2",
   "block": "3部"
  },
- "神戸学院大学": {
-  "team": "神戸学院大学",
-  "slug": "koubegakuin",
-  "block": "2部"
+ "大阪経済大学": {
+  "team": "大阪経済大学",
+  "slug": "osaka-keizai",
+  "block": "3部"
+ },
+ "大阪国際大学": {
+  "team": "大阪国際大学",
+  "slug": "oosakakokusai",
+  "block": "3部"
+ },
+ "奈良女子大学": {
+  "team": "奈良女子大学",
+  "slug": "nara-joshi",
+  "block": "3部"
+ },
+ "合同チーム1": {
+  "team": "合同チーム1",
+  "slug": "goudouchiimu1",
+  "block": "3部"
  }
 }

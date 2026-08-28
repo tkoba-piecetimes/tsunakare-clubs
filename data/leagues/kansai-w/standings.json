@@ -171,34 +171,6 @@
    "goals_for": 11
   },
   {
-   "team": "近畿大学",
-   "slug": "kindai",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 6,
-   "goal_diff": "0",
-   "goals_for": 0
-  },
-  {
-   "team": "神戸学院大学",
-   "slug": "koubegakuin",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 7,
-   "goal_diff": "0",
-   "goals_for": 0
-  },
-  {
    "team": "神戸女学院大学",
    "slug": "kobe-jogakuin",
    "points": 0,
@@ -208,7 +180,7 @@
    "losses": 1,
    "gf": 4,
    "ga": 21,
-   "rank": 8,
+   "rank": 6,
    "goal_diff": "-17",
    "goals_for": 4
   },
@@ -222,7 +194,7 @@
    "losses": 3,
    "gf": 12,
    "ga": 47,
-   "rank": 9,
+   "rank": 7,
    "goal_diff": "-35",
    "goals_for": 12
   }
@@ -271,8 +243,8 @@
    "goals_for": 13
   },
   {
-   "team": "合同2",
-   "slug": "goudou2",
+   "team": "合同チーム2",
+   "slug": "goudouchiimu2",
    "points": 0,
    "games": 0,
    "wins": 0,
@@ -281,6 +253,62 @@
    "gf": 0,
    "ga": 0,
    "rank": 4,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "大阪経済大学",
+   "slug": "osaka-keizai",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 5,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "大阪国際大学",
+   "slug": "oosakakokusai",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 6,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "奈良女子大学",
+   "slug": "nara-joshi",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 7,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "合同チーム1",
+   "slug": "goudouchiimu1",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 8,
    "goal_diff": "0",
    "goals_for": 0
   },
@@ -294,7 +322,7 @@
    "losses": 1,
    "gf": 7,
    "ga": 13,
-   "rank": 5,
+   "rank": 9,
    "goal_diff": "-6",
    "goals_for": 7
   },
@@ -308,7 +336,7 @@
    "losses": 1,
    "gf": 4,
    "ga": 12,
-   "rank": 6,
+   "rank": 10,
    "goal_diff": "-8",
    "goals_for": 4
   },
@@ -322,7 +350,7 @@
    "losses": 1,
    "gf": 3,
    "ga": 16,
-   "rank": 7,
+   "rank": 11,
    "goal_diff": "-13",
    "goals_for": 3
   }
