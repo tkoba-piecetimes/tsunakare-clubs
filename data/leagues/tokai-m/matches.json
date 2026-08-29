@@ -204,9 +204,9 @@
   "home_slug": "shinshuu",
   "away_slug": "shiga",
   "venue": "名古屋大学予定",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 4,
   "note": ""
  },
  {

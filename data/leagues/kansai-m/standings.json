@@ -115,6 +115,20 @@
    "goals_for": 16
   },
   {
+   "team": "京都産業大学",
+   "slug": "kyoto-sangyo",
+   "points": 6,
+   "games": 4,
+   "wins": 2,
+   "draws": 0,
+   "losses": 2,
+   "gf": 27,
+   "ga": 23,
+   "rank": 2,
+   "goal_diff": "+4",
+   "goals_for": 27
+  },
+  {
    "team": "近畿大学",
    "slug": "kindai",
    "points": 5,
@@ -124,7 +138,7 @@
    "losses": 0,
    "gf": 21,
    "ga": 11,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "+10",
    "goals_for": 21
   },
@@ -138,7 +152,7 @@
    "losses": 0,
    "gf": 11,
    "ga": 10,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "+1",
    "goals_for": 11
   },
@@ -152,23 +166,9 @@
    "losses": 0,
    "gf": 6,
    "ga": 4,
-   "rank": 4,
+   "rank": 5,
    "goal_diff": "+2",
    "goals_for": 6
-  },
-  {
-   "team": "京都産業大学",
-   "slug": "kyoto-sangyo",
-   "points": 3,
-   "games": 3,
-   "wins": 1,
-   "draws": 0,
-   "losses": 2,
-   "gf": 17,
-   "ga": 18,
-   "rank": 5,
-   "goal_diff": "-1",
-   "goals_for": 17
   },
   {
    "team": "神戸学院大学",
@@ -188,45 +188,45 @@
    "team": "京都工芸繊維大学",
    "slug": "kyoutokougeisen-i",
    "points": 0,
-   "games": 2,
+   "games": 3,
    "wins": 0,
    "draws": 0,
-   "losses": 2,
-   "gf": 7,
-   "ga": 13,
+   "losses": 3,
+   "gf": 12,
+   "ga": 23,
    "rank": 7,
-   "goal_diff": "-6",
-   "goals_for": 7
+   "goal_diff": "-11",
+   "goals_for": 12
   }
  ],
  "3部": [
   {
    "team": "追手門学院大学",
    "slug": "ottemongakuin",
-   "points": 3,
-   "games": 1,
-   "wins": 1,
+   "points": 6,
+   "games": 2,
+   "wins": 2,
    "draws": 0,
    "losses": 0,
-   "gf": 11,
-   "ga": 3,
+   "gf": 19,
+   "ga": 5,
    "rank": 1,
-   "goal_diff": "+8",
-   "goals_for": 11
+   "goal_diff": "+14",
+   "goals_for": 19
   },
   {
    "team": "大阪公立大学",
    "slug": "osaka-metropolitan",
    "points": 0,
-   "games": 0,
+   "games": 1,
    "wins": 0,
    "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
+   "losses": 1,
+   "gf": 2,
+   "ga": 8,
    "rank": 2,
-   "goal_diff": "0",
-   "goals_for": 0
+   "goal_diff": "-6",
+   "goals_for": 2
   },
   {
    "team": "大阪教育大学",

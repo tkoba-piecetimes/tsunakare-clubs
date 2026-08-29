@@ -399,9 +399,9 @@
   "home_slug": "aichi-gakuin",
   "away_slug": "aichikyouiku",
   "venue": "愛知学院大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 9,
+  "away_score": 8,
   "note": ""
  },
  {

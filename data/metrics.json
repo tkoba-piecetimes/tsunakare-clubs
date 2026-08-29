@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-28",
+ "updated_at": "2026-08-29",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -114,13 +114,19 @@
    {
     "date": "20260828",
     "users": 24,
-    "pageviews": 76,
-    "sessions": 28
+    "pageviews": 85,
+    "sessions": 30
+   },
+   {
+    "date": "20260829",
+    "users": 48,
+    "pageviews": 210,
+    "sessions": 63
    }
   ],
-  "total_users": 513,
-  "total_pageviews": 1776,
-  "total_sessions": 644
+  "total_users": 561,
+  "total_pageviews": 1995,
+  "total_sessions": 709
  },
  "gsc": {
   "daily": [
@@ -231,10 +237,16 @@
     "clicks": 2,
     "impressions": 119,
     "position": 9.4
+   },
+   {
+    "date": "2026-08-27",
+    "clicks": 18,
+    "impressions": 205,
+    "position": 10.6
    }
   ],
-  "total_clicks": 312,
-  "total_impressions": 3124,
+  "total_clicks": 330,
+  "total_impressions": 3329,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
@@ -250,6 +262,11 @@
     "query": "ラクロス ショットクロック",
     "clicks": 1,
     "impressions": 3
+   },
+   {
+    "query": "ラクロス ルール 反則",
+    "clicks": 1,
+    "impressions": 8
    },
    {
     "query": "ラクロス 大学 ランキング 関西",
@@ -278,11 +295,6 @@
    },
    {
     "query": "rtv ラクロス",
-    "clicks": 0,
-    "impressions": 1
-   },
-   {
-    "query": "コラプシングとは",
     "clicks": 0,
     "impressions": 1
    }

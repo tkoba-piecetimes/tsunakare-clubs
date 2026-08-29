@@ -354,9 +354,9 @@
   "home_slug": "kyoutokougeisen-i",
   "away_slug": "kyoto-sangyo",
   "venue": "伊丹スポーツセンター陸上競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 10,
   "note": ""
  },
  {
@@ -369,9 +369,9 @@
   "home_slug": "osaka-metropolitan",
   "away_slug": "ottemongakuin",
   "venue": "伊丹スポーツセンター陸上競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 2,
+  "away_score": 8,
   "note": ""
  },
  {
@@ -383,6 +383,21 @@
   "away": "神戸大学",
   "home_slug": "osaka-keizai",
   "away_slug": "kobe",
+  "venue": "宝が池球技場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-08-30-konan-vs-kansai",
+  "date": "2026-08-30",
+  "time": "16:45",
+  "category": "2部",
+  "home": "甲南大学",
+  "away": "関西大学",
+  "home_slug": "konan",
+  "away_slug": "kansai",
   "venue": "宝が池球技場",
   "status": "scheduled",
   "home_score": null,
