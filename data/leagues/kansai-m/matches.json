@@ -384,9 +384,9 @@
   "home_slug": "osaka-keizai",
   "away_slug": "kobe",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 8,
   "note": ""
  },
  {
@@ -402,7 +402,7 @@
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": ""
+  "note": "雷のため中止・延期"
  },
  {
   "id": "2026-09-05-kyoto-sangyo-vs-kindai",

@@ -414,10 +414,10 @@
   "home_slug": "kinjo-gakuin",
   "away_slug": "aichi-shukutoku",
   "venue": "愛知淑徳大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "特定試合"
+  "status": "played",
+  "home_score": 9,
+  "away_score": 11,
+  "note": ""
  },
  {
   "id": "2026-08-30-gifu-vs-nagoya",
@@ -429,10 +429,10 @@
   "home_slug": "gifu",
   "away_slug": "nagoya",
   "venue": "愛知淑徳大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "特定試合"
+  "status": "played",
+  "home_score": 5,
+  "away_score": 16,
+  "note": ""
  },
  {
   "id": "2026-09-05-aichi-shukutoku-vs-nagoya",
@@ -495,14 +495,14 @@
   "note": ""
  },
  {
-  "id": "2026-09-13-mitei-vs-mitei",
+  "id": "2026-09-13-chukyo-vs-aichi",
   "date": "2026-09-13",
   "time": "10:00",
   "category": "準決勝",
-  "home": "未定",
-  "away": "未定",
-  "home_slug": "mitei",
-  "away_slug": "mitei",
+  "home": "中京大学",
+  "away": "愛知大学",
+  "home_slug": "chukyo",
+  "away_slug": "aichi",
   "venue": "愛知大学豊橋",
   "status": "scheduled",
   "home_score": null,
@@ -510,14 +510,14 @@
   "note": ""
  },
  {
-  "id": "2026-09-13-mitei-vs-mitei",
+  "id": "2026-09-13-shinshuu-vs-sugiyama",
   "date": "2026-09-13",
   "time": "15:40",
   "category": "準決勝",
-  "home": "未定",
-  "away": "未定",
-  "home_slug": "mitei",
-  "away_slug": "mitei",
+  "home": "信州大学",
+  "away": "椙山女学園大学",
+  "home_slug": "shinshuu",
+  "away_slug": "sugiyama",
   "venue": "愛知大学豊橋",
   "status": "scheduled",
   "home_score": null,

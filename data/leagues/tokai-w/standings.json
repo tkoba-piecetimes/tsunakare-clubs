@@ -1,6 +1,34 @@
 {
  "1部": [
   {
+   "team": "名古屋大学",
+   "slug": "nagoya",
+   "points": 13,
+   "games": 5,
+   "wins": 4,
+   "draws": 1,
+   "losses": 0,
+   "gf": 57,
+   "ga": 34,
+   "rank": 1,
+   "goal_diff": "+23",
+   "goals_for": 57
+  },
+  {
+   "team": "愛知淑徳大学",
+   "slug": "aichi-shukutoku",
+   "points": 12,
+   "games": 5,
+   "wins": 4,
+   "draws": 0,
+   "losses": 1,
+   "gf": 52,
+   "ga": 34,
+   "rank": 2,
+   "goal_diff": "+18",
+   "goals_for": 52
+  },
+  {
    "team": "南山大学",
    "slug": "nanzan",
    "points": 10,
@@ -10,37 +38,9 @@
    "losses": 1,
    "gf": 42,
    "ga": 23,
-   "rank": 1,
+   "rank": 3,
    "goal_diff": "+19",
    "goals_for": 42
-  },
-  {
-   "team": "名古屋大学",
-   "slug": "nagoya",
-   "points": 10,
-   "games": 4,
-   "wins": 3,
-   "draws": 1,
-   "losses": 0,
-   "gf": 41,
-   "ga": 29,
-   "rank": 2,
-   "goal_diff": "+12",
-   "goals_for": 41
-  },
-  {
-   "team": "愛知淑徳大学",
-   "slug": "aichi-shukutoku",
-   "points": 9,
-   "games": 4,
-   "wins": 3,
-   "draws": 0,
-   "losses": 1,
-   "gf": 41,
-   "ga": 25,
-   "rank": 3,
-   "goal_diff": "+16",
-   "goals_for": 41
   },
   {
    "team": "愛知教育大学",
@@ -74,29 +74,29 @@
    "team": "岐阜大学",
    "slug": "gifu",
    "points": 3,
-   "games": 3,
+   "games": 4,
    "wins": 1,
    "draws": 0,
-   "losses": 2,
-   "gf": 7,
-   "ga": 33,
+   "losses": 3,
+   "gf": 12,
+   "ga": 49,
    "rank": 6,
-   "goal_diff": "-26",
-   "goals_for": 7
+   "goal_diff": "-37",
+   "goals_for": 12
   },
   {
    "team": "金城学院大学",
    "slug": "kinjo-gakuin",
    "points": 0,
-   "games": 4,
+   "games": 5,
    "wins": 0,
    "draws": 0,
-   "losses": 4,
-   "gf": 13,
-   "ga": 63,
+   "losses": 5,
+   "gf": 22,
+   "ga": 74,
    "rank": 7,
-   "goal_diff": "-50",
-   "goals_for": 13
+   "goal_diff": "-52",
+   "goals_for": 22
   }
  ],
  "2部 Aブロック": [

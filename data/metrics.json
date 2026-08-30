@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-29",
+ "updated_at": "2026-08-30",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -119,14 +119,20 @@
    },
    {
     "date": "20260829",
-    "users": 48,
-    "pageviews": 210,
-    "sessions": 63
+    "users": 52,
+    "pageviews": 255,
+    "sessions": 75
+   },
+   {
+    "date": "20260830",
+    "users": 51,
+    "pageviews": 178,
+    "sessions": 69
    }
   ],
-  "total_users": 561,
-  "total_pageviews": 1995,
-  "total_sessions": 709
+  "total_users": 616,
+  "total_pageviews": 2218,
+  "total_sessions": 790
  },
  "gsc": {
   "daily": [
@@ -243,10 +249,16 @@
     "clicks": 18,
     "impressions": 205,
     "position": 10.6
+   },
+   {
+    "date": "2026-08-28",
+    "clicks": 29,
+    "impressions": 319,
+    "position": 8.2
    }
   ],
-  "total_clicks": 330,
-  "total_impressions": 3329,
+  "total_clicks": 359,
+  "total_impressions": 3648,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
@@ -256,7 +268,7 @@
    {
     "query": "第38回関東学生ラクロスリーグ戦",
     "clicks": 2,
-    "impressions": 9
+    "impressions": 13
    },
    {
     "query": "ラクロス ショットクロック",

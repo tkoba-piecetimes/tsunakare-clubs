@@ -15,6 +15,34 @@
    "goals_for": 15
   },
   {
+   "team": "酪農学園大学",
+   "slug": "rakuno-gakuen",
+   "points": 3,
+   "games": 1,
+   "wins": 1,
+   "draws": 0,
+   "losses": 0,
+   "gf": 21,
+   "ga": 1,
+   "rank": 2,
+   "goal_diff": "+20",
+   "goals_for": 21
+  },
+  {
+   "team": "北海学園大学",
+   "slug": "hokkai-gakuen",
+   "points": 3,
+   "games": 1,
+   "wins": 1,
+   "draws": 0,
+   "losses": 0,
+   "gf": 8,
+   "ga": 6,
+   "rank": 3,
+   "goal_diff": "+2",
+   "goals_for": 8
+  },
+  {
    "team": "北海道大学",
    "slug": "hokkaido",
    "points": 1,
@@ -24,65 +52,37 @@
    "losses": 0,
    "gf": 6,
    "ga": 6,
-   "rank": 2,
-   "goal_diff": "0",
-   "goals_for": 6
-  },
-  {
-   "team": "酪農学園大学",
-   "slug": "rakuno-gakuen",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 3,
-   "goal_diff": "0",
-   "goals_for": 0
-  },
-  {
-   "team": "北海学園大学",
-   "slug": "hokkai-gakuen",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
    "rank": 4,
    "goal_diff": "0",
-   "goals_for": 0
+   "goals_for": 6
   },
   {
    "team": "藤女子大学",
    "slug": "fuji-joshi",
    "points": 0,
-   "games": 0,
+   "games": 1,
    "wins": 0,
    "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
+   "losses": 1,
+   "gf": 6,
+   "ga": 8,
    "rank": 5,
-   "goal_diff": "0",
-   "goals_for": 0
+   "goal_diff": "-2",
+   "goals_for": 6
   },
   {
    "team": "合同",
    "slug": "goudou",
    "points": 0,
-   "games": 1,
+   "games": 2,
    "wins": 0,
    "draws": 0,
-   "losses": 1,
-   "gf": 7,
-   "ga": 9,
+   "losses": 2,
+   "gf": 8,
+   "ga": 30,
    "rank": 6,
-   "goal_diff": "-2",
-   "goals_for": 7
+   "goal_diff": "-22",
+   "goals_for": 8
   }
  ]
 }

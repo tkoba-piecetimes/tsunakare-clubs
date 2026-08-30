@@ -39,9 +39,9 @@
   "home_slug": "goudou",
   "away_slug": "rakuno-gakuen",
   "venue": "プレミストドーム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 1,
+  "away_score": 21,
   "note": ""
  },
  {
@@ -54,9 +54,9 @@
   "home_slug": "hokkai-gakuen",
   "away_slug": "fuji-joshi",
   "venue": "プレミストドーム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 8,
+  "away_score": 6,
   "note": ""
  },
  {

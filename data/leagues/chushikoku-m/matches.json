@@ -189,9 +189,9 @@
   "home_slug": "yamaguchi",
   "away_slug": "hiroshima",
   "venue": "観音寺市総合運動公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 6,
+  "away_score": 7,
   "note": ""
  },
  {

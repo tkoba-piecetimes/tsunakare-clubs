@@ -1,6 +1,20 @@
 {
  "1部": [
   {
+   "team": "神戸大学",
+   "slug": "kobe",
+   "points": 9,
+   "games": 4,
+   "wins": 3,
+   "draws": 0,
+   "losses": 1,
+   "gf": 16,
+   "ga": 14,
+   "rank": 1,
+   "goal_diff": "+2",
+   "goals_for": 16
+  },
+  {
    "team": "関西学院大学",
    "slug": "kwansei-gakuin",
    "points": 7,
@@ -10,7 +24,7 @@
    "losses": 0,
    "gf": 24,
    "ga": 7,
-   "rank": 1,
+   "rank": 2,
    "goal_diff": "+17",
    "goals_for": 24
   },
@@ -24,7 +38,7 @@
    "losses": 1,
    "gf": 22,
    "ga": 12,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "+10",
    "goals_for": 22
   },
@@ -38,23 +52,9 @@
    "losses": 1,
    "gf": 20,
    "ga": 13,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "+7",
    "goals_for": 20
-  },
-  {
-   "team": "神戸大学",
-   "slug": "kobe",
-   "points": 6,
-   "games": 3,
-   "wins": 2,
-   "draws": 0,
-   "losses": 1,
-   "gf": 8,
-   "ga": 9,
-   "rank": 4,
-   "goal_diff": "-1",
-   "goals_for": 8
   },
   {
    "team": "大阪大学",
@@ -88,15 +88,15 @@
    "team": "大阪経済大学",
    "slug": "osaka-keizai",
    "points": 0,
-   "games": 3,
+   "games": 4,
    "wins": 0,
    "draws": 0,
-   "losses": 3,
-   "gf": 5,
-   "ga": 25,
+   "losses": 4,
+   "gf": 10,
+   "ga": 33,
    "rank": 7,
-   "goal_diff": "-20",
-   "goals_for": 5
+   "goal_diff": "-23",
+   "goals_for": 10
   }
  ],
  "2部": [
