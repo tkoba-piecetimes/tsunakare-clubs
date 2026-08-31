@@ -339,9 +339,24 @@
   "home_slug": "kobe",
   "away_slug": "kyoto-joshi",
   "venue": "神戸総合運動公園球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 11,
+  "away_score": 3,
+  "note": ""
+ },
+ {
+  "id": "2026-08-30-kindai-vs-doshisha",
+  "date": "2026-08-30",
+  "time": "16:30",
+  "category": "1部",
+  "home": "近畿大学",
+  "away": "同志社大学",
+  "home_slug": "kindai",
+  "away_slug": "doshisha",
+  "venue": "神戸総合運動公園球技場",
+  "status": "played",
+  "home_score": 1,
+  "away_score": 15,
   "note": ""
  },
  {

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-30",
+ "updated_at": "2026-08-31",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -125,14 +125,20 @@
    },
    {
     "date": "20260830",
-    "users": 51,
-    "pageviews": 178,
-    "sessions": 69
+    "users": 54,
+    "pageviews": 217,
+    "sessions": 75
+   },
+   {
+    "date": "20260831",
+    "users": 50,
+    "pageviews": 189,
+    "sessions": 61
    }
   ],
-  "total_users": 616,
-  "total_pageviews": 2218,
-  "total_sessions": 790
+  "total_users": 669,
+  "total_pageviews": 2446,
+  "total_sessions": 857
  },
  "gsc": {
   "daily": [
@@ -255,15 +261,21 @@
     "clicks": 29,
     "impressions": 319,
     "position": 8.2
+   },
+   {
+    "date": "2026-08-29",
+    "clicks": 44,
+    "impressions": 291,
+    "position": 6.9
    }
   ],
-  "total_clicks": 359,
-  "total_impressions": 3648,
+  "total_clicks": 403,
+  "total_impressions": 3939,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
     "clicks": 9,
-    "impressions": 63
+    "impressions": 68
    },
    {
     "query": "第38回関東学生ラクロスリーグ戦",

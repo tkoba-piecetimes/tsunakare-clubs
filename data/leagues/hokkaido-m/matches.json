@@ -24,9 +24,9 @@
   "home_slug": "hokusei-gakuen",
   "away_slug": "hokkaido",
   "venue": "前田森林公園球技場(未確定)",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 0,
+  "away_score": 13,
   "note": ""
  },
  {
@@ -39,9 +39,9 @@
   "home_slug": "otaru-shoka",
   "away_slug": "hokkaidoukagaku",
   "venue": "前田森林公園球技場(未確定)",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 10,
+  "away_score": 1,
   "note": ""
  },
  {

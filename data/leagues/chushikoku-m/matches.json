@@ -204,9 +204,9 @@
   "home_slug": "tokushima",
   "away_slug": "shimane",
   "venue": "観音寺市総合運動公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 14,
+  "away_score": 0,
   "note": ""
  },
  {
