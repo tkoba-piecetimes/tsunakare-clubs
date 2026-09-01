@@ -147,7 +147,7 @@
   "status": "played",
   "home_score": 2,
   "away_score": 11,
-  "note": "星取表が中央が8点になっていたので修正しました"
+  "note": ""
  },
  {
   "id": "2026-07-18-keio-vs-meiji",
@@ -459,10 +459,10 @@
   "home_slug": "meisei",
   "away_slug": "senshu",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部B"
+  "status": "played",
+  "home_score": 7,
+  "away_score": 2,
+  "note": ""
  },
  {
   "id": "2026-08-16-daitobunka-vs-nihon",
@@ -474,10 +474,10 @@
   "home_slug": "daitobunka",
   "away_slug": "nihon",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部B"
+  "status": "played",
+  "home_score": 4,
+  "away_score": 6,
+  "note": ""
  },
  {
   "id": "2026-08-16-keio-hs-vs-tokyo-rika",
@@ -504,10 +504,10 @@
   "home_slug": "chuo",
   "away_slug": "dokkyo",
   "venue": "中央大学多摩キャンパスラグビー場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部A"
+  "status": "played",
+  "home_score": 13,
+  "away_score": 4,
+  "note": ""
  },
  {
   "id": "2026-08-22-hosei-vs-nittaidai",
@@ -519,10 +519,10 @@
   "home_slug": "hosei",
   "away_slug": "nittaidai",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部B"
+  "status": "played",
+  "home_score": 3,
+  "away_score": 8,
+  "note": ""
  },
  {
   "id": "2026-08-22-aoyamagakuin-vs-hitotsubashi",
@@ -534,10 +534,10 @@
   "home_slug": "aoyamagakuin",
   "away_slug": "hitotsubashi",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部B"
+  "status": "played",
+  "home_score": 7,
+  "away_score": 5,
+  "note": ""
  },
  {
   "id": "2026-08-22-rikkyo-vs-tokyo-gakugei",
@@ -549,10 +549,10 @@
   "home_slug": "rikkyo",
   "away_slug": "tokyo-gakugei",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部B"
+  "status": "played",
+  "home_score": 4,
+  "away_score": 3,
+  "note": ""
  },
  {
   "id": "2026-08-22-seikei-vs-waseda",
@@ -609,10 +609,10 @@
   "home_slug": "gakushuin",
   "away_slug": "meijigakuin",
   "venue": "学習院大学北グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部B"
+  "status": "played",
+  "home_score": 3,
+  "away_score": 6,
+  "note": ""
  },
  {
   "id": "2026-08-29-tokyo-vs-seijo",
@@ -624,10 +624,10 @@
   "home_slug": "tokyo",
   "away_slug": "seijo",
   "venue": "東京大学御殿下グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
+  "status": "played",
+  "home_score": 10,
+  "away_score": 0,
+  "note": ""
  },
  {
   "id": "2026-08-29-tokai-vs-musashi",
@@ -639,10 +639,10 @@
   "home_slug": "tokai",
   "away_slug": "musashi",
   "venue": "駒沢オリンピック公園総合運動場第二球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部B"
+  "status": "played",
+  "home_score": 6,
+  "away_score": 8,
+  "note": ""
  },
  {
   "id": "2026-08-29-teikyo-vs-tokyo-nodai",
@@ -654,10 +654,10 @@
   "home_slug": "teikyo",
   "away_slug": "tokyo-nodai",
   "venue": "駒沢オリンピック公園総合運動場第二球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
+  "status": "played",
+  "home_score": 4,
+  "away_score": 17,
+  "note": ""
  },
  {
   "id": "2026-08-29-meiji-vs-dokkyo",
@@ -669,10 +669,10 @@
   "home_slug": "meiji",
   "away_slug": "dokkyo",
   "venue": "駒沢オリンピック公園総合運動場第二球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部A"
+  "status": "played",
+  "home_score": 11,
+  "away_score": 2,
+  "note": ""
  },
  {
   "id": "2026-08-29-keio-vs-seikei",
@@ -684,10 +684,10 @@
   "home_slug": "keio",
   "away_slug": "seikei",
   "venue": "駒沢オリンピック公園総合運動場第二球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部A"
+  "status": "played",
+  "home_score": 9,
+  "away_score": 4,
+  "note": ""
  },
  {
   "id": "2026-08-30-toyo-vs-chiba",
@@ -699,10 +699,10 @@
   "home_slug": "toyo",
   "away_slug": "chiba",
   "venue": "東洋大学朝霞キャンパス朝霞グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
+  "status": "played",
+  "home_score": 7,
+  "away_score": 4,
+  "note": ""
  },
  {
   "id": "2026-09-05-tokai-vs-rikkyo",
