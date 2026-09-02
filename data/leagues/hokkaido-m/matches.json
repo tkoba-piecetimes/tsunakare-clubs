@@ -23,11 +23,11 @@
   "away": "北海道大学",
   "home_slug": "hokusei-gakuen",
   "away_slug": "hokkaido",
-  "venue": "前田森林公園球技場(未確定)",
+  "venue": "北海学園大学清田グラウンドラグビー場",
   "status": "played",
   "home_score": 0,
   "away_score": 13,
-  "note": ""
+  "note": "前田森林公園球技場の予定が北海学園大学清田グラウンドラグビー場に変更して実施したため"
  },
  {
   "id": "2026-08-30-otaru-shoka-vs-hokkaidoukagaku",
@@ -38,11 +38,11 @@
   "away": "北海道科学大学",
   "home_slug": "otaru-shoka",
   "away_slug": "hokkaidoukagaku",
-  "venue": "前田森林公園球技場(未確定)",
+  "venue": "北海学園大学清田グラウンドラグビー場",
   "status": "played",
   "home_score": 10,
   "away_score": 1,
-  "note": ""
+  "note": "前田森林公園球技場の予定を北海学園大学清田グラウンドラグビー場に変更して実施したため"
  },
  {
   "id": "2026-09-05-otaru-shoka-vs-hokkai-gakuen",
