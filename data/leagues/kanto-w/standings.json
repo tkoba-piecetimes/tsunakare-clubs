@@ -1,6 +1,20 @@
 {
  "1部 Aブロック": [
   {
+   "team": "立教大学",
+   "slug": "rikkyo",
+   "points": 6,
+   "games": 3,
+   "wins": 2,
+   "draws": 0,
+   "losses": 1,
+   "gf": 18,
+   "ga": 12,
+   "rank": 1,
+   "goal_diff": "+6",
+   "goals_for": 18
+  },
+  {
    "team": "慶應義塾大学",
    "slug": "keio",
    "points": 3,
@@ -10,7 +24,7 @@
    "losses": 0,
    "gf": 6,
    "ga": 3,
-   "rank": 1,
+   "rank": 2,
    "goal_diff": "+3",
    "goals_for": 6
   },
@@ -24,23 +38,9 @@
    "losses": 1,
    "gf": 10,
    "ga": 8,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "+2",
    "goals_for": 10
-  },
-  {
-   "team": "東海大学",
-   "slug": "tokai",
-   "points": 3,
-   "games": 1,
-   "wins": 1,
-   "draws": 0,
-   "losses": 0,
-   "gf": 7,
-   "ga": 6,
-   "rank": 3,
-   "goal_diff": "+1",
-   "goals_for": 7
   },
   {
    "team": "青山学院大学",
@@ -57,18 +57,18 @@
    "goals_for": 11
   },
   {
-   "team": "立教大学",
-   "slug": "rikkyo",
+   "team": "東海大学",
+   "slug": "tokai",
    "points": 3,
    "games": 2,
    "wins": 1,
    "draws": 0,
    "losses": 1,
-   "gf": 9,
-   "ga": 9,
+   "gf": 10,
+   "ga": 15,
    "rank": 5,
-   "goal_diff": "0",
-   "goals_for": 9
+   "goal_diff": "-5",
+   "goals_for": 10
   },
   {
    "team": "東京大学",
@@ -175,16 +175,16 @@
   {
    "team": "日本大学",
    "slug": "nihon",
-   "points": 3,
-   "games": 1,
-   "wins": 1,
+   "points": 6,
+   "games": 2,
+   "wins": 2,
    "draws": 0,
    "losses": 0,
-   "gf": 19,
-   "ga": 4,
+   "gf": 29,
+   "ga": 10,
    "rank": 1,
-   "goal_diff": "+15",
-   "goals_for": 19
+   "goal_diff": "+19",
+   "goals_for": 29
   },
   {
    "team": "専修大学",
@@ -215,8 +215,8 @@
    "goals_for": 14
   },
   {
-   "team": "成蹊大学",
-   "slug": "seikei",
+   "team": "明治学院大学",
+   "slug": "meijigakuin",
    "points": 1,
    "games": 1,
    "wins": 0,
@@ -229,18 +229,18 @@
    "goals_for": 5
   },
   {
-   "team": "明治学院大学",
-   "slug": "meijigakuin",
+   "team": "成蹊大学",
+   "slug": "seikei",
    "points": 1,
-   "games": 1,
+   "games": 2,
    "wins": 0,
    "draws": 1,
-   "losses": 0,
-   "gf": 5,
-   "ga": 5,
+   "losses": 1,
+   "gf": 11,
+   "ga": 15,
    "rank": 5,
-   "goal_diff": "0",
-   "goals_for": 5
+   "goal_diff": "-4",
+   "goals_for": 11
   },
   {
    "team": "駒澤大学",
@@ -261,16 +261,16 @@
   {
    "team": "横浜国立大学",
    "slug": "yokohama-kokudai",
-   "points": 3,
-   "games": 1,
-   "wins": 1,
+   "points": 6,
+   "games": 2,
+   "wins": 2,
    "draws": 0,
    "losses": 0,
-   "gf": 17,
-   "ga": 0,
+   "gf": 22,
+   "ga": 2,
    "rank": 1,
-   "goal_diff": "+17",
-   "goals_for": 17
+   "goal_diff": "+20",
+   "goals_for": 22
   },
   {
    "team": "東京学芸大学",
@@ -287,6 +287,20 @@
    "goals_for": 13
   },
   {
+   "team": "日本女子体育大学",
+   "slug": "nihonjoshitaiiku",
+   "points": 3,
+   "games": 2,
+   "wins": 1,
+   "draws": 0,
+   "losses": 1,
+   "gf": 22,
+   "ga": 17,
+   "rank": 3,
+   "goal_diff": "+5",
+   "goals_for": 22
+  },
+  {
    "team": "神奈川大学",
    "slug": "kanagawa",
    "points": 3,
@@ -296,7 +310,7 @@
    "losses": 0,
    "gf": 4,
    "ga": 3,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "+1",
    "goals_for": 4
   },
@@ -304,43 +318,29 @@
    "team": "一橋大学",
    "slug": "hitotsubashi",
    "points": 0,
-   "games": 1,
+   "games": 2,
    "wins": 0,
    "draws": 0,
-   "losses": 1,
-   "gf": 3,
-   "ga": 4,
-   "rank": 4,
-   "goal_diff": "-1",
-   "goals_for": 3
-  },
-  {
-   "team": "日本女子体育大学",
-   "slug": "nihonjoshitaiiku",
-   "points": 0,
-   "games": 1,
-   "wins": 0,
-   "draws": 0,
-   "losses": 1,
-   "gf": 4,
-   "ga": 13,
+   "losses": 2,
+   "gf": 5,
+   "ga": 9,
    "rank": 5,
-   "goal_diff": "-9",
-   "goals_for": 4
+   "goal_diff": "-4",
+   "goals_for": 5
   },
   {
    "team": "千葉大学",
    "slug": "chiba",
    "points": 0,
-   "games": 1,
+   "games": 2,
    "wins": 0,
    "draws": 0,
-   "losses": 1,
-   "gf": 0,
-   "ga": 17,
+   "losses": 2,
+   "gf": 4,
+   "ga": 35,
    "rank": 6,
-   "goal_diff": "-17",
-   "goals_for": 0
+   "goal_diff": "-31",
+   "goals_for": 4
   }
  ],
  "3部 Aブロック": [
@@ -417,90 +417,90 @@
  ],
  "3部 Bブロック": [
   {
-   "team": "実践女子大学",
-   "slug": "jissen-joshi",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
+   "team": "日本女子大学",
+   "slug": "nihon-joshi",
+   "points": 3,
+   "games": 1,
+   "wins": 1,
    "draws": 0,
    "losses": 0,
-   "gf": 0,
-   "ga": 0,
+   "gf": 10,
+   "ga": 8,
    "rank": 1,
+   "goal_diff": "+2",
+   "goals_for": 10
+  },
+  {
+   "team": "実践女子大学",
+   "slug": "jissen-joshi",
+   "points": 1,
+   "games": 1,
+   "wins": 0,
+   "draws": 1,
+   "losses": 0,
+   "gf": 5,
+   "ga": 5,
+   "rank": 2,
    "goal_diff": "0",
-   "goals_for": 0
+   "goals_for": 5
   },
   {
    "team": "大妻女子大学",
    "slug": "otsuma",
-   "points": 0,
-   "games": 0,
+   "points": 1,
+   "games": 1,
    "wins": 0,
-   "draws": 0,
+   "draws": 1,
    "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 2,
+   "gf": 5,
+   "ga": 5,
+   "rank": 3,
    "goal_diff": "0",
-   "goals_for": 0
+   "goals_for": 5
   },
   {
    "team": "共立女子大学",
    "slug": "kyoritsu-joshi",
    "points": 0,
-   "games": 0,
+   "games": 1,
    "wins": 0,
    "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 3,
-   "goal_diff": "0",
-   "goals_for": 0
-  },
-  {
-   "team": "日本女子大学",
-   "slug": "nihon-joshi",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
+   "losses": 1,
+   "gf": 8,
+   "ga": 10,
    "rank": 4,
-   "goal_diff": "0",
-   "goals_for": 0
+   "goal_diff": "-2",
+   "goals_for": 8
   }
  ],
  "3部 Cブロック": [
   {
-   "team": "東京女子大学",
-   "slug": "tokyo-joshi",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 1,
-   "goal_diff": "0",
-   "goals_for": 0
-  },
-  {
    "team": "武蔵大学",
    "slug": "musashi",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
+   "points": 3,
+   "games": 2,
+   "wins": 1,
+   "draws": 0,
+   "losses": 1,
+   "gf": 19,
+   "ga": 7,
+   "rank": 1,
+   "goal_diff": "+12",
+   "goals_for": 19
+  },
+  {
+   "team": "東京女子大学",
+   "slug": "tokyo-joshi",
+   "points": 3,
+   "games": 1,
+   "wins": 1,
    "draws": 0,
    "losses": 0,
-   "gf": 0,
-   "ga": 0,
+   "gf": 6,
+   "ga": 4,
    "rank": 2,
-   "goal_diff": "0",
-   "goals_for": 0
+   "goal_diff": "+2",
+   "goals_for": 6
   },
   {
    "team": "明星大学",
@@ -534,15 +534,15 @@
    "team": "玉川大学",
    "slug": "tamagawa",
    "points": 0,
-   "games": 0,
+   "games": 1,
    "wins": 0,
    "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
+   "losses": 1,
+   "gf": 1,
+   "ga": 15,
    "rank": 5,
-   "goal_diff": "0",
-   "goals_for": 0
+   "goal_diff": "-14",
+   "goals_for": 1
   }
  ]
 }
