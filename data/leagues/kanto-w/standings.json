@@ -459,6 +459,20 @@
    "goals_for": 5
   },
   {
+   "team": "東京外語大学",
+   "slug": "toukyougaigo",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 4,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
    "team": "共立女子大学",
    "slug": "kyoritsu-joshi",
    "points": 0,
@@ -468,7 +482,7 @@
    "losses": 1,
    "gf": 8,
    "ga": 10,
-   "rank": 4,
+   "rank": 5,
    "goal_diff": "-2",
    "goals_for": 8
   }
@@ -543,6 +557,94 @@
    "rank": 5,
    "goal_diff": "-14",
    "goals_for": 1
+  }
+ ],
+ "4部 Aブロック": [
+  {
+   "team": "淑徳大学",
+   "slug": "shukutoku",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 1,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "聖神女子大学",
+   "slug": "hijirikaminjoko",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 2,
+   "goal_diff": "0",
+   "goals_for": 0
+  }
+ ],
+ "4部 Bブロック": [
+  {
+   "team": "関東学院大学",
+   "slug": "kantogakuin",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 1,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "東京経済大学",
+   "slug": "tokyo-keizai",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 2,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "西部文理・文教・東京家政・高崎経済",
+   "slug": "seibubunri-bunkyou-toukyoukasei-takasakikeizai",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 3,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "埼玉",
+   "slug": "saitama",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 4,
+   "goal_diff": "0",
+   "goals_for": 0
   }
  ]
 }

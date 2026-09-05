@@ -204,9 +204,9 @@
   "home_slug": "hiroshima",
   "away_slug": "hiroshima-shudo",
   "venue": "福富多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 22,
+  "away_score": 3,
   "note": ""
  },
  {
@@ -219,9 +219,9 @@
   "home_slug": "yamaguchikenritsu",
   "away_slug": "ehime",
   "venue": "福富多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 14,
+  "away_score": 2,
   "note": ""
  },
  {

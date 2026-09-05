@@ -3,30 +3,30 @@
   {
    "team": "北海道大学",
    "slug": "hokkaido",
+   "points": 9,
+   "games": 3,
+   "wins": 3,
+   "draws": 0,
+   "losses": 0,
+   "gf": 54,
+   "ga": 1,
+   "rank": 1,
+   "goal_diff": "+53",
+   "goals_for": 54
+  },
+  {
+   "team": "小樽商科大学",
+   "slug": "otaru-shoka",
    "points": 6,
    "games": 2,
    "wins": 2,
    "draws": 0,
    "losses": 0,
-   "gf": 30,
-   "ga": 1,
-   "rank": 1,
-   "goal_diff": "+29",
-   "goals_for": 30
-  },
-  {
-   "team": "小樽商科大学",
-   "slug": "otaru-shoka",
-   "points": 3,
-   "games": 1,
-   "wins": 1,
-   "draws": 0,
-   "losses": 0,
-   "gf": 10,
-   "ga": 1,
+   "gf": 14,
+   "ga": 4,
    "rank": 2,
-   "goal_diff": "+9",
-   "goals_for": 10
+   "goal_diff": "+10",
+   "goals_for": 14
   },
   {
    "team": "未定",
@@ -43,20 +43,6 @@
    "goals_for": 0
   },
   {
-   "team": "北海道科学大学",
-   "slug": "hokkaidoukagaku",
-   "points": 0,
-   "games": 1,
-   "wins": 0,
-   "draws": 0,
-   "losses": 1,
-   "gf": 1,
-   "ga": 10,
-   "rank": 4,
-   "goal_diff": "-9",
-   "goals_for": 1
-  },
-  {
    "team": "北星学園大学",
    "slug": "hokusei-gakuen",
    "points": 0,
@@ -66,7 +52,7 @@
    "losses": 1,
    "gf": 0,
    "ga": 13,
-   "rank": 5,
+   "rank": 4,
    "goal_diff": "-13",
    "goals_for": 0
   },
@@ -74,14 +60,28 @@
    "team": "北海学園大学",
    "slug": "hokkai-gakuen",
    "points": 0,
-   "games": 1,
+   "games": 2,
    "wins": 0,
    "draws": 0,
-   "losses": 1,
+   "losses": 2,
+   "gf": 4,
+   "ga": 21,
+   "rank": 5,
+   "goal_diff": "-17",
+   "goals_for": 4
+  },
+  {
+   "team": "北海道科学大学",
+   "slug": "hokkaidoukagaku",
+   "points": 0,
+   "games": 2,
+   "wins": 0,
+   "draws": 0,
+   "losses": 2,
    "gf": 1,
-   "ga": 17,
+   "ga": 34,
    "rank": 6,
-   "goal_diff": "-16",
+   "goal_diff": "-33",
    "goals_for": 1
   }
  ]

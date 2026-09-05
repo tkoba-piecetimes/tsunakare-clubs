@@ -23,11 +23,11 @@
   "away": "合同",
   "home_slug": "hokusei-gakuen",
   "away_slug": "goudou",
-  "venue": "NOPPORO ヤシマ商会スポーツパーク",
+  "venue": "NOPPOROヤシマ商会スポーツパークホッケー場",
   "status": "played",
   "home_score": 9,
   "away_score": 7,
-  "note": ""
+  "note": "正式名称に変更"
  },
  {
   "id": "2026-08-29-goudou-vs-rakuno-gakuen",
@@ -84,9 +84,9 @@
   "home_slug": "hokkaido",
   "away_slug": "goudou",
   "venue": "前田森林公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 19,
+  "away_score": 2,
   "note": ""
  },
  {
@@ -107,7 +107,7 @@
  {
   "id": "2026-09-12-goudou-vs-hokkai-gakuen",
   "date": "2026-09-12",
-  "time": "12:30",
+  "time": "13:00",
   "category": "リーグ",
   "home": "合同",
   "away": "北海学園大学",
@@ -117,7 +117,7 @@
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": ""
+  "note": "審判員の関係上"
  },
  {
   "id": "2026-09-13-fuji-joshi-vs-hokusei-gakuen",

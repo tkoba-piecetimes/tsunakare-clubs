@@ -444,9 +444,9 @@
   "home_slug": "aichi-shukutoku",
   "away_slug": "nagoya",
   "venue": "愛・地球博多目的広場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 8,
   "note": ""
  },
  {
@@ -459,9 +459,9 @@
   "home_slug": "aichikyouiku",
   "away_slug": "gifu",
   "venue": "岐阜大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 18,
+  "away_score": 4,
   "note": ""
  },
  {

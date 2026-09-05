@@ -414,9 +414,9 @@
   "home_slug": "kyoto-sangyo",
   "away_slug": "kindai",
   "venue": "伏見桃山城運動公園多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 7,
+  "away_score": 6,
   "note": ""
  },
  {

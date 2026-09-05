@@ -27,7 +27,7 @@
   "status": "played",
   "home_score": 0,
   "away_score": 13,
-  "note": "前田森林公園球技場の予定が北海学園大学清田グラウンドラグビー場に変更して実施したため"
+  "note": "前田森林公園球技場の予定が北海学園大学清田グラウンドラグビー場に変更して実施"
  },
  {
   "id": "2026-08-30-otaru-shoka-vs-hokkaidoukagaku",
@@ -42,7 +42,7 @@
   "status": "played",
   "home_score": 10,
   "away_score": 1,
-  "note": "前田森林公園球技場の予定を北海学園大学清田グラウンドラグビー場に変更して実施したため"
+  "note": "前田森林公園球技場の予定が北海学園大学清田グラウンドラグビー場に変更して実施"
  },
  {
   "id": "2026-09-05-otaru-shoka-vs-hokkai-gakuen",
@@ -53,10 +53,10 @@
   "away": "北海学園大学",
   "home_slug": "otaru-shoka",
   "away_slug": "hokkai-gakuen",
-  "venue": "北海道立野幌総合運動公園陸上競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "venue": "NOPPORO ヤシマ商会スポーツパークホッケー場",
+  "status": "played",
+  "home_score": 4,
+  "away_score": 3,
   "note": ""
  },
  {
@@ -68,10 +68,10 @@
   "away": "北海道科学大学",
   "home_slug": "hokkaido",
   "away_slug": "hokkaidoukagaku",
-  "venue": "北海道立野幌総合運動公園陸上競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "venue": "NOPPORO ヤシマ商会スポーツパークホッケー場",
+  "status": "played",
+  "home_score": 24,
+  "away_score": 0,
   "note": ""
  },
  {
@@ -83,11 +83,11 @@
   "away": "北星学園大学",
   "home_slug": "otaru-shoka",
   "away_slug": "hokusei-gakuen",
-  "venue": "北海道立野幌総合運動公園陸上競技場",
+  "venue": "NOPPORO ヤシマ商会スポーツパークホッケー場",
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": ""
+  "note": "北海道立野幌総合運動公園陸上競技場の予定がNOPPORO ヤシマ商会スポーツパークホッケー場に変更して実施"
  },
  {
   "id": "2026-09-12-hokkaidoukagaku-vs-hokkai-gakuen",
@@ -98,11 +98,11 @@
   "away": "北海学園大学",
   "home_slug": "hokkaidoukagaku",
   "away_slug": "hokkai-gakuen",
-  "venue": "北海道立野幌総合運動公園陸上競技場",
+  "venue": "NOPPORO ヤシマ商会スポーツパークホッケー場",
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": ""
+  "note": "北海道立野幌総合運動公園陸上競技場の予定がNOPPORO ヤシマ商会スポーツパークホッケー場に変更して実施"
  },
  {
   "id": "2026-09-23-hokusei-gakuen-vs-hokkai-gakuen",
@@ -128,11 +128,11 @@
   "away": "北海道大学",
   "home_slug": "otaru-shoka",
   "away_slug": "hokkaido",
-  "venue": "北海道立野幌総合運動公園陸上競技場",
+  "venue": "NOPPORO ヤシマ商会スポーツパークホッケー場",
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": ""
+  "note": "北海道立野幌総合運動公園陸上競技場の予定がNOPPORO ヤシマ商会スポーツパークホッケー場に変更して実施"
  },
  {
   "id": "2026-10-04-hokkaidoukagaku-vs-hokusei-gakuen",
@@ -152,7 +152,7 @@
  {
   "id": "2026-10-17-mitei-vs-mitei",
   "date": "2026-10-17",
-  "time": "未定",
+  "time": "13:45",
   "category": "リーグ",
   "home": "未定",
   "away": "未定",

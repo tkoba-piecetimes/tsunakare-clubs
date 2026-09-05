@@ -179,6 +179,16 @@
   "slug": "dokkyo",
   "block": "3部 Aブロック"
  },
+ "関東学院大学": {
+  "team": "関東学院大学",
+  "slug": "kantogakuin",
+  "block": "4部 Bブロック"
+ },
+ "東京経済大学": {
+  "team": "東京経済大学",
+  "slug": "tokyo-keizai",
+  "block": "4部 Bブロック"
+ },
  "筑波大学": {
   "team": "筑波大学",
   "slug": "tsukuba",
@@ -188,5 +198,30 @@
   "team": "大東文化大学",
   "slug": "daitobunka",
   "block": "3部 Aブロック"
+ },
+ "西部文理・文教・東京家政・高崎経済": {
+  "team": "西部文理・文教・東京家政・高崎経済",
+  "slug": "seibubunri-bunkyou-toukyoukasei-takasakikeizai",
+  "block": "4部 Bブロック"
+ },
+ "埼玉": {
+  "team": "埼玉",
+  "slug": "saitama",
+  "block": "4部 Bブロック"
+ },
+ "東京外語大学": {
+  "team": "東京外語大学",
+  "slug": "toukyougaigo",
+  "block": "3部 Bブロック"
+ },
+ "淑徳大学": {
+  "team": "淑徳大学",
+  "slug": "shukutoku",
+  "block": "4部 Aブロック"
+ },
+ "聖神女子大学": {
+  "team": "聖神女子大学",
+  "slug": "hijirikaminjoko",
+  "block": "4部 Aブロック"
  }
 }
