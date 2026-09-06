@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-05",
+ "updated_at": "2026-09-06",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -161,14 +161,20 @@
    },
    {
     "date": "20260905",
-    "users": 77,
-    "pageviews": 283,
-    "sessions": 94
+    "users": 80,
+    "pageviews": 322,
+    "sessions": 102
+   },
+   {
+    "date": "20260906",
+    "users": 59,
+    "pageviews": 278,
+    "sessions": 77
    }
   ],
-  "total_users": 864,
-  "total_pageviews": 3085,
-  "total_sessions": 1092
+  "total_users": 926,
+  "total_pageviews": 3402,
+  "total_sessions": 1177
  },
  "gsc": {
   "daily": [
@@ -327,15 +333,21 @@
     "clicks": 11,
     "impressions": 99,
     "position": 7.1
+   },
+   {
+    "date": "2026-09-04",
+    "clicks": 34,
+    "impressions": 284,
+    "position": 6.9
    }
   ],
-  "total_clicks": 519,
-  "total_impressions": 4859,
+  "total_clicks": 553,
+  "total_impressions": 5143,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
-    "clicks": 14,
-    "impressions": 109
+    "clicks": 15,
+    "impressions": 120
    },
    {
     "query": "第38回関東学生ラクロスリーグ戦",
@@ -353,9 +365,14 @@
     "impressions": 8
    },
    {
+    "query": "ラクロス 大学 ランキング 関東",
+    "clicks": 1,
+    "impressions": 3
+   },
+   {
     "query": "ラクロス 大学 ランキング 関西",
     "clicks": 1,
-    "impressions": 19
+    "impressions": 21
    },
    {
     "query": "ラクロス用語",
@@ -374,11 +391,6 @@
    },
    {
     "query": "明学 ラクロス",
-    "clicks": 1,
-    "impressions": 1
-   },
-   {
-    "query": "東北大学ラクロス部",
     "clicks": 1,
     "impressions": 1
    }
