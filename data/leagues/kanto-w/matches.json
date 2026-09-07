@@ -294,10 +294,10 @@
   "home_slug": "keio",
   "away_slug": "tokai",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部A"
+  "status": "played",
+  "home_score": 12,
+  "away_score": 5,
+  "note": ""
  },
  {
   "id": "2026-08-09-meijigakuin-vs-senshu",
@@ -309,10 +309,10 @@
   "home_slug": "meijigakuin",
   "away_slug": "senshu",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
+  "status": "played",
+  "home_score": 6,
+  "away_score": 12,
+  "note": ""
  },
  {
   "id": "2026-08-09-nihon-vs-seikei",
@@ -414,10 +414,10 @@
   "home_slug": "nittaidai",
   "away_slug": "gakushuin",
   "venue": "駒沢オリンピック公園総合運動場第一球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部B"
+  "status": "played",
+  "home_score": 9,
+  "away_score": 2,
+  "note": ""
  },
  {
   "id": "2026-08-22-aoyamagakuin-vs-tokyo",
@@ -474,10 +474,10 @@
   "home_slug": "keio",
   "away_slug": "waseda",
   "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部A"
+  "status": "played",
+  "home_score": 6,
+  "away_score": 11,
+  "note": ""
  },
  {
   "id": "2026-08-29-tokyo-gakugei-vs-chiba",
@@ -549,10 +549,10 @@
   "home_slug": "hosei",
   "away_slug": "nittaidai",
   "venue": "駒沢オリンピック公園総合運動場第一球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部B"
+  "status": "played",
+  "home_score": 0,
+  "away_score": 10,
+  "note": ""
  },
  {
   "id": "2026-08-30-musashi-vs-tamagawa",
@@ -609,10 +609,10 @@
   "home_slug": "dokkyo",
   "away_slug": "sophia",
   "venue": "獨協大学人工芝グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部A"
+  "status": "played",
+  "home_score": 5,
+  "away_score": 9,
+  "note": ""
  },
  {
   "id": "2026-09-05-kantogakuin-vs-tokyo-keizai",
@@ -714,6 +714,21 @@
   "home_slug": "shukutoku",
   "away_slug": "hijirikaminjoko",
   "venue": "大宮けんぽ第１区画ラグビー場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-09-11-nittaidai-vs-meiji",
+  "date": "2026-09-11",
+  "time": "19:00",
+  "category": "1部 Bブロック",
+  "home": "日本体育大学",
+  "away": "明治大学",
+  "home_slug": "nittaidai",
+  "away_slug": "meiji",
+  "venue": "日本体育大学世田谷キャンパスグラウンド",
   "status": "scheduled",
   "home_score": null,
   "away_score": null,

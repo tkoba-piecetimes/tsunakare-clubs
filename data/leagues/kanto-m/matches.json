@@ -714,10 +714,10 @@
   "home_slug": "tokai",
   "away_slug": "rikkyo",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部B"
+  "status": "played",
+  "home_score": 8,
+  "away_score": 7,
+  "note": ""
  },
  {
   "id": "2026-09-05-yokohama-kokudai-vs-tokyo-gakugei",
@@ -729,10 +729,10 @@
   "home_slug": "yokohama-kokudai",
   "away_slug": "tokyo-gakugei",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部B"
+  "status": "played",
+  "home_score": 2,
+  "away_score": 5,
+  "note": ""
  },
  {
   "id": "2026-09-05-hitotsubashi-vs-meijigakuin",
@@ -744,10 +744,10 @@
   "home_slug": "hitotsubashi",
   "away_slug": "meijigakuin",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部B"
+  "status": "played",
+  "home_score": 2,
+  "away_score": 4,
+  "note": ""
  },
  {
   "id": "2026-09-05-hosei-vs-aoyamagakuin",
@@ -759,10 +759,10 @@
   "home_slug": "hosei",
   "away_slug": "aoyamagakuin",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部B"
+  "status": "played",
+  "home_score": 8,
+  "away_score": 2,
+  "note": ""
  },
  {
   "id": "2026-09-05-chuo-vs-waseda",
@@ -774,10 +774,10 @@
   "home_slug": "chuo",
   "away_slug": "waseda",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部A"
+  "status": "played",
+  "home_score": 5,
+  "away_score": 6,
+  "note": ""
  },
  {
   "id": "2026-09-06-tokyo-vs-chiba",
@@ -804,10 +804,10 @@
   "home_slug": "teikyo",
   "away_slug": "toyo",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
+  "status": "played",
+  "home_score": 0,
+  "away_score": 12,
+  "note": ""
  },
  {
   "id": "2026-09-06-tokyo-nodai-vs-seijo",
