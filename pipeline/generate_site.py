@@ -33,6 +33,7 @@ TUNAKARE_LISTING_LP = "https://lp.tunakare.jp/s01/"
 TUNAKARE_MEDIA_CONTACT = "https://media.tunakare.jp/contact/student/"
 TUNAKARE_SHUKATSU = "https://shukatsu.tunakare.jp/"
 TUNAKARE_CAREER = "https://career.tunakare.jp/"
+TUNAKARE_BIZ_GUIDE = "https://shukatsu.tunakare.jp/biz/guide"
 
 # ---- お問い合わせ（中立リレーAPI経由・運営元秘匿。メディアSNS統合要件定義_2026-08 §3-1）
 CONTACT_MEDIA_KEY = "lacrosse"
@@ -437,6 +438,12 @@ def sponsor_block():
     parts.append('<p>この部活・競技を応援したい方へ: '
                   + tunakare_link(TUNAKARE_SPONSOR_SEARCH, "sponsor", "cv_sponsor_click",
                                   "ツナカレで協賛募集中の部活を探す", cls="cta") + '</p>')
+    parts.append('<p>この部の学生の方へ: '
+                  + tunakare_link(TUNAKARE_SHUKATSU, "shukatsu", "cv_shukatsu_click",
+                                  "部活と両立できる就活相談（無料・メールで回答）", cls="cta") + '</p>')
+    parts.append('<p class="note">体育会学生の採用を検討中の企業の方へ: '
+                  + tunakare_link(TUNAKARE_BIZ_GUIDE, "biz-guide", "cv_guide_click",
+                                  "体育会学生採用ガイド2026（無料資料）", cls="cta cta-outline") + '</p>')
     parts.append('<p class="note">この部の関係者の方へ: '
                   + tunakare_link(TUNAKARE_LISTING_LP, "listing", "cv_listing_click",
                                   "協賛募集を無料で掲載", cls="cta cta-outline")
@@ -479,12 +486,24 @@ CTA_BANDS = {
 
 
 def article_cta_band(cta_key):
+    """記事frontmatterのcta値に応じたCTA帯（D3）。
+
+    cta: sponsor の記事は読者の大半が学生・保護者・OBのため、sponsor帯の直後に
+    学生向け就活相談の副帯（outlineスタイル）を必ず追加する。
+    """
     cfg = CTA_BANDS.get(cta_key)
     if not cfg:
         return ""
     link = tunakare_link(cfg["url"], cfg["campaign"], cfg["event"], cfg["label"], cls="cta")
-    return (f'<section class="article-cta"><h2>{escape(cfg["title"])}</h2>'
+    band = (f'<section class="article-cta"><h2>{escape(cfg["title"])}</h2>'
             f'<p>{escape(cfg["text"])}</p><p>{link}</p></section>')
+    if cta_key == "sponsor":
+        s_cfg = CTA_BANDS["shukatsu"]
+        s_link = tunakare_link(s_cfg["url"], s_cfg["campaign"], s_cfg["event"], s_cfg["label"],
+                                cls="cta cta-outline")
+        band += (f'<section class="article-cta cta-band-sub"><h2>{escape(s_cfg["title"])}</h2>'
+                 f'<p>{escape(s_cfg["text"])}</p><p>{s_link}</p></section>')
+    return band
 
 
 def build_support_section():
