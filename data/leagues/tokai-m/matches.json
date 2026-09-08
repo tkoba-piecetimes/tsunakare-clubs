@@ -249,9 +249,9 @@
   "home_slug": "aichi",
   "away_slug": "shiga",
   "venue": "愛・地球博記念公園-多目的球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 1,
+  "away_score": 10,
   "note": ""
  },
  {
@@ -264,9 +264,24 @@
   "home_slug": "chukyo",
   "away_slug": "gifu",
   "venue": "信州大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 4,
+  "note": ""
+ },
+ {
+  "id": "2026-09-06-chuubu-vs-shinshuu",
+  "date": "2026-09-06",
+  "time": "15:30",
+  "category": "2部",
+  "home": "中部大学",
+  "away": "信州大学",
+  "home_slug": "chuubu",
+  "away_slug": "shinshuu",
+  "venue": "信州大学",
+  "status": "played",
+  "home_score": 1,
+  "away_score": 11,
   "note": ""
  },
  {

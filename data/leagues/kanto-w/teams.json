@@ -223,5 +223,15 @@
   "team": "聖神女子大学",
   "slug": "hijirikaminjoko",
   "block": "4部 Aブロック"
+ },
+ "帝京・成城・創価大学": {
+  "team": "帝京・成城・創価大学",
+  "slug": "teikyou-seijou-souka",
+  "block": "4部 Aブロック"
+ },
+ "埼玉大学": {
+  "team": "埼玉大学",
+  "slug": "saitama",
+  "block": "4部 Bブロック"
  }
 }

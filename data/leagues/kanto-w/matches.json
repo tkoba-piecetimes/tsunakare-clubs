@@ -444,10 +444,10 @@
   "home_slug": "meisei",
   "away_slug": "toukyoujoshitaiiku",
   "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部C"
+  "status": "played",
+  "home_score": 3,
+  "away_score": 6,
+  "note": ""
  },
  {
   "id": "2026-08-23-sophia-vs-tokyo-rika",
@@ -459,10 +459,10 @@
   "home_slug": "sophia",
   "away_slug": "tokyo-rika",
   "venue": "アミノバイタルフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部A"
+  "status": "played",
+  "home_score": 4,
+  "away_score": 7,
+  "note": ""
  },
  {
   "id": "2026-08-23-keio-vs-waseda",
@@ -489,10 +489,10 @@
   "home_slug": "tokyo-gakugei",
   "away_slug": "chiba",
   "venue": "東京学芸大学総合グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部B"
+  "status": "played",
+  "home_score": 25,
+  "away_score": 0,
+  "note": ""
  },
  {
   "id": "2026-08-29-rikkyo-vs-tokai",
@@ -519,10 +519,10 @@
   "home_slug": "meijigakuin",
   "away_slug": "komazawa",
   "venue": "明治学院大学ヘボンフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
+  "status": "played",
+  "home_score": 11,
+  "away_score": 10,
+  "note": ""
  },
  {
   "id": "2026-08-30-senshu-vs-nihon",
@@ -534,10 +534,10 @@
   "home_slug": "senshu",
   "away_slug": "nihon",
   "venue": "駒沢オリンピック公園総合運動場第一球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
+  "status": "played",
+  "home_score": 9,
+  "away_score": 8,
+  "note": ""
  },
  {
   "id": "2026-08-30-hosei-vs-nittaidai",
@@ -579,10 +579,10 @@
   "home_slug": "meiji",
   "away_slug": "chuo",
   "venue": "駒沢オリンピック公園総合運動場第一球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部B"
+  "status": "played",
+  "home_score": 8,
+  "away_score": 2,
+  "note": ""
  },
  {
   "id": "2026-09-05-yokohama-kokudai-vs-kanagawa",
@@ -795,6 +795,51 @@
   "note": "2部B"
  },
  {
+  "id": "2026-09-13-tokyo-nodai-vs-chuo",
+  "date": "2026-09-13",
+  "time": "9:00",
+  "category": "1部 Bブロック",
+  "home": "東京農業大学",
+  "away": "中央大学",
+  "home_slug": "tokyo-nodai",
+  "away_slug": "chuo",
+  "venue": "中央大学多摩キャンパスラグビー場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-09-13-meijigakuin-vs-nihon",
+  "date": "2026-09-13",
+  "time": "9:50",
+  "category": "2部 Aブロック",
+  "home": "明治学院大学",
+  "away": "日本大学",
+  "home_slug": "meijigakuin",
+  "away_slug": "nihon",
+  "venue": "大宮けんぽ第２区画サッカー場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-09-13-otsuma-vs-kyoritsu-joshi",
+  "date": "2026-09-13",
+  "time": "12:30",
+  "category": "3部 Bブロック",
+  "home": "大妻女子大学",
+  "away": "共立女子大学",
+  "home_slug": "otsuma",
+  "away_slug": "kyoritsu-joshi",
+  "venue": "大宮けんぽ第２区画サッカー場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-09-19-nihonjoshitaiiku-vs-yokohama-kokudai",
   "date": "2026-09-19",
   "time": "8:50",
@@ -808,6 +853,21 @@
   "home_score": null,
   "away_score": null,
   "note": "2部B"
+ },
+ {
+  "id": "2026-09-19-tokai-vs-tokyo",
+  "date": "2026-09-19",
+  "time": "11:30",
+  "category": "1部 Aブロック",
+  "home": "東海大学",
+  "away": "東京大学",
+  "home_slug": "tokai",
+  "away_slug": "tokyo",
+  "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
  },
  {
   "id": "2026-09-19-tokyo-rika-vs-tsukuba",
@@ -840,6 +900,36 @@
   "note": "3部C"
  },
  {
+  "id": "2026-09-19-teikyou-seijou-souka-vs-shukutoku",
+  "date": "2026-09-19",
+  "time": "18:40",
+  "category": "4部 Aブロック",
+  "home": "帝京・成城・創価大学",
+  "away": "淑徳大学",
+  "home_slug": "teikyou-seijou-souka",
+  "away_slug": "shukutoku",
+  "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-09-20-musashi-vs-toukyoujoshitaiiku",
+  "date": "2026-09-20",
+  "time": "13:00",
+  "category": "3部 Cブロック",
+  "home": "武蔵大学",
+  "away": "東京女子体育大学",
+  "home_slug": "musashi",
+  "away_slug": "toukyoujoshitaiiku",
+  "venue": "武蔵大学朝霞グラウンド",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-09-23-tokyo-nodai-vs-meiji",
   "date": "2026-09-23",
   "time": "9:20",
@@ -853,6 +943,111 @@
   "home_score": null,
   "away_score": null,
   "note": "1部B"
+ },
+ {
+  "id": "2026-09-23-kantogakuin-vs-saitama",
+  "date": "2026-09-23",
+  "time": "11:50",
+  "category": "4部 Bブロック",
+  "home": "関東学院大学",
+  "away": "埼玉大学",
+  "home_slug": "kantogakuin",
+  "away_slug": "saitama",
+  "venue": "駒沢オリンピック公園総合運動場補助競技場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-09-26-chuo-vs-gakushuin",
+  "date": "2026-09-26",
+  "time": "9:00",
+  "category": "1部 Bブロック",
+  "home": "中央大学",
+  "away": "学習院大学",
+  "home_slug": "chuo",
+  "away_slug": "gakushuin",
+  "venue": "中央大学多摩キャンパスラグビー場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-09-26-tokyo-vs-rikkyo",
+  "date": "2026-09-26",
+  "time": "10:40",
+  "category": "1部 Aブロック",
+  "home": "東京大学",
+  "away": "立教大学",
+  "home_slug": "tokyo",
+  "away_slug": "rikkyo",
+  "venue": "立教大学新座キャンパス多目的グラウンド",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-09-26-waseda-vs-tokai",
+  "date": "2026-09-26",
+  "time": "18:40",
+  "category": "1部 Aブロック",
+  "home": "早稲田大学",
+  "away": "東海大学",
+  "home_slug": "waseda",
+  "away_slug": "tokai",
+  "venue": "早稲田大学東伏見キャンパス アメリカンフットボール場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-09-27-sophia-vs-tsukuba",
+  "date": "2026-09-27",
+  "time": "11:00",
+  "category": "3部 Aブロック",
+  "home": "上智大学",
+  "away": "筑波大学",
+  "home_slug": "sophia",
+  "away_slug": "tsukuba",
+  "venue": "筑波大学セキショウフィールド",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-09-27-kyoritsu-joshi-vs-jissen-joshi",
+  "date": "2026-09-27",
+  "time": "13:50",
+  "category": "3部 Bブロック",
+  "home": "共立女子大学",
+  "away": "実践女子大学",
+  "home_slug": "kyoritsu-joshi",
+  "away_slug": "jissen-joshi",
+  "venue": "筑波大学セキショウフィールド",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-09-27-toyo-vs-nihon",
+  "date": "2026-09-27",
+  "time": "19:00",
+  "category": "2部 Aブロック",
+  "home": "東洋大学",
+  "away": "日本大学",
+  "home_slug": "toyo",
+  "away_slug": "nihon",
+  "venue": "東洋大学朝霞キャンパスグラウンド",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
  },
  {
   "id": "2026-10-24-tokyo-rika-vs-daitobunka",
