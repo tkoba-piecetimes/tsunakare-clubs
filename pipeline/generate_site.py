@@ -33,7 +33,7 @@ TUNAKARE_LISTING_LP = "https://lp.tunakare.jp/s01/"
 TUNAKARE_MEDIA_CONTACT = "https://media.tunakare.jp/contact/student/"
 TUNAKARE_SHUKATSU = "https://shukatsu.tunakare.jp/"
 TUNAKARE_CAREER = "https://career.tunakare.jp/"
-TUNAKARE_BIZ_GUIDE = "https://shukatsu.tunakare.jp/biz/guide"
+TUNAKARE_BIZ_GUIDE = "https://career.tunakare.jp/biz/guide"
 
 # ---- お問い合わせ（中立リレーAPI経由・運営元秘匿。メディアSNS統合要件定義_2026-08 §3-1）
 CONTACT_MEDIA_KEY = "lacrosse"
