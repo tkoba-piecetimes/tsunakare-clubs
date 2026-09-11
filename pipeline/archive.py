@@ -1,5 +1,6 @@
 """Historical database views backed by immutable, attributed season snapshots."""
 import json
+from pathlib import Path
 from html import escape as e
 from urllib.parse import urlencode
 
@@ -30,6 +31,9 @@ def sources(h):
         f'<a href="{e(h["standings_url"])}" target="_blank" rel="noopener">公式順位・星取表 ↗</a>')
 
 def build(site,leagues,meta,page,write_page):
+    standings_path=Path(__file__).resolve().parents[1]/'data'/'history-standings.json'
+    if standings_path.exists():
+        (site/'assets'/'archive-standings.json').write_text(standings_path.read_text(encoding='utf8'),encoding='utf8')
     seasons=[]
     for l in leagues:
         for h in l['hist']:
@@ -42,7 +46,7 @@ def build(site,leagues,meta,page,write_page):
     (site/'assets'/'archive-data.json').write_text(json.dumps({'from_year':2021,'current_year':meta['season_year'],'seasons':seasons},ensure_ascii=False,separators=(',',':')),encoding='utf8')
     indexed=''.join(f'<li><a href="/{s["code"]}/seasons/{s["year"]}/">{s["year"]}年 {e(s["label"])}（{len(s["matches"])}試合収録）</a></li>' for s in seasons if s['year']<meta['season_year'])
     body=f'''<div class="archive-page"><div class="archive-intro"><div><p class="eyebrow">COLLEGE LACROSSE / SINCE 2021</p><h1>ラクロスの記録を、<br>つなぐ。</h1><p>あの年の母校も、ライバルとの一戦も。<br>年度・地区・大学から、全国の試合を探そう。</p></div><div class="archive-period"><strong>2021<span>—</span>{meta['season_year']}</strong><span>全国7地区 / 男子・女子</span></div></div><div id="archive-hub"><p role="status">データを読み込んでいます。</p></div><details class="archive-index"><summary>年度・地区別の記録一覧</summary><ul>{indexed}</ul></details><p class="archive-footnote">公式資料で確認できたスコアを掲載しています。未収録・日付未確認の記録があります。学校名は当時の表記を基本とし、構成が変わる合同チームは年度ごとに区別しています。</p></div>'''
-    write_page('archive',page('../','2021年からの大学ラクロスデータベース | ラクロスマニア',body,meta,path='archive/',desc='2021年以降の全国大学ラクロスを年度・地区・男女・大学別に検索。過去の試合結果、年度別成績、直接対決、公式順位表へのリンクを掲載。',extra_head='<script src="/assets/archive.js" defer></script>'))
+    write_page('archive',page('../','2021年からの大学ラクロスデータベース | ラクロスマニア',body,meta,path='archive/',desc='2021年以降の全国大学ラクロスを年度・地区・男女・大学別に検索。過去の試合結果、年度別成績、直接対決、公式順位・星取表をページ内で確認できます。',extra_head='<script src="/assets/archive.js" defer></script>'))
     for h in seasons:
         if h['year']>=meta['season_year']: continue
         rows=''
