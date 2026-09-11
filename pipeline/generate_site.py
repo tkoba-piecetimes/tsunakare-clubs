@@ -16,6 +16,7 @@ import shutil
 from datetime import date
 from html import escape
 from pathlib import Path
+import clubhouse
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -398,16 +399,14 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
 <link rel="canonical" href="{escape(url)}">
 {extra_head}{ga}
 <link rel="stylesheet" href="{rel}style.css">
+<link rel="stylesheet" href="{rel}assets/clubhouse.css">
+<link rel="stylesheet" href="{rel}assets/production.css">
+<script src="{rel}assets/clubhouse.js" defer></script>
 </head>
 <body{body_cls}>
-<header class="site-header">
-  <div class="header-inner">
-    <a class="brand" href="{rel}index.html"><span class="brand-tick"></span>ラクロスマニア<span class="brand-sub">JAPAN COLLEGE LACROSSE</span></a>
-    <nav class="global-nav">{nav}</nav>
-  </div>
-</header>
+{clubhouse.header(meta)}
 {subnav}
-<main>
+<main class="production-main">
 {body}
 </main>
 <footer class="site-footer">
@@ -420,6 +419,7 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
   </div>
 </footer>
 {sticky}
+{clubhouse.mobile_nav()}
 {CTA_VIEW_SCRIPT}
 </body>
 </html>"""
@@ -818,46 +818,8 @@ def matchday_highlights(lg, today_iso):
 # ---------------------------------------------------------------- portal
 
 def build_portal(leagues, articles, meta):
-    rel = ""
-    total_teams = sum(len(lg["teams"]) for lg in leagues)
-    body = ('<div class="hero">'
-            '<img class="hero-img" src="assets/hero.jpg" alt="" width="1440" height="768">'
-            '<div class="hero-text">'
-            '<p class="hero-kicker">全国学生ラクロスリーグ</p>'
-            '<h1>大学ラクロスの試合結果・データを全国7地区で毎日更新</h1>'
-            f'<p class="hero-sub">男子・女子 全{len(leagues)}リーグ・{total_teams}チームの結果・順位・過去の対戦データを掲載　|　最終更新 {escape(meta["fetched_at"][:10])}</p>'
-            '</div>'
-            '</div>')
-    for gender in ("男子", "女子"):
-        cards = ""
-        for lg in leagues:
-            if lg["meta"]["gender"] != gender:
-                continue
-            played = sum(1 for m in lg["matches"] if m["status"] == "played")
-            cards += (f'<div class="digest-card"><h3><a href="{lg["code"]}/index.html">'
-                      f'{escape(lg["label"])}</a></h3>'
-                      f'<p class="note">{escape(lg["meta"]["league"])}</p>'
-                      f'<p class="cat-line"><span class="cat">チーム {len(lg["teams"])}</span> '
-                      f'<span class="cat">消化 {played}/{len(lg["matches"])}試合</span></p></div>')
-        body += f'<section><h2>{gender}リーグ</h2><div class="digest">{cards}</div></section>'
-    body += build_support_section()
-    recent = []
-    for lg in leagues:
-        for m in lg["matches"]:
-            if m["status"] == "played" and m["date"]:
-                recent.append((m["date"], lg, m))
-    recent.sort(key=lambda x: x[0], reverse=True)
-    rows = "".join(match_row(m, "", league_label=lg["label"], league_code=lg["code"])
-                   for _, lg, m in recent[:10])
-    body += ('<section><h2>全国の最新結果</h2>' + match_table(rows, with_league=True)
-             + '</section>')
-    if articles:
-        body += ('<section><h2>読みもの</h2><div class="digest">'
-                 + "".join(article_card(a, rel) for a in articles[:3])
-                 + f'</div><p class="more"><a class="cta" href="articles/index.html">読みもの一覧へ →</a></p></section>')
-    write_page("", page(rel, "ラクロスマニア | 大学ラクロスの試合結果・順位・データ", body, meta,
-                        path="",
-                        desc=f"全国7地区・男女{len(leagues)}リーグの大学ラクロスの試合結果・日程・順位表を毎日更新。過去の対戦データ・戦術記事・記録も掲載。"))
+    body = clubhouse.portal(leagues, articles, meta, article_card)
+    write_page("", page("", "ラクロスマニア | 大学ラクロスの試合結果・順位・データ", body, meta))
 
 
 # ---------------------------------------------------------------- league pages
@@ -1697,6 +1659,7 @@ def main():
         for f in ASSETS.iterdir():
             shutil.copy(f, SITE / "assets" / f.name)
 
+    clubhouse.export_data(SITE, leagues)
     build_portal(leagues, articles, global_meta)
     for lg in leagues:
         build_league(lg, articles)
