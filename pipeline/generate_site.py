@@ -38,6 +38,7 @@ TUNAKARE_SHUKATSU = "https://shukatsu.tunakare.jp/"
 TUNAKARE_CAREER = "https://career.tunakare.jp/"
 TUNAKARE_BIZ_GUIDE = "https://career.tunakare.jp/biz/guide"
 TUNAKARE_GAKUCHIKA = "https://shukatsu.tunakare.jp/download/gakuchika-template"
+INTERN_URL = "https://intern.tunakare.jp/assessment?utm_source=lacrossemania&utm_medium=cta&utm_campaign=intern"  # ツナカレインターン16タイプ診断（学生集客戦略v2 §4 チャネル2・2026-09-12）
 
 # ---- お問い合わせ（中立リレーAPI経由・運営元秘匿。メディアSNS統合要件定義_2026-08 §3-1）
 CONTACT_MEDIA_KEY = "lacrosse"
@@ -585,6 +586,26 @@ def article_cta_band(cta_key):
         band += (f'<section class="article-cta cta-band-sub"><h2>{escape(s_cfg["title"])}</h2>'
                  f'<p>{escape(s_cfg["text"])}</p><p>{s_link}</p></section>')
     return band
+
+
+def intern_cta_band():
+    """記事末尾に常時1つ表示する、ツナカレインターン16タイプ診断への導線CTA帯。
+
+    article_cta_band()（記事frontmatterのcta値に応じた既存CTA帯）とは独立・常時表示で、
+    その直後に置く。学生集客の戦略設計v2
+    （tsunakare-intern/docs/business/27_student-acquisition-v2.md）§4 チャネル2
+    （部活メディア）・§5 メッセージ体系（S2低学年向け）2026-09-12。
+    既存の箱型CTA（article-cta等）が使う左の縦線装飾（border-left）はあえて使わず、
+    紺地の帯＋白文字で視覚的に区別する（木場さん指示）。
+    """
+    heading = "オフシーズン・引退後に、長期インターンという選択"
+    sub = "部活で培った力を実務で試す。16タイプ診断（30秒）で合う企業がわかります。"
+    return (f'<section class="intern-cta-band">'
+            '<span class="pr-badge pr-badge-light">PR</span>'
+            f'<p class="intern-cta-band-text"><strong>{escape(heading)}</strong><br>{escape(sub)}</p>'
+            f'<a class="cta" href="{escape(INTERN_URL)}" rel="noopener" '
+            f'data-cta="cv_intern_click" data-position="intern_cta_band" '
+            'onclick="window.gtag&&gtag(\'event\',\'cv_intern_click\')">16タイプ診断を受ける →</a></section>')
 
 
 def sticky_bar():
@@ -1139,6 +1160,7 @@ def build_articles(articles, meta):
         body += f'<h1>{escape(a["title"])}</h1>'
         body += f'<div class="article">{md_to_html(a["body"])}</div>'
         body += article_cta_band(a.get("cta", "none"))
+        body += intern_cta_band()
         body += f'<section><h2>あわせて読む</h2><ul>{related}</ul></section>'
         write_page(f"articles/{a['slug']}",
                    page(rel, f'{a["title"]} | ラクロスマニア', body, meta,
@@ -1588,6 +1610,11 @@ table.detail td { white-space:normal; }
   box-shadow:0 1px 3px rgba(7,26,51,.06); }
 .article-cta h2 { margin-top:0; border-left:none; padding-left:0; font-size:1rem; }
 .article-cta p:last-child { margin-bottom:0; }
+
+.intern-cta-band { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem 1.2rem;
+  background:var(--navy); border-radius:12px; padding:1.1rem 1.3rem; margin-top:1.6rem; }
+.intern-cta-band-text { margin:0; font-size:.85rem; flex:1 1 220px; color:#fff; }
+.pr-badge-light { background:var(--accent); color:var(--navy); }
 .support .digest-card p:last-of-type { margin-top:.8em; margin-bottom:0; }
 
 .cat-line { font-size:.8rem; margin:.4rem 0; }
