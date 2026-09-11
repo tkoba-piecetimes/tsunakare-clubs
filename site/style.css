@@ -118,6 +118,11 @@ table.detail td { white-space:normal; }
   box-shadow:0 1px 3px rgba(7,26,51,.06); }
 .article-cta h2 { margin-top:0; border-left:none; padding-left:0; font-size:1rem; }
 .article-cta p:last-child { margin-bottom:0; }
+
+.intern-cta-band { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem 1.2rem;
+  background:var(--navy); border-radius:12px; padding:1.1rem 1.3rem; margin-top:1.6rem; }
+.intern-cta-band-text { margin:0; font-size:.85rem; flex:1 1 220px; color:#fff; }
+.pr-badge-light { background:var(--accent); color:var(--navy); }
 .support .digest-card p:last-of-type { margin-top:.8em; margin-bottom:0; }
 
 .cat-line { font-size:.8rem; margin:.4rem 0; }
