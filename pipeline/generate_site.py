@@ -401,6 +401,7 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
 <link rel="stylesheet" href="{rel}style.css">
 <link rel="stylesheet" href="{rel}assets/clubhouse.css">
 <link rel="stylesheet" href="{rel}assets/production.css">
+<link rel="stylesheet" href="{rel}assets/support-cards.css">
 <script src="{rel}assets/clubhouse.js" defer></script>
 </head>
 <body{body_cls}>
@@ -473,37 +474,48 @@ def article_card(a, rel):
 
 
 def sponsor_block():
-    """チームページの応援ブロック（D2改訂版）。全チーム共通の汎用3導線を表示する。
-
-    個別部活への協賛ページ直リンク・団体名表示は行わない（募集中の部活はツナカレに
-    遷移して初めてわかる設計。案件には締切・停止があり静的サイト側に募集状況を持つと
-    管理不能になるため）。
-    """
-    parts = ['<section class="sponsor"><h2>この部を応援する</h2>']
-    parts.append('<p>この部活・競技を応援したい方へ: '
-                  + tunakare_link(TUNAKARE_SPONSOR_SEARCH, "sponsor", "cv_sponsor_click",
-                                  "ツナカレで協賛募集中の部活を探す", cls="cta") + '</p>')
-    parts.append('<p>この部の学生の方へ: '
-                  + tunakare_link(TUNAKARE_GAKUCHIKA, "gakuchika-template", "cv_gakuchika_click",
-                                  f"{SPORT_NAME}部のガクチカ、書き方テンプレ＆例文集（無料PDF）を受け取る",
-                                  cls="cta") + '</p>')
-    parts.append('<p class="note">'
-                  + tunakare_link(TUNAKARE_SHUKATSU, "shukatsu", "cv_shukatsu_click",
-                                  "部活と両立できる就活相談（無料・メールで回答）", cls="cta cta-outline")
-                  + '</p>')
-    parts.append('<p class="note">体育会学生の採用を検討中の企業の方へ: '
-                  + tunakare_link(TUNAKARE_BIZ_GUIDE, "biz-guide", "cv_guide_click",
-                                  "体育会学生採用ガイド2026（無料資料）", cls="cta cta-outline") + '</p>')
-    parts.append('<p class="note">この部の関係者の方へ: '
-                  + tunakare_link(TUNAKARE_LISTING_LP, "listing", "cv_listing_click",
-                                  "協賛募集を無料で掲載", cls="cta cta-outline")
-                  + '</p>')
-    parts.append('<p class="note">'
-                  + tunakare_link(TUNAKARE_MEDIA_CONTACT, "media-pr", "cv_media_pr_click",
-                                   "取材してほしい部活を募集しています", cls="cta cta-outline")
-                  + '</p>')
-    parts.append('</section>')
-    return "".join(parts)
+    """Audience-specific support cards; links retain campaign and conversion tracking."""
+    sponsor = tunakare_link(
+        "https://tunakare.jp/sponsorship/search?activity=%E3%83%A9%E3%82%AF%E3%83%AD%E3%82%B9",
+        "sponsor", "cv_sponsor_click", "協賛募集を見る", cls="sc-action sc-primary", pr=False)
+    guide = tunakare_link(TUNAKARE_BIZ_GUIDE, "biz-guide", "cv_guide_click",
+                          "体育会学生の採用ガイド", cls="sc-secondary", pr=False)
+    listing = tunakare_link(TUNAKARE_LISTING_LP, "listing", "cv_listing_click",
+                            "協賛募集を掲載する", cls="sc-action", pr=False)
+    interview = tunakare_link(TUNAKARE_MEDIA_CONTACT, "media-pr", "cv_media_pr_click",
+                              "取材を依頼する", cls="sc-secondary", pr=False)
+    gakuchika = tunakare_link(TUNAKARE_GAKUCHIKA, "gakuchika-template", "cv_gakuchika_click",
+                              "ガクチカの書き方を見る", cls="sc-resource-link", pr=False)
+    career = tunakare_link(TUNAKARE_SHUKATSU, "shukatsu", "cv_shukatsu_click",
+                           "部活と両立できる就活相談", cls="sc-resource-link", pr=False)
+    return f'''<section class="support-cards" aria-labelledby="support-cards-title">
+      <div class="sc-heading">
+        <div><h2 id="support-cards-title"><span>ラクロス部の挑戦を、</span><wbr><span>支える。</span></h2>
+        <p class="sc-intro">協賛・取材を通じて、部活の活動を広げませんか。</p></div>
+        <span class="sc-pr">PR ｜ ツナカレ</span>
+      </div>
+      <div class="sc-grid">
+        <div class="sc-option">
+          <p class="sc-audience">部活を応援したい企業・団体の方</p>
+          <h3>応援するチームを探す</h3>
+          <p class="sc-description">ラクロス部の活動内容や条件を見て、協賛先を探せます。</p>
+          {sponsor}{guide}
+        </div>
+        <div class="sc-option">
+          <p class="sc-audience">主将・マネージャー・部の関係者の方</p>
+          <h3>自分たちの活動を広げる</h3>
+          <p class="sc-description">協賛募集の掲載や取材を通じて、部の取り組みを届けられます。</p>
+          {listing}{interview}
+        </div>
+      </div>
+      <details class="sc-extra">
+        <summary>部員向けの就活サポート</summary>
+        <div class="sc-resources">
+          <div class="sc-resource">{gakuchika}<p>無料PDF・テンプレートと例文</p></div>
+          <div class="sc-resource">{career}<p>無料・メールで回答</p></div>
+        </div>
+      </details>
+    </section>'''
 
 
 # cta frontmatter値 → 記事フッターCTA帯の内容（D3）
