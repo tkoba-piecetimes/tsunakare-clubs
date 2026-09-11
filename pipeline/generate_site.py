@@ -17,6 +17,7 @@ from datetime import date
 from html import escape
 from pathlib import Path
 import clubhouse
+import archive
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -77,6 +78,7 @@ _sitemap_paths: list[str] = []
 
 def load_leagues():
     leagues = []
+    historical = archive.load(DATA)
     for code in LEAGUE_ORDER:
         d = DATA / "leagues" / code
         if not (d / "matches.json").exists():
@@ -93,6 +95,11 @@ def load_leagues():
         if hdir.exists():
             lg["hist"] = [json.loads(f.read_text(encoding="utf-8"))
                           for f in sorted(hdir.glob("*.json"), reverse=True)]
+        by_year = {h['year']: h for h in lg['hist']}
+        for h in historical['seasons']:
+            if h['code'] == code:
+                by_year[h['year']] = {**h, 'standings': h.get('standings') or by_year.get(h['year'], {}).get('standings', {})}
+        lg['hist'] = [by_year[y] for y in sorted(by_year, reverse=True)]
         lg["matches_by_year"] = ([(lg["meta"]["season_year"], lg["matches"])]
                                  + [(h["year"], h["matches"]) for h in lg["hist"]])
         lg["played_total"] = sum(1 for _, ms in lg["matches_by_year"]
@@ -360,6 +367,7 @@ def league_subnav(lg, L):
     if lg["has_records"]:
         items.append(("records/index.html", "記録室"))
     links = "".join(f'<a href="{L}{href}">{label}</a>' for href, label in items)
+    links += f'<a href="/archive/?league={lg["code"]}&year=all">2021年〜の記録</a>'
     return ('<div class="league-nav"><div class="league-nav-inner">'
             f'<span class="league-name">{escape(lg["label"])}</span>{links}</div></div>')
 
@@ -402,6 +410,7 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
 <link rel="stylesheet" href="{rel}assets/clubhouse.css">
 <link rel="stylesheet" href="{rel}assets/production.css">
 <link rel="stylesheet" href="{rel}assets/support-cards.css">
+<link rel="stylesheet" href="{rel}assets/archive.css">
 <script src="{rel}assets/clubhouse.js" defer></script>
 </head>
 <body{body_cls}>
@@ -954,21 +963,7 @@ def build_league(lg, articles):
             body += ('<section><h2>今後の日程</h2>'
                      + match_table("".join(match_row(m, L) for m in my_upcoming))
                      + "</section>")
-        season_rows = ""
-        for h in lg["hist"]:
-            for hblock, entries in h["standings"].items():
-                e = next((x for x in entries if x["team"] == team), None)
-                if e:
-                    season_rows += (f'<tr><td>{h["year"]}年</td><td>{escape(hblock)}</td>'
-                                    f'<td>{e["rank"]}位</td>'
-                                    f'<td>{e["wins"]}-{e["draws"]}-{e["losses"]}</td>'
-                                    f'<td>{e["gf"]} - {e["ga"]}</td></tr>')
-        if season_rows:
-            body += ('<section><h2>年度別成績</h2>'
-                     '<div class="tbl"><table><thead><tr><th>年度</th><th>所属</th><th>順位</th>'
-                     '<th>勝-分-敗</th><th>総得点-総失点</th></tr></thead>'
-                     f'<tbody>{season_rows}</tbody></table></div>'
-                     '<p class="note">※順位はブロック内リーグ戦の結果から編集部が算出した参考値です。</p></section>')
+        body += archive.team_history(lg, team)
         if articles:
             art_links = "".join(
                 f'<li><a href="{R}articles/{a["slug"]}/index.html">{escape(a["title"])}</a></li>'
@@ -995,6 +990,7 @@ def build_league(lg, articles):
         if m["status"] == "scheduled":
             body += preview_sections(m, matches, standings)
         body += h2h_section(m, lg["matches_by_year"])
+        body += f'<p><a href="{escape(archive.link(code, year="all", team=m["home"], opponent=m["away"], view="h2h"))}">2021年からの直接対決をすべて見る →</a></p>'
         d = date_jp(m["date"], with_year=True) if m["date"] else "未定"
         body += ('<div class="tbl"><table class="detail"><tbody>'
                  f'<tr><th>日付</th><td>{d}</td></tr>'
@@ -1673,6 +1669,7 @@ def main():
 
     clubhouse.export_data(SITE, leagues)
     build_portal(leagues, articles, global_meta)
+    archive.build(SITE, leagues, global_meta, page, write_page)
     for lg in leagues:
         build_league(lg, articles)
     build_articles(articles, global_meta)

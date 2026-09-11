@@ -5,17 +5,17 @@ from html import escape as e
 
 def header(meta):
     year = meta.get('season_year', 2026)
-    return f'''<header class="header"><a class="brand official-brand" href="/"><span class="brand-tick"></span><span>ラクロスマニア<small>JAPAN COLLEGE LACROSSE</small></span></a><nav aria-label="メインナビゲーション"><a href="/#results">試合・結果</a><a href="/#leagues">リーグ</a><a href="/articles/">読みもの</a><a href="/glossary/">用語辞典</a><a href="/videos/">動画</a><a href="/#support">部活の協賛</a></nav><a class="myteam" href="/#my-teams">マイチーム →</a></header><div class="seasonbar"><span><i></i> COLLEGE LACROSSE {year}</span><span>7地区。14リーグ。その一瞬を、見逃すな。</span><a href="/#support">部活の挑戦をツナカレでつなぐ ↗ <span>PR</span></a></div>'''
+    return f'''<header class="header"><a class="brand official-brand" href="/"><span class="brand-tick"></span><span>ラクロスマニア<small>JAPAN COLLEGE LACROSSE</small></span></a><nav aria-label="メインナビゲーション"><a href="/#results">試合・結果</a><a href="/#leagues">リーグ</a><a href="/articles/">読みもの</a><a href="/archive/">データベース</a><a href="/videos/">動画</a><a href="/#support">部活の協賛</a></nav><a class="myteam" href="/#my-teams">マイチーム →</a></header><div class="seasonbar"><span><i></i> COLLEGE LACROSSE {year}</span><span>7地区。14リーグ。その一瞬を、見逃すな。</span><a href="/#support">部活の挑戦をツナカレでつなぐ ↗ <span>PR</span></a></div>'''
 
 
 def mobile_nav():
-    return '<nav class="mobile-nav" aria-label="モバイルメニュー"><a href="/#results">試合結果</a><a href="/articles/">読みもの</a><a href="/#support">部活の協賛</a><a href="/#my-teams">マイチーム</a></nav>'
+    return '<nav class="mobile-nav" aria-label="モバイルメニュー"><a href="/#results">試合結果</a><a href="/archive/">過去の記録</a><a href="/#support">部活の協賛</a><a href="/#my-teams">マイチーム</a></nav>'
 
 
 def export_data(site, leagues):
     data = []
     for lg in leagues:
-        data.append({k: lg[k] for k in ('code', 'label', 'meta', 'matches', 'standings', 'teams', 'hist')})
+        data.append({k: lg[k] for k in ('code', 'label', 'meta', 'matches', 'standings', 'teams')})
     (site / 'assets' / 'clubhouse-data.json').write_text(json.dumps(data, ensure_ascii=False), encoding='utf-8')
 
 
