@@ -69,9 +69,9 @@
   "home_slug": "fuji-joshi",
   "away_slug": "rakuno-gakuen",
   "venue": "前田森林公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 3,
+  "away_score": 18,
   "note": ""
  },
  {
@@ -99,9 +99,9 @@
   "home_slug": "hokkaido",
   "away_slug": "rakuno-gakuen",
   "venue": "前田森林公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 8,
+  "away_score": 16,
   "note": ""
  },
  {
@@ -114,10 +114,10 @@
   "home_slug": "goudou",
   "away_slug": "hokkai-gakuen",
   "venue": "前田森林公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "審判員の関係上"
+  "status": "played",
+  "home_score": 9,
+  "away_score": 13,
+  "note": ""
  },
  {
   "id": "2026-09-13-fuji-joshi-vs-hokusei-gakuen",

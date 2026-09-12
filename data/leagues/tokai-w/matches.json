@@ -474,9 +474,9 @@
   "home_slug": "kinjo-gakuin",
   "away_slug": "gifu",
   "venue": "牧野ヶ池緑地",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 12,
+  "away_score": 9,
   "note": ""
  },
  {
@@ -489,9 +489,9 @@
   "home_slug": "nanzan",
   "away_slug": "aichi-gakuin",
   "venue": "愛知淑徳大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 5,
   "note": ""
  },
  {

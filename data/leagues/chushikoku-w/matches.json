@@ -234,9 +234,9 @@
   "home_slug": "yasudajoshi",
   "away_slug": "matsuyamadaigaku-kouchidaigakugoudouchiimu",
   "venue": "宮窪石文化運動公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 7,
+  "away_score": 7,
   "note": ""
  },
  {
@@ -249,9 +249,9 @@
   "home_slug": "tokushima",
   "away_slug": "okayama",
   "venue": "宮窪石文化運動公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 10,
+  "away_score": 4,
   "note": ""
  },
  {

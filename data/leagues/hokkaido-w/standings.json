@@ -1,18 +1,46 @@
 {
  "リーグ": [
   {
+   "team": "酪農学園大学",
+   "slug": "rakuno-gakuen",
+   "points": 9,
+   "games": 3,
+   "wins": 3,
+   "draws": 0,
+   "losses": 0,
+   "gf": 55,
+   "ga": 12,
+   "rank": 1,
+   "goal_diff": "+43",
+   "goals_for": 55
+  },
+  {
+   "team": "北海学園大学",
+   "slug": "hokkai-gakuen",
+   "points": 6,
+   "games": 2,
+   "wins": 2,
+   "draws": 0,
+   "losses": 0,
+   "gf": 21,
+   "ga": 15,
+   "rank": 2,
+   "goal_diff": "+6",
+   "goals_for": 21
+  },
+  {
    "team": "北海道大学",
    "slug": "hokkaido",
    "points": 4,
-   "games": 2,
+   "games": 3,
    "wins": 1,
    "draws": 1,
-   "losses": 0,
-   "gf": 25,
-   "ga": 8,
-   "rank": 1,
-   "goal_diff": "+17",
-   "goals_for": 25
+   "losses": 1,
+   "gf": 33,
+   "ga": 24,
+   "rank": 3,
+   "goal_diff": "+9",
+   "goals_for": 33
   },
   {
    "team": "北星学園大学",
@@ -24,65 +52,37 @@
    "losses": 0,
    "gf": 15,
    "ga": 13,
-   "rank": 2,
-   "goal_diff": "+2",
-   "goals_for": 15
-  },
-  {
-   "team": "酪農学園大学",
-   "slug": "rakuno-gakuen",
-   "points": 3,
-   "games": 1,
-   "wins": 1,
-   "draws": 0,
-   "losses": 0,
-   "gf": 21,
-   "ga": 1,
-   "rank": 3,
-   "goal_diff": "+20",
-   "goals_for": 21
-  },
-  {
-   "team": "北海学園大学",
-   "slug": "hokkai-gakuen",
-   "points": 3,
-   "games": 1,
-   "wins": 1,
-   "draws": 0,
-   "losses": 0,
-   "gf": 8,
-   "ga": 6,
    "rank": 4,
    "goal_diff": "+2",
-   "goals_for": 8
+   "goals_for": 15
   },
   {
    "team": "藤女子大学",
    "slug": "fuji-joshi",
    "points": 0,
-   "games": 1,
+   "games": 2,
    "wins": 0,
    "draws": 0,
-   "losses": 1,
-   "gf": 6,
-   "ga": 8,
+   "losses": 2,
+   "gf": 9,
+   "ga": 26,
    "rank": 5,
-   "goal_diff": "-2",
-   "goals_for": 6
+   "goal_diff": "-17",
+   "goals_for": 9
   },
   {
    "team": "合同",
    "slug": "goudou",
    "points": 0,
-   "games": 3,
+   "games": 4,
    "wins": 0,
    "draws": 0,
-   "losses": 3,
-   "gf": 10,
-   "ga": 49,
+   "losses": 4,
+   "gf": 19,
+   "ga": 62,
    "rank": 6,
-   "goal_diff": "-39",
-   "goals_for": 10
+   "goal_diff": "-43",
+   "goals_for": 19
   }
  ]
 }

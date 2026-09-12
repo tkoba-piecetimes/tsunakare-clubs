@@ -729,9 +729,9 @@
   "home_slug": "nittaidai",
   "away_slug": "meiji",
   "venue": "日本体育大学世田谷キャンパスグラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 6,
+  "away_score": 5,
   "note": ""
  },
  {
@@ -744,10 +744,10 @@
   "home_slug": "keio",
   "away_slug": "rikkyo",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部A"
+  "status": "played",
+  "home_score": 4,
+  "away_score": 9,
+  "note": ""
  },
  {
   "id": "2026-09-12-seikei-vs-komazawa",
@@ -759,10 +759,10 @@
   "home_slug": "seikei",
   "away_slug": "komazawa",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
+  "status": "played",
+  "home_score": 10,
+  "away_score": 8,
+  "note": ""
  },
  {
   "id": "2026-09-12-hosei-vs-gakushuin",
