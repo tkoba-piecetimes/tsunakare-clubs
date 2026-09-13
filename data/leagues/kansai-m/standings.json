@@ -1,6 +1,20 @@
 {
  "1部": [
   {
+   "team": "関西学院大学",
+   "slug": "kwansei-gakuin",
+   "points": 10,
+   "games": 4,
+   "wins": 3,
+   "draws": 1,
+   "losses": 0,
+   "gf": 31,
+   "ga": 11,
+   "rank": 1,
+   "goal_diff": "+20",
+   "goals_for": 31
+  },
+  {
    "team": "神戸大学",
    "slug": "kobe",
    "points": 10,
@@ -10,23 +24,9 @@
    "losses": 1,
    "gf": 19,
    "ga": 17,
-   "rank": 1,
+   "rank": 2,
    "goal_diff": "+2",
    "goals_for": 19
-  },
-  {
-   "team": "関西学院大学",
-   "slug": "kwansei-gakuin",
-   "points": 7,
-   "games": 3,
-   "wins": 2,
-   "draws": 1,
-   "losses": 0,
-   "gf": 24,
-   "ga": 7,
-   "rank": 2,
-   "goal_diff": "+17",
-   "goals_for": 24
   },
   {
    "team": "京都大学",
@@ -46,15 +46,15 @@
    "team": "同志社大学",
    "slug": "doshisha",
    "points": 7,
-   "games": 4,
+   "games": 5,
    "wins": 2,
    "draws": 1,
-   "losses": 1,
-   "gf": 20,
-   "ga": 13,
+   "losses": 2,
+   "gf": 24,
+   "ga": 20,
    "rank": 4,
-   "goal_diff": "+7",
-   "goals_for": 20
+   "goal_diff": "+4",
+   "goals_for": 24
   },
   {
    "team": "大阪大学",
@@ -143,6 +143,20 @@
    "goals_for": 14
   },
   {
+   "team": "甲南大学",
+   "slug": "konan",
+   "points": 6,
+   "games": 2,
+   "wins": 2,
+   "draws": 0,
+   "losses": 0,
+   "gf": 15,
+   "ga": 8,
+   "rank": 4,
+   "goal_diff": "+7",
+   "goals_for": 15
+  },
+  {
    "team": "近畿大学",
    "slug": "kindai",
    "points": 5,
@@ -152,37 +166,23 @@
    "losses": 1,
    "gf": 27,
    "ga": 18,
-   "rank": 4,
+   "rank": 5,
    "goal_diff": "+9",
    "goals_for": 27
-  },
-  {
-   "team": "甲南大学",
-   "slug": "konan",
-   "points": 3,
-   "games": 1,
-   "wins": 1,
-   "draws": 0,
-   "losses": 0,
-   "gf": 6,
-   "ga": 4,
-   "rank": 5,
-   "goal_diff": "+2",
-   "goals_for": 6
   },
   {
    "team": "神戸学院大学",
    "slug": "koubegakuin",
    "points": 3,
-   "games": 4,
+   "games": 5,
    "wins": 1,
    "draws": 0,
-   "losses": 3,
-   "gf": 18,
-   "ga": 28,
+   "losses": 4,
+   "gf": 22,
+   "ga": 37,
    "rank": 6,
-   "goal_diff": "-10",
-   "goals_for": 18
+   "goal_diff": "-15",
+   "goals_for": 22
   },
   {
    "team": "京都工芸繊維大学",

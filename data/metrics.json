@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-12",
+ "updated_at": "2026-09-13",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -203,14 +203,20 @@
    },
    {
     "date": "20260912",
-    "users": 82,
-    "pageviews": 267,
-    "sessions": 107
+    "users": 86,
+    "pageviews": 298,
+    "sessions": 113
+   },
+   {
+    "date": "20260913",
+    "users": 75,
+    "pageviews": 178,
+    "sessions": 98
    }
   ],
-  "total_users": 1204,
-  "total_pageviews": 4488,
-  "total_sessions": 1532
+  "total_users": 1283,
+  "total_pageviews": 4697,
+  "total_sessions": 1636
  },
  "gsc": {
   "daily": [
@@ -411,30 +417,41 @@
     "clicks": 14,
     "impressions": 111,
     "position": 6.9
+   },
+   {
+    "date": "2026-09-11",
+    "clicks": 39,
+    "impressions": 345,
+    "position": 5.7
    }
   ],
-  "total_clicks": 717,
-  "total_impressions": 6542,
+  "total_clicks": 756,
+  "total_impressions": 6887,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
     "clicks": 23,
-    "impressions": 167
+    "impressions": 179
    },
    {
     "query": "ラクロス 大学 ランキング 関西",
-    "clicks": 4,
-    "impressions": 29
+    "clicks": 5,
+    "impressions": 30
    },
    {
     "query": "関東学生 ラクロス 1部 女子",
-    "clicks": 4,
-    "impressions": 9
+    "clicks": 5,
+    "impressions": 14
    },
    {
     "query": "第38回関東学生ラクロスリーグ戦",
+    "clicks": 3,
+    "impressions": 23
+   },
+   {
+    "query": "関西女子ラクロスリーグ",
     "clicks": 2,
-    "impressions": 20
+    "impressions": 5
    },
    {
     "query": "ラクロス ショットクロック",
@@ -458,11 +475,6 @@
    },
    {
     "query": "北海道大学 ラクロス 女子",
-    "clicks": 1,
-    "impressions": 2
-   },
-   {
-    "query": "大学 ラクロス リーグ 2026",
     "clicks": 1,
     "impressions": 2
    }

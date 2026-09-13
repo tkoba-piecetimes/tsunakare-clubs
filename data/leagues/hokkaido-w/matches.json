@@ -129,9 +129,9 @@
   "home_slug": "fuji-joshi",
   "away_slug": "hokusei-gakuen",
   "venue": "酪農学園大学（予定）",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 2,
+  "away_score": 17,
   "note": ""
  },
  {

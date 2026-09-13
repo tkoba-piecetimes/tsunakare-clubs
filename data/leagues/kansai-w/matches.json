@@ -369,9 +369,9 @@
   "home_slug": "mukogawa-joshi",
   "away_slug": "kyoto-sangyo",
   "venue": "太陽が丘第2競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 7,
+  "away_score": 6,
   "note": ""
  },
  {
@@ -399,9 +399,9 @@
   "home_slug": "osaka-keizai",
   "away_slug": "ottemongakuin",
   "venue": "太陽が丘第2競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 14,
+  "away_score": 6,
   "note": ""
  },
  {
@@ -474,9 +474,9 @@
   "home_slug": "oosakataiiku",
   "away_slug": "kobe-jogakuin",
   "venue": "舞洲運動広場運動場AC",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 23,
+  "away_score": 3,
   "note": ""
  },
  {
@@ -489,9 +489,9 @@
   "home_slug": "doshisha",
   "away_slug": "kansai",
   "venue": "太陽が丘球技場A",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 7,
+  "away_score": 4,
   "note": ""
  },
  {

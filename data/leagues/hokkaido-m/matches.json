@@ -84,10 +84,10 @@
   "home_slug": "otaru-shoka",
   "away_slug": "hokusei-gakuen",
   "venue": "NOPPORO ヤシマ商会スポーツパークホッケー場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "ホッケー場"
+  "status": "played",
+  "home_score": 2,
+  "away_score": 3,
+  "note": ""
  },
  {
   "id": "2026-09-12-hokkaidoukagaku-vs-hokkai-gakuen",
@@ -99,10 +99,10 @@
   "home_slug": "hokkaidoukagaku",
   "away_slug": "hokkai-gakuen",
   "venue": "NOPPORO ヤシマ商会スポーツパークホッケー場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "ホッケー場"
+  "status": "played",
+  "home_score": 2,
+  "away_score": 15,
+  "note": ""
  },
  {
   "id": "2026-09-26-otaru-shoka-vs-hokkaido",

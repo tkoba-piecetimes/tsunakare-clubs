@@ -459,9 +459,9 @@
   "home_slug": "doshisha",
   "away_slug": "kwansei-gakuin",
   "venue": "鶴見緑地第2球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 7,
   "note": ""
  },
  {
@@ -474,9 +474,9 @@
   "home_slug": "koubegakuin",
   "away_slug": "konan",
   "venue": "鶴見緑地第2球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 9,
   "note": ""
  },
  {
