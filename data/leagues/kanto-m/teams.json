@@ -169,16 +169,6 @@
   "slug": "senshu",
   "block": "3部 Bブロック"
  },
- "東京理科大学": {
-  "team": "東京理科大学",
-  "slug": "tokyo-rika",
-  "block": "3部 Aブロック"
- },
- "国士館": {
-  "team": "国士館",
-  "slug": "kokushikan",
-  "block": "2部 Bブロック"
- },
  "駒澤大学": {
   "team": "駒澤大学",
   "slug": "komazawa",
@@ -187,6 +177,11 @@
  "慶應義塾高校": {
   "team": "慶應義塾高校",
   "slug": "keio-hs",
+  "block": "3部 Aブロック"
+ },
+ "東京理科大学": {
+  "team": "東京理科大学",
+  "slug": "tokyo-rika",
   "block": "3部 Aブロック"
  }
 }

@@ -684,9 +684,9 @@
   "home_slug": "tokyo-keizai",
   "away_slug": "nihon",
   "venue": "大宮けんぽグラウンド２区画サッカー場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 1,
+  "away_score": 4,
   "note": ""
  },
  {
@@ -705,21 +705,6 @@
   "note": ""
  },
  {
-  "id": "2026-09-06-tokyo-rika-vs-kanagawa",
-  "date": "2026-09-06",
-  "time": "12:20",
-  "category": "3部 Aブロック",
-  "home": "東京理科大学",
-  "away": "神奈川大学",
-  "home_slug": "tokyo-rika",
-  "away_slug": "kanagawa",
-  "venue": "大宮けんぽグラウンド２区画サッカー場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-09-06-yokohama-kokudai-vs-tokyo-gakugei",
   "date": "2026-09-06",
   "time": "12:40",
@@ -735,49 +720,19 @@
   "note": ""
  },
  {
-  "id": "2026-09-06-tokyo-nodai-vs-seijo",
-  "date": "2026-09-06",
-  "time": "13:40",
-  "category": "2部 Aブロック",
-  "home": "東京農業大学",
-  "away": "成城大学",
-  "home_slug": "tokyo-nodai",
-  "away_slug": "seijo",
-  "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
- },
- {
-  "id": "2026-09-06-josai-kantogakuin-vs-daitobunka",
-  "date": "2026-09-06",
-  "time": "14:40",
-  "category": "3部 Bブロック",
-  "home": "城西・関東学院",
-  "away": "大東文化大学",
-  "home_slug": "josai-kantogakuin",
-  "away_slug": "daitobunka",
-  "venue": "大宮けんぽグラウンド２区画サッカー場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部B"
- },
- {
   "id": "2026-09-06-kokushikan-vs-musashi",
   "date": "2026-09-06",
   "time": "16:00",
   "category": "2部 Bブロック",
-  "home": "国士館",
+  "home": "国士舘大学",
   "away": "武蔵大学",
   "home_slug": "kokushikan",
   "away_slug": "musashi",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部B"
+  "status": "played",
+  "home_score": 5,
+  "away_score": 3,
+  "note": ""
  },
  {
   "id": "2026-09-12-chuo-vs-meiji",
@@ -920,7 +875,7 @@
   "time": "10:00",
   "category": "2部 Bブロック",
   "home": "立教大学",
-  "away": "国士館",
+  "away": "国士舘大学",
   "home_slug": "rikkyo",
   "away_slug": "kokushikan",
   "venue": "立教大学新座キャンパス多目的グラウンド",
@@ -958,6 +913,21 @@
   "home_score": null,
   "away_score": null,
   "note": "3部B"
+ },
+ {
+  "id": "2026-09-21-tokyo-nodai-vs-seijo",
+  "date": "2026-09-21",
+  "time": "14:40",
+  "category": "2部 Aブロック",
+  "home": "東京農業大学",
+  "away": "成城大学",
+  "home_slug": "tokyo-nodai",
+  "away_slug": "seijo",
+  "venue": "横浜FC東戸塚フットボールパーク",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": "2部A"
  },
  {
   "id": "2026-09-26-meijigakuin-vs-hosei",
