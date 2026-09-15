@@ -109,11 +109,6 @@
   "slug": "osaka-keizai",
   "block": "3部"
  },
- "大阪国際大学": {
-  "team": "大阪国際大学",
-  "slug": "oosakakokusai",
-  "block": "3部"
- },
  "奈良女子大学": {
   "team": "奈良女子大学",
   "slug": "nara-joshi",
@@ -122,6 +117,11 @@
  "合同チーム1": {
   "team": "合同チーム1",
   "slug": "goudouchiimu1",
+  "block": "3部"
+ },
+ "大阪国際大学": {
+  "team": "大阪国際大学",
+  "slug": "oosakakokusai",
   "block": "3部"
  }
 }

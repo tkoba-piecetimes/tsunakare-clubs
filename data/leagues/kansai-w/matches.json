@@ -375,21 +375,6 @@
   "note": ""
  },
  {
-  "id": "2026-09-05-kyoto-joshi-vs-kobe-jogakuin",
-  "date": "2026-09-05",
-  "time": "11:55",
-  "category": "2部",
-  "home": "京都女子大学",
-  "away": "神戸女学院大学",
-  "home_slug": "kyoto-joshi",
-  "away_slug": "kobe-jogakuin",
-  "venue": "太陽が丘第2競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-09-05-osaka-keizai-vs-ottemongakuin",
   "date": "2026-09-05",
   "time": "14:30",
@@ -414,9 +399,9 @@
   "home_slug": "kyoto-sangyo",
   "away_slug": "ritsumeikan",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 3,
+  "away_score": 9,
   "note": ""
  },
  {
@@ -429,9 +414,9 @@
   "home_slug": "kyoutokougeisen-i",
   "away_slug": "kyoto-joshi",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 9,
+  "away_score": 11,
   "note": ""
  },
  {
@@ -444,24 +429,9 @@
   "home_slug": "osaka-keizai",
   "away_slug": "osaka",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
-  "id": "2026-09-12-goudouchiimu2-vs-oosakakokusai",
-  "date": "2026-09-12",
-  "time": "14:30",
-  "category": "3部",
-  "home": "合同チーム2",
-  "away": "大阪国際大学",
-  "home_slug": "goudouchiimu2",
-  "away_slug": "oosakakokusai",
-  "venue": "舞洲運動広場運動場AC",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 6,
+  "away_score": 11,
   "note": ""
  },
  {
@@ -504,9 +474,9 @@
   "home_slug": "oosakakyouiku",
   "away_slug": "kyoto",
   "venue": "太陽が丘球技場A",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 13,
   "note": ""
  },
  {
@@ -519,9 +489,9 @@
   "home_slug": "nara-joshi",
   "away_slug": "doshisha-joshi",
   "venue": "太陽が丘球技場A",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 6,
+  "away_score": 17,
   "note": ""
  },
  {
