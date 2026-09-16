@@ -37,3 +37,5 @@ cta: none
 ## 相手チームのスカウティング
 
 リーグ戦は同じブロックのチームと毎年当たるため、**対戦相手の情報は蓄積が効きます**。相手の主力の背番号・利き手・得意な形をシートにまとめ、代替わりしても引き継ぐ。ラクロスマニアの[試合結果・日程](../../schedule/index.html)と[過去の対戦データ](../../index.html)、[Japan Lacrosse Live](https://www.lacrosselive.jp/)や[JLA公式YouTube](https://www.youtube.com/channel/UCpOxINAZ422HSX17E7T84aA)の試合映像を組み合わせれば、外部データだけでもかなりのスカウティングが可能です。
+
+分析で終わらせず、見つかった修正点を次の練習メニューに反映させるところまでが一連の流れです。年間の期分けに合わせてどこで映像分析の時間を確保するかは、[シーズン逆算の練習計画](../practice-planning/index.html)で扱っています。

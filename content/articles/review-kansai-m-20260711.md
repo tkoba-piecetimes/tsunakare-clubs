@@ -31,3 +31,9 @@ cta: sponsor
 ## 出典
 
 - [公益社団法人日本ラクロス協会](https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/)
+
+## あわせて読む
+
+- [第36回関西学生ラクロスリーグ戦 男子の順位表](../../kansai-m/standings/index.html)（勝点・得失点差を毎日更新）
+- [関西学生ラクロスリーグ戦 男子の試合日程・結果一覧](../../kansai-m/schedule/index.html)
+- [次節（7月19日）の結果まとめ](../review-kansai-m-20260719/index.html)
