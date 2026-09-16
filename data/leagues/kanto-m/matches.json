@@ -750,6 +750,21 @@
   "note": ""
  },
  {
+  "id": "2026-09-13-waseda-vs-keiou",
+  "date": "2026-09-13",
+  "time": "9:00",
+  "category": "1部 Aブロック",
+  "home": "早稲田大学",
+  "away": "慶應大学",
+  "home_slug": "waseda",
+  "away_slug": "keiou",
+  "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
+  "status": "played",
+  "home_score": 4,
+  "away_score": 6,
+  "note": ""
+ },
+ {
   "id": "2026-09-13-gakushuin-vs-hitotsubashi",
   "date": "2026-09-13",
   "time": "9:20",

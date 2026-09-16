@@ -105,21 +105,6 @@
   "note": ""
  },
  {
-  "id": "2026-08-16-fukuoka-vs-kyushu-univ",
-  "date": "2026-08-16",
-  "time": "10:00",
-  "category": "1部",
-  "home": "福岡大学",
-  "away": "九州大学",
-  "home_slug": "fukuoka",
-  "away_slug": "kyushu-univ",
-  "venue": "西南学院大学田尻グリーンフィールドラグビー場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-08-23-chikushijogakuen-vs-nakamuragakuendaigaku-kurumedaigakugoudouchiimu",
   "date": "2026-08-23",
   "time": "10:00",
@@ -132,21 +117,6 @@
   "status": "played",
   "home_score": 28,
   "away_score": 5,
-  "note": ""
- },
- {
-  "id": "2026-08-23-chikushijogakuen-vs-goudou",
-  "date": "2026-08-23",
-  "time": "10:00",
-  "category": "2部",
-  "home": "筑紫女学園大学",
-  "away": "合同",
-  "home_slug": "chikushijogakuen",
-  "away_slug": "goudou",
-  "venue": "平和台陸上競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
   "note": ""
  },
  {
@@ -165,21 +135,6 @@
   "note": ""
  },
  {
-  "id": "2026-08-29-kitakyushu-vs-kyushu-univ",
-  "date": "2026-08-29",
-  "time": "10:00",
-  "category": "1部",
-  "home": "北九州市立大学",
-  "away": "九州大学",
-  "home_slug": "kitakyushu",
-  "away_slug": "kyushu-univ",
-  "venue": "オクゼン不動産フットボールスタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-08-29-fukuokakyouiku-vs-fukuoka",
   "date": "2026-08-29",
   "time": "14:00",
@@ -192,21 +147,6 @@
   "status": "played",
   "home_score": 7,
   "away_score": 12,
-  "note": ""
- },
- {
-  "id": "2026-08-29-fukuokakyouiku-vs-fukuoka",
-  "date": "2026-08-29",
-  "time": "14:00",
-  "category": "1部",
-  "home": "福岡教育大学",
-  "away": "福岡大学",
-  "home_slug": "fukuokakyouiku",
-  "away_slug": "fukuoka",
-  "venue": "オクゼン不動産フットボールスタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
   "note": ""
  },
  {

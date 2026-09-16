@@ -101,20 +101,6 @@
    "goals_for": 36
   },
   {
-   "team": "合同",
-   "slug": "goudou",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 4,
-   "goal_diff": "0",
-   "goals_for": 0
-  },
-  {
    "team": "中村学園大学・久留米大学合同チーム",
    "slug": "nakamuragakuendaigaku-kurumedaigakugoudouchiimu",
    "points": 0,
@@ -124,7 +110,7 @@
    "losses": 2,
    "gf": 5,
    "ga": 66,
-   "rank": 5,
+   "rank": 4,
    "goal_diff": "-61",
    "goals_for": 5
   }

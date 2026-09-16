@@ -169,6 +169,11 @@
   "slug": "senshu",
   "block": "3部 Bブロック"
  },
+ "慶應大学": {
+  "team": "慶應大学",
+  "slug": "keiou",
+  "block": "1部 Aブロック"
+ },
  "駒澤大学": {
   "team": "駒澤大学",
   "slug": "komazawa",

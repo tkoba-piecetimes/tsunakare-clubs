@@ -159,10 +159,10 @@
   "home_slug": "kitakyushu",
   "away_slug": "nakamuragakuen",
   "venue": "久留米大学御井キャンパスグラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
+  "status": "played",
+  "home_score": 1,
+  "away_score": 0,
+  "note": "中村学園大学大学の試合放棄によって、北九州市立大学の不戦勝"
  },
  {
   "id": "2026-08-23-kurume-vs-ritsumeikanajiataiheiyou",
@@ -174,10 +174,10 @@
   "home_slug": "kurume",
   "away_slug": "ritsumeikanajiataiheiyou",
   "venue": "久留米大学御井キャンパスグラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
+  "status": "played",
+  "home_score": 0,
+  "away_score": 0,
+  "note": "試合が延期"
  },
  {
   "id": "2026-08-23-fukuoka-vs-seinan-gakuin",
@@ -189,9 +189,9 @@
   "home_slug": "fukuoka",
   "away_slug": "seinan-gakuin",
   "venue": "久留米大学御井キャンパスグラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 14,
+  "away_score": 2,
   "note": ""
  },
  {
@@ -204,9 +204,9 @@
   "home_slug": "kurume",
   "away_slug": "seinan-gakuin",
   "venue": "オクゼン不動産フットボールスタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 10,
+  "away_score": 4,
   "note": ""
  },
  {
@@ -219,9 +219,9 @@
   "home_slug": "fukuoka",
   "away_slug": "kitakyushu",
   "venue": "九州大学多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 18,
+  "away_score": 0,
   "note": ""
  },
  {
@@ -234,9 +234,9 @@
   "home_slug": "ritsumeikanajiataiheiyou",
   "away_slug": "kyushu-univ",
   "venue": "九州大学多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 0,
+  "away_score": 17,
   "note": ""
  },
  {
@@ -249,9 +249,9 @@
   "home_slug": "kyushu-univ",
   "away_slug": "kurume",
   "venue": "APUグラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 9,
+  "away_score": 2,
   "note": ""
  },
  {
@@ -264,9 +264,9 @@
   "home_slug": "ritsumeikanajiataiheiyou",
   "away_slug": "seinan-gakuin",
   "venue": "APUグラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 2,
+  "away_score": 2,
   "note": ""
  },
  {
