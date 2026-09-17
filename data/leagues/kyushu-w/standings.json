@@ -61,16 +61,16 @@
   {
    "team": "西南学院大学",
    "slug": "seinan-gakuin",
-   "points": 4,
-   "games": 2,
-   "wins": 1,
+   "points": 7,
+   "games": 3,
+   "wins": 2,
    "draws": 1,
    "losses": 0,
-   "gf": 47,
-   "ga": 9,
+   "gf": 70,
+   "ga": 10,
    "rank": 1,
-   "goal_diff": "+38",
-   "goals_for": 47
+   "goal_diff": "+60",
+   "goals_for": 70
   },
   {
    "team": "福岡女学院大学",
@@ -90,15 +90,29 @@
    "team": "筑紫女学園大学",
    "slug": "chikushijogakuen",
    "points": 3,
-   "games": 2,
+   "games": 3,
    "wins": 1,
    "draws": 0,
-   "losses": 1,
-   "gf": 36,
-   "ga": 27,
+   "losses": 2,
+   "gf": 37,
+   "ga": 50,
    "rank": 3,
-   "goal_diff": "+9",
-   "goals_for": 36
+   "goal_diff": "-13",
+   "goals_for": 37
+  },
+  {
+   "team": "合同（中村学園大学・久留米大学）",
+   "slug": "goudou-nakamuragakuendaigaku-kurumedaigaku",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 4,
+   "goal_diff": "0",
+   "goals_for": 0
   },
   {
    "team": "中村学園大学・久留米大学合同チーム",
@@ -110,7 +124,7 @@
    "losses": 2,
    "gf": 5,
    "ga": 66,
-   "rank": 4,
+   "rank": 5,
    "goal_diff": "-61",
    "goals_for": 5
   }

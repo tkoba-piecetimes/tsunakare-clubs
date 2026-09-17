@@ -165,6 +165,21 @@
   "note": ""
  },
  {
+  "id": "2026-09-05-fukuokajogakuin-vs-goudou-nakamuragakuendaigaku-kurumedaigaku",
+  "date": "2026-09-05",
+  "time": "10:00",
+  "category": "2部",
+  "home": "福岡女学院大学",
+  "away": "合同（中村学園大学・久留米大学）",
+  "home_slug": "fukuokajogakuin",
+  "away_slug": "goudou-nakamuragakuendaigaku-kurumedaigaku",
+  "venue": "久留米大学御井キャンパスグラウンド",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-09-06-seinan-gakuin-vs-chikushijogakuen",
   "date": "2026-09-06",
   "time": "10:00",
@@ -174,6 +189,21 @@
   "home_slug": "seinan-gakuin",
   "away_slug": "chikushijogakuen",
   "venue": "西南学院大学田尻グリーンフィールド",
+  "status": "played",
+  "home_score": 23,
+  "away_score": 1,
+  "note": ""
+ },
+ {
+  "id": "2026-09-06-seinan-gakuin-vs-chikushijogakuen",
+  "date": "2026-09-06",
+  "time": "10:00",
+  "category": "2部",
+  "home": "西南学院大学",
+  "away": "筑紫女学園大学",
+  "home_slug": "seinan-gakuin",
+  "away_slug": "chikushijogakuen",
+  "venue": "西南学院大学田尻グリーンフィールド（ラグビー場）",
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
