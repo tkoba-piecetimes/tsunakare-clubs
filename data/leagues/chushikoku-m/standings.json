@@ -43,6 +43,34 @@
    "goals_for": 28
   },
   {
+   "team": "香川大学",
+   "slug": "kagawa",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 4,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "松山大学",
+   "slug": "matsuyama",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 5,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
    "team": "山口大学",
    "slug": "yamaguchi",
    "points": 0,
@@ -52,7 +80,7 @@
    "losses": 3,
    "gf": 12,
    "ga": 30,
-   "rank": 4,
+   "rank": 6,
    "goal_diff": "-18",
    "goals_for": 12
   },
@@ -66,7 +94,7 @@
    "losses": 2,
    "gf": 0,
    "ga": 28,
-   "rank": 5,
+   "rank": 7,
    "goal_diff": "-28",
    "goals_for": 0
   }
@@ -115,6 +143,34 @@
    "goals_for": 6
   },
   {
+   "team": "徳島大学",
+   "slug": "tokushima",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 4,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "広島大学",
+   "slug": "hiroshima",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 5,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
    "team": "広島修道大学",
    "slug": "hiroshima-shudo",
    "points": 0,
@@ -124,7 +180,7 @@
    "losses": 2,
    "gf": 4,
    "ga": 13,
-   "rank": 4,
+   "rank": 6,
    "goal_diff": "-9",
    "goals_for": 4
   }

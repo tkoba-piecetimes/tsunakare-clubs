@@ -240,25 +240,10 @@
   "note": ""
  },
  {
-  "id": "2026-09-20-tokushima-vs-hiroshima",
+  "id": "2026-09-20-kagawa-vs-matsuyama",
   "date": "2026-09-20",
   "time": "10:20",
   "category": "1部",
-  "home": "徳島大学",
-  "away": "広島大学",
-  "home_slug": "tokushima",
-  "away_slug": "hiroshima",
-  "venue": "鳴門大塚スポーツパーク",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
-  "id": "2026-09-20-kagawa-vs-matsuyama",
-  "date": "2026-09-20",
-  "time": "14:10",
-  "category": "2部",
   "home": "香川大学",
   "away": "松山大学",
   "home_slug": "kagawa",
@@ -267,7 +252,22 @@
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": ""
+  "note": "試合の順番が逆に登録してしまっていた"
+ },
+ {
+  "id": "2026-09-20-tokushima-vs-hiroshima",
+  "date": "2026-09-20",
+  "time": "14:20",
+  "category": "2部",
+  "home": "徳島大学",
+  "away": "広島大学",
+  "home_slug": "tokushima",
+  "away_slug": "hiroshima",
+  "venue": "鳴門大塚スポーツパーク",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": "試合の順番を逆に登録してしまっていた"
  },
  {
   "id": "2026-10-03-2bu3kurai-vs-2bu4kurai",
