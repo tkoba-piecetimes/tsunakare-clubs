@@ -3,16 +3,16 @@
   {
    "team": "名古屋大学",
    "slug": "nagoya",
-   "points": 12,
-   "games": 4,
-   "wins": 4,
+   "points": 15,
+   "games": 5,
+   "wins": 5,
    "draws": 0,
    "losses": 0,
-   "gf": 24,
-   "ga": 15,
+   "gf": 33,
+   "ga": 16,
    "rank": 1,
-   "goal_diff": "+9",
-   "goals_for": 24
+   "goal_diff": "+17",
+   "goals_for": 33
   },
   {
    "team": "中京大学",
@@ -45,44 +45,44 @@
   {
    "team": "名城大学",
    "slug": "meijo",
-   "points": 3,
-   "games": 4,
-   "wins": 1,
+   "points": 6,
+   "games": 5,
+   "wins": 2,
    "draws": 0,
    "losses": 3,
-   "gf": 20,
-   "ga": 20,
+   "gf": 30,
+   "ga": 21,
    "rank": 4,
-   "goal_diff": "0",
-   "goals_for": 20
+   "goal_diff": "+9",
+   "goals_for": 30
   },
   {
    "team": "岐阜大学",
    "slug": "gifu",
    "points": 3,
-   "games": 4,
+   "games": 5,
    "wins": 1,
    "draws": 0,
-   "losses": 3,
-   "gf": 15,
-   "ga": 19,
+   "losses": 4,
+   "gf": 16,
+   "ga": 29,
    "rank": 5,
-   "goal_diff": "-4",
-   "goals_for": 15
+   "goal_diff": "-13",
+   "goals_for": 16
   },
   {
    "team": "愛知教育大学",
    "slug": "aichikyouiku",
    "points": 0,
-   "games": 4,
+   "games": 5,
    "wins": 0,
    "draws": 0,
-   "losses": 4,
-   "gf": 5,
-   "ga": 25,
+   "losses": 5,
+   "gf": 6,
+   "ga": 34,
    "rank": 6,
-   "goal_diff": "-20",
-   "goals_for": 5
+   "goal_diff": "-28",
+   "goals_for": 6
   }
  ],
  "2部": [

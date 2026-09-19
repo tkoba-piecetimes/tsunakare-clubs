@@ -825,6 +825,21 @@
   "note": ""
  },
  {
+  "id": "2026-09-19-tokyo-gakugei-vs-tokai",
+  "date": "2026-09-19",
+  "time": "12:20",
+  "category": "2部 Bブロック",
+  "home": "東京学芸大学",
+  "away": "東海大学",
+  "home_slug": "tokyo-gakugei",
+  "away_slug": "tokai",
+  "venue": "横浜FC東戸塚フットボールパーク",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-09-19-senshu-vs-tokyo-keizai",
   "date": "2026-09-19",
   "time": "12:20",
@@ -930,6 +945,21 @@
   "note": "3部B"
  },
  {
+  "id": "2026-09-21-seikei-vs-waseda",
+  "date": "2026-09-21",
+  "time": "10:00",
+  "category": "1部 Aブロック",
+  "home": "成蹊大学",
+  "away": "早稲田大学",
+  "home_slug": "seikei",
+  "away_slug": "waseda",
+  "venue": "横浜FC東戸塚フットボールパーク",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-09-21-tokyo-nodai-vs-seijo",
   "date": "2026-09-21",
   "time": "14:40",
@@ -943,6 +973,21 @@
   "home_score": null,
   "away_score": null,
   "note": "2部A"
+ },
+ {
+  "id": "2026-09-21-tokyo-nodai-vs-seijo",
+  "date": "2026-09-21",
+  "time": "14:40",
+  "category": "2部 Aブロック",
+  "home": "東京農業大学",
+  "away": "成城大学",
+  "home_slug": "tokyo-nodai",
+  "away_slug": "seijo",
+  "venue": "横浜FC東戸塚フットボールパーク",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
  },
  {
   "id": "2026-09-26-meijigakuin-vs-hosei",

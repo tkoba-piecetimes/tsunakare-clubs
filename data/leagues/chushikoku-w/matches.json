@@ -264,9 +264,9 @@
   "home_slug": "hiroshima",
   "away_slug": "tokushima",
   "venue": "広島大学西グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 12,
+  "away_score": 7,
   "note": ""
  },
  {
@@ -279,9 +279,9 @@
   "home_slug": "yamaguchi",
   "away_slug": "hiroshima-shudo",
   "venue": "広島大学西グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 7,
+  "away_score": 6,
   "note": ""
  },
  {
@@ -294,9 +294,9 @@
   "home_slug": "shimane",
   "away_slug": "yasudajoshi",
   "venue": "広島大学西グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 13,
+  "away_score": 5,
   "note": ""
  },
  {

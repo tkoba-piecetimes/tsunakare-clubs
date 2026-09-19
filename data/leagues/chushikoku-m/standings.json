@@ -43,6 +43,20 @@
    "goals_for": 28
   },
   {
+   "team": "山口大学",
+   "slug": "yamaguchi",
+   "points": 3,
+   "games": 4,
+   "wins": 1,
+   "draws": 0,
+   "losses": 3,
+   "gf": 21,
+   "ga": 35,
+   "rank": 4,
+   "goal_diff": "-14",
+   "goals_for": 21
+  },
+  {
    "team": "香川大学",
    "slug": "kagawa",
    "points": 0,
@@ -52,7 +66,7 @@
    "losses": 0,
    "gf": 0,
    "ga": 0,
-   "rank": 4,
+   "rank": 5,
    "goal_diff": "0",
    "goals_for": 0
   },
@@ -66,53 +80,39 @@
    "losses": 0,
    "gf": 0,
    "ga": 0,
-   "rank": 5,
+   "rank": 6,
    "goal_diff": "0",
    "goals_for": 0
-  },
-  {
-   "team": "山口大学",
-   "slug": "yamaguchi",
-   "points": 0,
-   "games": 3,
-   "wins": 0,
-   "draws": 0,
-   "losses": 3,
-   "gf": 12,
-   "ga": 30,
-   "rank": 6,
-   "goal_diff": "-18",
-   "goals_for": 12
   },
   {
    "team": "島根大学",
    "slug": "shimane",
    "points": 0,
-   "games": 2,
+   "games": 3,
    "wins": 0,
    "draws": 0,
-   "losses": 2,
-   "gf": 0,
-   "ga": 28,
+   "losses": 3,
+   "gf": 5,
+   "ga": 37,
    "rank": 7,
-   "goal_diff": "-28",
-   "goals_for": 0
+   "goal_diff": "-32",
+   "goals_for": 5
   }
  ],
  "2部": [
   {
    "team": "愛媛大学",
    "slug": "ehime",
-   "points": 6,
-   "games": 2,
-   "wins": 2,
+   "points": 9,
+   "games": 3,
+   "wins": 3,
    "draws": 0,
    "losses": 0,
-   "gf": 30,
+   "gf": 51,
    "ga": 6,
    "rank": 1,
-   "goal_diff": "+24",
-   "goals_for": 30
+   "goal_diff": "+45",
+   "goals_for": 51
   },
   {
    "team": "香川大学",
@@ -174,14 +174,14 @@
    "team": "広島修道大学",
    "slug": "hiroshima-shudo",
    "points": 0,
-   "games": 2,
+   "games": 3,
    "wins": 0,
    "draws": 0,
-   "losses": 2,
+   "losses": 3,
    "gf": 4,
-   "ga": 13,
+   "ga": 34,
    "rank": 6,
-   "goal_diff": "-9",
+   "goal_diff": "-30",
    "goals_for": 4
   }
  ]

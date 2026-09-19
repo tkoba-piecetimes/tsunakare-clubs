@@ -849,10 +849,10 @@
   "home_slug": "nihonjoshitaiiku",
   "away_slug": "yokohama-kokudai",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部B"
+  "status": "played",
+  "home_score": 3,
+  "away_score": 9,
+  "note": ""
  },
  {
   "id": "2026-09-19-tokai-vs-tokyo",
@@ -864,9 +864,9 @@
   "home_slug": "tokai",
   "away_slug": "tokyo",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 10,
+  "away_score": 10,
   "note": ""
  },
  {
