@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-19",
+ "updated_at": "2026-09-20",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -245,14 +245,20 @@
    },
    {
     "date": "20260919",
-    "users": 74,
-    "pageviews": 178,
-    "sessions": 92
+    "users": 75,
+    "pageviews": 208,
+    "sessions": 93
+   },
+   {
+    "date": "20260920",
+    "users": 61,
+    "pageviews": 147,
+    "sessions": 74
    }
   ],
-  "total_users": 1602,
-  "total_pageviews": 5754,
-  "total_sessions": 2040
+  "total_users": 1664,
+  "total_pageviews": 5931,
+  "total_sessions": 2115
  },
  "gsc": {
   "daily": [
@@ -489,30 +495,42 @@
     "clicks": 20,
     "impressions": 207,
     "position": 7.1
+   },
+   {
+    "date": "2026-09-17",
+    "clicks": 23,
+    "impressions": 213,
+    "position": 6.5
+   },
+   {
+    "date": "2026-09-18",
+    "clicks": 48,
+    "impressions": 323,
+    "position": 5.8
    }
   ],
-  "total_clicks": 956,
-  "total_impressions": 8879,
+  "total_clicks": 1027,
+  "total_impressions": 9415,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
-    "clicks": 32,
-    "impressions": 227
+    "clicks": 37,
+    "impressions": 241
    },
    {
     "query": "ラクロス 大学 ランキング 関西",
     "clicks": 8,
-    "impressions": 38
+    "impressions": 41
    },
    {
     "query": "関東学生 ラクロス 1部 女子",
-    "clicks": 6,
-    "impressions": 32
+    "clicks": 7,
+    "impressions": 39
    },
    {
     "query": "第38回関東学生ラクロスリーグ戦",
     "clicks": 3,
-    "impressions": 29
+    "impressions": 31
    },
    {
     "query": "関西女子ラクロスリーグ",
@@ -522,12 +540,17 @@
    {
     "query": "ラクロス 大学 ランキング 男子",
     "clicks": 2,
-    "impressions": 59
+    "impressions": 60
    },
    {
     "query": "ラクロス用語",
     "clicks": 2,
-    "impressions": 9
+    "impressions": 10
+   },
+   {
+    "query": "北海道大学 ラクロス 女子",
+    "clicks": 2,
+    "impressions": 3
    },
    {
     "query": "ラクロス ショットクロック",
@@ -538,11 +561,6 @@
     "query": "ラクロス ルール 反則",
     "clicks": 1,
     "impressions": 8
-   },
-   {
-    "query": "ラクロス 大学 ランキング 関東",
-    "clicks": 1,
-    "impressions": 4
    }
   ]
  }

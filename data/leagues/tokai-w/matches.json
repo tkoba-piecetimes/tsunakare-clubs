@@ -549,9 +549,24 @@
   "home_slug": "shinshuu",
   "away_slug": "aichi",
   "venue": "愛知大学豊橋キャンパスグラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 10,
+  "away_score": 9,
+  "note": ""
+ },
+ {
+  "id": "2026-09-19-chukyo-vs-sugiyama",
+  "date": "2026-09-19",
+  "time": "15:40",
+  "category": "プレーオフ",
+  "home": "中京大学",
+  "away": "椙山女学園大学",
+  "home_slug": "chukyo",
+  "away_slug": "sugiyama",
+  "venue": "愛知大学豊橋",
+  "status": "played",
+  "home_score": 12,
+  "away_score": 8,
   "note": ""
  },
  {
