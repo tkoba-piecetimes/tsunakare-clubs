@@ -27,6 +27,16 @@ cta: sponsor
 - 戦績: 5勝0分0敗
 - 得失点差: +24
 
+## 対戦相手のシーズン記録
+
+- [東海大学のシーズン記録](../season-kanto-m-tokai-2023/index.html)
+- [慶應義塾大学のシーズン記録](../season-kanto-m-keio-2023/index.html)
+- [一橋大学のシーズン記録](../season-kanto-m-hitotsubashi-2023/index.html)
+- [獨協大学のシーズン記録](../season-kanto-m-dokkyo-2023/index.html)
+- [中央大学のシーズン記録](../season-kanto-m-chuo-2023/index.html)
+- [東京大学のシーズン記録](../season-kanto-m-tokyo-2023/index.html)
+- [法政大学のシーズン記録](../season-kanto-m-hosei-2023/index.html)
+
 ## 出典
 
 - [公益社団法人日本ラクロス協会](https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/)
