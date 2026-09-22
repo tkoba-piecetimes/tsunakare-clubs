@@ -144,9 +144,9 @@
   "home_slug": "fuji-joshi",
   "away_slug": "hokkaido",
   "venue": "北海学園大学清田グラウンド（予定）",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 3,
+  "away_score": 22,
   "note": ""
  },
  {
