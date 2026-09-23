@@ -549,9 +549,9 @@
   "home_slug": "ottemongakuin",
   "away_slug": "osaka-metropolitan",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 3,
   "note": ""
  },
  {
