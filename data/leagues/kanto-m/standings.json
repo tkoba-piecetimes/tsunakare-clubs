@@ -71,32 +71,32 @@
    "goals_for": 6
   },
   {
-   "team": "成蹊大学",
-   "slug": "seikei",
-   "points": 0,
-   "games": 3,
-   "wins": 0,
-   "draws": 0,
-   "losses": 3,
-   "gf": 10,
-   "ga": 28,
-   "rank": 6,
-   "goal_diff": "-18",
-   "goals_for": 10
-  },
-  {
    "team": "獨協大学",
    "slug": "dokkyo",
+   "points": 3,
+   "games": 5,
+   "wins": 1,
+   "draws": 0,
+   "losses": 4,
+   "gf": 18,
+   "ga": 40,
+   "rank": 6,
+   "goal_diff": "-22",
+   "goals_for": 18
+  },
+  {
+   "team": "成蹊大学",
+   "slug": "seikei",
    "points": 0,
    "games": 4,
    "wins": 0,
    "draws": 0,
    "losses": 4,
-   "gf": 12,
-   "ga": 36,
+   "gf": 14,
+   "ga": 34,
    "rank": 7,
-   "goal_diff": "-24",
-   "goals_for": 12
+   "goal_diff": "-20",
+   "goals_for": 14
   }
  ],
  "1部 Bブロック": [
@@ -187,6 +187,20 @@
  ],
  "2部 Aブロック": [
   {
+   "team": "東京大学",
+   "slug": "tokyo",
+   "points": 12,
+   "games": 4,
+   "wins": 4,
+   "draws": 0,
+   "losses": 0,
+   "gf": 34,
+   "ga": 11,
+   "rank": 1,
+   "goal_diff": "+23",
+   "goals_for": 34
+  },
+  {
    "team": "東洋大学",
    "slug": "toyo",
    "points": 9,
@@ -196,23 +210,9 @@
    "losses": 1,
    "gf": 33,
    "ga": 12,
-   "rank": 1,
+   "rank": 2,
    "goal_diff": "+21",
    "goals_for": 33
-  },
-  {
-   "team": "東京大学",
-   "slug": "tokyo",
-   "points": 9,
-   "games": 3,
-   "wins": 3,
-   "draws": 0,
-   "losses": 0,
-   "gf": 22,
-   "ga": 7,
-   "rank": 2,
-   "goal_diff": "+15",
-   "goals_for": 22
   },
   {
    "team": "東京農業大学",
@@ -229,20 +229,6 @@
    "goals_for": 30
   },
   {
-   "team": "千葉大学",
-   "slug": "chiba",
-   "points": 3,
-   "games": 3,
-   "wins": 1,
-   "draws": 0,
-   "losses": 2,
-   "gf": 15,
-   "ga": 19,
-   "rank": 4,
-   "goal_diff": "-4",
-   "goals_for": 15
-  },
-  {
    "team": "成城大学",
    "slug": "seijo",
    "points": 3,
@@ -252,9 +238,23 @@
    "losses": 2,
    "gf": 14,
    "ga": 22,
-   "rank": 5,
+   "rank": 4,
    "goal_diff": "-8",
    "goals_for": 14
+  },
+  {
+   "team": "千葉大学",
+   "slug": "chiba",
+   "points": 3,
+   "games": 4,
+   "wins": 1,
+   "draws": 0,
+   "losses": 3,
+   "gf": 19,
+   "ga": 31,
+   "rank": 5,
+   "goal_diff": "-12",
+   "goals_for": 19
   },
   {
    "team": "帝京大学",
@@ -373,18 +373,32 @@
    "goals_for": 16
   },
   {
-   "team": "埼玉大学",
-   "slug": "saitama",
+   "team": "筑波大学",
+   "slug": "tsukuba",
    "points": 3,
    "games": 2,
    "wins": 1,
    "draws": 0,
    "losses": 1,
-   "gf": 14,
-   "ga": 11,
+   "gf": 17,
+   "ga": 15,
    "rank": 2,
-   "goal_diff": "+3",
-   "goals_for": 14
+   "goal_diff": "+2",
+   "goals_for": 17
+  },
+  {
+   "team": "埼玉大学",
+   "slug": "saitama",
+   "points": 3,
+   "games": 3,
+   "wins": 1,
+   "draws": 0,
+   "losses": 2,
+   "gf": 19,
+   "ga": 18,
+   "rank": 3,
+   "goal_diff": "+1",
+   "goals_for": 19
   },
   {
    "team": "慶應義塾高校",
@@ -396,7 +410,7 @@
    "losses": 0,
    "gf": 0,
    "ga": 0,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "0",
    "goals_for": 0
   },
@@ -410,23 +424,9 @@
    "losses": 0,
    "gf": 0,
    "ga": 0,
-   "rank": 4,
+   "rank": 5,
    "goal_diff": "0",
    "goals_for": 0
-  },
-  {
-   "team": "筑波大学",
-   "slug": "tsukuba",
-   "points": 0,
-   "games": 1,
-   "wins": 0,
-   "draws": 0,
-   "losses": 1,
-   "gf": 9,
-   "ga": 10,
-   "rank": 5,
-   "goal_diff": "-1",
-   "goals_for": 9
   },
   {
    "team": "上智大学",
@@ -436,11 +436,11 @@
    "wins": 0,
    "draws": 0,
    "losses": 1,
-   "gf": 5,
+   "gf": 4,
    "ga": 9,
    "rank": 6,
-   "goal_diff": "-4",
-   "goals_for": 5
+   "goal_diff": "-5",
+   "goals_for": 4
   }
  ],
  "3部 Bブロック": [
@@ -475,30 +475,30 @@
   {
    "team": "東京経済大学",
    "slug": "tokyo-keizai",
+   "points": 5,
+   "games": 4,
+   "wins": 1,
+   "draws": 2,
+   "losses": 1,
+   "gf": 23,
+   "ga": 15,
+   "rank": 3,
+   "goal_diff": "+8",
+   "goals_for": 23
+  },
+  {
+   "team": "専修大学",
+   "slug": "senshu",
    "points": 4,
    "games": 3,
    "wins": 1,
    "draws": 1,
    "losses": 1,
-   "gf": 19,
-   "ga": 11,
-   "rank": 3,
-   "goal_diff": "+8",
-   "goals_for": 19
-  },
-  {
-   "team": "専修大学",
-   "slug": "senshu",
-   "points": 3,
-   "games": 2,
-   "wins": 1,
-   "draws": 0,
-   "losses": 1,
-   "gf": 13,
-   "ga": 8,
+   "gf": 17,
+   "ga": 12,
    "rank": 4,
    "goal_diff": "+5",
-   "goals_for": 13
+   "goals_for": 17
   },
   {
    "team": "大東文化大学",

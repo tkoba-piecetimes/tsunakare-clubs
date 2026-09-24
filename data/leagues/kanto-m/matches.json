@@ -236,7 +236,7 @@
   "venue": "上智大学秦野トラックフィールド",
   "status": "played",
   "home_score": 9,
-  "away_score": 5,
+  "away_score": 4,
   "note": ""
  },
  {
@@ -804,10 +804,10 @@
   "home_slug": "chiba",
   "away_slug": "tokyo",
   "venue": "千葉大学西千葉キャンパス",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
+  "status": "played",
+  "home_score": 4,
+  "away_score": 12,
+  "note": ""
  },
  {
   "id": "2026-09-19-saitama-vs-tsukuba",
@@ -819,9 +819,9 @@
   "home_slug": "saitama",
   "away_slug": "tsukuba",
   "venue": "大宮けんぽグラウンド２区画サッカー場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 8,
   "note": ""
  },
  {
@@ -849,9 +849,9 @@
   "home_slug": "senshu",
   "away_slug": "tokyo-keizai",
   "venue": "大宮けんぽグラウンド２区画サッカー場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 4,
   "note": ""
  },
  {
@@ -879,25 +879,10 @@
   "home_slug": "dokkyo",
   "away_slug": "seikei",
   "venue": "獨協大学人工芝グラウンドAコート",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部A"
- },
- {
-  "id": "2026-09-19-tokyo-gakugei-vs-tokai",
-  "date": "2026-09-19",
-  "time": "未定",
-  "category": "2部 Bブロック",
-  "home": "東京学芸大学",
-  "away": "東海大学",
-  "home_slug": "tokyo-gakugei",
-  "away_slug": "tokai",
-  "venue": "セナリオハウスフィールド三郷",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部B"
+  "status": "played",
+  "home_score": 6,
+  "away_score": 4,
+  "note": ""
  },
  {
   "id": "2026-09-20-rikkyo-vs-kokushikan",
