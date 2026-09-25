@@ -42,7 +42,7 @@
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": ""
+  "note": "雨天延期"
  },
  {
   "id": "2026-09-13-tohoku-gakuin-vs-fukushima",
@@ -54,9 +54,9 @@
   "home_slug": "tohoku-gakuin",
   "away_slug": "fukushima",
   "venue": "福島大学グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 2,
+  "away_score": 32,
   "note": ""
  },
  {
@@ -69,9 +69,9 @@
   "home_slug": "iwate",
   "away_slug": "tohoku-univ",
   "venue": "未定",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 1,
+  "away_score": 27,
   "note": ""
  },
  {

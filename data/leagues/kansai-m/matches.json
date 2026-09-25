@@ -690,34 +690,34 @@
   "note": ""
  },
  {
-  "id": "2026-10-24-tbd-vs-tbd",
+  "id": "2026-10-24-1buriiguburokku2kurai-vs-1buriiguburokku3kurai",
   "date": "2026-10-24",
   "time": "9:00",
   "category": "準決勝",
-  "home": "TBD",
-  "away": "TBD",
-  "home_slug": "tbd",
-  "away_slug": "tbd",
+  "home": "1部リーグブロック2位",
+  "away": "1部リーグブロック3位",
+  "home_slug": "1buriiguburokku2kurai",
+  "away_slug": "1buriiguburokku3kurai",
   "venue": "鶴見緑地スタジアム",
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": ""
+  "note": "【有料試合】・男子1部リーグ準決勝"
  },
  {
-  "id": "2026-10-24-tbd-vs-tbd",
+  "id": "2026-10-24-joshi-1buriiguburokku2kurai-vs-joshi-1buriiguburokku3kurai",
   "date": "2026-10-24",
-  "time": "9:00",
-  "category": "準決勝",
-  "home": "TBD",
-  "away": "TBD",
-  "home_slug": "tbd",
-  "away_slug": "tbd",
+  "time": "11:30",
+  "category": "プレーオフ",
+  "home": "(女子)1部リーグブロック2位",
+  "away": "(女子)1部リーグブロック3位",
+  "home_slug": "joshi-1buriiguburokku2kurai",
+  "away_slug": "joshi-1buriiguburokku3kurai",
   "venue": "鶴見緑地スタジアム",
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": ""
+  "note": "【有料試合】・女子1部リーグ準決勝"
  },
  {
   "id": "2026-10-31-konan-vs-kyoto-sangyo",
@@ -750,33 +750,33 @@
   "note": ""
  },
  {
-  "id": "2026-11-01-tbd-vs-tbd",
+  "id": "2026-11-01-1buburokku1kurai-vs-1bujunkesshoushousha",
   "date": "2026-11-01",
   "time": "11:00",
-  "category": "決勝",
-  "home": "TBD",
-  "away": "TBD",
-  "home_slug": "tbd",
-  "away_slug": "tbd",
+  "category": "プレーオフ",
+  "home": "1部ブロック1位",
+  "away": "1部準決勝勝者",
+  "home_slug": "1buburokku1kurai",
+  "away_slug": "1bujunkesshoushousha",
   "venue": "たけびしスタジアム京都",
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": ""
+  "note": "男子1部リーグ決勝戦"
  },
  {
-  "id": "2026-11-01-tbd-vs-tbd",
+  "id": "2026-11-01-joshi-1buriiguburokku1kurai-vs-joshi-1buriigujunkesshoushousha",
   "date": "2026-11-01",
-  "time": "11:00",
-  "category": "決勝",
-  "home": "TBD",
-  "away": "TBD",
-  "home_slug": "tbd",
-  "away_slug": "tbd",
+  "time": "14:00",
+  "category": "プレーオフ",
+  "home": "(女子)1部リーグブロック1位",
+  "away": "(女子)1部リーグ準決勝勝者",
+  "home_slug": "joshi-1buriiguburokku1kurai",
+  "away_slug": "joshi-1buriigujunkesshoushousha",
   "venue": "たけびしスタジアム京都",
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": ""
+  "note": "女子1部リーグ決勝戦"
  }
 ]
