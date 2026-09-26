@@ -31,16 +31,16 @@
   {
    "team": "京都大学",
    "slug": "kyoto",
-   "points": 7,
-   "games": 4,
-   "wins": 2,
+   "points": 10,
+   "games": 5,
+   "wins": 3,
    "draws": 1,
    "losses": 1,
-   "gf": 22,
-   "ga": 12,
+   "gf": 35,
+   "ga": 14,
    "rank": 3,
-   "goal_diff": "+10",
-   "goals_for": 22
+   "goal_diff": "+21",
+   "goals_for": 35
   },
   {
    "team": "同志社大学",
@@ -88,15 +88,15 @@
    "team": "大阪経済大学",
    "slug": "osaka-keizai",
    "points": 0,
-   "games": 4,
+   "games": 5,
    "wins": 0,
    "draws": 0,
-   "losses": 4,
-   "gf": 10,
-   "ga": 33,
+   "losses": 5,
+   "gf": 12,
+   "ga": 46,
    "rank": 7,
-   "goal_diff": "-23",
-   "goals_for": 10
+   "goal_diff": "-34",
+   "goals_for": 12
   }
  ],
  "2部": [

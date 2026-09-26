@@ -564,10 +564,10 @@
   "home_slug": "osaka-keizai",
   "away_slug": "kyoto",
   "venue": "鶴見緑地第2球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "試合開始時刻の変更"
+  "status": "played",
+  "home_score": 2,
+  "away_score": 13,
+  "note": ""
  },
  {
   "id": "2026-10-03-osaka-keizai-vs-osaka",

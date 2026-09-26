@@ -29,6 +29,20 @@
    "goals_for": 46
   },
   {
+   "team": "関西大学",
+   "slug": "kansai",
+   "points": 9,
+   "games": 5,
+   "wins": 3,
+   "draws": 0,
+   "losses": 2,
+   "gf": 43,
+   "ga": 32,
+   "rank": 3,
+   "goal_diff": "+11",
+   "goals_for": 43
+  },
+  {
    "team": "京都産業大学",
    "slug": "kyoto-sangyo",
    "points": 9,
@@ -38,7 +52,7 @@
    "losses": 2,
    "gf": 40,
    "ga": 31,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "+9",
    "goals_for": 40
   },
@@ -52,23 +66,9 @@
    "losses": 3,
    "gf": 39,
    "ga": 28,
-   "rank": 4,
+   "rank": 5,
    "goal_diff": "+11",
    "goals_for": 39
-  },
-  {
-   "team": "関西大学",
-   "slug": "kansai",
-   "points": 6,
-   "games": 4,
-   "wins": 2,
-   "draws": 0,
-   "losses": 2,
-   "gf": 30,
-   "ga": 28,
-   "rank": 5,
-   "goal_diff": "+2",
-   "goals_for": 30
   },
   {
    "team": "武庫川女子大学",
@@ -88,15 +88,15 @@
    "team": "近畿大学",
    "slug": "kindai",
    "points": 0,
-   "games": 4,
+   "games": 5,
    "wins": 0,
    "draws": 0,
-   "losses": 4,
-   "gf": 21,
-   "ga": 57,
+   "losses": 5,
+   "gf": 25,
+   "ga": 70,
    "rank": 7,
-   "goal_diff": "-36",
-   "goals_for": 21
+   "goal_diff": "-45",
+   "goals_for": 25
   }
  ],
  "2部": [
