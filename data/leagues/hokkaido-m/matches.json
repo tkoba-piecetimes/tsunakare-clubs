@@ -129,10 +129,10 @@
   "home_slug": "otaru-shoka",
   "away_slug": "hokkaido",
   "venue": "NOPPORO ヤシマ商会スポーツパークホッケー場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "ホッケー場"
+  "status": "played",
+  "home_score": 1,
+  "away_score": 14,
+  "note": ""
  },
  {
   "id": "2026-10-04-hokkaidoukagaku-vs-hokusei-gakuen",

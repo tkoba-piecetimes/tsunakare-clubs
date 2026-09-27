@@ -29,32 +29,32 @@
    "goals_for": 36
   },
   {
-   "team": "岩手大学",
-   "slug": "iwate",
-   "points": 0,
-   "games": 1,
-   "wins": 0,
-   "draws": 0,
-   "losses": 1,
-   "gf": 1,
-   "ga": 27,
-   "rank": 3,
-   "goal_diff": "-26",
-   "goals_for": 1
-  },
-  {
    "team": "東北学院大学",
    "slug": "tohoku-gakuin",
+   "points": 3,
+   "games": 3,
+   "wins": 1,
+   "draws": 0,
+   "losses": 2,
+   "gf": 10,
+   "ga": 67,
+   "rank": 3,
+   "goal_diff": "-57",
+   "goals_for": 10
+  },
+  {
+   "team": "岩手大学",
+   "slug": "iwate",
    "points": 0,
    "games": 2,
    "wins": 0,
    "draws": 0,
    "losses": 2,
-   "gf": 2,
-   "ga": 61,
+   "gf": 7,
+   "ga": 35,
    "rank": 4,
-   "goal_diff": "-59",
-   "goals_for": 2
+   "goal_diff": "-28",
+   "goals_for": 7
   }
  ]
 }

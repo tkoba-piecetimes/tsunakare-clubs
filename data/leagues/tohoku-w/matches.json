@@ -84,9 +84,9 @@
   "home_slug": "tohoku-gakuin",
   "away_slug": "iwate",
   "venue": "未定",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 8,
+  "away_score": 6,
   "note": ""
  },
  {
