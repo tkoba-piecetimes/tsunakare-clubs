@@ -159,9 +159,9 @@
   "home_slug": "hokusei-gakuen",
   "away_slug": "hokkai-gakuen",
   "venue": "北海学園大学清田グラウンド（予定）",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 14,
+  "away_score": 4,
   "note": ""
  },
  {
@@ -174,9 +174,9 @@
   "home_slug": "hokkai-gakuen",
   "away_slug": "rakuno-gakuen",
   "venue": "前田森林公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 2,
+  "away_score": 21,
   "note": ""
  },
  {
@@ -189,9 +189,9 @@
   "home_slug": "goudou",
   "away_slug": "fuji-joshi",
   "venue": "前田森林公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 16,
   "note": ""
  },
  {

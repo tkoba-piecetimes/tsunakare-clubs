@@ -15,32 +15,32 @@
    "goals_for": 33
   },
   {
+   "team": "中央大学",
+   "slug": "chuo",
+   "points": 9,
+   "games": 5,
+   "wins": 3,
+   "draws": 0,
+   "losses": 2,
+   "gf": 38,
+   "ga": 24,
+   "rank": 2,
+   "goal_diff": "+14",
+   "goals_for": 38
+  },
+  {
    "team": "慶應義塾大学",
    "slug": "keio",
    "points": 9,
-   "games": 3,
+   "games": 4,
    "wins": 3,
    "draws": 0,
-   "losses": 0,
-   "gf": 20,
-   "ga": 11,
-   "rank": 2,
-   "goal_diff": "+9",
-   "goals_for": 20
-  },
-  {
-   "team": "中央大学",
-   "slug": "chuo",
-   "points": 6,
-   "games": 4,
-   "wins": 2,
-   "draws": 0,
-   "losses": 2,
-   "gf": 33,
-   "ga": 21,
+   "losses": 1,
+   "gf": 23,
+   "ga": 16,
    "rank": 3,
-   "goal_diff": "+12",
-   "goals_for": 33
+   "goal_diff": "+7",
+   "goals_for": 23
   },
   {
    "team": "早稲田大学",
@@ -103,16 +103,16 @@
   {
    "team": "明治学院大学",
    "slug": "meijigakuin",
-   "points": 12,
-   "games": 4,
-   "wins": 4,
+   "points": 15,
+   "games": 5,
+   "wins": 5,
    "draws": 0,
    "losses": 0,
-   "gf": 20,
-   "ga": 12,
+   "gf": 29,
+   "ga": 16,
    "rank": 1,
-   "goal_diff": "+8",
-   "goals_for": 20
+   "goal_diff": "+13",
+   "goals_for": 29
   },
   {
    "team": "日本体育大学",
@@ -132,15 +132,15 @@
    "team": "法政大学",
    "slug": "hosei",
    "points": 9,
-   "games": 4,
+   "games": 5,
    "wins": 3,
    "draws": 0,
-   "losses": 1,
-   "gf": 29,
-   "ga": 19,
+   "losses": 2,
+   "gf": 33,
+   "ga": 28,
    "rank": 3,
-   "goal_diff": "+10",
-   "goals_for": 29
+   "goal_diff": "+5",
+   "goals_for": 33
   },
   {
    "team": "青山学院大学",

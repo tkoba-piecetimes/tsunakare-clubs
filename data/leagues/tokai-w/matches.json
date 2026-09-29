@@ -594,9 +594,9 @@
   "home_slug": "aichi-gakuin",
   "away_slug": "shinshuu",
   "venue": "愛知学院大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 21,
+  "away_score": 5,
   "note": ""
  },
  {

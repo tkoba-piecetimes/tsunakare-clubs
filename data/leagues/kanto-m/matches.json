@@ -984,10 +984,10 @@
   "home_slug": "meijigakuin",
   "away_slug": "hosei",
   "venue": "明治学院大学ヘボンフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部B"
+  "status": "played",
+  "home_score": 9,
+  "away_score": 4,
+  "note": ""
  },
  {
   "id": "2026-09-27-waseda-vs-meiji",
@@ -1029,10 +1029,10 @@
   "home_slug": "keio",
   "away_slug": "chuo",
   "venue": "慶應義塾大学日吉キャンパス陸上競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部A"
+  "status": "played",
+  "home_score": 3,
+  "away_score": 5,
+  "note": ""
  },
  {
   "id": "2026-10-03-tokyo-vs-teikyo",
