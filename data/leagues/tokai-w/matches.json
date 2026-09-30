@@ -384,9 +384,9 @@
   "home_slug": "nagoyagaikokugo",
   "away_slug": "sugiyama",
   "venue": "愛・地球博記念公園多目的広場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 0,
+  "away_score": 0,
   "note": ""
  },
  {
@@ -570,21 +570,6 @@
   "note": ""
  },
  {
-  "id": "2026-09-19-chukyo-vs-sugiyama",
-  "date": "2026-09-19",
-  "time": "15:40",
-  "category": "プレーオフ",
-  "home": "中京大学",
-  "away": "椙山女学園大学",
-  "home_slug": "chukyo",
-  "away_slug": "sugiyama",
-  "venue": "愛知大学豊橋キャンパスグラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-09-27-aichi-gakuin-vs-shinshuu",
   "date": "2026-09-27",
   "time": "9:30",
@@ -600,14 +585,14 @@
   "note": ""
  },
  {
-  "id": "2026-10-04-nagoya-vs-9-27shousha",
+  "id": "2026-10-04-nagoya-vs-aichi-gakuin",
   "date": "2026-10-04",
   "time": "10:00",
   "category": "プレーオフ",
   "home": "名古屋大学",
-  "away": "9/27勝者",
+  "away": "愛知学院大学",
   "home_slug": "nagoya",
-  "away_slug": "9-27shousha",
+  "away_slug": "aichi-gakuin",
   "venue": "名古屋大学",
   "status": "scheduled",
   "home_score": null,

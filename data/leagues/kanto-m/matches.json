@@ -985,8 +985,8 @@
   "away_slug": "hosei",
   "venue": "明治学院大学ヘボンフィールド",
   "status": "played",
-  "home_score": 9,
-  "away_score": 4,
+  "home_score": 4,
+  "away_score": 9,
   "note": ""
  },
  {
@@ -1014,9 +1014,9 @@
   "home_slug": "nittaidai",
   "away_slug": "gakushuin",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 7,
+  "away_score": 2,
   "note": "1部B"
  },
  {

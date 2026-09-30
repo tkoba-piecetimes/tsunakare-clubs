@@ -159,9 +159,9 @@
   "home_slug": "fukuokajogakuin",
   "away_slug": "nakamuragakuendaigaku-kurumedaigakugoudouchiimu",
   "venue": "久留米大学グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 35,
+  "away_score": 1,
   "note": ""
  },
  {

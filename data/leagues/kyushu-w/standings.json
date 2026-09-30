@@ -75,16 +75,16 @@
   {
    "team": "福岡女学院大学",
    "slug": "fukuokajogakuin",
-   "points": 4,
-   "games": 2,
-   "wins": 1,
+   "points": 7,
+   "games": 3,
+   "wins": 2,
    "draws": 1,
    "losses": 0,
-   "gf": 31,
-   "ga": 17,
+   "gf": 66,
+   "ga": 18,
    "rank": 2,
-   "goal_diff": "+14",
-   "goals_for": 31
+   "goal_diff": "+48",
+   "goals_for": 66
   },
   {
    "team": "筑紫女学園大学",
@@ -118,15 +118,15 @@
    "team": "中村学園大学・久留米大学合同チーム",
    "slug": "nakamuragakuendaigaku-kurumedaigakugoudouchiimu",
    "points": 0,
-   "games": 2,
+   "games": 3,
    "wins": 0,
    "draws": 0,
-   "losses": 2,
-   "gf": 5,
-   "ga": 66,
+   "losses": 3,
+   "gf": 6,
+   "ga": 101,
    "rank": 5,
-   "goal_diff": "-61",
-   "goals_for": 5
+   "goal_diff": "-95",
+   "goals_for": 6
   }
  ]
 }
