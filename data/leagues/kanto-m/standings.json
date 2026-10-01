@@ -1,18 +1,18 @@
 {
  "1部 Aブロック": [
   {
-   "team": "明治大学",
-   "slug": "meiji",
-   "points": 9,
-   "games": 4,
-   "wins": 3,
+   "team": "早稲田大学",
+   "slug": "waseda",
+   "points": 12,
+   "games": 5,
+   "wins": 4,
    "draws": 0,
    "losses": 1,
-   "gf": 33,
-   "ga": 16,
+   "gf": 35,
+   "ga": 21,
    "rank": 1,
-   "goal_diff": "+17",
-   "goals_for": 33
+   "goal_diff": "+14",
+   "goals_for": 35
   },
   {
    "team": "中央大学",
@@ -29,6 +29,20 @@
    "goals_for": 38
   },
   {
+   "team": "明治大学",
+   "slug": "meiji",
+   "points": 9,
+   "games": 5,
+   "wins": 3,
+   "draws": 0,
+   "losses": 2,
+   "gf": 35,
+   "ga": 22,
+   "rank": 3,
+   "goal_diff": "+13",
+   "goals_for": 35
+  },
+  {
    "team": "慶應義塾大学",
    "slug": "keio",
    "points": 9,
@@ -38,23 +52,9 @@
    "losses": 1,
    "gf": 23,
    "ga": 16,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "+7",
    "goals_for": 23
-  },
-  {
-   "team": "早稲田大学",
-   "slug": "waseda",
-   "points": 6,
-   "games": 3,
-   "wins": 2,
-   "draws": 0,
-   "losses": 1,
-   "gf": 17,
-   "ga": 15,
-   "rank": 4,
-   "goal_diff": "+2",
-   "goals_for": 17
   },
   {
    "team": "慶應大学",
@@ -88,15 +88,15 @@
    "team": "成蹊大学",
    "slug": "seikei",
    "points": 0,
-   "games": 4,
+   "games": 5,
    "wins": 0,
    "draws": 0,
-   "losses": 4,
-   "gf": 14,
-   "ga": 34,
+   "losses": 5,
+   "gf": 18,
+   "ga": 46,
    "rank": 7,
-   "goal_diff": "-20",
-   "goals_for": 14
+   "goal_diff": "-28",
+   "goals_for": 18
   }
  ],
  "1部 Bブロック": [
