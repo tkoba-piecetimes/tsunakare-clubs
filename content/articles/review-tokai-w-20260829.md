@@ -28,6 +28,8 @@ cta: sponsor
 | 6 | [岐阜大学](../../tokai-w/clubs/gifu/index.html) | 3 | -51 |
 | 7 | [金城学院大学](../../tokai-w/clubs/kinjo-gakuin/index.html) | 0 | -52 |
 
+愛知淑徳大学が7月19日の南山大学戦に7-9で敗れた試合の経過と当時の順位表は、[東海学生ラクロスリーグ戦 女子の7月18日～19日の結果まとめ](../review-tokai-w-20260718/index.html)で確認できます。
+
 ## 出典
 
 - [公益社団法人日本ラクロス協会](https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/)

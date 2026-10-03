@@ -31,6 +31,8 @@ cta: sponsor
 | 6 | [金城学院大学](../../tokai-w/clubs/kinjo-gakuin/index.html) | 3 | -49 |
 | 7 | [岐阜大学](../../tokai-w/clubs/gifu/index.html) | 3 | -54 |
 
+準決勝に進んだ信州大学が2部Bブロックで愛知大学に9-7で勝った7月19日の試合は、[東海女子ラクロスリーグ戦の7月18日～19日の結果まとめ](../review-tokai-w-20260718/index.html)に記録しています。
+
 ## 出典
 
 - [公益社団法人日本ラクロス協会](https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/)

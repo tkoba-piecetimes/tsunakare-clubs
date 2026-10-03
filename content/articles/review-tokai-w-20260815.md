@@ -28,6 +28,8 @@ cta: sponsor
 | 6 | [岐阜大学](../../tokai-w/clubs/gifu/index.html) | 3 | -26 |
 | 7 | [金城学院大学](../../tokai-w/clubs/kinjo-gakuin/index.html) | 0 | -50 |
 
+シーズン序盤の6月28日に南山大学が金城学院大学を14-3で下し、1部の首位に立った試合の経過は、[東海学生ラクロスリーグ戦 女子の6月27日～28日の結果まとめ](../review-tokai-w-20260627/index.html)で確認できます。
+
 ## 出典
 
 - [公益社団法人日本ラクロス協会](https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/)

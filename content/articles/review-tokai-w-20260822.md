@@ -49,6 +49,8 @@ cta: sponsor
 | 3 | [名城大学](../../tokai-w/clubs/meijo/index.html) | 3 | -50 |
 | 4 | [至学館大学・日本福祉大学・滋賀大学合同チーム](../../tokai-w/clubs/itagakkandaigaku-nipponfukushidaigaku-shigadaigakugoudouchiimu/index.html) | 0 | -64 |
 
+2部Aブロックの中京大学が名古屋外国語大学に37-0で大勝した試合など、ここまでの順位の動きを振り返りたい方は、[東海学生ラクロスリーグ戦 女子の7月4日～5日の結果まとめ](../review-tokai-w-20260704/index.html)もあわせてご覧ください。
+
 ## 出典
 
 - [公益社団法人日本ラクロス協会](https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/)
