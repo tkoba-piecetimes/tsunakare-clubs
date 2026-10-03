@@ -579,9 +579,9 @@
   "home_slug": "osaka-keizai",
   "away_slug": "osaka",
   "venue": "鶴見緑地第2球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 7,
   "note": ""
  },
  {

@@ -43,6 +43,20 @@
    "goals_for": 35
   },
   {
+   "team": "大阪大学",
+   "slug": "osaka",
+   "points": 8,
+   "games": 6,
+   "wins": 2,
+   "draws": 2,
+   "losses": 2,
+   "gf": 32,
+   "ga": 31,
+   "rank": 4,
+   "goal_diff": "+1",
+   "goals_for": 32
+  },
+  {
    "team": "同志社大学",
    "slug": "doshisha",
    "points": 7,
@@ -52,23 +66,9 @@
    "losses": 2,
    "gf": 24,
    "ga": 20,
-   "rank": 4,
+   "rank": 5,
    "goal_diff": "+4",
    "goals_for": 24
-  },
-  {
-   "team": "大阪大学",
-   "slug": "osaka",
-   "points": 5,
-   "games": 5,
-   "wins": 1,
-   "draws": 2,
-   "losses": 2,
-   "gf": 25,
-   "ga": 27,
-   "rank": 5,
-   "goal_diff": "-2",
-   "goals_for": 25
   },
   {
    "team": "立命館大学",
@@ -88,15 +88,15 @@
    "team": "大阪経済大学",
    "slug": "osaka-keizai",
    "points": 0,
-   "games": 5,
+   "games": 6,
    "wins": 0,
    "draws": 0,
-   "losses": 5,
-   "gf": 12,
-   "ga": 46,
+   "losses": 6,
+   "gf": 16,
+   "ga": 53,
    "rank": 7,
-   "goal_diff": "-34",
-   "goals_for": 12
+   "goal_diff": "-37",
+   "goals_for": 16
   }
  ],
  "2部": [

@@ -323,20 +323,20 @@
    },
    {
     "date": "20261002",
-    "users": 70,
-    "pageviews": 172,
-    "sessions": 84
+    "users": 72,
+    "pageviews": 202,
+    "sessions": 91
    },
    {
     "date": "20261003",
-    "users": 12,
-    "pageviews": 33,
-    "sessions": 14
+    "users": 157,
+    "pageviews": 412,
+    "sessions": 204
    }
   ],
-  "total_users": 2741,
-  "total_pageviews": 9284,
-  "total_sessions": 3453
+  "total_users": 2888,
+  "total_pageviews": 9693,
+  "total_sessions": 3650
  },
  "gsc": {
   "daily": [

@@ -3,30 +3,30 @@
   {
    "team": "酪農学園大学",
    "slug": "rakuno-gakuen",
-   "points": 12,
-   "games": 4,
-   "wins": 4,
+   "points": 15,
+   "games": 5,
+   "wins": 5,
    "draws": 0,
    "losses": 0,
-   "gf": 76,
-   "ga": 14,
+   "gf": 94,
+   "ga": 17,
    "rank": 1,
-   "goal_diff": "+62",
-   "goals_for": 76
+   "goal_diff": "+77",
+   "goals_for": 94
   },
   {
    "team": "北星学園大学",
    "slug": "hokusei-gakuen",
    "points": 10,
-   "games": 4,
+   "games": 5,
    "wins": 3,
    "draws": 1,
-   "losses": 0,
-   "gf": 46,
-   "ga": 19,
+   "losses": 1,
+   "gf": 49,
+   "ga": 37,
    "rank": 2,
-   "goal_diff": "+27",
-   "goals_for": 46
+   "goal_diff": "+12",
+   "goals_for": 49
   },
   {
    "team": "北海道大学",

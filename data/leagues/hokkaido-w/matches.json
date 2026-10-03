@@ -204,9 +204,9 @@
   "home_slug": "rakuno-gakuen",
   "away_slug": "hokusei-gakuen",
   "venue": "NOPPORO ヤシマ商会スポーツパーク",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 18,
+  "away_score": 3,
   "note": ""
  },
  {
