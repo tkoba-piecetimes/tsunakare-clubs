@@ -43,6 +43,13 @@ jobs:
         run: python pipeline/generate_articles.py
       - name: Generate site
         run: python pipeline/generate_site.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate results experience and preserved pages
+        run: |
+          node --test tests/experience.test.cjs
+          python tests/validate_site.py
       - name: Commit updated data & site
         if: github.event_name != 'push'
         run: |

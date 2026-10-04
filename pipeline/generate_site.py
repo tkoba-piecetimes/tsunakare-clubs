@@ -18,6 +18,7 @@ from html import escape
 from pathlib import Path
 import clubhouse
 import archive
+import experience
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -375,6 +376,7 @@ def league_subnav(lg, L):
 
 def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="website",
          subnav="", sitemap=True, sticky=""):
+    body = experience.enhance(path, body, meta)
     if sitemap:
         _sitemap_paths.append(path)
     else:
@@ -388,7 +390,7 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
     ga = ""
     if GA_MEASUREMENT_ID:
         ga = (f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>'
-              '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
+              '<script>window.dataLayer=window.dataLayer||[];function gtag(){if(location.hostname==="lacrossemania.jp")dataLayer.push(arguments);}'
               f"gtag('js',new Date());gtag('config','{GA_MEASUREMENT_ID}');</script>")
     nav = "".join(f'<a href="{rel}{href}">{label}</a>' for href, label in NAV_ITEMS)
     body_cls = ' class="has-sticky-cta"' if sticky else ""
@@ -412,12 +414,18 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
 <link rel="stylesheet" href="{rel}assets/production.css">
 <link rel="stylesheet" href="{rel}assets/support-cards.css">
 <link rel="stylesheet" href="{rel}assets/archive.css">
-<script src="{rel}assets/clubhouse.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{rel}assets/field-notes.css">
+<link rel="stylesheet" href="{rel}assets/experience.css">
+<script src="{rel}assets/experience-core.js" defer></script>
+<script src="{rel}assets/experience.js" defer></script>
 </head>
 <body{body_cls}>
-{clubhouse.header(meta)}
+{experience.header(meta)}
 {subnav}
-<main class="production-main">
+<main class="production-main" id="main" tabindex="-1" data-page="{escape(path or 'results')}">
 {body}
 </main>
 <footer class="site-footer">
@@ -429,8 +437,7 @@ def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="we
     <p>ラクロスマニアは大学ラクロスの情報メディアです。順位・成績の出典と集計範囲は各表に記載しています。確定情報は連盟公式の発表をご確認ください。</p>
   </div>
 </footer>
-{sticky}
-{clubhouse.mobile_nav()}
+{experience.mobile_nav()}
 {CTA_VIEW_SCRIPT}
 </body>
 </html>"""
@@ -1694,8 +1701,11 @@ def main():
         for f in ASSETS.iterdir():
             shutil.copy(f, SITE / "assets" / f.name)
 
+    experience.configure(leagues, articles, SITE)
     clubhouse.export_data(SITE, leagues)
     build_portal(leagues, articles, global_meta)
+    for route, name in [('leagues', 'リーグ・順位表'), ('my-teams', 'マイチーム')]:
+        write_page(route, page('../', name + ' | ラクロスマニア', '', global_meta, path=route+'/'))
     archive.build(SITE, leagues, global_meta, page, write_page)
     for lg in leagues:
         build_league(lg, articles)
