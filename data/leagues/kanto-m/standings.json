@@ -189,16 +189,16 @@
   {
    "team": "東京大学",
    "slug": "tokyo",
-   "points": 12,
-   "games": 4,
-   "wins": 4,
+   "points": 15,
+   "games": 5,
+   "wins": 5,
    "draws": 0,
    "losses": 0,
-   "gf": 34,
+   "gf": 51,
    "ga": 11,
    "rank": 1,
-   "goal_diff": "+23",
-   "goals_for": 34
+   "goal_diff": "+40",
+   "goals_for": 51
   },
   {
    "team": "東洋大学",
@@ -231,43 +231,43 @@
   {
    "team": "成城大学",
    "slug": "seijo",
-   "points": 3,
-   "games": 3,
-   "wins": 1,
+   "points": 6,
+   "games": 4,
+   "wins": 2,
    "draws": 0,
    "losses": 2,
-   "gf": 14,
-   "ga": 22,
+   "gf": 18,
+   "ga": 24,
    "rank": 4,
-   "goal_diff": "-8",
-   "goals_for": 14
+   "goal_diff": "-6",
+   "goals_for": 18
   },
   {
    "team": "千葉大学",
    "slug": "chiba",
    "points": 3,
-   "games": 4,
+   "games": 5,
    "wins": 1,
    "draws": 0,
-   "losses": 3,
-   "gf": 19,
-   "ga": 31,
+   "losses": 4,
+   "gf": 21,
+   "ga": 35,
    "rank": 5,
-   "goal_diff": "-12",
-   "goals_for": 19
+   "goal_diff": "-14",
+   "goals_for": 21
   },
   {
    "team": "帝京大学",
    "slug": "teikyo",
    "points": 0,
-   "games": 4,
+   "games": 5,
    "wins": 0,
    "draws": 0,
-   "losses": 4,
+   "losses": 5,
    "gf": 8,
-   "ga": 51,
+   "ga": 68,
    "rank": 6,
-   "goal_diff": "-43",
+   "goal_diff": "-60",
    "goals_for": 8
   }
  ],
@@ -373,6 +373,20 @@
    "goals_for": 16
   },
   {
+   "team": "慶應義塾高校",
+   "slug": "keio-hs",
+   "points": 3,
+   "games": 1,
+   "wins": 1,
+   "draws": 0,
+   "losses": 0,
+   "gf": 5,
+   "ga": 2,
+   "rank": 2,
+   "goal_diff": "+3",
+   "goals_for": 5
+  },
+  {
    "team": "筑波大学",
    "slug": "tsukuba",
    "points": 3,
@@ -382,7 +396,7 @@
    "losses": 1,
    "gf": 17,
    "ga": 15,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "+2",
    "goals_for": 17
   },
@@ -396,23 +410,9 @@
    "losses": 2,
    "gf": 19,
    "ga": 18,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "+1",
    "goals_for": 19
-  },
-  {
-   "team": "慶應義塾高校",
-   "slug": "keio-hs",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 4,
-   "goal_diff": "0",
-   "goals_for": 0
   },
   {
    "team": "東京理科大学",
@@ -432,15 +432,15 @@
    "team": "上智大学",
    "slug": "sophia",
    "points": 0,
-   "games": 1,
+   "games": 2,
    "wins": 0,
    "draws": 0,
-   "losses": 1,
-   "gf": 4,
-   "ga": 9,
+   "losses": 2,
+   "gf": 6,
+   "ga": 14,
    "rank": 6,
-   "goal_diff": "-5",
-   "goals_for": 4
+   "goal_diff": "-8",
+   "goals_for": 6
   }
  ],
  "3部 Bブロック": [

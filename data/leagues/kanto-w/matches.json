@@ -420,21 +420,6 @@
   "note": ""
  },
  {
-  "id": "2026-08-22-aoyamagakuin-vs-tokyo",
-  "date": "2026-08-22",
-  "time": "14:30",
-  "category": "1部 Aブロック",
-  "home": "青山学院大学",
-  "away": "東京大学",
-  "home_slug": "aoyamagakuin",
-  "away_slug": "tokyo",
-  "venue": "駒沢オリンピック公園総合運動場第一球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部A"
- },
- {
   "id": "2026-08-23-meisei-vs-toukyoujoshitaiiku",
   "date": "2026-08-23",
   "time": "9:30",
@@ -654,9 +639,9 @@
   "home_slug": "aoyamagakuin",
   "away_slug": "waseda",
   "venue": "武蔵大学朝霞グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 11,
+  "away_score": 5,
   "note": ""
  },
  {
@@ -774,10 +759,10 @@
   "home_slug": "hosei",
   "away_slug": "gakushuin",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部B"
+  "status": "played",
+  "home_score": 7,
+  "away_score": 5,
+  "note": ""
  },
  {
   "id": "2026-09-12-hitotsubashi-vs-tokyo-gakugei",
@@ -789,10 +774,10 @@
   "home_slug": "hitotsubashi",
   "away_slug": "tokyo-gakugei",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部B"
+  "status": "played",
+  "home_score": 6,
+  "away_score": 10,
+  "note": ""
  },
  {
   "id": "2026-09-13-tokyo-nodai-vs-chuo",
@@ -804,9 +789,9 @@
   "home_slug": "tokyo-nodai",
   "away_slug": "chuo",
   "venue": "中央大学多摩キャンパスラグビー場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 6,
+  "away_score": 14,
   "note": ""
  },
  {
@@ -1047,6 +1032,21 @@
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-10-03-tokyo-vs-aoyamagakuin",
+  "date": "2026-10-03",
+  "time": "8:50",
+  "category": "1部 Aブロック",
+  "home": "東京大学",
+  "away": "青山学院大学",
+  "home_slug": "tokyo",
+  "away_slug": "aoyamagakuin",
+  "venue": "東京大学駒場第二グラウンド",
+  "status": "played",
+  "home_score": 3,
+  "away_score": 3,
   "note": ""
  },
  {
