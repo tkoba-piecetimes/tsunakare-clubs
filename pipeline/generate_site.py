@@ -224,6 +224,7 @@ def jsonld_sports_event(m, league_name, gender):
 
 def md_inline(s):
     s = escape(s, quote=False)
+    s = s.replace("&lt;!-- index-lane-link --&gt;", "<!-- index-lane-link -->")
     s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', s)
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
     return s
