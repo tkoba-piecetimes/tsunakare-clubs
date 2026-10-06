@@ -594,9 +594,9 @@
   "home_slug": "osaka-metropolitan",
   "away_slug": "oosakakyouiku",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 8,
+  "away_score": 3,
   "note": ""
  },
  {

@@ -1050,21 +1050,6 @@
   "note": "3部B"
  },
  {
-  "id": "2026-10-04-musashi-vs-rikkyo",
-  "date": "2026-10-04",
-  "time": "9:00",
-  "category": "2部 Bブロック",
-  "home": "武蔵大学",
-  "away": "立教大学",
-  "home_slug": "musashi",
-  "away_slug": "rikkyo",
-  "venue": "武蔵大学朝霞グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部B"
- },
- {
   "id": "2026-10-11-rikkyo-vs-kokushikan",
   "date": "2026-10-11",
   "time": "10:00",

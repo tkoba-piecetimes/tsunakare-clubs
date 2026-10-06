@@ -594,9 +594,9 @@
   "home_slug": "nagoya",
   "away_slug": "aichi-gakuin",
   "venue": "名古屋大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 10,
+  "away_score": 8,
   "note": ""
  },
  {
@@ -609,9 +609,9 @@
   "home_slug": "aichi-shukutoku",
   "away_slug": "nanzan",
   "venue": "名古屋大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 9,
   "note": ""
  },
  {
