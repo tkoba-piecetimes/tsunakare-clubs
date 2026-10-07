@@ -6,6 +6,7 @@ University marks are editorial abbreviations, never presented as official crests
 import json
 import re
 import hashlib
+from pathlib import Path
 from datetime import datetime
 from html import escape as e
 from urllib.parse import urlencode
@@ -124,7 +125,24 @@ def related(kind='watch'):
     return f'<section class="context-reading"><div class="eyebrow">AFTER THE SCORE</div><h2>{"この一戦を、もっと楽しむ。" if kind=="watch" else "チームの挑戦を、続けるために。"}</h2>{links}<div class="context-pr"><small>部活の協賛 / PR</small><a href="/#support">遠征費・用具費など、チームの活動を支える協賛について →</a></div></section>'
 
 def league_links():
-    return '<div class="league-grid">'+''.join(f'<a class="league-card" href="/{lg["code"]}/"><span class="region-number">{i//2+1:02}</span><div><span class="region-en">{lg["code"].split("-")[0].upper()}</span><h2>{e(lg["label"])}</h2><p>{len(lg["teams"])}チーム · 結果・順位・星取表</p></div></a>' for i,lg in enumerate(LEAGUES))+'</div>'
+    atlas = json.loads((Path(__file__).resolve().parents[1]/'assets/japan-regions.json').read_text(encoding='utf8'))
+    # Geographic order expresses location, never a regional ranking. No region is preselected.
+    regions = [('hokkaido','北海道',425,80,528,96),('tohoku','東北',565,260,477,258),
+               ('kanto','関東',550,390,437,377),('tokai','東海',430,535,355,405),
+               ('kansai','関西',306,331,285,424),('chushikoku','中四国',115,348,207,434),
+               ('kyushu','九州',72,490,111,480)]
+    shapes, labels, panels, directory = [], [], [], []
+    for code,name,x,y,tx,ty in regions:
+        target = 'league-region-'+code
+        shapes.append(f'<a href="#{target}" class="map-region" data-map-region="{code}" tabindex="-1" aria-label="{name}のリーグを選ぶ"><path d="{atlas["regions"][code]}"/></a>')
+        labels.append(f'<a class="map-label" href="#{target}" data-map-region="{code}" aria-controls="{target}" style="--label-x:{x/6.8:.2f}%;--label-y:{y/6.2:.2f}%"><span>{name}</span><span aria-hidden="true">↗</span></a>')
+        teams = [lg for lg in LEAGUES if lg['code'].startswith(code+'-')]
+        rows = ''.join(f'<div class="region-league-row"><div class="region-league-heading"><h4>{e(lg["meta"]["gender"])}リーグ</h4><span>{len(lg["teams"])}チーム</span></div><div class="region-league-actions"><a href="/{lg["code"]}/">試合結果・日程 <span aria-hidden="true">→</span></a><a href="/{lg["code"]}/standings/">順位表 <span aria-hidden="true">→</span></a></div></div>' for lg in teams)
+        panels.append(f'<section class="region-detail" id="{target}" data-region-panel="{code}" tabindex="-1" aria-label="{name}のリーグ"><div class="region-detail-top"><div class="eyebrow">{code.upper()}</div><button class="map-back" data-map-back>↑ 地域を選び直す</button></div><h3>{name}<small>地区</small></h3>{rows}<a class="region-all-results" href="/?region={name}">{name}の男女の結果をまとめて見る <span aria-hidden="true">↗</span></a></section>')
+        direct_links = ''.join(f'<div class="league-directory-gender"><h4>{e(lg["meta"]["gender"])}</h4><div><a href="/{lg["code"]}/" aria-label="{name}・{e(lg["meta"]["gender"])}の試合結果・日程">結果・日程 <span aria-hidden="true">→</span></a><a href="/{lg["code"]}/standings/" aria-label="{name}・{e(lg["meta"]["gender"])}の順位表">順位表 <span aria-hidden="true">→</span></a></div></div>' for lg in teams)
+        directory.append(f'<div class="league-directory-row" role="listitem"><h3>{name}</h3>{direct_links}</div>')
+    leaders=''.join(f'<path d="M{x},{y} L{tx},{ty}" data-map-leader="{code}"/>' for code,name,x,y,tx,ty in regions)
+    return f'''<div class="map-toolbar"><p><span class="map-hover-copy">地域にカーソルを合わせて、結果・順位へ。</span><span class="map-touch-copy">地図をタップするか、一覧から探せます。</span></p><a href="#league-directory">全地域を一覧で見る <span aria-hidden="true">↓</span></a></div><div class="league-atlas" data-league-map><div class="map-canvas"><div class="map-caption" aria-hidden="true">FIND YOUR<br><strong>LEAGUE.</strong></div><svg class="japan-map" viewBox="{atlas['viewBox']}" aria-hidden="true"><g class="map-leaders" aria-hidden="true">{leaders}</g>{''.join(shapes)}<path class="map-inset" d="M27 542H159V609H27 M27 536L35 528" aria-hidden="true"/><text class="map-inset-label" x="37" y="558" aria-hidden="true">沖縄</text></svg>{''.join(labels)}<p class="map-hint"><span class="map-hover-copy">カーソルを合わせると、リーグを表示</span><span class="map-touch-copy">地域をタップして、リーグを表示</span></p></div><div class="map-directory"><div class="map-intro" data-map-intro hidden><div class="eyebrow">JAPAN COLLEGE LACROSSE</div><h3>それぞれの地域に、<br>熱くなる一戦がある。</h3><p><span class="map-hover-copy">地図にカーソルを合わせると、<br>男子・女子の結果と順位を表示します。</span><span class="map-touch-copy">地図をタップすると、<br>男子・女子の結果と順位を表示します。</span></p><a class="map-list-link" href="#league-directory">一覧からすぐに探す ↓</a><span class="map-intro-arrow" aria-hidden="true">↖</span></div>{''.join(panels)}<p class="map-status sr-only" aria-live="polite" aria-atomic="true"></p></div></div><section class="league-directory" id="league-directory" aria-labelledby="league-directory-title"><div class="league-directory-heading"><div><div class="eyebrow">ALL REGIONS</div><h2 id="league-directory-title">全国のリーグ一覧</h2></div><p>男子・女子の結果と順位表へ、直接アクセス。</p></div><div class="league-directory-list" role="list">{''.join(directory)}</div></section>'''
 
 def filters(code=''):
     region = '<label class="region-select"><span class="sr-only">地区</span><select id="region" aria-label="地区">'+''.join(f'<option>{r}</option>' for r in REGIONS)+'</select></label>' if not code else ''

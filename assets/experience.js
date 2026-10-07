@@ -18,6 +18,29 @@
  const toggle=document.getElementById('menu-toggle'),menu=document.getElementById('mobile-menu');
  toggle?.addEventListener('click',()=>{menu.hidden=!menu.hidden;toggle.setAttribute('aria-expanded',String(!menu.hidden));});
  document.addEventListener('keydown',ev=>{if(ev.key==='Escape'&&!menu.hidden){menu.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.focus();}});
+ // The map works independently of data requests; static anchors remain usable without JavaScript.
+ document.querySelectorAll('[data-league-map]').forEach(atlas=>{
+   const controls=[...atlas.querySelectorAll('[data-map-region]')],panels=[...atlas.querySelectorAll('[data-region-panel]')],intro=atlas.querySelector('[data-map-intro]');
+   atlas.dataset.ready='true';intro.hidden=false;panels.forEach(p=>p.hidden=true);
+   controls.forEach(a=>{a.setAttribute('role','button');a.setAttribute('aria-pressed','false');});
+   function preview(code){controls.forEach(a=>a.classList.toggle('is-preview',a.dataset.mapRegion===code));atlas.querySelectorAll('[data-map-leader]').forEach(p=>p.classList.toggle('is-preview',p.dataset.mapLeader===code));}
+   let activeRegion='',hoverTimer;
+   function choose(code,moveFocus=false){
+     const panel=panels.find(p=>p.dataset.regionPanel===code);if(!panel)return;
+     if(activeRegion!==code){activeRegion=code;intro.hidden=true;panels.forEach(p=>p.hidden=p!==panel);controls.forEach(a=>a.setAttribute('aria-pressed',String(a.dataset.mapRegion===code)));atlas.querySelector('.map-status').textContent=panel.getAttribute('aria-label')+'を表示しました。';}
+     if(moveFocus){history.replaceState(null,'','#'+panel.id);panel.focus({preventScroll:true});if(matchMedia('(max-width: 760px)').matches)panel.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}
+   }
+   // Reveal on hover without moving focus, scrolling, or changing the URL.
+   // Keep the last region visible so its links remain reachable across the map/panel gap.
+   atlas.addEventListener('pointerover',ev=>{if(ev.pointerType!=='mouse')return;const code=ev.target.closest('[data-map-region]')?.dataset.mapRegion;clearTimeout(hoverTimer);preview(code);if(code)hoverTimer=setTimeout(()=>choose(code),90);});
+   atlas.addEventListener('pointerleave',()=>{clearTimeout(hoverTimer);preview(null);});
+   atlas.addEventListener('focusin',ev=>{const code=ev.target.closest('[data-map-region]')?.dataset.mapRegion;clearTimeout(hoverTimer);preview(code);if(code)choose(code);});
+   atlas.addEventListener('focusout',()=>preview(null));
+   atlas.addEventListener('click',ev=>{clearTimeout(hoverTimer);if(ev.target.closest('[data-map-back]')){atlas.querySelector('.map-label[aria-pressed=true]')?.focus({preventScroll:true});atlas.querySelector('.map-canvas').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});return;}const a=ev.target.closest('[data-map-region]');if(!a||ev.ctrlKey||ev.metaKey||ev.shiftKey||ev.altKey)return;ev.preventDefault();choose(a.dataset.mapRegion,true);});
+   atlas.addEventListener('keydown',ev=>{const a=ev.target.closest('[data-map-region]');if(a&&ev.key===' '){ev.preventDefault();a.click();}});
+   const fromHash=()=>{const panel=panels.find(p=>'#'+p.id===location.hash);if(panel)choose(panel.dataset.regionPanel);};
+   fromHash();window.addEventListener('hashchange',fromHash);
+ });
  function toast(text){const el=document.getElementById('toast');el.textContent=text;el.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('visible'),2800);}
  function badge(name){const d=identities[name]||{mark:'—',color:'#647a70'};return `<span class="team-badge team-badge--pair" style="--team-color:${esc(d.color)}" aria-hidden="true"><span>${esc(d.mark)}</span></span>`;}
  function matchUrl(l,m){return '/'+l.code+'/matches/'+encodeURIComponent(m.id)+'/';}
@@ -55,6 +78,7 @@
      const current=read('lm-favorites-v3');saved=C.migrateSaved(leagues,read('lm-teams'),read('lm-demo-teams-v2'),current);if(!Array.isArray(current))write('lm-favorites-v3',saved);
      if(center){document.getElementById('team-search').value=state.q;const region=document.getElementById('region');if(region)region.value=state.region;renderCenter();}
      reflectSaved();renderPicks();renderCatalog();
+     if(location.hash==='#leagues'||location.hash.startsWith('#league-region-'))document.getElementById(location.hash.slice(1))?.scrollIntoView({block:'start'});
    }catch(error){const note=document.createElement('p');note.className='notice';note.setAttribute('role','status');note.innerHTML='絞り込み・保存機能を読み込めませんでした。掲載済みの結果は引き続き閲覧できます。<a href="/leagues/">リーグ一覧から探す →</a>';main.prepend(note);document.querySelectorAll('[data-save],.compact-filters input,.compact-filters select,.compact-filters button,.center-tabs button').forEach(x=>x.disabled=true);}
  }
  if(center||document.querySelector('[data-save]')||document.getElementById('my-team-results'))load();
