@@ -45,16 +45,16 @@
   {
    "team": "北星学園大学",
    "slug": "hokusei-gakuen",
-   "points": 3,
-   "games": 3,
-   "wins": 1,
+   "points": 6,
+   "games": 4,
+   "wins": 2,
    "draws": 0,
    "losses": 2,
-   "gf": 4,
-   "ga": 20,
+   "gf": 10,
+   "ga": 21,
    "rank": 4,
-   "goal_diff": "-16",
-   "goals_for": 4
+   "goal_diff": "-11",
+   "goals_for": 10
   },
   {
    "team": "未定",
@@ -74,15 +74,15 @@
    "team": "北海道科学大学",
    "slug": "hokkaidoukagaku",
    "points": 0,
-   "games": 3,
+   "games": 4,
    "wins": 0,
    "draws": 0,
-   "losses": 3,
-   "gf": 3,
-   "ga": 49,
+   "losses": 4,
+   "gf": 4,
+   "ga": 55,
    "rank": 6,
-   "goal_diff": "-46",
-   "goals_for": 3
+   "goal_diff": "-51",
+   "goals_for": 4
   }
  ]
 }

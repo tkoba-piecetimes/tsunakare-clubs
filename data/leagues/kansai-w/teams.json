@@ -52,12 +52,12 @@
  "大阪大学": {
   "team": "大阪大学",
   "slug": "osaka",
-  "block": "3部"
+  "block": "3部 Bブロック"
  },
  "追手門学院大学": {
   "team": "追手門学院大学",
   "slug": "ottemongakuin",
-  "block": "3部"
+  "block": "3部 Bブロック"
  },
  "神戸大学": {
   "team": "神戸大学",
@@ -82,51 +82,41 @@
  "龍谷大学": {
   "team": "龍谷大学",
   "slug": "ryukoku",
-  "block": "3部"
+  "block": "3部 Aブロック"
  },
  "同志社女子大学": {
   "team": "同志社女子大学",
   "slug": "doshisha-joshi",
-  "block": "3部"
- },
- "合同1": {
-  "team": "合同1",
-  "slug": "goudou1",
-  "block": "3部"
- },
- "大阪公立大学": {
-  "team": "大阪公立大学",
-  "slug": "osaka-metropolitan",
-  "block": "3部"
- },
- "合同チーム2": {
-  "team": "合同チーム2",
-  "slug": "goudouchiimu2",
-  "block": "3部"
- },
- "大阪経済大学": {
-  "team": "大阪経済大学",
-  "slug": "osaka-keizai",
-  "block": "3部"
- },
- "奈良女子大学": {
-  "team": "奈良女子大学",
-  "slug": "nara-joshi",
-  "block": "3部"
- },
- "合同2": {
-  "team": "合同2",
-  "slug": "goudou2",
-  "block": "3部"
+  "block": "3部 Aブロック"
  },
  "合同チーム1": {
   "team": "合同チーム1",
   "slug": "goudouchiimu1",
-  "block": "3部"
+  "block": "3部 Bブロック"
+ },
+ "大阪公立大学": {
+  "team": "大阪公立大学",
+  "slug": "osaka-metropolitan",
+  "block": "3部 Bブロック"
+ },
+ "大阪経済大学": {
+  "team": "大阪経済大学",
+  "slug": "osaka-keizai",
+  "block": "3部 Bブロック"
+ },
+ "奈良女子大学": {
+  "team": "奈良女子大学",
+  "slug": "nara-joshi",
+  "block": "3部 Aブロック"
+ },
+ "合同チーム2": {
+  "team": "合同チーム2",
+  "slug": "goudouchiimu2",
+  "block": "3部 Aブロック"
  },
  "大阪国際大学": {
   "team": "大阪国際大学",
   "slug": "oosakakokusai",
-  "block": "3部"
+  "block": "3部 Aブロック"
  }
 }

@@ -954,10 +954,10 @@
   "home_slug": "keio-hs",
   "away_slug": "sophia",
   "venue": "慶應義塾大学日吉キャンパス陸上競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部A"
+  "status": "played",
+  "home_score": 5,
+  "away_score": 2,
+  "note": ""
  },
  {
   "id": "2026-09-27-keio-vs-chuo",
@@ -984,10 +984,10 @@
   "home_slug": "tokyo",
   "away_slug": "teikyo",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
+  "status": "played",
+  "home_score": 17,
+  "away_score": 0,
+  "note": ""
  },
  {
   "id": "2026-10-03-seijo-vs-chiba",
@@ -999,10 +999,10 @@
   "home_slug": "seijo",
   "away_slug": "chiba",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
+  "status": "played",
+  "home_score": 4,
+  "away_score": 2,
+  "note": ""
  },
  {
   "id": "2026-10-03-toyo-vs-tokyo-nodai",
@@ -1048,21 +1048,6 @@
   "home_score": null,
   "away_score": null,
   "note": "3部B"
- },
- {
-  "id": "2026-10-04-musashi-vs-rikkyo",
-  "date": "2026-10-04",
-  "time": "9:00",
-  "category": "2部 Bブロック",
-  "home": "武蔵大学",
-  "away": "立教大学",
-  "home_slug": "musashi",
-  "away_slug": "rikkyo",
-  "venue": "武蔵大学朝霞グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部B"
  },
  {
   "id": "2026-10-11-rikkyo-vs-kokushikan",
