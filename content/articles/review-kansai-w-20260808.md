@@ -40,7 +40,7 @@ cta: sponsor
 | 3 | [京都大学](../../kansai-w/clubs/kyoto/index.html) | 3 | +7 |
 | 4 | [大阪体育大学](../../kansai-w/clubs/oosakataiiku/index.html) | 3 | +1 |
 | 5 | [近畿大学](../../kansai-w/clubs/kindai/index.html) | 0 | 0 |
-| 6 | [神戸学院大学](../../kansai-w/clubs/koubegakuin/index.html) | 0 | 0 |
+| 6 | [神戸学院大学](/archive/?league=kansai-w&year=all&team=神戸学院大学) | 0 | 0 |
 | 7 | [京都女子大学](../../kansai-w/clubs/kyoto-joshi/index.html) | 0 | -7 |
 | 8 | [神戸女学院大学](../../kansai-w/clubs/kobe-jogakuin/index.html) | 0 | -17 |
 | 9 | [京都工芸繊維大学](../../kansai-w/clubs/kyoutokougeisen-i/index.html) | 0 | -18 |
