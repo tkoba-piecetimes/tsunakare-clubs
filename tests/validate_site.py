@@ -20,7 +20,12 @@ class Page(HTMLParser):
 broken=[];checked=0
 for file in SITE.rglob('index.html'):
  text=file.read_text(encoding='utf8'); p=Page();p.feed(text)
- if 'http-equiv="refresh"' in text:continue
+ if 'http-equiv="refresh"' in text:
+  assert len(p.canonical)==1,file
+  destination=urlparse(p.canonical[0])
+  assert destination.netloc=='lacrossemania.jp',(file,p.canonical)
+  assert (SITE/unquote(destination.path).lstrip('/')/'index.html').exists(),(file,p.canonical)
+  continue
  checked+=1
  assert len(p.canonical)==1,file
  assert p.h1==1,(file,p.h1)

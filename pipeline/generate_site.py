@@ -1452,18 +1452,23 @@ def build_dashboard(leagues, articles, meta):
 # ---------------------------------------------------------------- misc output
 
 def write_redirects(leagues):
-    """旧URL（リーグ接頭辞なし＝旧関東男子）から新URLへのリダイレクトスタブ。"""
+    """旧関東男子URLと名称変更前のチームURLを現在のページへ転送。"""
     kanto = next((lg for lg in leagues if lg["code"] == "kanto-m"), None)
-    if not kanto:
-        return 0
-    targets = ["schedule/", "standings/", "teams/", "records/"]
-    targets += [f'clubs/{info["slug"]}/' for info in kanto["teams"].values()]
-    targets += [f'matches/{m["id"]}/' for m in kanto["matches"]]
+    redirects = []
+    if kanto:
+        targets = ["schedule/", "standings/", "teams/", "records/"]
+        targets += [f'clubs/{info["slug"]}/' for info in kanto["teams"].values()]
+        targets += [f'matches/{m["id"]}/' for m in kanto["matches"]]
+        redirects += [(t, "kanto-m/" + t) for t in targets]
+    redirects += [
+        ("kansai-w/clubs/goudou1/", "kansai-w/clubs/goudouchiimu1/"),
+        ("kansai-w/clubs/goudou2/", "kansai-w/clubs/goudouchiimu2/"),
+    ]
     n = 0
-    for t in targets:
-        new_url = SITE_BASE + "kanto-m/" + t
-        out = SITE / t / "index.html"
-        if out.exists():
+    for old_path, new_path in redirects:
+        new_url = SITE_BASE + new_path
+        out = SITE / old_path / "index.html"
+        if out.exists() or not (SITE / new_path / "index.html").exists():
             continue
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(
