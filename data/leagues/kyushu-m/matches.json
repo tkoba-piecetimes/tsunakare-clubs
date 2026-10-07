@@ -279,9 +279,9 @@
   "home_slug": "ritsumeikanajiataiheiyou",
   "away_slug": "fukuoka",
   "venue": "オクゼン不動産フットボールスタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 0,
+  "away_score": 24,
   "note": ""
  },
  {
@@ -294,9 +294,9 @@
   "home_slug": "nakamuragakuen",
   "away_slug": "kyushu-univ",
   "venue": "オクゼン不動産フットボールスタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 1,
+  "away_score": 5,
   "note": ""
  },
  {
@@ -309,9 +309,9 @@
   "home_slug": "seinan-gakuin",
   "away_slug": "kitakyushu",
   "venue": "九州大学多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 3,
+  "away_score": 8,
   "note": ""
  },
  {

@@ -1,6 +1,20 @@
 {
  "1部 Aブロック": [
   {
+   "team": "早稲田大学",
+   "slug": "waseda",
+   "points": 9,
+   "games": 4,
+   "wins": 3,
+   "draws": 0,
+   "losses": 1,
+   "gf": 32,
+   "ga": 19,
+   "rank": 1,
+   "goal_diff": "+13",
+   "goals_for": 32
+  },
+  {
    "team": "立教大学",
    "slug": "rikkyo",
    "points": 9,
@@ -10,37 +24,9 @@
    "losses": 1,
    "gf": 27,
    "ga": 16,
-   "rank": 1,
+   "rank": 2,
    "goal_diff": "+11",
    "goals_for": 27
-  },
-  {
-   "team": "青山学院大学",
-   "slug": "aoyamagakuin",
-   "points": 7,
-   "games": 4,
-   "wins": 2,
-   "draws": 1,
-   "losses": 1,
-   "gf": 25,
-   "ga": 19,
-   "rank": 2,
-   "goal_diff": "+6",
-   "goals_for": 25
-  },
-  {
-   "team": "早稲田大学",
-   "slug": "waseda",
-   "points": 6,
-   "games": 4,
-   "wins": 2,
-   "draws": 0,
-   "losses": 2,
-   "gf": 26,
-   "ga": 25,
-   "rank": 3,
-   "goal_diff": "+1",
-   "goals_for": 26
   },
   {
    "team": "慶應義塾大学",
@@ -52,9 +38,23 @@
    "losses": 2,
    "gf": 28,
    "ga": 28,
-   "rank": 4,
+   "rank": 3,
    "goal_diff": "0",
    "goals_for": 28
+  },
+  {
+   "team": "青山学院大学",
+   "slug": "aoyamagakuin",
+   "points": 4,
+   "games": 4,
+   "wins": 1,
+   "draws": 1,
+   "losses": 2,
+   "gf": 19,
+   "ga": 25,
+   "rank": 4,
+   "goal_diff": "-6",
+   "goals_for": 19
   },
   {
    "team": "東海大学",
