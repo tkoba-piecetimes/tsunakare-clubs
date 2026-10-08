@@ -83,10 +83,10 @@
   "away": "東北大学",
   "home_slug": "iwate",
   "away_slug": "tohoku-univ",
-  "venue": "未定",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "venue": "八幡平市ラグビー場Eコート",
+  "status": "played",
+  "home_score": 3,
+  "away_score": 13,
   "note": ""
  },
  {

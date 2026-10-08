@@ -3,30 +3,16 @@
   {
    "team": "東北大学",
    "slug": "tohoku-univ",
-   "points": 6,
-   "games": 2,
-   "wins": 2,
+   "points": 9,
+   "games": 3,
+   "wins": 3,
    "draws": 0,
    "losses": 0,
-   "gf": 21,
-   "ga": 3,
+   "gf": 34,
+   "ga": 6,
    "rank": 1,
-   "goal_diff": "+18",
-   "goals_for": 21
-  },
-  {
-   "team": "岩手大学",
-   "slug": "iwate",
-   "points": 3,
-   "games": 1,
-   "wins": 1,
-   "draws": 0,
-   "losses": 0,
-   "gf": 16,
-   "ga": 0,
-   "rank": 2,
-   "goal_diff": "+16",
-   "goals_for": 16
+   "goal_diff": "+28",
+   "goals_for": 34
   },
   {
    "team": "福島大学",
@@ -38,8 +24,22 @@
    "losses": 1,
    "gf": 19,
    "ga": 6,
-   "rank": 3,
+   "rank": 2,
    "goal_diff": "+13",
+   "goals_for": 19
+  },
+  {
+   "team": "岩手大学",
+   "slug": "iwate",
+   "points": 3,
+   "games": 2,
+   "wins": 1,
+   "draws": 0,
+   "losses": 1,
+   "gf": 19,
+   "ga": 13,
+   "rank": 3,
+   "goal_diff": "+6",
    "goals_for": 19
   },
   {
