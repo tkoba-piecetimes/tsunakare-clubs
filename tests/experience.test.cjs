@@ -39,7 +39,11 @@ test('next fixtures sort 9:00 before 11:00 with unknown times last',()=>{
 });
 test('university marks use compact, distinct editorial abbreviations',()=>{
  const seen=new Map();for(const [name,d]of Object.entries(identities)){assert.ok(d.mark.length<=4,`${name} ${d.mark}`);if(['—','+'].includes(d.mark))continue;assert.ok(!seen.has(d.mark)||seen.get(d.mark)===d.identity,`${name} shares ${d.mark}`);seen.set(d.mark,d.identity);}
- assert.equal(identities['慶應大学'].mark,identities['慶應義塾大学'].mark);
- assert.equal(identities['慶應大学'].color,identities['慶應義塾大学'].color);
- assert.ok(C.matches('慶應大学','慶応',identities));
+ // 公式データの表記揺れ（慶應大学）は年度によって消えるため、出現時のみ同一校扱いを確認する
+ if(identities['慶應大学']){
+  assert.equal(identities['慶應大学'].mark,identities['慶應義塾大学'].mark);
+  assert.equal(identities['慶應大学'].color,identities['慶應義塾大学'].color);
+  assert.ok(C.matches('慶應大学','慶応',identities));
+ }
+ assert.ok(C.matches('慶應義塾大学','慶応',identities));
 });

@@ -1463,6 +1463,14 @@ def write_redirects(leagues):
     redirects += [
         ("kansai-w/clubs/goudou1/", "kansai-w/clubs/goudouchiimu1/"),
         ("kansai-w/clubs/goudou2/", "kansai-w/clubs/goudouchiimu2/"),
+        # 2026-10 公式データの表記統一（慶應大学→慶應義塾大学）で keiou → keio
+        ("clubs/keiou/", "clubs/keio/"),
+        ("kanto-m/clubs/keiou/", "kanto-m/clubs/keio/"),
+        ("kanto-m/matches/2026-09-13-waseda-vs-keiou/", "kanto-m/matches/2026-09-13-waseda-vs-keio/"),
+        ("matches/2026-09-13-waseda-vs-keiou/", "kanto-m/matches/2026-09-13-waseda-vs-keio/"),
+        # 対戦未定だった枠が確定してチーム名入りのURLになったもの
+        ("hokkaido-m/clubs/mitei/", "hokkaido-m/teams/"),
+        ("hokkaido-m/matches/2026-10-17-mitei-vs-mitei/", "hokkaido-m/matches/2026-10-17-hokkaido-vs-hokkai-gakuen/"),
     ]
     n = 0
     for old_path, new_path in redirects:
