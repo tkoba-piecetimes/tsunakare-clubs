@@ -57,20 +57,6 @@
    "goals_for": 10
   },
   {
-   "team": "未定",
-   "slug": "mitei",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 5,
-   "goal_diff": "0",
-   "goals_for": 0
-  },
-  {
    "team": "北海道科学大学",
    "slug": "hokkaidoukagaku",
    "points": 0,
@@ -80,7 +66,7 @@
    "losses": 4,
    "gf": 4,
    "ga": 55,
-   "rank": 6,
+   "rank": 5,
    "goal_diff": "-51",
    "goals_for": 4
   }
