@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-09",
+ "updated_at": "2026-10-10",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -365,14 +365,20 @@
    },
    {
     "date": "20261009",
-    "users": 5,
-    "pageviews": 20,
-    "sessions": 6
+    "users": 74,
+    "pageviews": 313,
+    "sessions": 84
+   },
+   {
+    "date": "20261010",
+    "users": 4,
+    "pageviews": 15,
+    "sessions": 5
    }
   ],
-  "total_users": 3404,
-  "total_pageviews": 11437,
-  "total_sessions": 4289
+  "total_users": 3477,
+  "total_pageviews": 11745,
+  "total_sessions": 4372
  },
  "gsc": {
   "daily": [
