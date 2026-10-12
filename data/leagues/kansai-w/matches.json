@@ -699,9 +699,9 @@
   "home_slug": "kindai",
   "away_slug": "ritsumeikan",
   "venue": "舞洲運動広場運動場AC",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 7,
+  "away_score": 15,
   "note": ""
  },
  {
@@ -714,9 +714,9 @@
   "home_slug": "mukogawa-joshi",
   "away_slug": "doshisha",
   "venue": "舞洲運動広場運動場AC",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 2,
+  "away_score": 16,
   "note": ""
  },
  {
@@ -729,9 +729,9 @@
   "home_slug": "doshisha-joshi",
   "away_slug": "oosakakokusai",
   "venue": "舞洲運動広場運動場AC",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 7,
+  "away_score": 7,
   "note": ""
  },
  {
