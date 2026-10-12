@@ -21,6 +21,8 @@ cta: sponsor
 
 8月6日に5-6の1点差で敗れた一橋大学のシーズン全試合と最終成績（1部 Aブロック3位）は、[一橋大学の2023年シーズン記録](../season-kanto-m-hitotsubashi-2023/index.html)で確認できます。<!-- index-lane-link -->
 
+開幕戦の7月15日に5-3で勝った中央大学のシーズン全体の成績は、[中央大学の2023年シーズン記録](../season-kanto-m-chuo-2023/index.html)にまとめています。<!-- index-lane-link -->
+
 ## 最終成績
 
 - 最終順位: 5位
