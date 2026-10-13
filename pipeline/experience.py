@@ -171,6 +171,13 @@ def team_form(lg,t,n=5):
         items+=f'<a class="form-{result}" href="{match_url(lg,m)}" aria-label="{e(m["date"])} {result} {a}対{b}">{result}</a>'
     return f'<div class="form-strip" aria-label="直近{len(ms)}試合・右が最新">{items}<small>→ 最新</small></div>' if ms else '<p class="source-note">試合結果は未掲載です。</p>'
 
+def contact_feature_cta(rel):
+    """チーム・大学ページ向け: 部の紹介記事（無料）の依頼導線。location=team-feature で計測。"""
+    return ('<p class="contact-cta">この部の関係者の方へ：部の紹介記事を無料で作成します。'
+            f'<a href="{rel}contact/index.html?type=feature" data-cta="contact_click" data-cta-location="team-feature" '
+            'onclick="window.gtag&&gtag(\'event\',\'contact_click\',{location:\'team-feature\'})">依頼する →</a></p>')
+
+
 def contact_cta(rel, location):
     """データページ末尾の問い合わせ案内（自サイト内リンクのためPR表記なし）。
     location: standings|schedule|match|team|result。クリックはGA4 contact_clickで計測。"""
@@ -191,7 +198,7 @@ def team(lg,t):
     body+=team_form(lg,t)+source(lg['meta'])
     body+='<section class="section"><h2>今シーズンの全結果</h2>'+cards(lg,played)+'</section><section class="section"><h2>今後の日程</h2>'+cards(lg,future)+'</section>'
     if pending: body+='<details class="pending-details"><summary>結果未掲載の試合 '+str(len(pending))+'件</summary><p>延期・中止の可能性があります。公式発表をご確認ください。</p>'+cards(lg,pending)+'</details>'
-    return body+archive.team_history(lg,t['team'])+related('team')+contact_cta('/','team')
+    return body+archive.team_history(lg,t['team'])+related('team')+contact_cta('/','team')+contact_feature_cta('/')
 
 def match(lg,m):
     known={t['slug']:t for t in lg['teams'].values()}
