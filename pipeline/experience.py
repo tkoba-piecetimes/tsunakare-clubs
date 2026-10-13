@@ -86,7 +86,7 @@ def mark(name, size='small'):
     return f'<span class="team-badge team-badge--{size} team-badge--pair" style="--team-color:{d["color"]}" aria-hidden="true"><span>{e(d["mark"])}</span></span>'
 
 def header(meta):
-    return '''<a class="skip" href="#main">本文へ</a><header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="ラクロスマニア 試合結果へ"><span class="brand-mark" aria-hidden="true">L<span>M</span></span><span>ラクロスマニア<small>JAPAN COLLEGE LACROSSE</small></span></a><nav class="main-nav" aria-label="メインナビゲーション"><a href="/">試合結果</a><a href="/leagues/">リーグ・順位</a><a href="/articles/">読みもの</a><a href="/archive/">過去の記録</a><a href="/videos/">動画</a></nav><a class="myteam-link" href="/my-teams/">☆ マイチーム</a><button class="menu-button" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">メニュー</button></div><nav id="mobile-menu" hidden aria-label="全ページ"><a href="/">試合結果</a><a href="/leagues/">リーグ・順位表</a><a href="/articles/">読みもの</a><a href="/archive/">過去の記録</a><a href="/videos/">動画</a><a href="/glossary/">用語辞典</a><a href="/#support">部活の協賛</a><a href="/contact/">お問い合わせ</a></nav></header>'''
+    return '''<a class="skip" href="#main">本文へ</a><header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="ラクロスマニア 試合結果へ"><span class="brand-mark" aria-hidden="true">L<span>M</span></span><span>ラクロスマニア<small>JAPAN COLLEGE LACROSSE</small></span></a><nav class="main-nav" aria-label="メインナビゲーション"><a href="/">試合結果</a><a href="/leagues/">リーグ・順位</a><a href="/articles/">読みもの</a><a href="/archive/">過去の記録</a><a href="/videos/">動画</a><a href="/contact/">お問い合わせ</a></nav><a class="myteam-link" href="/my-teams/">☆ マイチーム</a><button class="menu-button" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">メニュー</button></div><nav id="mobile-menu" hidden aria-label="全ページ"><a href="/">試合結果</a><a href="/leagues/">リーグ・順位表</a><a href="/articles/">読みもの</a><a href="/archive/">過去の記録</a><a href="/videos/">動画</a><a href="/glossary/">用語辞典</a><a href="/#support">部活の協賛</a><a href="/contact/">お問い合わせ</a></nav></header>'''
 
 def mobile_nav():
     return '<nav class="bottom-nav" aria-label="モバイル主要ページ"><a href="/">試合結果</a><a href="/leagues/">リーグ・順位</a><a href="/articles/">読みもの</a><a href="/my-teams/">マイチーム</a></nav><div id="toast" role="status" aria-live="polite"></div>'
@@ -171,6 +171,14 @@ def team_form(lg,t,n=5):
         items+=f'<a class="form-{result}" href="{match_url(lg,m)}" aria-label="{e(m["date"])} {result} {a}対{b}">{result}</a>'
     return f'<div class="form-strip" aria-label="直近{len(ms)}試合・右が最新">{items}<small>→ 最新</small></div>' if ms else '<p class="source-note">試合結果は未掲載です。</p>'
 
+def contact_cta(rel, location):
+    """データページ末尾の問い合わせ案内（自サイト内リンクのためPR表記なし）。
+    location: standings|schedule|match|team|result。クリックはGA4 contact_clickで計測。"""
+    return ('<p class="contact-cta">掲載内容の誤りや、試合・チームに関する情報提供は編集部までお知らせください。'
+            f'<a href="{rel}contact/index.html" data-cta="contact_click" data-cta-location="{location}" '
+            f'onclick="window.gtag&&gtag(\'event\',\'contact_click\',{{location:\'{location}\'}})">編集部に連絡する →</a></p>')
+
+
 def team(lg,t):
     ms=[m for m in lg['matches'] if t['slug'] in (m['home_slug'],m['away_slug'])]
     played=sort([m for m in ms if m['status']=='played']); future=upcoming(ms)
@@ -183,7 +191,7 @@ def team(lg,t):
     body+=team_form(lg,t)+source(lg['meta'])
     body+='<section class="section"><h2>今シーズンの全結果</h2>'+cards(lg,played)+'</section><section class="section"><h2>今後の日程</h2>'+cards(lg,future)+'</section>'
     if pending: body+='<details class="pending-details"><summary>結果未掲載の試合 '+str(len(pending))+'件</summary><p>延期・中止の可能性があります。公式発表をご確認ください。</p>'+cards(lg,pending)+'</details>'
-    return body+archive.team_history(lg,t['team'])+related('team')
+    return body+archive.team_history(lg,t['team'])+related('team')+contact_cta('/','team')
 
 def match(lg,m):
     known={t['slug']:t for t in lg['teams'].values()}
@@ -205,7 +213,7 @@ def match(lg,m):
     direct.sort(key=lambda v:(v[0],v[1].get('date') or ''),reverse=True)
     body+='</div></section><section class="section"><div class="section-heading"><h2>これまでの直接対決</h2><a href="'+e(archive.link(lg['code'],year='all',team=m['home'],opponent=m['away'],view='h2h'))+'">全年度を見る →</a></div>'
     body+=''.join(f'<div class="h2h-row"><span>{e(x.get("date") or str(y)+"年")}</span><span>{e(x["home"])}</span><strong>{x["home_score"]} – {x["away_score"]}</strong><span>{e(x["away"])}</span></div>' for y,x in direct[:3]) or '<p>収録データに直接対決はありません。</p>'
-    return body+'</section><div class="toolbox"><a class="button outline" href="/videos/">公式の映像・配信を探す ↗</a></div>'+related()
+    return body+'</section><div class="toolbox"><a class="button outline" href="/videos/">公式の映像・配信を探す ↗</a></div>'+related()+contact_cta('/','match')
 
 def myteams():
     teams=''.join(f'<div class="team-tile" data-team-tile="{e(t["team"])}">{mark(t["team"])}<a href="{team_url(lg,t)}">{e(t["team"])}<small>{e(lg["label"])}</small></a>{follow(lg,t)}</div>' for lg in LEAGUES for t in lg['teams'].values() if t['team'] not in ['未定'] and '勝者' not in t['team'])
