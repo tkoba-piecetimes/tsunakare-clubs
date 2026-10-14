@@ -17,6 +17,8 @@ cta: sponsor
 | 8月11日（火） | 1部 Bブロック | [青山学院大学](../../kanto-m/clubs/aoyamagakuin/index.html) vs [明治学院大学](../../kanto-m/clubs/meijigakuin/index.html) | 2 - 4 |
 | 8月11日（火） | 1部 Bブロック | [法政大学](../../kanto-m/clubs/hosei/index.html) vs [学習院大学](../../kanto-m/clubs/gakushuin/index.html) | 10 - 5 |
 
+続く8月15日～16日には2部 Aブロックと3部 Bブロックの試合が組まれており、結果は[8月15日～16日の結果まとめ](../review-kanto-m-20260815/index.html)で確認できます。<!-- index-lane-link -->
+
 ## 順位表（勝点・得失点差）
 
 ### 1部 Aブロック

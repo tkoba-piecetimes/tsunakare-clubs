@@ -19,6 +19,8 @@ cta: sponsor
 | 9月6日（日） | 2部 Aブロック | [帝京大学](../../kanto-m/clubs/teikyo/index.html) vs [東洋大学](../../kanto-m/clubs/toyo/index.html) | 0 - 12 |
 | 9月6日（日） | 2部 Bブロック | [横浜国立大学](../../kanto-m/clubs/yokohama-kokudai/index.html) vs [東京学芸大学](../../kanto-m/clubs/tokyo-gakugei/index.html) | 2 - 5 |
 
+この節に至るまでの流れとして、1部の中央大学と獨協大学が対戦した8月22日の試合結果は[8月22日の結果まとめ](../review-kanto-m-20260822/index.html)に掲載しています。<!-- index-lane-link -->
+
 ## 順位表（勝点・得失点差）
 
 ### 1部 Aブロック
