@@ -10,6 +10,7 @@ URL構造:
   site/articles/ glossary/ videos/    全リーグ共通コンテンツ
   旧URL（リーグ接頭辞なし）→ /kanto-m/ へのリダイレクトスタブを生成
 """
+import subprocess
 import json
 import re
 import shutil
@@ -1497,6 +1498,20 @@ def write_redirects(leagues):
         ("hokkaido-m/clubs/mitei/", "hokkaido-m/teams/"),
         ("hokkaido-m/matches/2026-10-17-mitei-vs-mitei/", "hokkaido-m/matches/2026-10-17-hokkaido-vs-hokkai-gakuen/"),
     ]
+    # 公式データの表記変更・対戦確定で試合/チームURLが消えたら、リーグの日程/チーム一覧へ自動転送
+    # （手動追記が追いつかずデプロイが止まった 10-09・10-13 の再発防止）
+    try:
+        baseline = subprocess.check_output(
+            ["git", "ls-tree", "-r", "--name-only", "HEAD", "site"],
+            cwd=SITE.parent, text=True).splitlines()
+    except Exception:
+        baseline = []
+    for p in baseline:
+        parts = p.split("/")
+        if len(parts) == 5 and parts[4] == "index.html" and parts[2] in ("matches", "clubs"):
+            if not (SITE.parent / p).exists():
+                dest = "schedule/" if parts[2] == "matches" else "teams/"
+                redirects.append((f"{parts[1]}/{parts[2]}/{parts[3]}/", f"{parts[1]}/{dest}"))
     n = 0
     for old_path, new_path in redirects:
         new_url = SITE_BASE + new_path

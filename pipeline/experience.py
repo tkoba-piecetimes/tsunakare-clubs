@@ -168,7 +168,7 @@ def team_form(lg,t,n=5):
     for m in reversed(ms):
         a,b=(m['home_score'],m['away_score']) if m['home_slug']==t['slug'] else (m['away_score'],m['home_score'])
         result='勝' if a>b else '敗' if a<b else '分'
-        items+=f'<a class="form-{result}" href="{match_url(lg,m)}" aria-label="{e(m["date"])} {result} {a}対{b}">{result}</a>'
+        items+=f'<a class="form-{result}" href="{match_url(lg,m)}" aria-label="{e(m.get("date") or "")} {result} {a}対{b}">{result}</a>'
     return f'<div class="form-strip" aria-label="直近{len(ms)}試合・右が最新">{items}<small>→ 最新</small></div>' if ms else '<p class="source-note">試合結果は未掲載です。</p>'
 
 def contact_feature_cta(rel):
