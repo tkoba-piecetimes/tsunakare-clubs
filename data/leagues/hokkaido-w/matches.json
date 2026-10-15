@@ -219,9 +219,9 @@
   "home_slug": "hokkaido",
   "away_slug": "hokkai-gakuen",
   "venue": "NOPPORO ヤシマ商会スポーツパーク",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 10,
+  "away_score": 5,
   "note": ""
  },
  {
