@@ -735,6 +735,21 @@
   "note": ""
  },
  {
+  "id": "2026-10-11-goudou2-vs-oosakakokusai",
+  "date": "2026-10-11",
+  "time": "10:40",
+  "category": "3部 Aブロック",
+  "home": "合同2",
+  "away": "大阪国際大学",
+  "home_slug": "goudou2",
+  "away_slug": "oosakakokusai",
+  "venue": "甲南大学六甲アイランドグラウンド",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-10-12-goudouchiimu1-vs-osaka",
   "date": "2026-10-12",
   "time": "10:00",
@@ -823,6 +838,21 @@
   "home_score": null,
   "away_score": null,
   "note": ""
+ },
+ {
+  "id": "2026-10-18-nara-joshi-vs-goudou2",
+  "date": "2026-10-18",
+  "time": "14:30",
+  "category": "3部 Aブロック",
+  "home": "奈良女子大学",
+  "away": "合同２",
+  "home_slug": "nara-joshi",
+  "away_slug": "goudou2",
+  "venue": "伏見桃山城運動公園多目的グラウンド",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": "10/4の延期試合を追加"
  },
  {
   "id": "2026-10-24-danshi-koubedaigaku-1buriiguburokku2kurai-vs-danshi-doushishadaigaku-1buriiguburokku3kurai",

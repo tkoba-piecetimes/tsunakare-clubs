@@ -1080,6 +1080,21 @@
   "note": ""
  },
  {
+  "id": "2026-10-04-tokyo-nodai-vs-gakushuin",
+  "date": "2026-10-04",
+  "time": "11:00",
+  "category": "1部 Bブロック",
+  "home": "東京農業大学",
+  "away": "学習院大学",
+  "home_slug": "tokyo-nodai",
+  "away_slug": "gakushuin",
+  "venue": "学習院北グラウンド",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-10-11-meijigakuin-vs-nihon",
   "date": "2026-10-11",
   "time": "9:00",

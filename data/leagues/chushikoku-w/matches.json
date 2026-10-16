@@ -315,6 +315,36 @@
   "note": ""
  },
  {
+  "id": "2026-10-17-hiroshima-vs-yamaguchi",
+  "date": "2026-10-17",
+  "time": "11:00",
+  "category": "プレーオフ",
+  "home": "広島大学",
+  "away": "山口大学",
+  "home_slug": "hiroshima",
+  "away_slug": "yamaguchi",
+  "venue": "岡山県総合グラウンド補助陸上競技場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-10-17-tokushima-vs-okayama",
+  "date": "2026-10-17",
+  "time": "15:00",
+  "category": "プレーオフ",
+  "home": "徳島大学",
+  "away": "岡山大学",
+  "home_slug": "tokushima",
+  "away_slug": "okayama",
+  "venue": "岡山県総合グラウンド補助陸上競技場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-10-17-1bu1kurai-vs-wairudokaadosenshoumono",
   "date": "2026-10-17",
   "time": "未定",

@@ -118,5 +118,15 @@
   "team": "大阪国際大学",
   "slug": "oosakakokusai",
   "block": "3部 Aブロック"
+ },
+ "合同2": {
+  "team": "合同2",
+  "slug": "goudou2",
+  "block": "3部 Aブロック"
+ },
+ "合同２": {
+  "team": "合同２",
+  "slug": "goudou2",
+  "block": "3部 Aブロック"
  }
 }

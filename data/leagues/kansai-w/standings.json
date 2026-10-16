@@ -243,6 +243,34 @@
    "goals_for": 25
   },
   {
+   "team": "合同2",
+   "slug": "goudou2",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 4,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "合同２",
+   "slug": "goudou2",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 5,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
    "team": "奈良女子大学",
    "slug": "nara-joshi",
    "points": 0,
@@ -252,7 +280,7 @@
    "losses": 2,
    "gf": 12,
    "ga": 31,
-   "rank": 4,
+   "rank": 6,
    "goal_diff": "-19",
    "goals_for": 12
   },
@@ -266,7 +294,7 @@
    "losses": 1,
    "gf": 0,
    "ga": 21,
-   "rank": 5,
+   "rank": 7,
    "goal_diff": "-21",
    "goals_for": 0
   }
