@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-16",
+ "updated_at": "2026-10-17",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -407,14 +407,20 @@
    },
    {
     "date": "20261016",
-    "users": 77,
-    "pageviews": 251,
-    "sessions": 93
+    "users": 78,
+    "pageviews": 253,
+    "sessions": 96
+   },
+   {
+    "date": "20261017",
+    "users": 79,
+    "pageviews": 342,
+    "sessions": 100
    }
   ],
-  "total_users": 4063,
-  "total_pageviews": 14255,
-  "total_sessions": 5130
+  "total_users": 4143,
+  "total_pageviews": 14599,
+  "total_sessions": 5233
  },
  "gsc": {
   "daily": [
@@ -819,20 +825,26 @@
     "clicks": 31,
     "impressions": 383,
     "position": 6.5
+   },
+   {
+    "date": "2026-10-15",
+    "clicks": 32,
+    "impressions": 309,
+    "position": 6.7
    }
   ],
-  "total_clicks": 2600,
-  "total_impressions": 20579,
+  "total_clicks": 2632,
+  "total_impressions": 20888,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
-    "clicks": 113,
-    "impressions": 485
+    "clicks": 114,
+    "impressions": 489
    },
    {
     "query": "ラクロスマニア",
-    "clicks": 52,
-    "impressions": 164
+    "clicks": 53,
+    "impressions": 167
    },
    {
     "query": "第３４回東海学生ラクロスリーグ戦女子日程",
@@ -841,18 +853,18 @@
    },
    {
     "query": "ラクロス 大学 ランキング 関西",
-    "clicks": 20,
-    "impressions": 90
+    "clicks": 21,
+    "impressions": 92
    },
    {
     "query": "東海学生ラクロスリーグ 2026",
     "clicks": 14,
-    "impressions": 44
+    "impressions": 45
    },
    {
     "query": "関西ラクロスリーグ",
     "clicks": 13,
-    "impressions": 332
+    "impressions": 348
    },
    {
     "query": "ラクロス 大学 女子 ランキング 関東",
@@ -860,19 +872,19 @@
     "impressions": 78
    },
    {
-    "query": "関東学生 ラクロス 1部 女子",
-    "clicks": 10,
-    "impressions": 64
+    "query": "関東学生 ラクロス 1部女子",
+    "clicks": 11,
+    "impressions": 107
    },
    {
-    "query": "関東学生 ラクロス 1部女子",
+    "query": "関東学生 ラクロス 1部 女子",
     "clicks": 10,
-    "impressions": 104
+    "impressions": 65
    },
    {
     "query": "ラクロス 大学 ランキング 男子",
     "clicks": 9,
-    "impressions": 112
+    "impressions": 116
    }
   ]
  }
