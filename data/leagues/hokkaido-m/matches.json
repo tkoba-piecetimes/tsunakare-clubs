@@ -153,15 +153,15 @@
   "id": "2026-10-17-hokkaido-vs-hokkai-gakuen",
   "date": "2026-10-17",
   "time": "13:45",
-  "category": "リーグ",
+  "category": "プレーオフ",
   "home": "北海道大学",
   "away": "北海学園大学",
   "home_slug": "hokkaido",
   "away_slug": "hokkai-gakuen",
   "venue": "厚別公園主競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "決勝（対戦カード未定）"
+  "status": "played",
+  "home_score": 9,
+  "away_score": 2,
+  "note": ""
  }
 ]
