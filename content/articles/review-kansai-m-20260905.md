@@ -16,6 +16,8 @@ cta: sponsor
 | 9月6日（日） | 1部 | [神戸大学](../../kansai-m/clubs/kobe/index.html) vs [大阪大学](../../kansai-m/clubs/osaka/index.html) | 3 - 3 |
 | 9月6日（日） | 2部 | [龍谷大学](../../kansai-m/clubs/ryukoku/index.html) vs [京都工芸繊維大学](../../kansai-m/clubs/kyoutokougeisen-i/index.html) | 3 - 1 |
 
+9月6日に大阪大学と3-3で引き分けた神戸大学が、前節の8月30日に大阪経済大学へ8-5で勝った試合は、[第36回関西学生ラクロスリーグ戦 男子の8月29日～30日の結果まとめ](../review-kansai-m-20260829/index.html)に掲載しています。<!-- index-lane-link -->
+
 ## 順位表（勝点・得失点差）
 
 ### 1部

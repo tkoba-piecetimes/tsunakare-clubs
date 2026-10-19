@@ -17,6 +17,8 @@ cta: sponsor
 | 10月4日（日） | 1部 | [関西大学](../../kansai-w/clubs/kansai/index.html) vs [関西学院大学](../../kansai-w/clubs/kwansei-gakuin/index.html) | 2 - 13 |
 | 10月4日（日） | 2部 | [京都大学](../../kansai-w/clubs/kyoto/index.html) vs [京都工芸繊維大学](../../kansai-w/clubs/kyoutokougeisen-i/index.html) | 22 - 4 |
 
+地区ごとの順位表の見方を比べるなら、岡山大学が山口大学に21-3で勝った8月23日の試合を含む[第33回中四国学生ラクロスリーグ戦 女子の8月22日～23日の結果まとめ](../review-chushikoku-w-20260822/index.html)も参考になります。<!-- index-lane-link -->
+
 ## 順位表（勝点・得失点差）
 
 ### 1部
