@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic','Meiryo',sans-serif" role="img">
+<title>男子ラクロスのフィールドを上から見た図。両端のゴールとクリース、ゴールエリア、リストレイニングライン、センターライン、ウイングエリアの位置を示す</title>
+<rect width="640" height="420" fill="#ffffff"/>
+<rect x="60" y="80" width="520" height="312" fill="#e8f3e8" stroke="#1f2a44" stroke-width="3"/>
+<rect x="268.0" y="80" width="104.0" height="62.39999999999998" fill="#fff3cf" stroke="none"/>
+<rect x="268.0" y="329.6" width="104.0" height="62.39999999999998" fill="#fff3cf" stroke="none"/>
+<line x1="216.0" y1="80" x2="216.0" y2="392" stroke="#2f6fd6" stroke-width="3" stroke-dasharray="9 5"/>
+<line x1="424.0" y1="80" x2="424.0" y2="392" stroke="#2f6fd6" stroke-width="3" stroke-dasharray="9 5"/>
+<line x1="268.0" y1="142.39999999999998" x2="372.0" y2="142.39999999999998" stroke="#f2a900" stroke-width="3"/>
+<line x1="268.0" y1="329.6" x2="372.0" y2="329.6" stroke="#f2a900" stroke-width="3"/>
+<line x1="320" y1="80" x2="320" y2="392" stroke="#1f2a44" stroke-width="5"/>
+<circle cx="122.4" cy="236.0" r="15.600000000000001" fill="#ffffff" fill-opacity="0.6" stroke="#1f2a44" stroke-width="2.5"/>
+<line x1="122.4" y1="231.242" x2="122.4" y2="240.758" stroke="#d64545" stroke-width="6"/>
+<circle cx="517.6" cy="236.0" r="15.600000000000001" fill="#ffffff" fill-opacity="0.6" stroke="#1f2a44" stroke-width="2.5"/>
+<line x1="517.6" y1="231.242" x2="517.6" y2="240.758" stroke="#d64545" stroke-width="6"/>
+<text x="320" y="62" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="700" >ウイングエリア</text>
+<line x1="320" y1="68" x2="320" y2="102" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="540" y="62" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="400" >サイドライン</text>
+<line x1="540" y1="68" x2="540" y2="80" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="320" y="414" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="700" >センターライン（中央の太い線）</text>
+<line x1="320" y1="392" x2="320" y2="400" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="34" y="236.0" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="400" transform="rotate(-90 34 236.0)">エンドライン</text>
+<text x="134.4" y="180.0" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="700" >ゴール</text>
+<text x="122.4" y="290.0" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="700" >クリース</text>
+<line x1="122.4" y1="274.0" x2="122.4" y2="253.0" stroke="#1f2a44" stroke-width="1.5"/>
+<line x1="122.4" y1="187.0" x2="122.4" y2="228.0" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="138.0" y="108" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="700" >ゴールエリア</text>
+<text x="210.0" y="354" font-size="16" text-anchor="end" fill="#2f6fd6" font-weight="700" >リストレイニング</text>
+<text x="210.0" y="376" font-size="16" text-anchor="end" fill="#2f6fd6" font-weight="700" >ライン</text>
+<text x="502.0" y="108" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="700" >ゴールエリア</text>
+<text x="430.0" y="354" font-size="16" text-anchor="start" fill="#2f6fd6" font-weight="700" >リストレイニング</text>
+<text x="430.0" y="376" font-size="16" text-anchor="start" fill="#2f6fd6" font-weight="700" >ライン</text>
+<text x="517.6" y="290.0" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="700" >クリース</text>
+<line x1="517.6" y1="274.0" x2="517.6" y2="253.0" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="320" y="204.0" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="400" >フィールド中央</text>
+</svg>

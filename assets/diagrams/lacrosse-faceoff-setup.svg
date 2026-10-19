@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 470" width="640" height="470" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic','Meiryo',sans-serif" role="img">
+<title>男子ラクロスのフェイスオフ開始時の並び。センターで各チーム1人が向かい合い、ウイングエリアに各チーム1人ずつ、ゴーリー側のゴールエリアにゴーリーを含む4人、相手側のゴールエリアに3人が位置する</title>
+<rect width="640" height="470" fill="#ffffff"/>
+<rect x="60" y="80" width="520" height="312" fill="#e8f3e8" stroke="#1f2a44" stroke-width="3"/>
+<rect x="268.0" y="80" width="104.0" height="62.39999999999998" fill="#fff3cf" stroke="none"/>
+<rect x="268.0" y="329.6" width="104.0" height="62.39999999999998" fill="#fff3cf" stroke="none"/>
+<line x1="216.0" y1="80" x2="216.0" y2="392" stroke="#2f6fd6" stroke-width="3" stroke-dasharray="9 5"/>
+<line x1="424.0" y1="80" x2="424.0" y2="392" stroke="#2f6fd6" stroke-width="3" stroke-dasharray="9 5"/>
+<line x1="268.0" y1="142.39999999999998" x2="372.0" y2="142.39999999999998" stroke="#f2a900" stroke-width="3"/>
+<line x1="268.0" y1="329.6" x2="372.0" y2="329.6" stroke="#f2a900" stroke-width="3"/>
+<line x1="320" y1="80" x2="320" y2="392" stroke="#1f2a44" stroke-width="5"/>
+<circle cx="122.4" cy="236.0" r="15.600000000000001" fill="#ffffff" fill-opacity="0.6" stroke="#1f2a44" stroke-width="2.5"/>
+<line x1="122.4" y1="231.242" x2="122.4" y2="240.758" stroke="#d64545" stroke-width="6"/>
+<circle cx="517.6" cy="236.0" r="15.600000000000001" fill="#ffffff" fill-opacity="0.6" stroke="#1f2a44" stroke-width="2.5"/>
+<line x1="517.6" y1="231.242" x2="517.6" y2="240.758" stroke="#d64545" stroke-width="6"/>
+<text x="320" y="62" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="700" >ウイングエリア</text>
+<line x1="320" y1="68" x2="320" y2="86" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="320" y="414" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="700" >センターライン</text>
+<circle cx="305" cy="236.0" r="12" fill="#2f6fd6" stroke="#ffffff" stroke-width="1.5"/><text x="305" y="239.96" font-size="11" text-anchor="middle" fill="#ffffff" font-weight="700" >FO</text>
+<circle cx="335" cy="236.0" r="12" fill="#d64545" stroke="#ffffff" stroke-width="1.5"/><text x="335" y="239.96" font-size="11" text-anchor="middle" fill="#ffffff" font-weight="700" >FO</text>
+<circle cx="302" cy="110" r="12" fill="#2f6fd6" stroke="#ffffff" stroke-width="1.5"/><text x="302" y="114.32" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700" >W</text>
+<circle cx="338" cy="110" r="12" fill="#d64545" stroke="#ffffff" stroke-width="1.5"/><text x="338" y="114.32" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700" >W</text>
+<circle cx="302" cy="362" r="12" fill="#2f6fd6" stroke="#ffffff" stroke-width="1.5"/><text x="302" y="366.32" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700" >W</text>
+<circle cx="338" cy="362" r="12" fill="#d64545" stroke="#ffffff" stroke-width="1.5"/><text x="338" y="366.32" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700" >W</text>
+<circle cx="122.4" cy="236.0" r="12" fill="#2f6fd6" stroke="#ffffff" stroke-width="1.5"/><text x="122.4" y="240.68" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="700" >G</text>
+<circle cx="150.0" cy="156.0" r="12" fill="#2f6fd6" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="150.0" cy="236.0" r="12" fill="#2f6fd6" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="150.0" cy="316.0" r="12" fill="#2f6fd6" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="192.0" cy="156.0" r="12" fill="#d64545" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="192.0" cy="236.0" r="12" fill="#d64545" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="192.0" cy="316.0" r="12" fill="#d64545" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="517.6" cy="236.0" r="12" fill="#d64545" stroke="#ffffff" stroke-width="1.5"/><text x="517.6" y="240.68" font-size="13" text-anchor="middle" fill="#ffffff" font-weight="700" >G</text>
+<circle cx="490.0" cy="156.0" r="12" fill="#d64545" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="490.0" cy="236.0" r="12" fill="#d64545" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="490.0" cy="316.0" r="12" fill="#d64545" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="448.0" cy="156.0" r="12" fill="#2f6fd6" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="448.0" cy="236.0" r="12" fill="#2f6fd6" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="448.0" cy="316.0" r="12" fill="#2f6fd6" stroke="#ffffff" stroke-width="1.5"/>
+<text x="60" y="46" font-size="14" text-anchor="start" fill="#4a5568" font-weight="400" >青と赤は別のチームです</text>
+<rect x="218.0" y="170.0" width="204" height="28" rx="6" fill="#ffffff" stroke="#9aa3b2" stroke-width="1"/><text x="320" y="189.76" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="400" >FO＝フェイスオフの選手</text>
+<rect x="218.0" y="274.0" width="204" height="28" rx="6" fill="#ffffff" stroke="#9aa3b2" stroke-width="1"/><text x="320" y="293.76" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="400" >W＝ウイングの選手</text>
+<text x="94.4" y="104" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="700" >ゴールエリア</text>
+<text x="545.6" y="104" font-size="14" text-anchor="middle" fill="#1f2a44" font-weight="700" >ゴールエリア</text>
+<text x="320" y="440" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="400" >各チーム10人＝フェイスオフ1＋ウイング2（上下1人ずつ）</text><text x="320" y="460" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="400" >＋自陣のゴールエリア4（ゴーリー含む）＋相手側のゴールエリア3</text>
+</svg>

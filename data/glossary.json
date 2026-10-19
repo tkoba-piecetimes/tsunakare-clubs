@@ -1,0 +1,370 @@
+{
+  "terms": [
+    {
+      "id": "crosse",
+      "term": "クロス",
+      "aliases": [
+        "スティック",
+        "ラクロススティック"
+      ],
+      "short": "ボールを運ぶ・パスする・シュートするために使う、先に網が付いた棒状の道具。ボールは手で直接持てない。",
+      "diagram": "lacrosse-crosse-parts",
+      "source": "https://www.lacrosse.gr.jp/how-to-watch/"
+    },
+    {
+      "id": "head",
+      "term": "ヘッド",
+      "aliases": [],
+      "short": "クロスの先端にある、ボールを受ける枠の部分。内側に網が張られている。",
+      "diagram": "lacrosse-crosse-parts",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "shaft",
+      "term": "シャフト",
+      "aliases": [
+        "ハンドル"
+      ],
+      "short": "クロスの柄（持ち手）にあたる長い棒の部分。先端のヘッド（枠）につながっている。",
+      "diagram": "lacrosse-crosse-parts",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "pocket",
+      "term": "ポケット",
+      "aliases": [],
+      "short": "ヘッドの網の中で、ボールが収まるくぼみの部分。深すぎてはいけないという規定がある。",
+      "diagram": "lacrosse-crosse-parts",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "throat",
+      "term": "スロート",
+      "aliases": [],
+      "short": "クロスの先端の枠（ヘッド）と柄がつながる、くびれた継ぎ目の部分。",
+      "diagram": "lacrosse-crosse-parts",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "sidewall",
+      "term": "サイドウォール",
+      "aliases": [],
+      "short": "クロスの先端の枠の縁にあたる部分。網のひもを通すための穴が空いている。",
+      "diagram": "lacrosse-crosse-parts",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "mesh",
+      "term": "メッシュ",
+      "aliases": [],
+      "short": "格子状に編まれた素材。クロスでは、ヘッドの網の部分に使われ、ひもで枠に固定する。",
+      "diagram": "lacrosse-crosse-parts",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "string",
+      "term": "ストリング",
+      "aliases": [],
+      "short": "クロスの網を枠に固定したり、形を整えたりするために通すひも。",
+      "diagram": "lacrosse-crosse-parts",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "long-stick",
+      "term": "ロングスティック",
+      "aliases": [
+        "ロングクロス"
+      ],
+      "short": "全長約132〜183cmの長いクロス。同時に使えるのは1チーム最大4人（ゴールキーパーを除く）。",
+      "diagram": "lacrosse-crosse-parts",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "short-stick",
+      "term": "ショートスティック",
+      "aliases": [],
+      "short": "全長約102〜107cmの標準的な長さのクロス。ロングスティックよりも短い。",
+      "diagram": "lacrosse-crosse-parts",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "mouthguard",
+      "term": "マウスガード",
+      "aliases": [],
+      "short": "歯と口の中を守るために口にはめる防具。男子は2017年から全員の着用が義務になった。",
+      "source": "https://www.lacrosse.gr.jp/medicalscience/armor/"
+    },
+    {
+      "id": "eye-guard",
+      "term": "アイガード",
+      "aliases": [],
+      "short": "目を守るゴーグル型の防具。女子のフィールドの選手は必ず着ける決まりになっている。",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_w_2026.pdf"
+    },
+    {
+      "id": "shoulder-pad",
+      "term": "ショルダーパッド",
+      "aliases": [],
+      "short": "肩から胸を守る防具。ボールや体当たりが胸に当たる危険を減らす。男子では着けるのが一般的。",
+      "source": "https://www.lacrosse.gr.jp/medicalscience/armor/"
+    },
+    {
+      "id": "faceoff",
+      "term": "フェイスオフ",
+      "aliases": [],
+      "short": "男子の試合開始や得点後に、センターで2人が向かい合ってボールを奪い合う再開方法。",
+      "diagram": "lacrosse-faceoff-setup",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "fogo",
+      "term": "FOGO",
+      "aliases": [],
+      "short": "試合再開のボール争い（フェイスオフ）を専門に担当し、終わるとすぐ交代する選手。Face Off, Get Offの略。",
+      "diagram": "lacrosse-faceoff-setup",
+      "source": "https://www.underarmour.com/en-us/products/byid/lacrosse-terms-glossary"
+    },
+    {
+      "id": "draw",
+      "term": "ドロー",
+      "aliases": [],
+      "short": "女子の試合開始・再開の方法。2人が背中合わせにクロスを構え、笛でボールを上に飛ばして奪い合う。",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_w_2026.pdf"
+    },
+    {
+      "id": "possession",
+      "term": "ポゼッション",
+      "aliases": [],
+      "short": "ボールをクロスで確保して持っている状態。またはそのチームがボールを持つ権利のこと。",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "ground-ball",
+      "term": "グラウンドボール",
+      "aliases": [],
+      "short": "地面に転がっているボール、またはそれを拾い合うプレー。先に確保したほうが攻撃できる。",
+      "source": "https://www.lacrosse.gr.jp/how-to-watch/"
+    },
+    {
+      "id": "clear",
+      "term": "クリア",
+      "aliases": [],
+      "short": "守る側がボールを確保し、自陣から運び出して攻撃につなげるプレー。",
+      "diagram": "lacrosse-offside-halves",
+      "source": "https://www.lacrosse.gr.jp/how-to-watch/"
+    },
+    {
+      "id": "ride",
+      "term": "ライド",
+      "aliases": [],
+      "short": "相手のクリア（自陣からのボールの運び出し）を止めにいく守備のプレー。",
+      "diagram": "lacrosse-offside-halves",
+      "source": "https://www.lacrosse.gr.jp/how-to-watch/"
+    },
+    {
+      "id": "dodge",
+      "term": "ダッジ",
+      "aliases": [
+        "ダッヂ",
+        "ドッジ"
+      ],
+      "short": "攻める側の選手が、1対1で守る相手をかわして前へ出るプレー。シュートやパスの機会を作る。",
+      "source": "https://www.lacrosse.gr.jp/how-to-watch/"
+    },
+    {
+      "id": "cradle",
+      "term": "クレードル",
+      "aliases": [
+        "クレードリング"
+      ],
+      "short": "クロスを小刻みに揺らし、ボールを網のくぼみに保ったまま相手から守る動き。",
+      "source": "https://www.lacrosse.gr.jp/how-to-watch/"
+    },
+    {
+      "id": "man-up",
+      "term": "マンアップ",
+      "aliases": [
+        "EMO",
+        "エキストラマン"
+      ],
+      "short": "相手の反則で相手が退場中になり、人数が多くなった側の攻撃。数の上で有利な状態。",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "man-down",
+      "term": "マンダウン",
+      "aliases": [],
+      "short": "自分のチームの反則で味方が退場中になり、人数が少ない状態で守ること。",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "offside",
+      "term": "オフサイド",
+      "aliases": [],
+      "short": "男子で、コートの半分ずつに入れる人数（攻める側6人・守る側7人まで）を超えてしまう反則。",
+      "diagram": "lacrosse-offside-halves",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "restraining-line",
+      "term": "リストレイニングライン",
+      "aliases": [
+        "レストレイニングライン",
+        "ゴールエリアライン"
+      ],
+      "short": "ゴール前方に引かれた横線で、その奥がゴールエリア。男子の試合再開（センターでのボール争い）の開始時、奥の選手は動きが制限される。",
+      "diagram": "lacrosse-field-zones",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "goal-area",
+      "term": "ゴールエリア",
+      "aliases": [],
+      "short": "コートの短い辺（エンドライン）から、ゴール前方の横線までの、ゴールがある区画。",
+      "diagram": "lacrosse-field-zones",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "wing-area",
+      "term": "ウイングエリア",
+      "aliases": [
+        "ウィングエリア"
+      ],
+      "short": "試合再開のボール争い（フェイスオフ）のとき、各チームの選手が1人ずつ位置につく、サイドライン沿いの区画。",
+      "diagram": "lacrosse-faceoff-setup",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "center-line",
+      "term": "センターライン",
+      "aliases": [],
+      "short": "コートの中央を横切る太い線。試合再開のボール争いを行う場所で、人数制限（オフサイド）の境目にもなる。",
+      "diagram": "lacrosse-field-zones",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "crease",
+      "term": "クリース",
+      "aliases": [
+        "ゴールクリース"
+      ],
+      "short": "ゴールを囲む半径3mの円。男子では攻める側の選手は中に入れず、ゴールを守る選手が守られる。",
+      "diagram": "lacrosse-crease-rules",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "body-check",
+      "term": "ボディチェック",
+      "aliases": [],
+      "short": "男子で、ボールを持つ相手などに体を当てて止める行為。首から腰までの前・横からだけ認められる。",
+      "diagram": "lacrosse-body-check-zone",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "stick-check",
+      "term": "スティックチェック",
+      "aliases": [],
+      "short": "相手のクロスを自分のクロスで叩き、ボールを落とさせるプレー。相手の体を叩くのは反則。",
+      "source": "https://www.lacrosse.gr.jp/how-to-watch/"
+    },
+    {
+      "id": "slashing",
+      "term": "スラッシング",
+      "aliases": [],
+      "short": "危険・無謀にクロスを振り回したり、相手の首やヘルメットをクロスで叩いたりする反則。",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "cross-check",
+      "term": "クロスチェック",
+      "aliases": [],
+      "short": "クロスの柄の、握った両手の間の部分で相手を突き放したり押したりする反則。",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "holding",
+      "term": "ホールディング",
+      "aliases": [],
+      "short": "ルールで認められた場合を除き、相手の体やクロスをつかんで動きを止める反則。",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "minor-foul",
+      "term": "マイナーファウル",
+      "aliases": [],
+      "short": "比較的軽い反則。ボールを持つ側の相手が犯すと30秒間の退場、それ以外はボールを失う。",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "major-foul",
+      "term": "メジャーファウル",
+      "aliases": [],
+      "short": "重い反則。激しさに応じて1〜3分間の退場になり、相手チームの人数が多い状態になる。",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "shot-clock",
+      "term": "ショットクロック",
+      "aliases": [],
+      "short": "攻撃側が一定時間内にシュートを打たなければならない制限時間。国際ルールは80秒で、一部の公式戦に適用。",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "goalie",
+      "term": "ゴーリー",
+      "aliases": [
+        "ゴールキーパー"
+      ],
+      "short": "ゴールを守る専任の選手。ゴールを囲む円（クリース）の中では、手でもボールを止められる。",
+      "diagram": "lacrosse-crease-rules",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "attack",
+      "term": "アタック",
+      "aliases": [
+        "アタッカー"
+      ],
+      "short": "主に相手ゴールの近くで、シュートや得点の組み立てを担う選手。男子は3人。",
+      "diagram": "lacrosse-positions-formation",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "midfielder",
+      "term": "ミッドフィールダー",
+      "aliases": [
+        "ミッドフィルダー",
+        "ミッド"
+      ],
+      "short": "攻めと守りの両方に関わり、コート全体を動く選手。男子は3人。",
+      "diagram": "lacrosse-positions-formation",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "defense",
+      "term": "ディフェンス",
+      "aliases": [
+        "ディフェンダー"
+      ],
+      "short": "主に自陣のゴール近くで、相手のシュートを防ぎボールを奪う選手。男子は3人。",
+      "diagram": "lacrosse-positions-formation",
+      "source": "https://www.lacrosse.gr.jp/pdf/lacrosse/JLAOfficialRule_m_2026-2.pdf"
+    },
+    {
+      "id": "relegation-match",
+      "term": "入替戦",
+      "aliases": [],
+      "short": "上の部と下の部の間でチームを入れ替えるかを決める試合。上の部の下位チームと下の部の上位チームが戦う。",
+      "source": "https://www.lacrosse.gr.jp/news/59526/"
+    },
+    {
+      "id": "wall-ball",
+      "term": "ウォールボール",
+      "aliases": [
+        "壁当て"
+      ],
+      "short": "壁に向かってボールを投げ、跳ね返りを受ける、一人でできる基礎練習。",
+      "source": "https://graspo.jp/column/63"
+    }
+  ]
+}

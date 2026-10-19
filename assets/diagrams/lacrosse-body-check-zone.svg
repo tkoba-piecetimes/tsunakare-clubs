@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic','Meiryo',sans-serif" role="img">
+<title>男子ラクロスで体当たり（ボディチェック）が認められる範囲。首から腰までの前や横からだけが認められ、首より上、腰より下、背後からは反則になる</title>
+<rect width="640" height="400" fill="#ffffff"/>
+<rect x="20" y="20" width="240" height="84" fill="#fde2e2"/>
+<rect x="20" y="104" width="240" height="120" fill="#dff0df"/>
+<rect x="20" y="224" width="240" height="160" fill="#fde2e2"/>
+<circle cx="140" cy="58" r="26" fill="#ffffff" stroke="#1f2a44" stroke-width="4"/>
+<rect x="132" y="84" width="16" height="20" fill="#ffffff" stroke="#1f2a44" stroke-width="3"/>
+<rect x="96" y="104" width="88" height="120" rx="12" fill="#ffffff" stroke="#1f2a44" stroke-width="4"/>
+<line x1="96" y1="120" x2="66" y2="190" stroke="#1f2a44" stroke-width="14" stroke-linecap="round"/>
+<line x1="184" y1="120" x2="214" y2="190" stroke="#1f2a44" stroke-width="14" stroke-linecap="round"/>
+<rect x="100" y="224" width="36" height="140" rx="10" fill="#ffffff" stroke="#1f2a44" stroke-width="4"/>
+<rect x="144" y="224" width="36" height="140" rx="10" fill="#ffffff" stroke="#1f2a44" stroke-width="4"/>
+<text x="290" y="52" font-size="18" text-anchor="start" fill="#d64545" font-weight="700" >首より上</text>
+<text x="290" y="78" font-size="16" text-anchor="start" fill="#d64545" font-weight="700" >→ 反則</text>
+<text x="290" y="138" font-size="18" text-anchor="start" fill="#2a7a3a" font-weight="700" >首から腰まで（前・横から）</text>
+<text x="290" y="164" font-size="16" text-anchor="start" fill="#2a7a3a" font-weight="700" >→ ボディチェックOK</text>
+<text x="290" y="192" font-size="15" text-anchor="start" fill="#1f2a44" font-weight="400" >ただしボールを持つ相手、または</text>
+<text x="290" y="212" font-size="15" text-anchor="start" fill="#1f2a44" font-weight="400" >落ちた・空中のボールから2.7m以内の相手だけ</text>
+<text x="290" y="284" font-size="18" text-anchor="start" fill="#d64545" font-weight="700" >腰より下</text>
+<text x="290" y="310" font-size="16" text-anchor="start" fill="#d64545" font-weight="700" >→ 反則</text>
+<text x="290" y="346" font-size="15" text-anchor="start" fill="#1f2a44" font-weight="400" >後ろから最初に当たるのも反則です</text>
+</svg>

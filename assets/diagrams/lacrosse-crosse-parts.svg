@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 404" width="640" height="404" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic','Meiryo',sans-serif" role="img">
+<title>男子ラクロスのクロス（スティック）の各部名称。先端のヘッドとネット、ガードストップ、スロート、シャフトと、ショートスティックとロングスティックの全長の規定を示す</title>
+<rect width="640" height="404" fill="#ffffff"/>
+<rect x="236" y="168" width="384" height="16" rx="3" fill="#9aa3b2" stroke="#1f2a44" stroke-width="2"/>
+<rect x="604" y="168" width="16" height="16" rx="3" fill="#1f2a44"/>
+<path d="M 240 160 L 180 134 C 130 112 62 122 56 176 C 62 230 130 240 180 218 L 240 192 Z" fill="#ffffff" stroke="#1f2a44" stroke-width="5" stroke-linejoin="round"/>
+<clipPath id="hc"><path d="M 240 160 L 180 134 C 130 112 62 122 56 176 C 62 230 130 240 180 218 L 240 192 Z"/></clipPath>
+<g clip-path="url(#hc)"><line x1="70" y1="110" x2="70" y2="245" stroke="#9aa3b2" stroke-width="1.5"/><line x1="86" y1="110" x2="86" y2="245" stroke="#9aa3b2" stroke-width="1.5"/><line x1="102" y1="110" x2="102" y2="245" stroke="#9aa3b2" stroke-width="1.5"/><line x1="118" y1="110" x2="118" y2="245" stroke="#9aa3b2" stroke-width="1.5"/><line x1="134" y1="110" x2="134" y2="245" stroke="#9aa3b2" stroke-width="1.5"/><line x1="150" y1="110" x2="150" y2="245" stroke="#9aa3b2" stroke-width="1.5"/><line x1="166" y1="110" x2="166" y2="245" stroke="#9aa3b2" stroke-width="1.5"/><line x1="182" y1="110" x2="182" y2="245" stroke="#9aa3b2" stroke-width="1.5"/><line x1="198" y1="110" x2="198" y2="245" stroke="#9aa3b2" stroke-width="1.5"/><line x1="214" y1="110" x2="214" y2="245" stroke="#9aa3b2" stroke-width="1.5"/><line x1="230" y1="110" x2="230" y2="245" stroke="#9aa3b2" stroke-width="1.5"/><line x1="50" y1="116" x2="240" y2="116" stroke="#9aa3b2" stroke-width="1.5"/><line x1="50" y1="130" x2="240" y2="130" stroke="#9aa3b2" stroke-width="1.5"/><line x1="50" y1="144" x2="240" y2="144" stroke="#9aa3b2" stroke-width="1.5"/><line x1="50" y1="158" x2="240" y2="158" stroke="#9aa3b2" stroke-width="1.5"/><line x1="50" y1="172" x2="240" y2="172" stroke="#9aa3b2" stroke-width="1.5"/><line x1="50" y1="186" x2="240" y2="186" stroke="#9aa3b2" stroke-width="1.5"/><line x1="50" y1="200" x2="240" y2="200" stroke="#9aa3b2" stroke-width="1.5"/><line x1="50" y1="214" x2="240" y2="214" stroke="#9aa3b2" stroke-width="1.5"/><line x1="50" y1="228" x2="240" y2="228" stroke="#9aa3b2" stroke-width="1.5"/><line x1="50" y1="242" x2="240" y2="242" stroke="#9aa3b2" stroke-width="1.5"/></g>
+<path d="M 240 160 L 180 134 C 130 112 62 122 56 176 C 62 230 130 240 180 218 L 240 192 Z" fill="none" stroke="#1f2a44" stroke-width="5" stroke-linejoin="round"/>
+<line x1="234" y1="160" x2="234" y2="192" stroke="#f2a900" stroke-width="8"/>
+<rect x="240" y="164" width="14" height="24" fill="#1f2a44"/>
+<line x1="56" y1="100" x2="240" y2="100" stroke="#1f2a44" stroke-width="2"/><line x1="56" y1="94" x2="56" y2="106" stroke="#1f2a44" stroke-width="2"/><line x1="240" y1="94" x2="240" y2="106" stroke="#1f2a44" stroke-width="2"/>
+<text x="148" y="82" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="700" >ヘッド（ボールを受ける先端）</text>
+<text x="148" y="62" font-size="14" text-anchor="middle" fill="#4a5568" font-weight="400" >最も広い所の内側の幅 約15〜25cm</text>
+<text x="120" y="276" font-size="16" text-anchor="start" fill="#1f2a44" font-weight="700" >ネット（ボールが収まる所＝ポケット）</text>
+<line x1="140" y1="262" x2="140" y2="206" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="262" y="140" font-size="16" text-anchor="start" fill="#1f2a44" font-weight="700" >ガードストップ</text>
+<line x1="258" y1="134" x2="236" y2="158" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="262" y="214" font-size="16" text-anchor="start" fill="#1f2a44" font-weight="700" >スロート（ヘッドとシャフトの継ぎ目）</text>
+<line x1="258" y1="206" x2="248" y2="188" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="500" y="146" font-size="16" text-anchor="middle" fill="#1f2a44" font-weight="700" >シャフト（柄・ハンドル）</text>
+<line x1="500" y1="152" x2="500" y2="166" stroke="#1f2a44" stroke-width="1.5"/>
+<text x="40" y="312" font-size="16" text-anchor="start" fill="#1f2a44" font-weight="700" >全長の規定</text>
+<rect x="40" y="322" width="298.704" height="16" fill="#2f6fd6" rx="3"/>
+<text x="348.704" y="336" font-size="16" text-anchor="start" fill="#1f2a44" font-weight="400" >ショートスティック 約102〜107cm</text>
+<rect x="40" y="352" width="369.824" height="16" fill="#f2a900" rx="3"/>
+<rect x="409.824" y="352" width="142.23999999999995" height="16" fill="#fbe3a0" rx="3"/>
+<text x="40" y="392" font-size="16" text-anchor="start" fill="#1f2a44" font-weight="400" >ロングスティック 約132〜183cm（淡い部分が長さの幅）</text>
+</svg>
