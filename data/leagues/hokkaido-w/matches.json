@@ -249,9 +249,9 @@
   "home_slug": "rakuno-gakuen",
   "away_slug": "hokkaido",
   "venue": "厚別公園主競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 12,
+  "away_score": 3,
   "note": ""
  }
 ]

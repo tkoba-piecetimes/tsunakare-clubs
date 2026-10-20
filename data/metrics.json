@@ -425,14 +425,20 @@
    },
    {
     "date": "20261019",
-    "users": 99,
-    "pageviews": 400,
-    "sessions": 122
+    "users": 135,
+    "pageviews": 497,
+    "sessions": 163
+   },
+   {
+    "date": "20261020",
+    "users": 39,
+    "pageviews": 197,
+    "sessions": 52
    }
   ],
-  "total_users": 4433,
-  "total_pageviews": 15666,
-  "total_sessions": 5584
+  "total_users": 4508,
+  "total_pageviews": 15960,
+  "total_sessions": 5677
  },
  "gsc": {
   "daily": [
@@ -855,20 +861,26 @@
     "clicks": 93,
     "impressions": 893,
     "position": 5.7
+   },
+   {
+    "date": "2026-10-18",
+    "clicks": 119,
+    "impressions": 1062,
+    "position": 5.9
    }
   ],
-  "total_clicks": 2795,
-  "total_impressions": 22438,
+  "total_clicks": 2914,
+  "total_impressions": 23500,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
-    "clicks": 121,
-    "impressions": 514
+    "clicks": 129,
+    "impressions": 537
    },
    {
     "query": "ラクロスマニア",
-    "clicks": 56,
-    "impressions": 170
+    "clicks": 62,
+    "impressions": 176
    },
    {
     "query": "第３４回東海学生ラクロスリーグ戦女子日程",
@@ -878,37 +890,37 @@
    {
     "query": "ラクロス 大学 ランキング 関西",
     "clicks": 22,
-    "impressions": 100
+    "impressions": 103
+   },
+   {
+    "query": "ラクロス 大学 女子 ランキング 関東",
+    "clicks": 15,
+    "impressions": 88
    },
    {
     "query": "東海学生ラクロスリーグ 2026",
     "clicks": 15,
-    "impressions": 50
+    "impressions": 51
    },
    {
     "query": "関西ラクロスリーグ",
     "clicks": 15,
-    "impressions": 392
-   },
-   {
-    "query": "ラクロス 大学 女子 ランキング 関東",
-    "clicks": 14,
-    "impressions": 83
+    "impressions": 406
    },
    {
     "query": "関東学生 ラクロス 1部女子",
-    "clicks": 12,
-    "impressions": 118
-   },
-   {
-    "query": "関東学生 ラクロス 1部 女子",
-    "clicks": 10,
-    "impressions": 65
+    "clicks": 13,
+    "impressions": 132
    },
    {
     "query": "ラクロス 大学 ランキング 男子",
-    "clicks": 9,
-    "impressions": 123
+    "clicks": 11,
+    "impressions": 135
+   },
+   {
+    "query": "ラクロス 関東 学生 リーグ 2026 結果",
+    "clicks": 10,
+    "impressions": 55
    }
   ]
  }

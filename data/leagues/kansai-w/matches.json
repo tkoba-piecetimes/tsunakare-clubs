@@ -744,9 +744,9 @@
   "home_slug": "goudou2",
   "away_slug": "oosakakokusai",
   "venue": "甲南大学六甲アイランドグラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 3,
+  "away_score": 23,
   "note": ""
  },
  {
@@ -789,9 +789,9 @@
   "home_slug": "kwansei-gakuin",
   "away_slug": "kyoto-sangyo",
   "venue": "太陽が丘第2競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 15,
+  "away_score": 5,
   "note": ""
  },
  {
@@ -804,9 +804,9 @@
   "home_slug": "ottemongakuin",
   "away_slug": "goudouchiimu1",
   "venue": "太陽が丘第2競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 3,
+  "away_score": 15,
   "note": ""
  },
  {
@@ -819,9 +819,9 @@
   "home_slug": "kobe",
   "away_slug": "oosakakyouiku",
   "venue": "伏見桃山城運動公園多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 11,
+  "away_score": 4,
   "note": ""
  },
  {
@@ -834,9 +834,9 @@
   "home_slug": "ryukoku",
   "away_slug": "oosakakokusai",
   "venue": "伏見桃山城運動公園多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 8,
+  "away_score": 9,
   "note": ""
  },
  {
@@ -849,10 +849,10 @@
   "home_slug": "nara-joshi",
   "away_slug": "goudou2",
   "venue": "伏見桃山城運動公園多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "10/4の延期試合を追加"
+  "status": "played",
+  "home_score": 16,
+  "away_score": 4,
+  "note": ""
  },
  {
   "id": "2026-10-24-danshi-koubedaigaku-1buriiguburokku2kurai-vs-danshi-doushishadaigaku-1buriiguburokku3kurai",
