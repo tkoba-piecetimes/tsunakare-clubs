@@ -16,6 +16,8 @@ cta: sponsor
 | 9月12日（土） | 1部 Aブロック | [慶應義塾大学](../../kanto-w/clubs/keio/index.html) vs [立教大学](../../kanto-w/clubs/rikkyo/index.html) | 4 - 9 |
 | 9月12日（土） | 2部 Aブロック | [成蹊大学](../../kanto-w/clubs/seikei/index.html) vs [駒澤大学](../../kanto-w/clubs/komazawa/index.html) | 10 - 8 |
 
+この節の前に、8月29日に立教大学が東海大学に9-3で勝った1部Aブロックの試合は、[第38回関東学生ラクロスリーグ戦 女子の8月29日～30日の結果まとめ](../review-kanto-w-20260829/index.html)の順位表とあわせて確認できます。<!-- index-lane-link -->
+
 ## 順位表（勝点・得失点差）
 
 ### 1部 Aブロック

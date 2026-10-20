@@ -18,6 +18,8 @@ cta: sponsor
 | 9月27日（日） | 1部 Bブロック | [日本体育大学](../../kanto-m/clubs/nittaidai/index.html) vs [学習院大学](../../kanto-m/clubs/gakushuin/index.html) | 7 - 2 |
 | 9月27日（日） | 3部 Aブロック | [慶應義塾高校](../../kanto-m/clubs/keio-hs/index.html) vs [上智大学](../../kanto-m/clubs/sophia/index.html) | 5 - 2 |
 
+シーズン終盤のリーグ戦で上位を争うチームが目指す舞台については、[ラクロス全日本大学選手権大会とは？ 出場校の決まり方とトーナメント方式](../lacrosse-national-championship-guide/index.html)で解説しています。<!-- index-lane-link -->
+
 ## 順位表（勝点・得失点差）
 
 ### 1部 Aブロック
