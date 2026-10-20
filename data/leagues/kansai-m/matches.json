@@ -669,9 +669,9 @@
   "home_slug": "kansai",
   "away_slug": "ryukoku",
   "venue": "伏見桃山城運動公園多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 7,
+  "away_score": 4,
   "note": ""
  },
  {
@@ -684,9 +684,9 @@
   "home_slug": "oosakakyouiku",
   "away_slug": "ottemongakuin",
   "venue": "伏見桃山城運動公園多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 2,
+  "away_score": 5,
   "note": ""
  },
  {
