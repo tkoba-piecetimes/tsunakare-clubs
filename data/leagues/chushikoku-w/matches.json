@@ -345,36 +345,6 @@
   "note": ""
  },
  {
-  "id": "2026-10-17-1bu1kurai-vs-wairudokaadosenshoumono",
-  "date": "2026-10-17",
-  "time": "未定",
-  "category": "プレーオフ",
-  "home": "1部1位",
-  "away": "ワイルドカード戦勝者",
-  "home_slug": "1bu1kurai",
-  "away_slug": "wairudokaadosenshoumono",
-  "venue": "岡山県総合グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
-  "id": "2026-10-17-1bu2kurai-vs-1bu3kurai",
-  "date": "2026-10-17",
-  "time": "未定",
-  "category": "プレーオフ",
-  "home": "1部2位",
-  "away": "1部3位",
-  "home_slug": "1bu2kurai",
-  "away_slug": "1bu3kurai",
-  "venue": "岡山県総合グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-11-08-hiroshima-shudo-vs-shimane",
   "date": "2026-11-08",
   "time": "10:00",

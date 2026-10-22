@@ -275,16 +275,16 @@
   {
    "team": "横浜国立大学",
    "slug": "yokohama-kokudai",
-   "points": 10,
+   "points": 13,
    "games": 5,
-   "wins": 3,
+   "wins": 4,
    "draws": 1,
-   "losses": 1,
-   "gf": 40,
-   "ga": 17,
+   "losses": 0,
+   "gf": 43,
+   "ga": 14,
    "rank": 2,
-   "goal_diff": "+23",
-   "goals_for": 40
+   "goal_diff": "+29",
+   "goals_for": 43
   },
   {
    "team": "日本女子体育大学",
@@ -303,16 +303,16 @@
   {
    "team": "神奈川大学",
    "slug": "kanagawa",
-   "points": 6,
+   "points": 3,
    "games": 3,
-   "wins": 2,
+   "wins": 1,
    "draws": 0,
-   "losses": 1,
-   "gf": 17,
-   "ga": 16,
+   "losses": 2,
+   "gf": 14,
+   "ga": 19,
    "rank": 4,
-   "goal_diff": "+1",
-   "goals_for": 17
+   "goal_diff": "-5",
+   "goals_for": 14
   },
   {
    "team": "一橋大学",

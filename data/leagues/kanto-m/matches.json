@@ -1155,6 +1155,36 @@
   "note": "3部B"
  },
  {
+  "id": "2026-10-31-keio-vs-waseda",
+  "date": "2026-10-31",
+  "time": "14:20",
+  "category": "プレーオフ",
+  "home": "慶應義塾大学",
+  "away": "早稲田大学",
+  "home_slug": "keio",
+  "away_slug": "waseda",
+  "venue": "駒沢オリンピック公園総合運動場 第二球技場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-10-31-josai-kantogakuin-vs-nihon",
+  "date": "2026-10-31",
+  "time": "16:20",
+  "category": "3部 Bブロック",
+  "home": "城西・関東学院",
+  "away": "日本大学",
+  "home_slug": "josai-kantogakuin",
+  "away_slug": "nihon",
+  "venue": "駒沢オリンピック公園総合運動場 第二球技場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-10-31-junkesshoushourichiimu-vs-junkesshoushourichiimu",
   "date": "2026-10-31",
   "time": "未定",
@@ -1215,6 +1245,21 @@
   "note": "3部A"
  },
  {
+  "id": "2026-11-07-saitama-vs-tokyo-rika",
+  "date": "2026-11-07",
+  "time": "13:40",
+  "category": "3部 Aブロック",
+  "home": "埼玉大学",
+  "away": "東京理科大学",
+  "home_slug": "saitama",
+  "away_slug": "tokyo-rika",
+  "venue": "大井ふ頭中央海浜公園ホッケー競技場 メインピッチ",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-11-08-meisei-vs-tokyo-keizai",
   "date": "2026-11-08",
   "time": "9:00",
@@ -1260,6 +1305,21 @@
   "note": "3部B"
  },
  {
+  "id": "2026-11-08-nihon-vs-komazawa",
+  "date": "2026-11-08",
+  "time": "17:30",
+  "category": "3部 Bブロック",
+  "home": "日本大学",
+  "away": "駒澤大学",
+  "home_slug": "nihon",
+  "away_slug": "komazawa",
+  "venue": "大井ふ頭中央海浜公園ホッケー競技場 メインピッチ",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-11-14-tokyo-rika-vs-tsukuba",
   "date": "2026-11-14",
   "time": "0:00",
@@ -1273,5 +1333,50 @@
   "home_score": null,
   "away_score": null,
   "note": "時間など詳細は決まり次第更新させていただきます"
+ },
+ {
+  "id": "2026-12-19-2bua5kurai-vs-3bub2kurai",
+  "date": "2026-12-19",
+  "time": "10:00",
+  "category": "プレーオフ",
+  "home": "2部A5位",
+  "away": "3部B2位",
+  "home_slug": "2bua5kurai",
+  "away_slug": "3bub2kurai",
+  "venue": "駒沢オリンピック公園総合運動場 第二球球技場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": "2部3部入れ替え戦"
+ },
+ {
+  "id": "2026-12-19-2bub5kurai-vs-3bua2kurai",
+  "date": "2026-12-19",
+  "time": "12:40",
+  "category": "プレーオフ",
+  "home": "2部B5位",
+  "away": "3部A2位",
+  "home_slug": "2bub5kurai",
+  "away_slug": "3bua2kurai",
+  "venue": "駒沢オリンピック公園総合運動場 第二球技場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": "2部3部入れ替え戦"
+ },
+ {
+  "id": "2026-12-19-2bua6kurai-vs-3bub1kurai",
+  "date": "2026-12-19",
+  "time": "15:20",
+  "category": "プレーオフ",
+  "home": "2部A6位",
+  "away": "3部B1位",
+  "home_slug": "2bua6kurai",
+  "away_slug": "3bub1kurai",
+  "venue": "駒沢オリンピック公園総合運動場 第二球技場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": "2部3部入れ替え戦"
  }
 ]

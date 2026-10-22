@@ -15,32 +15,32 @@
    "goals_for": 34
   },
   {
+   "team": "岩手大学",
+   "slug": "iwate",
+   "points": 6,
+   "games": 3,
+   "wins": 2,
+   "draws": 0,
+   "losses": 1,
+   "gf": 23,
+   "ga": 16,
+   "rank": 2,
+   "goal_diff": "+7",
+   "goals_for": 23
+  },
+  {
    "team": "福島大学",
    "slug": "fukushima",
    "points": 3,
-   "games": 2,
+   "games": 3,
    "wins": 1,
    "draws": 0,
-   "losses": 1,
-   "gf": 19,
-   "ga": 6,
-   "rank": 2,
-   "goal_diff": "+13",
-   "goals_for": 19
-  },
-  {
-   "team": "岩手大学",
-   "slug": "iwate",
-   "points": 3,
-   "games": 2,
-   "wins": 1,
-   "draws": 0,
-   "losses": 1,
-   "gf": 19,
-   "ga": 13,
+   "losses": 2,
+   "gf": 22,
+   "ga": 10,
    "rank": 3,
-   "goal_diff": "+6",
-   "goals_for": 19
+   "goal_diff": "+12",
+   "goals_for": 22
   },
   {
    "team": "新潟大学",
