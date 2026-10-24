@@ -25,6 +25,8 @@ cta: sponsor
 - 戦績: 3勝0分2敗
 - 得失点差: +2
 
+10月7日に2-8で敗れた法政大学は、同じ1部 Bブロックを5勝0分0敗の1位で終えており、その全試合結果は[法政大学の2023年シーズン記録](../season-kanto-m-hosei-2023/index.html)で確認できます。<!-- index-lane-link -->
+
 ## 出典
 
 - [公益社団法人日本ラクロス協会](https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/)

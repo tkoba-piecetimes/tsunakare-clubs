@@ -24,6 +24,8 @@ cta: sponsor
 - 戦績: 2勝0分2敗
 - 得失点差: -8
 
+11月4日に4-3で勝った大東文化大学は、同じ3部 Bブロックを0勝0分4敗の5位で終えており、その全試合結果は[大東文化大学の2023年シーズン記録](../season-kanto-m-daitobunka-2023/index.html)で確認できます。<!-- index-lane-link -->
+
 ## 出典
 
 - [公益社団法人日本ラクロス協会](https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/)
