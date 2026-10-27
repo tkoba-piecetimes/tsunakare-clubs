@@ -1674,6 +1674,11 @@ def write_redirects(leagues):
             if not (SITE.parent / p).exists():
                 dest = "schedule/" if parts[2] == "matches" else "teams/"
                 redirects.append((f"{parts[1]}/{parts[2]}/{parts[3]}/", f"{parts[1]}/{dest}"))
+        # 旧関東男子URL（リーグ接頭辞なしの matches/・clubs/）も同様に関東男子の一覧へ（10-23 停止の再発防止）
+        elif len(parts) == 4 and parts[3] == "index.html" and parts[1] in ("matches", "clubs"):
+            if not (SITE.parent / p).exists():
+                dest = "schedule/" if parts[1] == "matches" else "teams/"
+                redirects.append((f"{parts[1]}/{parts[2]}/", f"kanto-m/{dest}"))
     n = 0
     for old_path, new_path in redirects:
         new_url = SITE_BASE + new_path
