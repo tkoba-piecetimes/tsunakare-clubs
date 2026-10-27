@@ -1,0 +1,74 @@
+{
+  "slug": "lacrosse-manager-career",
+  "media": "lacrossemania",
+  "stage": "diagnose45",
+  "diagnosedAt": "2026-10-27",
+  "ageDays": 47,
+  "gsc": { "period": "last7d", "impressions": 22, "clicks": 1, "avgPosition": 7.0 },
+  "intentChanged": false,
+  "mergeProposal": null,
+  "factors": [
+    {
+      "factor": "検索意図の一致",
+      "layer": "article",
+      "finding": "上位は解説＋例文＋面接の答え方の型。自記事も解説型で意図は一致。ラクロス×マネージャー×キャリアの専用解説記事はSERPにほぼ無い",
+      "action": "意図は変えず、上位が持つ『伝え方の型・例文・深掘り質問』を追加して型の充足度を合わせた"
+    },
+    {
+      "factor": "タイトル・スニペット(CTR)",
+      "layer": "article",
+      "finding": "表示22・クリック1・7位。タイトル後半『支える側の経験が武器になる理由』は抽象的で、就活で何が得られるかが見えにくい",
+      "action": "タイトル後半を『「支える側」の強みを就活で伝える型』に変更、descriptionを対応表・5段階の型・深掘り質問を明示する形に書き直し"
+    },
+    {
+      "factor": "網羅性・情報量",
+      "layer": "article",
+      "finding": "約1,500字。構成テンプレ・例文・業務別の強み・面接質問・FAQが無い",
+      "action": "業務→強み→仕事の場面の対応表、5段階の型、例文の骨組み（○○置換式・体験談ではないと明記）、想定質問4つ、FAQ2問を追加"
+    },
+    {
+      "factor": "独自性(E-E-A-T)",
+      "layer": "article",
+      "finding": "2026・2027男子代表リストに『マネージャー』職は無く実際は『チームコーディネーター』（事実誤り）。根拠のない競技間比較あり。一次情報なし",
+      "action": "JLA両リストの役職名を確認して記述を訂正（2024BOX=チームマネジャー、2026-27=チームコーディネーター、経歴欄に学生マネージャー経験の記載）。比較・一般化を削除。ツナカレメディア取材記事2本（名古屋大・九州大の分業事例）を出典付きで追加。学生マネージャー本人の声は一次情報バンクに無し"
+    },
+    {
+      "factor": "構成・読みやすさ",
+      "layer": "article",
+      "finding": "冒頭が問題提起から始まり結論が後ろ。表・番号リストが無い",
+      "action": "冒頭に結論を先出し、表と番号付きの型で整理"
+    },
+    {
+      "factor": "内部リンク・トピック構造",
+      "layer": "article",
+      "finding": "被リンク8本はあるが発リンク2本のみ。仕事内容記事・運営役職記事・面接記事と未接続",
+      "action": "manager-duties-guide / club-ops-role-career / club-job-hunting-interview / club-strengths-weaknesses-job-hunting / club-bench-gakuchika への実在リンクを追加（計7本）"
+    },
+    {
+      "factor": "内部リンク・トピック構造",
+      "layer": "media",
+      "finding": "ラクロスのキャリア系記事（manager/ops-role/captain/teamwork/referee/bench等）が並列で、親となるハブ記事が無い",
+      "action": "『ラクロス部の経験と就活・キャリア』のトピッククラスタ親記事（lacrosse-club-job-hunting を親に据えるか新設）を媒体バックログへ"
+    },
+    {
+      "factor": "ドメイン評価・被リンク",
+      "layer": "media",
+      "finding": "周辺クエリは crexgroup・internshipguide など就活大手が占有。新規ドメインで汎用クエリは記事品質だけでは届きにくい",
+      "action": "記事単体では対応不可。競技特化（ラクロス×マネージャー）クエリに集中し、取材先の部・大学からの被リンク獲得策を媒体バックログへ"
+    },
+    {
+      "factor": "技術・表示",
+      "layer": "media",
+      "finding": "インデックス済み・表示あり。記事側で直す技術要因は見当たらない。FAQ追加に伴うFAQPage構造化データは記事frontmatterで指定する仕組みが無い",
+      "action": "FAQ見出しからFAQPage構造化データを出力するテンプレ対応を媒体バックログへ（任意）"
+    },
+    {
+      "factor": "CV",
+      "layer": "media",
+      "finding": "cta: career。表示が小さくCV判定は母数不足。学生向けキャリア記事のCV導線（ガクチカDL等）との接続は媒体側の設計",
+      "action": "記事は変更せず。キャリア系記事群のCTA（ガクチカ資料等）の効果測定を媒体側で継続"
+    }
+  ],
+  "primaryCause": ["網羅性・情報量", "タイトル・スニペット(CTR)", "独自性(E-E-A-T)"],
+  "summary": "意図は一致しているが、上位の就活ハウツーが持つ伝え方の型・例文・想定質問が無く情報量不足、タイトルが抽象的でCTRも弱かった。加えて2026-27男子代表リストの役職名に事実誤りがあった。記事層では事実訂正・対応表・5段階の型・例文骨組み・想定質問・FAQ・取材事例2件・内部リンク5本追加を実施。媒体層はキャリア系トピッククラスタの親記事整備、就活大手が占める汎用クエリでのドメイン評価、FAQ構造化データ対応をバックログへ。意図変更・統合提案なし（manager-duties-guide・club-ops-role-careerとは意図が異なり相互リンクで棲み分け）。"
+}
