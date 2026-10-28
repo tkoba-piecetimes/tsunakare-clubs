@@ -675,21 +675,6 @@
   "note": ""
  },
  {
-  "id": "2026-10-04-nara-joshi-vs-goudouchiimu2",
-  "date": "2026-10-04",
-  "time": "12:15",
-  "category": "3部 Aブロック",
-  "home": "奈良女子大学",
-  "away": "合同チーム2",
-  "home_slug": "nara-joshi",
-  "away_slug": "goudouchiimu2",
-  "venue": "伏見桃山城運動公園多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-10-10-kindai-vs-ritsumeikan",
   "date": "2026-10-10",
   "time": "10:00",
@@ -864,10 +849,10 @@
   "home_slug": "danshi-koubedaigaku-1buriiguburokku2kurai",
   "away_slug": "danshi-doushishadaigaku-1buriiguburokku3kurai",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "【有料試合】男子1部リーグ準決勝"
+  "status": "played",
+  "home_score": 4,
+  "away_score": 5,
+  "note": ""
  },
  {
   "id": "2026-10-24-ritsumeikandaigaku-1buriiguburokku2kurai-vs-kyoutosangyoudaigaku-1buriiguburokku3kurai",
@@ -879,9 +864,9 @@
   "home_slug": "ritsumeikandaigaku-1buriiguburokku2kurai",
   "away_slug": "kyoutosangyoudaigaku-1buriiguburokku3kurai",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 6,
+  "away_score": 10,
   "note": "【有料試合】女子1部リーグ準決勝"
  },
  {
@@ -894,9 +879,9 @@
   "home_slug": "ottemongakuin",
   "away_slug": "osaka-metropolitan",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 3,
+  "away_score": 16,
   "note": ""
  },
  {
@@ -909,9 +894,9 @@
   "home_slug": "goudouchiimu2",
   "away_slug": "doshisha-joshi",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 3,
+  "away_score": 25,
   "note": ""
  },
  {
@@ -924,9 +909,9 @@
   "home_slug": "kyoutokougeisen-i",
   "away_slug": "kobe-jogakuin",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 16,
+  "away_score": 10,
   "note": ""
  },
  {
@@ -942,7 +927,7 @@
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": ""
+  "note": "雨天中止"
  },
  {
   "id": "2026-10-31-kyoto-vs-oosakataiiku",
@@ -960,14 +945,14 @@
   "note": ""
  },
  {
-  "id": "2026-11-01-danshi-kanseigakuindaigaku-1buriiguburokku1kurai-vs-danshi-1buriigujunkesshoushousha",
+  "id": "2026-11-01-danshi-kanseigakuindaigaku-1buriiguburokku1kurai-vs-danshi-doushishadaigaku-junkesshoushousha",
   "date": "2026-11-01",
   "time": "11:00",
   "category": "プレーオフ",
   "home": "(男子)関西学院大学(1部リーグブロック1位)",
-  "away": "(男子)1部リーグ準決勝勝者",
+  "away": "(男子)同志社大学(準決勝勝者)",
   "home_slug": "danshi-kanseigakuindaigaku-1buriiguburokku1kurai",
-  "away_slug": "danshi-1buriigujunkesshoushousha",
+  "away_slug": "danshi-doushishadaigaku-junkesshoushousha",
   "venue": "たけびしスタジアム京都",
   "status": "scheduled",
   "home_score": null,

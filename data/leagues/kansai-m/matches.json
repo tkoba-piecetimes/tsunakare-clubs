@@ -699,10 +699,10 @@
   "home_slug": "koubedaigaku-1buriiguburokku2kurai",
   "away_slug": "doushishadaigaku-1buriiguburokku3kurai",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "【有料試合】男子1部リーグ準決勝"
+  "status": "played",
+  "home_score": 4,
+  "away_score": 5,
+  "note": ""
  },
  {
   "id": "2026-10-24-joshi-ritsumeikandaigaku-1buriiguburokku2kurai-vs-joshi-kyoutosangyoudaigaku-1buriiguburokku3kurai",
@@ -714,10 +714,25 @@
   "home_slug": "joshi-ritsumeikandaigaku-1buriiguburokku2kurai",
   "away_slug": "joshi-kyoutosangyoudaigaku-1buriiguburokku3kurai",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "【有料試合】女子1部リーグ準決勝"
+  "status": "played",
+  "home_score": 6,
+  "away_score": 10,
+  "note": ""
+ },
+ {
+  "id": "2026-10-24-konan-vs-kansai",
+  "date": "2026-10-24",
+  "time": "14:30",
+  "category": "2部",
+  "home": "甲南大学",
+  "away": "関西大学",
+  "home_slug": "konan",
+  "away_slug": "kansai",
+  "venue": "伏見桃山城運動公園多目的グラウンド",
+  "status": "played",
+  "home_score": 5,
+  "away_score": 3,
+  "note": ""
  },
  {
   "id": "2026-10-31-konan-vs-kyoto-sangyo",
@@ -750,14 +765,14 @@
   "note": ""
  },
  {
-  "id": "2026-11-01-kanseigakuindaigaku-1buriiguburokku1kurai-vs-1buriigujunkesshoushousha",
+  "id": "2026-11-01-kanseigakuindaigaku-1buriiguburokku1kurai-vs-doushishadaigaku-junkesshoushousha",
   "date": "2026-11-01",
   "time": "11:00",
   "category": "プレーオフ",
   "home": "関西学院大学(1部リーグブロック1位)",
-  "away": "1部リーグ準決勝勝者",
+  "away": "同志社大学(準決勝勝者)",
   "home_slug": "kanseigakuindaigaku-1buriiguburokku1kurai",
-  "away_slug": "1buriigujunkesshoushousha",
+  "away_slug": "doushishadaigaku-junkesshoushousha",
   "venue": "たけびしスタジアム京都",
   "status": "scheduled",
   "home_score": null,
@@ -765,14 +780,14 @@
   "note": "【有料試合】男子1部リーグ決勝戦"
  },
  {
-  "id": "2026-11-01-joshi-kanseigakuindaigaku-1buriiguburokku1kurai-vs-joshi-1buriigujunkesshoushousha",
+  "id": "2026-11-01-joshi-kanseigakuindaigaku-1buriiguburokku1kurai-vs-kyoutosangyoudaigaku-junkesshoushousha",
   "date": "2026-11-01",
   "time": "14:00",
   "category": "プレーオフ",
   "home": "(女子)関西学院大学(1部リーグブロック1位)",
-  "away": "(女子)1部リーグ準決勝勝者",
+  "away": "京都産業大学(準決勝勝者)",
   "home_slug": "joshi-kanseigakuindaigaku-1buriiguburokku1kurai",
-  "away_slug": "joshi-1buriigujunkesshoushousha",
+  "away_slug": "kyoutosangyoudaigaku-junkesshoushousha",
   "venue": "たけびしスタジアム京都",
   "status": "scheduled",
   "home_score": null,

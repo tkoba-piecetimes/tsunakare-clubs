@@ -225,21 +225,6 @@
   "note": ""
  },
  {
-  "id": "2026-10-17-riigu1kurai-vs-riigu2kurai",
-  "date": "2026-10-17",
-  "time": "11:00",
-  "category": "プレーオフ",
-  "home": "リーグ1位",
-  "away": "リーグ2位",
-  "home_slug": "riigu1kurai",
-  "away_slug": "riigu2kurai",
-  "venue": "厚別公園主競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "決勝（対戦カード未定）"
- },
- {
   "id": "2026-10-17-rakuno-gakuen-vs-hokkaido",
   "date": "2026-10-17",
   "time": "11:00",

@@ -324,9 +324,9 @@
   "home_slug": "meijo",
   "away_slug": "shinshuu",
   "venue": "あいち健康の森公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 1,
+  "away_score": 6,
   "note": "ワイルドカード決定戦"
  },
  {
@@ -339,9 +339,9 @@
   "home_slug": "gifu",
   "away_slug": "shiga",
   "venue": "あいち健康の森公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 8,
   "note": ""
  },
  {
@@ -354,9 +354,9 @@
   "home_slug": "chukyo",
   "away_slug": "nanzan",
   "venue": "森林公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 6,
   "note": ""
  },
  {
@@ -369,9 +369,9 @@
   "home_slug": "nagoya",
   "away_slug": "shinshuu",
   "venue": "森林公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 6,
+  "away_score": 3,
   "note": ""
  },
  {

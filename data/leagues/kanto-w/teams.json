@@ -1,64 +1,4 @@
 {
- "日本女子体育大学": {
-  "team": "日本女子体育大学",
-  "slug": "nihonjoshitaiiku",
-  "block": "2部 Bブロック"
- },
- "一橋大学": {
-  "team": "一橋大学",
-  "slug": "hitotsubashi",
-  "block": "2部 Bブロック"
- },
- "横浜国立大学": {
-  "team": "横浜国立大学",
-  "slug": "yokohama-kokudai",
-  "block": "2部 Bブロック"
- },
- "東京学芸大学": {
-  "team": "東京学芸大学",
-  "slug": "tokyo-gakugei",
-  "block": "2部 Bブロック"
- },
- "慶應義塾大学": {
-  "team": "慶應義塾大学",
-  "slug": "keio",
-  "block": "1部 Aブロック"
- },
- "青山学院大学": {
-  "team": "青山学院大学",
-  "slug": "aoyamagakuin",
-  "block": "1部 Aブロック"
- },
- "千葉大学": {
-  "team": "千葉大学",
-  "slug": "chiba",
-  "block": "2部 Bブロック"
- },
- "東京農業大学": {
-  "team": "東京農業大学",
-  "slug": "tokyo-nodai",
-  "block": "1部 Bブロック"
- },
- "学習院大学": {
-  "team": "学習院大学",
-  "slug": "gakushuin",
-  "block": "1部 Bブロック"
- },
- "専修大学": {
-  "team": "専修大学",
-  "slug": "senshu",
-  "block": "2部 Aブロック"
- },
- "成蹊大学": {
-  "team": "成蹊大学",
-  "slug": "seikei",
-  "block": "2部 Aブロック"
- },
- "駒澤大学": {
-  "team": "駒澤大学",
-  "slug": "komazawa",
-  "block": "2部 Aブロック"
- },
  "立教大学": {
   "team": "立教大学",
   "slug": "rikkyo",
@@ -74,9 +14,19 @@
   "slug": "tokyo",
   "block": "1部 Aブロック"
  },
+ "慶應義塾大学": {
+  "team": "慶應義塾大学",
+  "slug": "keio",
+  "block": "1部 Aブロック"
+ },
  "法政大学": {
   "team": "法政大学",
   "slug": "hosei",
+  "block": "1部 Bブロック"
+ },
+ "東京農業大学": {
+  "team": "東京農業大学",
+  "slug": "tokyo-nodai",
   "block": "1部 Bブロック"
  },
  "日本大学": {
@@ -84,9 +34,29 @@
   "slug": "nihon",
   "block": "2部 Aブロック"
  },
+ "駒澤大学": {
+  "team": "駒澤大学",
+  "slug": "komazawa",
+  "block": "2部 Aブロック"
+ },
+ "一橋大学": {
+  "team": "一橋大学",
+  "slug": "hitotsubashi",
+  "block": "2部 Bブロック"
+ },
  "神奈川大学": {
   "team": "神奈川大学",
   "slug": "kanagawa",
+  "block": "2部 Bブロック"
+ },
+ "東京学芸大学": {
+  "team": "東京学芸大学",
+  "slug": "tokyo-gakugei",
+  "block": "2部 Bブロック"
+ },
+ "日本女子体育大学": {
+  "team": "日本女子体育大学",
+  "slug": "nihonjoshitaiiku",
   "block": "2部 Bブロック"
  },
  "東海大学": {
@@ -94,14 +64,39 @@
   "slug": "tokai",
   "block": "1部 Aブロック"
  },
+ "青山学院大学": {
+  "team": "青山学院大学",
+  "slug": "aoyamagakuin",
+  "block": "1部 Aブロック"
+ },
+ "学習院大学": {
+  "team": "学習院大学",
+  "slug": "gakushuin",
+  "block": "1部 Bブロック"
+ },
  "明治大学": {
   "team": "明治大学",
   "slug": "meiji",
   "block": "1部 Bブロック"
  },
+ "横浜国立大学": {
+  "team": "横浜国立大学",
+  "slug": "yokohama-kokudai",
+  "block": "2部 Bブロック"
+ },
+ "千葉大学": {
+  "team": "千葉大学",
+  "slug": "chiba",
+  "block": "2部 Bブロック"
+ },
  "東洋大学": {
   "team": "東洋大学",
   "slug": "toyo",
+  "block": "2部 Aブロック"
+ },
+ "専修大学": {
+  "team": "専修大学",
+  "slug": "senshu",
   "block": "2部 Aブロック"
  },
  "日本体育大学": {
@@ -113,6 +108,11 @@
   "team": "中央大学",
   "slug": "chuo",
   "block": "1部 Bブロック"
+ },
+ "成蹊大学": {
+  "team": "成蹊大学",
+  "slug": "seikei",
+  "block": "2部 Aブロック"
  },
  "明治学院大学": {
   "team": "明治学院大学",
@@ -194,9 +194,9 @@
   "slug": "tsukuba",
   "block": "3部 Aブロック"
  },
- "帝京大学・成城大学・創価大学合同チーム": {
-  "team": "帝京大学・成城大学・創価大学合同チーム",
-  "slug": "teikyoudaigaku-seijoudaigaku-soukadaigakugoudouchiimu",
+ "成城大学・創価大学合同チーム": {
+  "team": "成城大学・創価大学合同チーム",
+  "slug": "seijoudaigaku-soukadaigakugoudouchiimu",
   "block": "4部 Aブロック"
  },
  "淑徳大学": {
@@ -209,24 +209,44 @@
   "slug": "saitama",
   "block": "4部 Bブロック"
  },
- "大東文化大学": {
-  "team": "大東文化大学",
-  "slug": "daitobunka",
-  "block": "3部 Aブロック"
- },
  "東京外国語大学": {
   "team": "東京外国語大学",
   "slug": "tokyo-gaigo",
   "block": "3部 Bブロック"
  },
+ "帝京大学": {
+  "team": "帝京大学",
+  "slug": "teikyo",
+  "block": "4部 Aブロック"
+ },
+ "国際基督教大学": {
+  "team": "国際基督教大学",
+  "slug": "kokusaikirisutokyou",
+  "block": "4部 Bブロック"
+ },
+ "大東文化大学": {
+  "team": "大東文化大学",
+  "slug": "daitobunka",
+  "block": "3部 Aブロック"
+ },
+ "茨城大学": {
+  "team": "茨城大学",
+  "slug": "ibaraki",
+  "block": "4部 Aブロック"
+ },
+ "東京家政大学・高崎経済大学": {
+  "team": "東京家政大学・高崎経済大学",
+  "slug": "toukyoukaseidaigaku-takasakikeizai",
+  "block": "4部 Bブロック"
+ },
+ "西武文理大学・文教大学": {
+  "team": "西武文理大学・文教大学",
+  "slug": "seibubunridaigaku-bunkyou",
+  "block": "4部 Bブロック"
+ },
  "聖心女子大学": {
   "team": "聖心女子大学",
   "slug": "seishin-joshi",
   "block": "4部 Aブロック"
- },
- "西武文理大学・文教大学・東京家政大学・高崎経済大学合同チーム": {
-  "team": "西武文理大学・文教大学・東京家政大学・高崎経済大学合同チーム",
-  "slug": "seibubunridaigaku-bunkyoudaigaku-toukyoukaseidaigaku-takasakikeizaidaigakugoudouchiimu",
-  "block": "4部 Bブロック"
  }
 }

@@ -173,33 +173,47 @@
   {
    "team": "京都工芸繊維大学",
    "slug": "kyoutokougeisen-i",
-   "points": 0,
-   "games": 5,
-   "wins": 0,
+   "points": 3,
+   "games": 6,
+   "wins": 1,
    "draws": 0,
    "losses": 5,
-   "gf": 25,
-   "ga": 80,
+   "gf": 41,
+   "ga": 90,
    "rank": 6,
-   "goal_diff": "-55",
-   "goals_for": 25
+   "goal_diff": "-49",
+   "goals_for": 41
   },
   {
    "team": "神戸女学院大学",
    "slug": "kobe-jogakuin",
    "points": 0,
-   "games": 4,
+   "games": 5,
    "wins": 0,
    "draws": 0,
-   "losses": 4,
-   "gf": 10,
-   "ga": 97,
+   "losses": 5,
+   "gf": 20,
+   "ga": 113,
    "rank": 7,
-   "goal_diff": "-87",
-   "goals_for": 10
+   "goal_diff": "-93",
+   "goals_for": 20
   }
  ],
  "3部 Aブロック": [
+  {
+   "team": "同志社女子大学",
+   "slug": "doshisha-joshi",
+   "points": 10,
+   "games": 4,
+   "wins": 3,
+   "draws": 1,
+   "losses": 0,
+   "gf": 61,
+   "ga": 20,
+   "rank": 1,
+   "goal_diff": "+41",
+   "goals_for": 61
+  },
   {
    "team": "大阪国際大学",
    "slug": "oosakakokusai",
@@ -210,23 +224,9 @@
    "losses": 0,
    "gf": 53,
    "ga": 24,
-   "rank": 1,
+   "rank": 2,
    "goal_diff": "+29",
    "goals_for": 53
-  },
-  {
-   "team": "同志社女子大学",
-   "slug": "doshisha-joshi",
-   "points": 7,
-   "games": 3,
-   "wins": 2,
-   "draws": 1,
-   "losses": 0,
-   "gf": 36,
-   "ga": 17,
-   "rank": 2,
-   "goal_diff": "+19",
-   "goals_for": 36
   },
   {
    "team": "龍谷大学",
@@ -288,31 +288,31 @@
    "team": "合同チーム2",
    "slug": "goudouchiimu2",
    "points": 0,
-   "games": 1,
+   "games": 2,
    "wins": 0,
    "draws": 0,
-   "losses": 1,
-   "gf": 0,
-   "ga": 21,
+   "losses": 2,
+   "gf": 3,
+   "ga": 46,
    "rank": 7,
-   "goal_diff": "-21",
-   "goals_for": 0
+   "goal_diff": "-43",
+   "goals_for": 3
   }
  ],
  "3部 Bブロック": [
   {
    "team": "大阪公立大学",
    "slug": "osaka-metropolitan",
-   "points": 9,
-   "games": 3,
-   "wins": 3,
+   "points": 12,
+   "games": 4,
+   "wins": 4,
    "draws": 0,
    "losses": 0,
-   "gf": 37,
-   "ga": 8,
+   "gf": 53,
+   "ga": 11,
    "rank": 1,
-   "goal_diff": "+29",
-   "goals_for": 37
+   "goal_diff": "+42",
+   "goals_for": 53
   },
   {
    "team": "大阪大学",
@@ -360,15 +360,15 @@
    "team": "追手門学院大学",
    "slug": "ottemongakuin",
    "points": 0,
-   "games": 3,
+   "games": 4,
    "wins": 0,
    "draws": 0,
-   "losses": 3,
-   "gf": 16,
-   "ga": 42,
+   "losses": 4,
+   "gf": 19,
+   "ga": 58,
    "rank": 5,
-   "goal_diff": "-26",
-   "goals_for": 16
+   "goal_diff": "-39",
+   "goals_for": 19
   }
  ]
 }
