@@ -257,46 +257,46 @@
    "goals_for": 28
   },
   {
-   "team": "合同２",
-   "slug": "goudou2",
-   "points": 0,
-   "games": 1,
-   "wins": 0,
-   "draws": 0,
-   "losses": 1,
-   "gf": 4,
-   "ga": 16,
-   "rank": 5,
-   "goal_diff": "-12",
-   "goals_for": 4
-  },
-  {
    "team": "合同2",
    "slug": "goudou2",
    "points": 0,
-   "games": 1,
+   "games": 0,
    "wins": 0,
    "draws": 0,
-   "losses": 1,
-   "gf": 3,
-   "ga": 23,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
+   "rank": 5,
+   "goal_diff": "0",
+   "goals_for": 0
+  },
+  {
+   "team": "合同２",
+   "slug": "goudou2",
+   "points": 0,
+   "games": 0,
+   "wins": 0,
+   "draws": 0,
+   "losses": 0,
+   "gf": 0,
+   "ga": 0,
    "rank": 6,
-   "goal_diff": "-20",
-   "goals_for": 3
+   "goal_diff": "0",
+   "goals_for": 0
   },
   {
    "team": "合同チーム2",
    "slug": "goudouchiimu2",
    "points": 0,
-   "games": 2,
+   "games": 4,
    "wins": 0,
    "draws": 0,
-   "losses": 2,
-   "gf": 3,
-   "ga": 46,
+   "losses": 4,
+   "gf": 10,
+   "ga": 85,
    "rank": 7,
-   "goal_diff": "-43",
-   "goals_for": 3
+   "goal_diff": "-75",
+   "goals_for": 10
   }
  ],
  "3部 Bブロック": [
