@@ -939,9 +939,9 @@
   "home_slug": "sophia",
   "away_slug": "tsukuba",
   "venue": "筑波大学セキショウフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 9,
+  "away_score": 5,
   "note": ""
  },
  {
@@ -954,9 +954,9 @@
   "home_slug": "kyoritsu-joshi",
   "away_slug": "jissen-joshi",
   "venue": "筑波大学セキショウフィールド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 9,
+  "away_score": 7,
   "note": ""
  },
  {
@@ -1044,10 +1044,10 @@
   "home_slug": "otsuma",
   "away_slug": "tokyo-gaigo",
   "venue": "大宮けんぽ7区画",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部B"
+  "status": "played",
+  "home_score": 5,
+  "away_score": 10,
+  "note": ""
  },
  {
   "id": "2026-10-04-tokyo-nodai-vs-gakushuin",
@@ -1164,10 +1164,10 @@
   "home_slug": "ibaraki",
   "away_slug": "shukutoku",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "4部A"
+  "status": "played",
+  "home_score": 7,
+  "away_score": 10,
+  "note": ""
  },
  {
   "id": "2026-10-10-senshu-vs-seikei",
@@ -1224,10 +1224,10 @@
   "home_slug": "nihon-joshi",
   "away_slug": "jissen-joshi",
   "venue": "大宮けんぽ第7区画",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部B"
+  "status": "played",
+  "home_score": 11,
+  "away_score": 4,
+  "note": ""
  },
  {
   "id": "2026-10-17-tsukuba-vs-dokkyo",
@@ -1239,10 +1239,10 @@
   "home_slug": "tsukuba",
   "away_slug": "dokkyo",
   "venue": "大宮けんぽ2区画",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部A"
+  "status": "played",
+  "home_score": 11,
+  "away_score": 5,
+  "note": ""
  },
  {
   "id": "2026-10-17-tamagawa-vs-tokyo-joshi",
@@ -1254,10 +1254,10 @@
   "home_slug": "tamagawa",
   "away_slug": "tokyo-joshi",
   "venue": "大宮けんぽ2区画",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部C"
+  "status": "played",
+  "home_score": 2,
+  "away_score": 18,
+  "note": ""
  },
  {
   "id": "2026-10-17-meisei-vs-musashi",
@@ -1269,10 +1269,10 @@
   "home_slug": "meisei",
   "away_slug": "musashi",
   "venue": "大宮けんぽ2区画",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部C"
+  "status": "played",
+  "home_score": 8,
+  "away_score": 7,
+  "note": ""
  },
  {
   "id": "2026-10-18-rikkyo-vs-meiji",
@@ -1284,10 +1284,10 @@
   "home_slug": "rikkyo",
   "away_slug": "meiji",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部準決勝"
+  "status": "played",
+  "home_score": 5,
+  "away_score": 4,
+  "note": ""
  },
  {
   "id": "2026-10-18-nittaidai-vs-waseda",
@@ -1299,10 +1299,10 @@
   "home_slug": "nittaidai",
   "away_slug": "waseda",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "1部準決勝"
+  "status": "played",
+  "home_score": 8,
+  "away_score": 7,
+  "note": ""
  },
  {
   "id": "2026-10-24-tokyo-rika-vs-daitobunka",
@@ -1314,10 +1314,10 @@
   "home_slug": "tokyo-rika",
   "away_slug": "daitobunka",
   "venue": "江戸川区臨海球技場E面",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部A"
+  "status": "played",
+  "home_score": 7,
+  "away_score": 10,
+  "note": ""
  },
  {
   "id": "2026-10-24-chiba-vs-kanagawa",
@@ -1329,10 +1329,10 @@
   "home_slug": "chiba",
   "away_slug": "kanagawa",
   "venue": "江戸川区臨海球技場E面",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部B"
+  "status": "played",
+  "home_score": 4,
+  "away_score": 22,
+  "note": ""
  },
  {
   "id": "2026-10-25-tokyo-gaigo-vs-kyoritsu-joshi",
@@ -1359,10 +1359,10 @@
   "home_slug": "kantogakuin",
   "away_slug": "kokusaikirisutokyou",
   "venue": "大宮けんぽ第1区画ラグビー場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "4部B"
+  "status": "played",
+  "home_score": 14,
+  "away_score": 2,
+  "note": ""
  },
  {
   "id": "2026-10-25-meijigakuin-vs-toyo",
@@ -1389,10 +1389,10 @@
   "home_slug": "tokyo-keizai",
   "away_slug": "saitama",
   "venue": "大宮けんぽ第1区画ラグビー場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "4部B"
+  "status": "played",
+  "home_score": 15,
+  "away_score": 3,
+  "note": ""
  },
  {
   "id": "2026-10-25-teikyo-vs-seijoudaigaku-soukadaigakugoudouchiimu",

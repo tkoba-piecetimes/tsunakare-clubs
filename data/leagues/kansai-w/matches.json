@@ -975,6 +975,36 @@
   "note": ""
  },
  {
+  "id": "2026-10-31-doshisha-joshi-vs-osaka-metropolitan",
+  "date": "2026-10-31",
+  "time": "12:00",
+  "category": "プレーオフ",
+  "home": "同志社女子大学",
+  "away": "大阪公立大学",
+  "home_slug": "doshisha-joshi",
+  "away_slug": "osaka-metropolitan",
+  "venue": "宝が池球技場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-10-31-oosakakokusai-vs-osaka",
+  "date": "2026-10-31",
+  "time": "14:30",
+  "category": "プレーオフ",
+  "home": "大阪国際大学",
+  "away": "大阪大学",
+  "home_slug": "oosakakokusai",
+  "away_slug": "osaka",
+  "venue": "宝が池球技場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-11-01-danshi-kanseigakuindaigaku-1buriiguburokku1kurai-vs-danshi-doushishadaigaku-junkesshoushousha",
   "date": "2026-11-01",
   "time": "11:00",
