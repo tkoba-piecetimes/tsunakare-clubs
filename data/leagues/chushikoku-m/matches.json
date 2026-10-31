@@ -210,6 +210,21 @@
   "note": ""
  },
  {
+  "id": "2026-09-06-okayama-vs-shimane",
+  "date": "2026-09-06",
+  "time": "10:20",
+  "category": "1部",
+  "home": "岡山大学",
+  "away": "島根大学",
+  "home_slug": "okayama",
+  "away_slug": "shimane",
+  "venue": "飯山総合運動公園",
+  "status": "played",
+  "home_score": 13,
+  "away_score": 1,
+  "note": ""
+ },
+ {
   "id": "2026-09-19-ehime-vs-hiroshima-shudo",
   "date": "2026-09-19",
   "time": "10:20",

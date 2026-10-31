@@ -312,7 +312,7 @@
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
-  "note": "ワイルドカード戦"
+  "note": "ワイルドカード・延期"
  },
  {
   "id": "2026-10-04-yamaguchi-vs-shimane",
@@ -327,7 +327,7 @@
   "status": "played",
   "home_score": 11,
   "away_score": 7,
-  "note": ""
+  "note": "ワイルドカード"
  },
  {
   "id": "2026-10-17-hiroshima-vs-yamaguchi",

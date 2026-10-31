@@ -630,21 +630,6 @@
   "note": ""
  },
  {
-  "id": "2026-09-06-toukyoujoshitaiiku-vs-tokyo-joshi",
-  "date": "2026-09-06",
-  "time": "15:30",
-  "category": "3部 Cブロック",
-  "home": "東京女子体育大学",
-  "away": "東京女子大学",
-  "home_slug": "toukyoujoshitaiiku",
-  "away_slug": "tokyo-joshi",
-  "venue": "高野スポーツパーク",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-09-11-nittaidai-vs-meiji",
   "date": "2026-09-11",
   "time": "19:00",
@@ -1058,21 +1043,6 @@
   "away": "学習院大学",
   "home_slug": "tokyo-nodai",
   "away_slug": "gakushuin",
-  "venue": "学習院北グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
-  "id": "2026-10-04-tokyo-nodai-vs-gakushuin",
-  "date": "2026-10-04",
-  "time": "11:00",
-  "category": "1部 Bブロック",
-  "home": "東京農業大学",
-  "away": "学習院大学",
-  "home_slug": "tokyo-nodai",
-  "away_slug": "gakushuin",
   "venue": "学習院大学北グラウンド",
   "status": "played",
   "home_score": 7,
@@ -1089,24 +1059,24 @@
   "home_slug": "toukyoujoshitaiiku",
   "away_slug": "tamagawa",
   "venue": "大宮けんぽ7区画",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部C"
+  "status": "played",
+  "home_score": 18,
+  "away_score": 2,
+  "note": ""
  },
  {
-  "id": "2026-10-04-teikyo-vs-seijoudaigaku-soukadaigakugoudouchiimu",
+  "id": "2026-10-04-seijoudaigaku-soukadaigakugoudouchiimu-vs-seishin-joshi",
   "date": "2026-10-04",
   "time": "14:30",
   "category": "4部 Aブロック",
-  "home": "帝京大学",
-  "away": "成城大学・創価大学合同チーム",
-  "home_slug": "teikyo",
-  "away_slug": "seijoudaigaku-soukadaigakugoudouchiimu",
+  "home": "成城大学・創価大学合同チーム",
+  "away": "聖心女子大学",
+  "home_slug": "seijoudaigaku-soukadaigakugoudouchiimu",
+  "away_slug": "seishin-joshi",
   "venue": "大宮けんぽ7区画",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 17,
+  "away_score": 7,
   "note": "4部A"
  },
  {
@@ -1119,10 +1089,10 @@
   "home_slug": "kokusaikirisutokyou",
   "away_slug": "tokyo-keizai",
   "venue": "大宮けんぽ1区画B面",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "4部B"
+  "status": "played",
+  "home_score": 6,
+  "away_score": 20,
+  "note": ""
  },
  {
   "id": "2026-10-10-nihonjoshitaiiku-vs-hitotsubashi",
@@ -1135,9 +1105,9 @@
   "away_slug": "hitotsubashi",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
   "status": "played",
-  "home_score": 16,
-  "away_score": 5,
-  "note": "2部B"
+  "home_score": 5,
+  "away_score": 16,
+  "note": ""
  },
  {
   "id": "2026-10-10-daitobunka-vs-sophia",
@@ -1149,10 +1119,10 @@
   "home_slug": "daitobunka",
   "away_slug": "sophia",
   "venue": "大宮けんぽ1区画B面",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部A"
+  "status": "played",
+  "home_score": 2,
+  "away_score": 12,
+  "note": ""
  },
  {
   "id": "2026-10-10-ibaraki-vs-shukutoku",
@@ -1200,18 +1170,18 @@
   "note": "9/13延期→10/11"
  },
  {
-  "id": "2026-10-11-toukyoukaseidaigaku-takasakikeizai-vs-seibubunridaigaku-bunkyou",
+  "id": "2026-10-11-seibubunridaigaku-bunkyoudaigaku-toukyoukaseidaigaku-takasakikeizaidaigakugoudouchiimu-vs-kantogakuin",
   "date": "2026-10-11",
   "time": "11:30",
   "category": "4部 Bブロック",
-  "home": "東京家政大学・高崎経済大学",
-  "away": "西武文理大学・文教大学",
-  "home_slug": "toukyoukaseidaigaku-takasakikeizai",
-  "away_slug": "seibubunridaigaku-bunkyou",
+  "home": "西武文理大学・文京大学・東京家政大学・高崎経済大学合同チーム",
+  "away": "関東学院大学",
+  "home_slug": "seibubunridaigaku-bunkyoudaigaku-toukyoukaseidaigaku-takasakikeizaidaigakugoudouchiimu",
+  "away_slug": "kantogakuin",
   "venue": "大宮けんぽ第7区画",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 1,
+  "away_score": 35,
   "note": "4部B"
  },
  {
@@ -1344,10 +1314,10 @@
   "home_slug": "tokyo-gaigo",
   "away_slug": "kyoritsu-joshi",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部B"
+  "status": "played",
+  "home_score": 7,
+  "away_score": 10,
+  "note": ""
  },
  {
   "id": "2026-10-25-kantogakuin-vs-kokusaikirisutokyou",
@@ -1374,10 +1344,10 @@
   "home_slug": "meijigakuin",
   "away_slug": "toyo",
   "venue": "明治学院大学ヘボン",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部A"
+  "status": "played",
+  "home_score": 3,
+  "away_score": 10,
+  "note": ""
  },
  {
   "id": "2026-10-25-tokyo-keizai-vs-saitama",
@@ -1440,21 +1410,6 @@
   "note": "1部決勝"
  },
  {
-  "id": "2026-11-01-jissen-joshi-vs-tokyo-gaigo",
-  "date": "2026-11-01",
-  "time": "9:00",
-  "category": "3部 Bブロック",
-  "home": "実践女子大学",
-  "away": "東京外国語大学",
-  "home_slug": "jissen-joshi",
-  "away_slug": "tokyo-gaigo",
-  "venue": "東京外国語大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "9/6延期→11/1（会場・時間未定）"
- },
- {
   "id": "2026-11-01-dokkyo-vs-tokyo-rika",
   "date": "2026-11-01",
   "time": "10:20",
@@ -1470,34 +1425,19 @@
   "note": "3部A"
  },
  {
-  "id": "2026-11-01-tokyo-vs-kyoritsu-joshi",
+  "id": "2026-11-01-tokyo-vs-tokyo-gakugei",
   "date": "2026-11-01",
   "time": "11:00",
-  "category": "リーグ",
+  "category": "入れ替え戦",
   "home": "東京大学",
-  "away": "共立女子大学",
+  "away": "東京学芸大学",
   "home_slug": "tokyo",
-  "away_slug": "kyoritsu-joshi",
-  "venue": "東京大学駒場第2",
+  "away_slug": "tokyo-gakugei",
+  "venue": "東京大学駒場第2グラウンド",
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
   "note": "入替戦"
- },
- {
-  "id": "2026-11-01-shukutoku-vs-seishin-joshi",
-  "date": "2026-11-01",
-  "time": "15:30",
-  "category": "4部 Aブロック",
-  "home": "淑徳大学",
-  "away": "聖心女子大学",
-  "home_slug": "shukutoku",
-  "away_slug": "seishin-joshi",
-  "venue": "高野スポーツパーク",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "9/6延期→11/1（会場・時間未定）"
  },
  {
   "id": "2026-11-07-tsukuba-vs-daitobunka",
@@ -1548,7 +1488,7 @@
   "id": "2026-11-07-aoyamagakuin-vs-tsukuba",
   "date": "2026-11-07",
   "time": "17:20",
-  "category": "リーグ",
+  "category": "プレーオフ",
   "home": "青山学院大学",
   "away": "筑波大学",
   "home_slug": "aoyamagakuin",
@@ -1575,6 +1515,21 @@
   "note": "4部B"
  },
  {
+  "id": "2026-11-08-jissen-joshi-vs-tokyo-gaigo",
+  "date": "2026-11-08",
+  "time": "9:00",
+  "category": "3部 Bブロック",
+  "home": "実践女子大学",
+  "away": "東京外国語大学",
+  "home_slug": "jissen-joshi",
+  "away_slug": "tokyo-gaigo",
+  "venue": "東京外国語大学運動場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": "集客試合ではありません。"
+ },
+ {
   "id": "2026-11-08-toukyoukaseidaigaku-takasakikeizai-vs-seibubunridaigaku-bunkyou",
   "date": "2026-11-08",
   "time": "11:10",
@@ -1588,6 +1543,51 @@
   "home_score": null,
   "away_score": null,
   "note": "4部B"
+ },
+ {
+  "id": "2026-11-08-nihon-joshi-vs-otsuma",
+  "date": "2026-11-08",
+  "time": "12:00",
+  "category": "3部 Bブロック",
+  "home": "日本女子大学",
+  "away": "大妻女子大学",
+  "home_slug": "nihon-joshi",
+  "away_slug": "otsuma",
+  "venue": "大宮けんぽ第1区画ラグビー場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-11-08-tokyo-nodai-vs-senshu",
+  "date": "2026-11-08",
+  "time": "14:00",
+  "category": "入れ替え戦",
+  "home": "東京農業大学",
+  "away": "専修大学",
+  "home_slug": "tokyo-nodai",
+  "away_slug": "senshu",
+  "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-11-14-otsuma-vs-kyoritsu-joshi",
+  "date": "2026-11-14",
+  "time": "9:00",
+  "category": "3部 Bブロック",
+  "home": "大妻女子大学",
+  "away": "共立女子大学",
+  "home_slug": "otsuma",
+  "away_slug": "kyoritsu-joshi",
+  "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
  },
  {
   "id": "2026-11-14-daitobunka-vs-dokkyo",
@@ -1633,6 +1633,21 @@
   "home_score": null,
   "away_score": null,
   "note": "3部B"
+ },
+ {
+  "id": "2026-11-21-shukutoku-vs-seishin-joshi",
+  "date": "2026-11-21",
+  "time": "15:40",
+  "category": "4部 Aブロック",
+  "home": "淑徳大学",
+  "away": "聖心女子大学",
+  "home_slug": "shukutoku",
+  "away_slug": "seishin-joshi",
+  "venue": "高野スポーツパーク",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": "11/1延期→11/21"
  },
  {
   "id": "2026-11-22-seibubunridaigaku-bunkyou-vs-saitama",

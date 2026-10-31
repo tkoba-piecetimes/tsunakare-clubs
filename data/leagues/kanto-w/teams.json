@@ -214,9 +214,9 @@
   "slug": "tokyo-gaigo",
   "block": "3部 Bブロック"
  },
- "帝京大学": {
-  "team": "帝京大学",
-  "slug": "teikyo",
+ "聖心女子大学": {
+  "team": "聖心女子大学",
+  "slug": "seishin-joshi",
   "block": "4部 Aブロック"
  },
  "国際基督教大学": {
@@ -234,6 +234,16 @@
   "slug": "ibaraki",
   "block": "4部 Aブロック"
  },
+ "西武文理大学・文京大学・東京家政大学・高崎経済大学合同チーム": {
+  "team": "西武文理大学・文京大学・東京家政大学・高崎経済大学合同チーム",
+  "slug": "seibubunridaigaku-bunkyoudaigaku-toukyoukaseidaigaku-takasakikeizaidaigakugoudouchiimu",
+  "block": "4部 Bブロック"
+ },
+ "帝京大学": {
+  "team": "帝京大学",
+  "slug": "teikyo",
+  "block": "4部 Aブロック"
+ },
  "東京家政大学・高崎経済大学": {
   "team": "東京家政大学・高崎経済大学",
   "slug": "toukyoukaseidaigaku-takasakikeizai",
@@ -243,10 +253,5 @@
   "team": "西武文理大学・文教大学",
   "slug": "seibubunridaigaku-bunkyou",
   "block": "4部 Bブロック"
- },
- "聖心女子大学": {
-  "team": "聖心女子大学",
-  "slug": "seishin-joshi",
-  "block": "4部 Aブロック"
  }
 }

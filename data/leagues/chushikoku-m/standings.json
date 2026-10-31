@@ -15,6 +15,20 @@
    "goals_for": 33
   },
   {
+   "team": "岡山大学",
+   "slug": "okayama",
+   "points": 7,
+   "games": 4,
+   "wins": 2,
+   "draws": 1,
+   "losses": 1,
+   "gf": 41,
+   "ga": 16,
+   "rank": 2,
+   "goal_diff": "+25",
+   "goals_for": 41
+  },
+  {
    "team": "広島大学",
    "slug": "hiroshima",
    "points": 7,
@@ -24,23 +38,9 @@
    "losses": 1,
    "gf": 30,
    "ga": 17,
-   "rank": 2,
-   "goal_diff": "+13",
-   "goals_for": 30
-  },
-  {
-   "team": "岡山大学",
-   "slug": "okayama",
-   "points": 4,
-   "games": 3,
-   "wins": 1,
-   "draws": 1,
-   "losses": 1,
-   "gf": 28,
-   "ga": 15,
    "rank": 3,
    "goal_diff": "+13",
-   "goals_for": 28
+   "goals_for": 30
   },
   {
    "team": "山口大学",
@@ -60,15 +60,15 @@
    "team": "島根大学",
    "slug": "shimane",
    "points": 0,
-   "games": 3,
+   "games": 4,
    "wins": 0,
    "draws": 0,
-   "losses": 3,
-   "gf": 5,
-   "ga": 37,
+   "losses": 4,
+   "gf": 6,
+   "ga": 50,
    "rank": 5,
-   "goal_diff": "-32",
-   "goals_for": 5
+   "goal_diff": "-44",
+   "goals_for": 6
   }
  ],
  "2部": [
