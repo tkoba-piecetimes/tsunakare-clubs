@@ -101,6 +101,20 @@
  ],
  "2部": [
   {
+   "team": "京都産業大学",
+   "slug": "kyoto-sangyo",
+   "points": 12,
+   "games": 6,
+   "wins": 4,
+   "draws": 0,
+   "losses": 2,
+   "gf": 43,
+   "ga": 33,
+   "rank": 1,
+   "goal_diff": "+10",
+   "goals_for": 43
+  },
+  {
    "team": "近畿大学",
    "slug": "kindai",
    "points": 11,
@@ -110,7 +124,7 @@
    "losses": 1,
    "gf": 43,
    "ga": 26,
-   "rank": 1,
+   "rank": 2,
    "goal_diff": "+17",
    "goals_for": 43
   },
@@ -124,7 +138,7 @@
    "losses": 1,
    "gf": 25,
    "ga": 23,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "+2",
    "goals_for": 25
   },
@@ -138,37 +152,23 @@
    "losses": 2,
    "gf": 28,
    "ga": 27,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "+1",
    "goals_for": 28
-  },
-  {
-   "team": "京都産業大学",
-   "slug": "kyoto-sangyo",
-   "points": 9,
-   "games": 5,
-   "wins": 3,
-   "draws": 0,
-   "losses": 2,
-   "gf": 34,
-   "ga": 29,
-   "rank": 4,
-   "goal_diff": "+5",
-   "goals_for": 34
   },
   {
    "team": "甲南大学",
    "slug": "konan",
    "points": 9,
-   "games": 4,
+   "games": 5,
    "wins": 3,
    "draws": 0,
-   "losses": 1,
-   "gf": 24,
-   "ga": 19,
+   "losses": 2,
+   "gf": 28,
+   "ga": 28,
    "rank": 5,
-   "goal_diff": "+5",
-   "goals_for": 24
+   "goal_diff": "0",
+   "goals_for": 28
   },
   {
    "team": "京都工芸繊維大学",
@@ -217,30 +217,30 @@
   {
    "team": "大阪公立大学",
    "slug": "osaka-metropolitan",
-   "points": 3,
-   "games": 3,
-   "wins": 1,
+   "points": 6,
+   "games": 4,
+   "wins": 2,
    "draws": 0,
    "losses": 2,
-   "gf": 13,
-   "ga": 16,
+   "gf": 18,
+   "ga": 20,
    "rank": 2,
-   "goal_diff": "-3",
-   "goals_for": 13
+   "goal_diff": "-2",
+   "goals_for": 18
   },
   {
    "team": "大阪教育大学",
    "slug": "oosakakyouiku",
    "points": 0,
-   "games": 3,
+   "games": 4,
    "wins": 0,
    "draws": 0,
-   "losses": 3,
-   "gf": 8,
-   "ga": 24,
+   "losses": 4,
+   "gf": 12,
+   "ga": 29,
    "rank": 3,
-   "goal_diff": "-16",
-   "goals_for": 8
+   "goal_diff": "-17",
+   "goals_for": 12
   }
  ]
 }

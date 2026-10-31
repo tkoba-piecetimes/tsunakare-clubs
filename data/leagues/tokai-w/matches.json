@@ -639,9 +639,9 @@
   "home_slug": "meijo",
   "away_slug": "nagoyagaikokugo",
   "venue": "愛知教育大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 13,
+  "away_score": 6,
   "note": ""
  },
  {
@@ -669,9 +669,9 @@
   "home_slug": "chuubu",
   "away_slug": "meijo",
   "venue": "愛知学院大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 11,
+  "away_score": 7,
   "note": ""
  },
  {
@@ -699,9 +699,9 @@
   "home_slug": "aichikyouiku",
   "away_slug": "aichi",
   "venue": "愛・地球博記念公園多目的球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 9,
+  "away_score": 3,
   "note": ""
  }
 ]

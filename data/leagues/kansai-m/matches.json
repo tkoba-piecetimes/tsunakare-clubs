@@ -729,9 +729,9 @@
   "home_slug": "konan",
   "away_slug": "kyoto-sangyo",
   "venue": "伏見桃山城運動公園多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 9,
   "note": ""
  },
  {
@@ -744,9 +744,9 @@
   "home_slug": "oosakakyouiku",
   "away_slug": "osaka-metropolitan",
   "venue": "伏見桃山城運動公園多目的グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 5,
   "note": ""
  },
  {
