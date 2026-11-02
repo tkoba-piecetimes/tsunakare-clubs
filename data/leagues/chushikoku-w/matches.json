@@ -369,9 +369,9 @@
   "home_slug": "hiroshima",
   "away_slug": "okayama",
   "venue": "広島広域公園",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 11,
+  "away_score": 5,
   "note": ""
  },
  {
