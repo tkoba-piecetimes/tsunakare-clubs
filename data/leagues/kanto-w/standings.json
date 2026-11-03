@@ -287,6 +287,20 @@
    "goals_for": 43
   },
   {
+   "team": "神奈川大学",
+   "slug": "kanagawa",
+   "points": 9,
+   "games": 5,
+   "wins": 3,
+   "draws": 0,
+   "losses": 2,
+   "gf": 47,
+   "ga": 33,
+   "rank": 3,
+   "goal_diff": "+14",
+   "goals_for": 47
+  },
+  {
    "team": "一橋大学",
    "slug": "hitotsubashi",
    "points": 6,
@@ -296,37 +310,23 @@
    "losses": 3,
    "gf": 41,
    "ga": 26,
-   "rank": 3,
+   "rank": 4,
    "goal_diff": "+15",
    "goals_for": 41
-  },
-  {
-   "team": "神奈川大学",
-   "slug": "kanagawa",
-   "points": 6,
-   "games": 4,
-   "wins": 2,
-   "draws": 0,
-   "losses": 2,
-   "gf": 36,
-   "ga": 23,
-   "rank": 4,
-   "goal_diff": "+13",
-   "goals_for": 36
   },
   {
    "team": "日本女子体育大学",
    "slug": "nihonjoshitaiiku",
    "points": 3,
-   "games": 4,
+   "games": 5,
    "wins": 1,
    "draws": 0,
-   "losses": 3,
-   "gf": 30,
-   "ga": 42,
+   "losses": 4,
+   "gf": 40,
+   "ga": 53,
    "rank": 5,
-   "goal_diff": "-12",
-   "goals_for": 30
+   "goal_diff": "-13",
+   "goals_for": 40
   },
   {
    "team": "千葉大学",
@@ -661,8 +661,8 @@
    "goals_for": 39
   },
   {
-   "team": "東京家政大学・高崎経済大学",
-   "slug": "toukyoukaseidaigaku-takasakikeizai",
+   "team": "西武文理大学・文教大学・東京家政大学・高崎経済大学合同チーム",
+   "slug": "seibubunridaigaku-bunkyoudaigaku-toukyoukaseidaigaku-takasakikeizaidaigakugoudouchiimu",
    "points": 0,
    "games": 0,
    "wins": 0,

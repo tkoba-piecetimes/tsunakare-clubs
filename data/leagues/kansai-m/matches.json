@@ -759,10 +759,10 @@
   "home_slug": "kanseigakuindaigaku-1buriiguburokku1kurai",
   "away_slug": "doushishadaigaku-junkesshoushousha",
   "venue": "たけびしスタジアム京都",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "【有料試合】男子1部リーグ決勝戦"
+  "status": "played",
+  "home_score": 8,
+  "away_score": 3,
+  "note": "1部リーグ男子優勝「関西学院大学」5年ぶり13回目"
  },
  {
   "id": "2026-11-01-joshi-kanseigakuindaigaku-1buriiguburokku1kurai-vs-kyoutosangyoudaigaku-junkesshoushousha",
@@ -774,10 +774,10 @@
   "home_slug": "joshi-kanseigakuindaigaku-1buriiguburokku1kurai",
   "away_slug": "kyoutosangyoudaigaku-junkesshoushousha",
   "venue": "たけびしスタジアム京都",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "【有料試合】1部リーグ準決勝勝者"
+  "status": "played",
+  "home_score": 10,
+  "away_score": 7,
+  "note": "1部リーグ女子優勝「関西学院大学」5年連続17回目"
  },
  {
   "id": "2026-11-07-konan-vs-ryukoku",

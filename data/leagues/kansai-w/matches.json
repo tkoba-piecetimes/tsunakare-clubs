@@ -969,9 +969,9 @@
   "home_slug": "kyoto",
   "away_slug": "oosakataiiku",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 5,
   "note": ""
  },
  {
@@ -984,9 +984,9 @@
   "home_slug": "doshisha-joshi",
   "away_slug": "osaka-metropolitan",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 12,
   "note": ""
  },
  {
@@ -999,9 +999,9 @@
   "home_slug": "oosakakokusai",
   "away_slug": "osaka",
   "venue": "宝が池球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 9,
+  "away_score": 6,
   "note": ""
  },
  {
@@ -1014,25 +1014,25 @@
   "home_slug": "danshi-kanseigakuindaigaku-1buriiguburokku1kurai",
   "away_slug": "danshi-doushishadaigaku-junkesshoushousha",
   "venue": "たけびしスタジアム京都",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "【有料試合】男子1部リーグ決勝戦"
+  "status": "played",
+  "home_score": 8,
+  "away_score": 3,
+  "note": "1部リーグ男子優勝「関西学院大学」5年ぶり13回目"
  },
  {
-  "id": "2026-11-01-kanseigakuindaigaku-1buriiguburokku1kurai-vs-1buriigujunkesshoushousha",
+  "id": "2026-11-01-kanseigakuindaigaku-1buriiguburokku1kurai-vs-kyoutosangyoudaigaku-junkesshoushousha",
   "date": "2026-11-01",
   "time": "14:00",
   "category": "プレーオフ",
   "home": "関西学院大学(1部リーグブロック1位)",
-  "away": "1部リーグ準決勝勝者",
+  "away": "京都産業大学(準決勝勝者)",
   "home_slug": "kanseigakuindaigaku-1buriiguburokku1kurai",
-  "away_slug": "1buriigujunkesshoushousha",
+  "away_slug": "kyoutosangyoudaigaku-junkesshoushousha",
   "venue": "たけびしスタジアム京都",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "【有料試合】女子1部リーグ決勝戦"
+  "status": "played",
+  "home_score": 10,
+  "away_score": 7,
+  "note": "1部リーグ女子優勝「関西学院大学」5年連続17回目"
  },
  {
   "id": "2026-11-15-kyoto-joshi-vs-kobe-jogakuin",

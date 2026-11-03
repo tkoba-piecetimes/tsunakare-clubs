@@ -103,30 +103,30 @@
   {
    "team": "京都大学",
    "slug": "kyoto",
-   "points": 15,
-   "games": 5,
+   "points": 16,
+   "games": 6,
    "wins": 5,
-   "draws": 0,
+   "draws": 1,
    "losses": 0,
-   "gf": 80,
-   "ga": 17,
+   "gf": 85,
+   "ga": 22,
    "rank": 1,
    "goal_diff": "+63",
-   "goals_for": 80
+   "goals_for": 85
   },
   {
    "team": "大阪体育大学",
    "slug": "oosakataiiku",
-   "points": 15,
-   "games": 5,
+   "points": 16,
+   "games": 6,
    "wins": 5,
-   "draws": 0,
+   "draws": 1,
    "losses": 0,
-   "gf": 72,
-   "ga": 24,
+   "gf": 77,
+   "ga": 29,
    "rank": 2,
    "goal_diff": "+48",
-   "goals_for": 72
+   "goals_for": 77
   },
   {
    "team": "神戸大学",
