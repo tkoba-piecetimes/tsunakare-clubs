@@ -171,6 +171,7 @@ level: 入門
 - [男子ラクロスと女子ラクロスはこんなに違う](../mens-womens-lacrosse/index.html)
 - [ラクロス観戦ガイド](../lacrosse-spectator-guide/index.html)
 - [大学入学前に知っておきたいラクロス部の基礎知識](../lacrosse-before-university-admission-guide/index.html)
+- [ラクロスの審判資格は就活で強みになる？取り方・級と自己PRでの伝え方](../lacrosse-referee-career/index.html)
 
 ## 参考リンク
 
