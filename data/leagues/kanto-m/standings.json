@@ -273,32 +273,32 @@
    "goals_for": 28
   },
   {
+   "team": "立教大学",
+   "slug": "rikkyo",
+   "points": 9,
+   "games": 5,
+   "wins": 3,
+   "draws": 0,
+   "losses": 2,
+   "gf": 37,
+   "ga": 26,
+   "rank": 2,
+   "goal_diff": "+11",
+   "goals_for": 37
+  },
+  {
    "team": "武蔵大学",
    "slug": "musashi",
    "points": 9,
-   "games": 4,
+   "games": 5,
    "wins": 3,
    "draws": 0,
-   "losses": 1,
-   "gf": 23,
-   "ga": 18,
-   "rank": 2,
-   "goal_diff": "+5",
-   "goals_for": 23
-  },
-  {
-   "team": "立教大学",
-   "slug": "rikkyo",
-   "points": 6,
-   "games": 4,
-   "wins": 2,
-   "draws": 0,
    "losses": 2,
-   "gf": 28,
-   "ga": 22,
+   "gf": 27,
+   "ga": 27,
    "rank": 3,
-   "goal_diff": "+6",
-   "goals_for": 28
+   "goal_diff": "0",
+   "goals_for": 27
   },
   {
    "team": "東海大学",
@@ -345,32 +345,32 @@
  ],
  "3部 Aブロック": [
   {
+   "team": "神奈川大学",
+   "slug": "kanagawa",
+   "points": 9,
+   "games": 3,
+   "wins": 3,
+   "draws": 0,
+   "losses": 0,
+   "gf": 22,
+   "ga": 18,
+   "rank": 1,
+   "goal_diff": "+4",
+   "goals_for": 22
+  },
+  {
    "team": "慶應義塾高校",
    "slug": "keio-hs",
    "points": 6,
-   "games": 2,
+   "games": 3,
    "wins": 2,
    "draws": 0,
-   "losses": 0,
-   "gf": 13,
-   "ga": 4,
-   "rank": 1,
-   "goal_diff": "+9",
-   "goals_for": 13
-  },
-  {
-   "team": "神奈川大学",
-   "slug": "kanagawa",
-   "points": 6,
-   "games": 2,
-   "wins": 2,
-   "draws": 0,
-   "losses": 0,
-   "gf": 16,
-   "ga": 14,
+   "losses": 1,
+   "gf": 17,
+   "ga": 10,
    "rank": 2,
-   "goal_diff": "+2",
-   "goals_for": 16
+   "goal_diff": "+7",
+   "goals_for": 17
   },
   {
    "team": "筑波大学",
@@ -431,6 +431,20 @@
  ],
  "3部 Bブロック": [
   {
+   "team": "日本大学",
+   "slug": "nihon",
+   "points": 9,
+   "games": 4,
+   "wins": 3,
+   "draws": 0,
+   "losses": 1,
+   "gf": 27,
+   "ga": 12,
+   "rank": 1,
+   "goal_diff": "+15",
+   "goals_for": 27
+  },
+  {
    "team": "東京経済大学",
    "slug": "tokyo-keizai",
    "points": 8,
@@ -440,7 +454,7 @@
    "losses": 1,
    "gf": 33,
    "ga": 18,
-   "rank": 1,
+   "rank": 2,
    "goal_diff": "+15",
    "goals_for": 33
   },
@@ -454,23 +468,9 @@
    "losses": 0,
    "gf": 13,
    "ga": 3,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "+10",
    "goals_for": 13
-  },
-  {
-   "team": "日本大学",
-   "slug": "nihon",
-   "points": 6,
-   "games": 3,
-   "wins": 2,
-   "draws": 0,
-   "losses": 1,
-   "gf": 11,
-   "ga": 11,
-   "rank": 3,
-   "goal_diff": "0",
-   "goals_for": 11
   },
   {
    "team": "専修大学",
@@ -518,15 +518,15 @@
    "team": "城西・関東学院",
    "slug": "josai-kantogakuin",
    "points": 0,
-   "games": 2,
+   "games": 3,
    "wins": 0,
    "draws": 0,
-   "losses": 2,
-   "gf": 4,
-   "ga": 25,
+   "losses": 3,
+   "gf": 5,
+   "ga": 41,
    "rank": 7,
-   "goal_diff": "-21",
-   "goals_for": 4
+   "goal_diff": "-36",
+   "goals_for": 5
   }
  ]
 }

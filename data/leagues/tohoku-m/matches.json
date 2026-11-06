@@ -129,9 +129,9 @@
   "home_slug": "tohoku-univ",
   "away_slug": "iwate",
   "venue": "岩沼市陸上競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
+  "status": "played",
+  "home_score": 6,
+  "away_score": 4,
+  "note": "東北大学の優勝"
  }
 ]

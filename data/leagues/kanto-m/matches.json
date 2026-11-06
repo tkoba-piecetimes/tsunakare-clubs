@@ -1224,9 +1224,9 @@
   "home_slug": "keio",
   "away_slug": "waseda",
   "venue": "駒沢オリンピック公園総合運動場 第二球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 7,
+  "away_score": 6,
   "note": ""
  },
  {
@@ -1239,9 +1239,9 @@
   "home_slug": "josai-kantogakuin",
   "away_slug": "nihon",
   "venue": "駒沢オリンピック公園総合運動場 第二球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 1,
+  "away_score": 16,
   "note": ""
  },
  {
@@ -1254,9 +1254,9 @@
   "home_slug": "rikkyo",
   "away_slug": "musashi",
   "venue": "立教大学新座キャンパスAグラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 9,
+  "away_score": 4,
   "note": "2部B"
  },
  {
@@ -1277,16 +1277,16 @@
  {
   "id": "2026-11-03-keio-hs-vs-kanagawa",
   "date": "2026-11-03",
-  "time": "13:40",
+  "time": "11:40",
   "category": "3部 Aブロック",
   "home": "慶應義塾高校",
   "away": "神奈川大学",
   "home_slug": "keio-hs",
   "away_slug": "kanagawa",
-  "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "venue": "筑波大学セキショウフィールド",
+  "status": "played",
+  "home_score": 4,
+  "away_score": 6,
   "note": "3部A"
  },
  {

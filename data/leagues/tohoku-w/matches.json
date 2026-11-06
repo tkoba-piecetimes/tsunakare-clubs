@@ -129,9 +129,9 @@
   "home_slug": "tohoku-univ",
   "away_slug": "fukushima",
   "venue": "岩沼市陸上競技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
+  "status": "played",
+  "home_score": 7,
+  "away_score": 5,
+  "note": "東北大学の優勝"
  }
 ]
