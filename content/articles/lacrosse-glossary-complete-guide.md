@@ -53,6 +53,8 @@ level: 入門
 
 ![男子ラクロスのポジション配置の例（ゴーリー1人・ディフェンス3人・ミッドフィールダー3人・アタック3人）](diagram:lacrosse-positions-formation)
 
+MFの動き方や練習の進め方は[ミッドフィルダーの役割と練習法](../lacrosse-midfielder-role-training/index.html)で解説しています。<!-- index-lane-link -->
+
 ポジション別の役割や練習法は、[マンダウンディフェンスの基本](../man-down-defense/index.html)や[フェイスオフの練習メニュー](../faceoff-training/index.html)、[クリアの基本設計](../clear-basics/index.html)も参考になります。
 
 ## スタッツ・分析で使われる用語 ― データを読むための言葉
