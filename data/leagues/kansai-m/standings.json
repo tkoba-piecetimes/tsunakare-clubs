@@ -101,6 +101,20 @@
  ],
  "2部": [
   {
+   "team": "龍谷大学",
+   "slug": "ryukoku",
+   "points": 13,
+   "games": 6,
+   "wins": 4,
+   "draws": 1,
+   "losses": 1,
+   "gf": 31,
+   "ga": 26,
+   "rank": 1,
+   "goal_diff": "+5",
+   "goals_for": 31
+  },
+  {
    "team": "京都産業大学",
    "slug": "kyoto-sangyo",
    "points": 12,
@@ -110,7 +124,7 @@
    "losses": 2,
    "gf": 43,
    "ga": 33,
-   "rank": 1,
+   "rank": 2,
    "goal_diff": "+10",
    "goals_for": 43
   },
@@ -124,23 +138,9 @@
    "losses": 1,
    "gf": 43,
    "ga": 26,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "+17",
    "goals_for": 43
-  },
-  {
-   "team": "龍谷大学",
-   "slug": "ryukoku",
-   "points": 10,
-   "games": 5,
-   "wins": 3,
-   "draws": 1,
-   "losses": 1,
-   "gf": 25,
-   "ga": 23,
-   "rank": 3,
-   "goal_diff": "+2",
-   "goals_for": 25
   },
   {
    "team": "関西大学",
@@ -160,15 +160,15 @@
    "team": "甲南大学",
    "slug": "konan",
    "points": 9,
-   "games": 5,
+   "games": 6,
    "wins": 3,
    "draws": 0,
-   "losses": 2,
-   "gf": 28,
-   "ga": 28,
+   "losses": 3,
+   "gf": 31,
+   "ga": 34,
    "rank": 5,
-   "goal_diff": "0",
-   "goals_for": 28
+   "goal_diff": "-3",
+   "goals_for": 31
   },
   {
    "team": "京都工芸繊維大学",

@@ -789,10 +789,10 @@
   "home_slug": "konan",
   "away_slug": "ryukoku",
   "venue": "鶴見緑地第2球技場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "雷により延期した為"
+  "status": "played",
+  "home_score": 3,
+  "away_score": 6,
+  "note": ""
  },
  {
   "id": "2026-11-21-ritsumeikandaigaku-1buburokku6kurai-vs-2buburokku2kurai",
