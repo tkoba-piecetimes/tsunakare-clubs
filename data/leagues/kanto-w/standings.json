@@ -661,34 +661,6 @@
    "goals_for": 39
   },
   {
-   "team": "西武文理大学・文教大学・東京家政大学・高崎経済大学合同チーム",
-   "slug": "seibubunridaigaku-bunkyoudaigaku-toukyoukaseidaigaku-takasakikeizaidaigakugoudouchiimu",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 3,
-   "goal_diff": "0",
-   "goals_for": 0
-  },
-  {
-   "team": "西武文理大学・文教大学",
-   "slug": "seibubunridaigaku-bunkyou",
-   "points": 0,
-   "games": 0,
-   "wins": 0,
-   "draws": 0,
-   "losses": 0,
-   "gf": 0,
-   "ga": 0,
-   "rank": 4,
-   "goal_diff": "0",
-   "goals_for": 0
-  },
-  {
    "team": "国際基督教大学",
    "slug": "kokusaikirisutokyou",
    "points": 0,
@@ -698,13 +670,13 @@
    "losses": 2,
    "gf": 8,
    "ga": 34,
-   "rank": 5,
+   "rank": 3,
    "goal_diff": "-26",
    "goals_for": 8
   },
   {
-   "team": "西武文理大学・文京大学・東京家政大学・高崎経済大学合同チーム",
-   "slug": "seibubunridaigaku-bunkyoudaigaku-toukyoukaseidaigaku-takasakikeizaidaigakugoudouchiimu",
+   "team": "西武文理大学・文教大学",
+   "slug": "seibubunridaigaku-bunkyou",
    "points": 0,
    "games": 1,
    "wins": 0,
@@ -712,7 +684,7 @@
    "losses": 1,
    "gf": 1,
    "ga": 35,
-   "rank": 6,
+   "rank": 4,
    "goal_diff": "-34",
    "goals_for": 1
   },
@@ -726,7 +698,7 @@
    "losses": 2,
    "gf": 5,
    "ga": 40,
-   "rank": 7,
+   "rank": 5,
    "goal_diff": "-35",
    "goals_for": 5
   }

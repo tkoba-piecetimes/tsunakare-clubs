@@ -234,24 +234,14 @@
   "slug": "ibaraki",
   "block": "4部 Aブロック"
  },
- "西武文理大学・文京大学・東京家政大学・高崎経済大学合同チーム": {
-  "team": "西武文理大学・文京大学・東京家政大学・高崎経済大学合同チーム",
-  "slug": "seibubunridaigaku-bunkyoudaigaku-toukyoukaseidaigaku-takasakikeizaidaigakugoudouchiimu",
+ "西武文理大学・文教大学": {
+  "team": "西武文理大学・文教大学",
+  "slug": "seibubunridaigaku-bunkyou",
   "block": "4部 Bブロック"
  },
  "帝京大学": {
   "team": "帝京大学",
   "slug": "teikyo",
   "block": "4部 Aブロック"
- },
- "西武文理大学・文教大学・東京家政大学・高崎経済大学合同チーム": {
-  "team": "西武文理大学・文教大学・東京家政大学・高崎経済大学合同チーム",
-  "slug": "seibubunridaigaku-bunkyoudaigaku-toukyoukaseidaigaku-takasakikeizaidaigakugoudouchiimu",
-  "block": "4部 Bブロック"
- },
- "西武文理大学・文教大学": {
-  "team": "西武文理大学・文教大学",
-  "slug": "seibubunridaigaku-bunkyou",
-  "block": "4部 Bブロック"
  }
 }

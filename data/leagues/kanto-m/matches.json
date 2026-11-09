@@ -915,6 +915,21 @@
   "note": "1部B"
  },
  {
+  "id": "2026-09-27-keio-vs-chuo",
+  "date": "2026-09-27",
+  "time": "13:30",
+  "category": "1部 Aブロック",
+  "home": "慶應義塾大学",
+  "away": "中央大学",
+  "home_slug": "keio",
+  "away_slug": "chuo",
+  "venue": "慶應義塾大学日吉キャンパス陸上競技場",
+  "status": "played",
+  "home_score": 3,
+  "away_score": 5,
+  "note": ""
+ },
+ {
   "id": "2026-09-27-keio-hs-vs-sophia",
   "date": "2026-09-27",
   "time": "16:00",
@@ -927,21 +942,6 @@
   "status": "played",
   "home_score": 5,
   "away_score": 2,
-  "note": ""
- },
- {
-  "id": "2026-09-27-keio-vs-chuo",
-  "date": "2026-09-27",
-  "time": "未定",
-  "category": "1部 Aブロック",
-  "home": "慶應義塾大学",
-  "away": "中央大学",
-  "home_slug": "keio",
-  "away_slug": "chuo",
-  "venue": "慶應義塾大学日吉キャンパス陸上競技場",
-  "status": "played",
-  "home_score": 3,
-  "away_score": 5,
   "note": ""
  },
  {
@@ -969,10 +969,10 @@
   "home_slug": "kokushikan",
   "away_slug": "tokyo-gakugei",
   "venue": "大宮けんぽグラウンド1区画サッカー場A面",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "2部B"
+  "status": "played",
+  "home_score": 7,
+  "away_score": 4,
+  "note": ""
  },
  {
   "id": "2026-10-03-seijo-vs-chiba",
@@ -1119,10 +1119,10 @@
   "home_slug": "kanagawa",
   "away_slug": "sophia",
   "venue": "江戸川区臨海球技場F面",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部A"
+  "status": "played",
+  "home_score": 8,
+  "away_score": 4,
+  "note": ""
  },
  {
   "id": "2026-10-24-komazawa-vs-daitobunka",
@@ -1134,10 +1134,10 @@
   "home_slug": "komazawa",
   "away_slug": "daitobunka",
   "venue": "江戸川区臨海球技場F面",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部B"
+  "status": "played",
+  "home_score": 6,
+  "away_score": 10,
+  "note": ""
  },
  {
   "id": "2026-10-24-nihon-vs-senshu",
@@ -1149,10 +1149,10 @@
   "home_slug": "nihon",
   "away_slug": "senshu",
   "venue": "江戸川区臨海球技場F面",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部B"
+  "status": "played",
+  "home_score": 10,
+  "away_score": 3,
+  "note": ""
  },
  {
   "id": "2026-10-24-tokyo-gakugei-vs-tokai",
@@ -1164,9 +1164,9 @@
   "home_slug": "tokyo-gakugei",
   "away_slug": "tokai",
   "venue": "江戸川区臨海球技場F面",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 3,
+  "away_score": 8,
   "note": ""
  },
  {
@@ -1179,10 +1179,25 @@
   "home_slug": "tokyo-nodai",
   "away_slug": "seijo",
   "venue": "江戸川区臨海球技場F面",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 10,
+  "away_score": 1,
   "note": ""
+ },
+ {
+  "id": "2026-10-25-kokushikan-vs-yokohama-kokudai",
+  "date": "2026-10-25",
+  "time": "10:00",
+  "category": "2部 Bブロック",
+  "home": "国士舘大学",
+  "away": "横浜国立大学",
+  "home_slug": "kokushikan",
+  "away_slug": "yokohama-kokudai",
+  "venue": "国士舘大学多摩キャンパスグランド",
+  "status": "played",
+  "home_score": 5,
+  "away_score": 1,
+  "note": "2部B（8/22延期分）"
  },
  {
   "id": "2026-10-25-josai-kantogakuin-vs-meisei",
@@ -1194,25 +1209,10 @@
   "home_slug": "josai-kantogakuin",
   "away_slug": "meisei",
   "venue": "大宮けんぽグラウンド1区画サッカー場B面",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部B"
- },
- {
-  "id": "2026-10-25-kokushikan-vs-yokohama-kokudai",
-  "date": "2026-10-25",
-  "time": "未定",
-  "category": "2部 Bブロック",
-  "home": "国士舘大学",
-  "away": "横浜国立大学",
-  "home_slug": "kokushikan",
-  "away_slug": "yokohama-kokudai",
-  "venue": "国士舘大学多摩キャンパスグランド",
   "status": "played",
-  "home_score": 5,
-  "away_score": 1,
-  "note": "2部B（8/22延期分）"
+  "home_score": 0,
+  "away_score": 17,
+  "note": ""
  },
  {
   "id": "2026-10-31-keio-vs-waseda",
@@ -1260,19 +1260,19 @@
   "note": "2部B"
  },
  {
-  "id": "2026-11-03-sophia-vs-tsukuba",
+  "id": "2026-11-03-tsukuba-vs-sophia",
   "date": "2026-11-03",
-  "time": "11:20",
+  "time": "9:20",
   "category": "3部 Aブロック",
-  "home": "上智大学",
-  "away": "筑波大学",
-  "home_slug": "sophia",
-  "away_slug": "tsukuba",
-  "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部A"
+  "home": "筑波大学",
+  "away": "上智大学",
+  "home_slug": "tsukuba",
+  "away_slug": "sophia",
+  "venue": "筑波大学セキショウフィールド",
+  "status": "played",
+  "home_score": 5,
+  "away_score": 7,
+  "note": ""
  },
  {
   "id": "2026-11-03-keio-hs-vs-kanagawa",

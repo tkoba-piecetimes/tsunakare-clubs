@@ -369,9 +369,9 @@
   "home_slug": "shimane",
   "away_slug": "ehime",
   "venue": "上浦多々羅スポーツ公園運動場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 0,
+  "away_score": 11,
   "note": ""
  },
  {
@@ -384,9 +384,9 @@
   "home_slug": "yamaguchi",
   "away_slug": "kagawa",
   "venue": "上浦多々羅スポーツ公園運動場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 7,
+  "away_score": 6,
   "note": ""
  }
 ]
