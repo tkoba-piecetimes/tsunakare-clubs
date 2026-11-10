@@ -1299,9 +1299,9 @@
   "home_slug": "meisei",
   "away_slug": "tokyo-keizai",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 0,
   "note": "3部B"
  },
  {
@@ -1314,9 +1314,9 @@
   "home_slug": "senshu",
   "away_slug": "daitobunka",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 9,
   "note": "3部B"
  },
  {
@@ -1329,9 +1329,9 @@
   "home_slug": "saitama",
   "away_slug": "tokyo-rika",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場 メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 1,
+  "away_score": 9,
   "note": ""
  },
  {
@@ -1359,9 +1359,9 @@
   "home_slug": "nihon",
   "away_slug": "komazawa",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場 メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 2,
+  "away_score": 5,
   "note": ""
  },
  {

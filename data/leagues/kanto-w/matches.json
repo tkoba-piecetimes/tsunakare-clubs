@@ -1449,9 +1449,9 @@
   "home_slug": "tokyo-joshi",
   "away_slug": "meisei",
   "venue": "高野スポーツパーク",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 6,
+  "away_score": 5,
   "note": "3部C"
  },
  {
@@ -1464,9 +1464,9 @@
   "home_slug": "tsukuba",
   "away_slug": "daitobunka",
   "venue": "高野スポーツパーク",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 8,
+  "away_score": 4,
   "note": "9/5からの延期"
  },
  {
@@ -1479,9 +1479,9 @@
   "home_slug": "seishin-joshi",
   "away_slug": "ibaraki",
   "venue": "高野スポーツパーク",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 12,
+  "away_score": 5,
   "note": "4部A"
  },
  {
@@ -1494,9 +1494,9 @@
   "home_slug": "aoyamagakuin",
   "away_slug": "yokohama-kokudai",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 7,
+  "away_score": 3,
   "note": "入替戦"
  },
  {
@@ -1524,9 +1524,9 @@
   "home_slug": "jissen-joshi",
   "away_slug": "tokyo-gaigo",
   "venue": "東京外国語大学運動場",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 6,
   "note": "集客試合ではありません。"
  },
  {
