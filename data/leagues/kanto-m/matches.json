@@ -1344,10 +1344,10 @@
   "home_slug": "nihon",
   "away_slug": "komazawa",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": "3部B"
+  "status": "played",
+  "home_score": 2,
+  "away_score": 5,
+  "note": ""
  },
  {
   "id": "2026-11-08-nihon-vs-komazawa",
@@ -1367,17 +1367,32 @@
  {
   "id": "2026-11-14-tokyo-rika-vs-tsukuba",
   "date": "2026-11-14",
-  "time": "0:00",
+  "time": "9:00",
   "category": "3部 Aブロック",
   "home": "東京理科大学",
   "away": "筑波大学",
   "home_slug": "tokyo-rika",
   "away_slug": "tsukuba",
-  "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
+  "venue": "駒沢オリンピック公園総合運動場 補助競技場",
   "status": "scheduled",
   "home_score": null,
   "away_score": null,
   "note": "時間など詳細は決まり次第更新させていただきます"
+ },
+ {
+  "id": "2026-11-14-josai-kantogakuin-vs-daitobunka",
+  "date": "2026-11-14",
+  "time": "10:00",
+  "category": "入れ替え戦",
+  "home": "城西・関東学院",
+  "away": "大東文化大学",
+  "home_slug": "josai-kantogakuin",
+  "away_slug": "daitobunka",
+  "venue": "駒沢オリンピック公園総合運動場 補助競技場",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
  },
  {
   "id": "2026-11-14-seikei-vs-tokyo",
@@ -1408,6 +1423,36 @@
   "home_score": null,
   "away_score": null,
   "note": "1部2部入れ替え戦"
+ },
+ {
+  "id": "2026-11-28-hitotsubashi-vs-2bubburokku2kurai",
+  "date": "2026-11-28",
+  "time": "14:00",
+  "category": "プレーオフ",
+  "home": "一橋大学",
+  "away": "2部Bブロック2位",
+  "home_slug": "hitotsubashi",
+  "away_slug": "2bubburokku2kurai",
+  "venue": "江戸川臨海球技場E面",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
+  "id": "2026-11-28-gakushuin-vs-kokushikan",
+  "date": "2026-11-28",
+  "time": "17:00",
+  "category": "入れ替え戦",
+  "home": "学習院大学",
+  "away": "国士舘大学",
+  "home_slug": "gakushuin",
+  "away_slug": "kokushikan",
+  "venue": "江戸川臨海球技場E面",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
  },
  {
   "id": "2026-12-19-2bua5kurai-vs-3bub2kurai",
