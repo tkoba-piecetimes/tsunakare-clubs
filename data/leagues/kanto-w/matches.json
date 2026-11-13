@@ -1509,9 +1509,9 @@
   "home_slug": "saitama",
   "away_slug": "kokusaikirisutokyou",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 2,
+  "away_score": 14,
   "note": "4部B"
  },
  {
@@ -1539,9 +1539,9 @@
   "home_slug": "seibubunridaigaku-bunkyou",
   "away_slug": "tokyo-keizai",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 3,
+  "away_score": 24,
   "note": "4部B"
  },
  {
@@ -1569,9 +1569,9 @@
   "home_slug": "tokyo-nodai",
   "away_slug": "senshu",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 6,
+  "away_score": 7,
   "note": ""
  },
  {
