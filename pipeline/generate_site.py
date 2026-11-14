@@ -20,6 +20,7 @@ from pathlib import Path
 import clubhouse
 import archive
 import experience
+import seo_overrides
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -501,6 +502,11 @@ def league_subnav(lg, L):
 def page(rel, title, body, meta, *, path="", desc="", extra_head="", og_type="website",
          subnav="", sitemap=True, sticky=""):
     body = experience.enhance(path, body, meta)
+    ov = seo_overrides.get(path)
+    if ov:
+        title = ov['title'] + ('' if path == '' else seo_overrides.SITE)
+        desc = ov['desc']
+        body = seo_overrides.apply_body(body, ov)
     if sitemap:
         _sitemap_paths.append(path)
     else:
