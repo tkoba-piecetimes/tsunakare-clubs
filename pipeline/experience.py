@@ -17,6 +17,7 @@ LEAGUES = []
 ARTICLES = []
 IDENTITIES = {}
 TODAY = ''
+shukatsu_cta_band = None  # generate_site が configure 時に差し込む（記事と同じ就活相談の帯）
 REGIONS = ['全国', '関東', '関西', '東海', '北海道', '東北', '中四国', '九州']
 ALIASES = {
  '早稲田大学':['早大','わせだ','waseda'], '慶應義塾大学':['慶応','慶應','慶大','けいおう','keio'],
@@ -198,7 +199,7 @@ def team(lg,t):
     body+=team_form(lg,t)+source(lg['meta'])
     body+='<section class="section"><h2>今シーズンの全結果</h2>'+cards(lg,played)+'</section><section class="section"><h2>今後の日程</h2>'+cards(lg,future)+'</section>'
     if pending: body+='<details class="pending-details"><summary>結果未掲載の試合 '+str(len(pending))+'件</summary><p>延期・中止の可能性があります。公式発表をご確認ください。</p>'+cards(lg,pending)+'</details>'
-    return body+archive.team_history(lg,t['team'])+related('team')+contact_cta('/','team')+contact_feature_cta('/')
+    return body+archive.team_history(lg,t['team'])+related('team')+contact_cta('/','team')+contact_feature_cta('/')+shukatsu_cta_band('shukatsu_cta_band_team')
 
 def match(lg,m):
     known={t['slug']:t for t in lg['teams'].values()}
