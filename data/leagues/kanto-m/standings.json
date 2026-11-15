@@ -461,30 +461,16 @@
   {
    "team": "駒澤大学",
    "slug": "komazawa",
-   "points": 9,
+   "points": 12,
    "games": 5,
-   "wins": 3,
+   "wins": 4,
    "draws": 0,
-   "losses": 2,
-   "gf": 24,
-   "ga": 26,
+   "losses": 1,
+   "gf": 31,
+   "ga": 19,
    "rank": 3,
-   "goal_diff": "-2",
-   "goals_for": 24
-  },
-  {
-   "team": "東京経済大学",
-   "slug": "tokyo-keizai",
-   "points": 8,
-   "games": 6,
-   "wins": 2,
-   "draws": 2,
-   "losses": 2,
-   "gf": 33,
-   "ga": 23,
-   "rank": 4,
-   "goal_diff": "+10",
-   "goals_for": 33
+   "goal_diff": "+12",
+   "goals_for": 31
   },
   {
    "team": "大東文化大学",
@@ -496,9 +482,23 @@
    "losses": 1,
    "gf": 27,
    "ga": 21,
-   "rank": 5,
+   "rank": 4,
    "goal_diff": "+6",
    "goals_for": 27
+  },
+  {
+   "team": "東京経済大学",
+   "slug": "tokyo-keizai",
+   "points": 5,
+   "games": 6,
+   "wins": 1,
+   "draws": 2,
+   "losses": 3,
+   "gf": 26,
+   "ga": 30,
+   "rank": 5,
+   "goal_diff": "-4",
+   "goals_for": 26
   },
   {
    "team": "専修大学",
