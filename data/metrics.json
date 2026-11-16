@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15",
+ "updated_at": "2026-11-16",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -568,6 +568,12 @@
     "sessions": 94
    },
    {
+    "date": "20261112",
+    "users": 55,
+    "pageviews": 199,
+    "sessions": 70
+   },
+   {
     "date": "20261113",
     "users": 77,
     "pageviews": 333,
@@ -581,14 +587,20 @@
    },
    {
     "date": "20261115",
-    "users": 18,
-    "pageviews": 39,
-    "sessions": 20
+    "users": 235,
+    "pageviews": 845,
+    "sessions": 286
+   },
+   {
+    "date": "20261116",
+    "users": 17,
+    "pageviews": 44,
+    "sessions": 19
    }
   ],
-  "total_users": 7660,
-  "total_pageviews": 27047,
-  "total_sessions": 9401
+  "total_users": 7949,
+  "total_pageviews": 28096,
+  "total_sessions": 9756
  },
  "gsc": {
   "daily": [
@@ -1167,30 +1179,41 @@
     "clicks": 59,
     "impressions": 813,
     "position": 6.4
+   },
+   {
+    "date": "2026-11-13",
+    "clicks": 81,
+    "impressions": 1329,
+    "position": 6.2
    }
   ],
-  "total_clicks": 4831,
-  "total_impressions": 44666,
+  "total_clicks": 4912,
+  "total_impressions": 45995,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
-    "clicks": 209,
-    "impressions": 743
+    "clicks": 213,
+    "impressions": 750
    },
    {
     "query": "ラクロスマニア",
-    "clicks": 112,
-    "impressions": 233
+    "clicks": 116,
+    "impressions": 237
    },
    {
     "query": "ラクロス 大学 ランキング 男子",
-    "clicks": 43,
-    "impressions": 235
+    "clicks": 45,
+    "impressions": 241
    },
    {
     "query": "ラクロス 大学 ランキング 関西",
     "clicks": 39,
-    "impressions": 176
+    "impressions": 180
+   },
+   {
+    "query": "ラクロス 関東 学生 リーグ 2026 結果",
+    "clicks": 38,
+    "impressions": 217
    },
    {
     "query": "第３４回東海学生ラクロスリーグ戦女子日程",
@@ -1199,18 +1222,13 @@
    },
    {
     "query": "関東学生 ラクロス 1部女子",
-    "clicks": 35,
-    "impressions": 203
-   },
-   {
-    "query": "ラクロス 関東 学生 リーグ 2026 結果",
-    "clicks": 34,
-    "impressions": 209
+    "clicks": 36,
+    "impressions": 205
    },
    {
     "query": "関西ラクロスリーグ",
-    "clicks": 34,
-    "impressions": 749
+    "clicks": 35,
+    "impressions": 759
    },
    {
     "query": "ラクロス 大学 女子 ランキング 関東",
@@ -1220,7 +1238,7 @@
    {
     "query": "東海学生ラクロスリーグ 2026",
     "clicks": 18,
-    "impressions": 81
+    "impressions": 82
    }
   ]
  }
