@@ -231,30 +231,30 @@
   {
    "team": "龍谷大学",
    "slug": "ryukoku",
-   "points": 3,
-   "games": 3,
-   "wins": 1,
+   "points": 6,
+   "games": 4,
+   "wins": 2,
    "draws": 0,
    "losses": 2,
-   "gf": 33,
-   "ga": 21,
+   "gf": 46,
+   "ga": 29,
    "rank": 3,
-   "goal_diff": "+12",
-   "goals_for": 33
+   "goal_diff": "+17",
+   "goals_for": 46
   },
   {
    "team": "奈良女子大学",
    "slug": "nara-joshi",
    "points": 3,
-   "games": 3,
+   "games": 4,
    "wins": 1,
    "draws": 0,
-   "losses": 2,
-   "gf": 28,
-   "ga": 35,
+   "losses": 3,
+   "gf": 36,
+   "ga": 48,
    "rank": 4,
-   "goal_diff": "-7",
-   "goals_for": 28
+   "goal_diff": "-12",
+   "goals_for": 36
   },
   {
    "team": "合同2",
