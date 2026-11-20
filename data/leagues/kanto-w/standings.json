@@ -389,33 +389,47 @@
   {
    "team": "大東文化大学",
    "slug": "daitobunka",
-   "points": 3,
-   "games": 3,
-   "wins": 1,
+   "points": 6,
+   "games": 4,
+   "wins": 2,
    "draws": 0,
    "losses": 2,
-   "gf": 16,
-   "ga": 27,
+   "gf": 32,
+   "ga": 32,
    "rank": 4,
-   "goal_diff": "-11",
-   "goals_for": 16
+   "goal_diff": "0",
+   "goals_for": 32
   },
   {
    "team": "獨協大学",
    "slug": "dokkyo",
    "points": 0,
-   "games": 2,
+   "games": 3,
    "wins": 0,
    "draws": 0,
-   "losses": 2,
-   "gf": 10,
-   "ga": 20,
+   "losses": 3,
+   "gf": 15,
+   "ga": 36,
    "rank": 5,
-   "goal_diff": "-10",
-   "goals_for": 10
+   "goal_diff": "-21",
+   "goals_for": 15
   }
  ],
  "3部 Bブロック": [
+  {
+   "team": "共立女子大学",
+   "slug": "kyoritsu-joshi",
+   "points": 9,
+   "games": 4,
+   "wins": 3,
+   "draws": 0,
+   "losses": 1,
+   "gf": 38,
+   "ga": 28,
+   "rank": 1,
+   "goal_diff": "+10",
+   "goals_for": 38
+  },
   {
    "team": "日本女子大学",
    "slug": "nihon-joshi",
@@ -426,23 +440,9 @@
    "losses": 0,
    "gf": 21,
    "ga": 12,
-   "rank": 1,
+   "rank": 2,
    "goal_diff": "+9",
    "goals_for": 21
-  },
-  {
-   "team": "共立女子大学",
-   "slug": "kyoritsu-joshi",
-   "points": 6,
-   "games": 3,
-   "wins": 2,
-   "draws": 0,
-   "losses": 1,
-   "gf": 27,
-   "ga": 24,
-   "rank": 2,
-   "goal_diff": "+3",
-   "goals_for": 27
   },
   {
    "team": "東京外国語大学",
@@ -459,20 +459,6 @@
    "goals_for": 23
   },
   {
-   "team": "大妻女子大学",
-   "slug": "otsuma",
-   "points": 1,
-   "games": 2,
-   "wins": 0,
-   "draws": 1,
-   "losses": 1,
-   "gf": 10,
-   "ga": 15,
-   "rank": 4,
-   "goal_diff": "-5",
-   "goals_for": 10
-  },
-  {
    "team": "実践女子大学",
    "slug": "jissen-joshi",
    "points": 1,
@@ -482,9 +468,23 @@
    "losses": 3,
    "gf": 21,
    "ga": 31,
-   "rank": 5,
+   "rank": 4,
    "goal_diff": "-10",
    "goals_for": 21
+  },
+  {
+   "team": "大妻女子大学",
+   "slug": "otsuma",
+   "points": 1,
+   "games": 3,
+   "wins": 0,
+   "draws": 1,
+   "losses": 2,
+   "gf": 14,
+   "ga": 26,
+   "rank": 5,
+   "goal_diff": "-12",
+   "goals_for": 14
   }
  ],
  "3部 Cブロック": [

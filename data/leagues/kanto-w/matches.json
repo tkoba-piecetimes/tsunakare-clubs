@@ -1584,9 +1584,9 @@
   "home_slug": "otsuma",
   "away_slug": "kyoritsu-joshi",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 4,
+  "away_score": 11,
   "note": ""
  },
  {
@@ -1599,9 +1599,9 @@
   "home_slug": "daitobunka",
   "away_slug": "dokkyo",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場サブピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 16,
+  "away_score": 5,
   "note": "3部A"
  },
  {

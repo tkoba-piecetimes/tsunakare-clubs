@@ -1404,9 +1404,9 @@
   "home_slug": "seikei",
   "away_slug": "tokyo",
   "venue": "大井ふ頭中央海浜公園ホッケー競技場メインピッチ",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 2,
+  "away_score": 16,
   "note": "1部2部入れ替え戦"
  },
  {

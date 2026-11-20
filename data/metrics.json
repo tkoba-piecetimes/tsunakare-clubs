@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-19",
+ "updated_at": "2026-11-20",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -611,14 +611,20 @@
    },
    {
     "date": "20261119",
-    "users": 11,
-    "pageviews": 52,
-    "sessions": 12
+    "users": 80,
+    "pageviews": 331,
+    "sessions": 100
+   },
+   {
+    "date": "20261120",
+    "users": 15,
+    "pageviews": 24,
+    "sessions": 20
    }
   ],
-  "total_users": 8327,
-  "total_pageviews": 29556,
-  "total_sessions": 10202
+  "total_users": 8411,
+  "total_pageviews": 29859,
+  "total_sessions": 10310
  },
  "gsc": {
   "daily": [
@@ -1221,15 +1227,21 @@
     "clicks": 87,
     "impressions": 1109,
     "position": 5.7
+   },
+   {
+    "date": "2026-11-17",
+    "clicks": 61,
+    "impressions": 945,
+    "position": 6.1
    }
   ],
-  "total_clicks": 5349,
-  "total_impressions": 50840,
+  "total_clicks": 5410,
+  "total_impressions": 51785,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
-    "clicks": 226,
-    "impressions": 783
+    "clicks": 228,
+    "impressions": 787
    },
    {
     "query": "ラクロスマニア",
@@ -1239,32 +1251,32 @@
    {
     "query": "ラクロス 大学 ランキング 男子",
     "clicks": 49,
-    "impressions": 261
+    "impressions": 266
    },
    {
     "query": "ラクロス 関東 学生 リーグ 2026 結果",
-    "clicks": 43,
-    "impressions": 243
+    "clicks": 44,
+    "impressions": 247
    },
    {
     "query": "ラクロス 大学 ランキング 関西",
-    "clicks": 42,
-    "impressions": 187
+    "clicks": 43,
+    "impressions": 188
    },
    {
     "query": "関東学生 ラクロス 1部女子",
-    "clicks": 41,
-    "impressions": 216
+    "clicks": 42,
+    "impressions": 218
+   },
+   {
+    "query": "関西ラクロスリーグ",
+    "clicks": 37,
+    "impressions": 789
    },
    {
     "query": "第３４回東海学生ラクロスリーグ戦女子日程",
     "clicks": 36,
     "impressions": 37
-   },
-   {
-    "query": "関西ラクロスリーグ",
-    "clicks": 36,
-    "impressions": 783
    },
    {
     "query": "ラクロス 大学 女子 ランキング 関東",
@@ -1273,8 +1285,8 @@
    },
    {
     "query": "ラクロス 関東学生リーグ 2026",
-    "clicks": 20,
-    "impressions": 287
+    "clicks": 21,
+    "impressions": 294
    }
   ]
  }
