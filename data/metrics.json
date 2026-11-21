@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20",
+ "updated_at": "2026-11-21",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -617,14 +617,20 @@
    },
    {
     "date": "20261120",
-    "users": 15,
+    "users": 95,
+    "pageviews": 283,
+    "sessions": 111
+   },
+   {
+    "date": "20261121",
+    "users": 9,
     "pageviews": 24,
-    "sessions": 20
+    "sessions": 10
    }
   ],
-  "total_users": 8411,
-  "total_pageviews": 29859,
-  "total_sessions": 10310
+  "total_users": 8500,
+  "total_pageviews": 30142,
+  "total_sessions": 10411
  },
  "gsc": {
   "daily": [
@@ -1233,30 +1239,41 @@
     "clicks": 61,
     "impressions": 945,
     "position": 6.1
+   },
+   {
+    "date": "2026-11-18",
+    "clicks": 53,
+    "impressions": 987,
+    "position": 5.7
    }
   ],
-  "total_clicks": 5410,
-  "total_impressions": 51785,
+  "total_clicks": 5463,
+  "total_impressions": 52772,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
-    "clicks": 228,
-    "impressions": 787
+    "clicks": 230,
+    "impressions": 793
    },
    {
     "query": "ラクロスマニア",
-    "clicks": 121,
-    "impressions": 243
+    "clicks": 124,
+    "impressions": 246
    },
    {
     "query": "ラクロス 大学 ランキング 男子",
-    "clicks": 49,
-    "impressions": 266
+    "clicks": 50,
+    "impressions": 270
    },
    {
     "query": "ラクロス 関東 学生 リーグ 2026 結果",
-    "clicks": 44,
-    "impressions": 247
+    "clicks": 45,
+    "impressions": 249
+   },
+   {
+    "query": "関東学生 ラクロス 1部女子",
+    "clicks": 45,
+    "impressions": 223
    },
    {
     "query": "ラクロス 大学 ランキング 関西",
@@ -1264,14 +1281,9 @@
     "impressions": 188
    },
    {
-    "query": "関東学生 ラクロス 1部女子",
-    "clicks": 42,
-    "impressions": 218
-   },
-   {
     "query": "関西ラクロスリーグ",
     "clicks": 37,
-    "impressions": 789
+    "impressions": 793
    },
    {
     "query": "第３４回東海学生ラクロスリーグ戦女子日程",
@@ -1281,12 +1293,12 @@
    {
     "query": "ラクロス 大学 女子 ランキング 関東",
     "clicks": 33,
-    "impressions": 156
+    "impressions": 158
    },
    {
     "query": "ラクロス 関東学生リーグ 2026",
     "clicks": 21,
-    "impressions": 294
+    "impressions": 297
    }
   ]
  }
