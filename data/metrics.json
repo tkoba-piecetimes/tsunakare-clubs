@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22",
+ "updated_at": "2026-11-23",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -625,18 +625,24 @@
     "date": "20261121",
     "users": 172,
     "pageviews": 635,
-    "sessions": 200
+    "sessions": 201
    },
    {
     "date": "20261122",
-    "users": 16,
-    "pageviews": 55,
-    "sessions": 19
+    "users": 241,
+    "pageviews": 778,
+    "sessions": 289
+   },
+   {
+    "date": "20261123",
+    "users": 14,
+    "pageviews": 50,
+    "sessions": 18
    }
   ],
-  "total_users": 8678,
-  "total_pageviews": 30808,
-  "total_sessions": 10620
+  "total_users": 8917,
+  "total_pageviews": 31581,
+  "total_sessions": 10909
  },
  "gsc": {
   "daily": [
@@ -1257,15 +1263,21 @@
     "clicks": 57,
     "impressions": 904,
     "position": 6.1
+   },
+   {
+    "date": "2026-11-20",
+    "clicks": 82,
+    "impressions": 1301,
+    "position": 5.8
    }
   ],
-  "total_clicks": 5520,
-  "total_impressions": 53676,
+  "total_clicks": 5602,
+  "total_impressions": 54977,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
-    "clicks": 232,
-    "impressions": 799
+    "clicks": 236,
+    "impressions": 806
    },
    {
     "query": "ラクロスマニア",
@@ -1274,13 +1286,13 @@
    },
    {
     "query": "ラクロス 大学 ランキング 男子",
-    "clicks": 50,
-    "impressions": 272
+    "clicks": 51,
+    "impressions": 274
    },
    {
     "query": "ラクロス 関東 学生 リーグ 2026 結果",
     "clicks": 45,
-    "impressions": 249
+    "impressions": 250
    },
    {
     "query": "関東学生 ラクロス 1部女子",
@@ -1289,13 +1301,13 @@
    },
    {
     "query": "ラクロス 大学 ランキング 関西",
-    "clicks": 43,
-    "impressions": 189
+    "clicks": 44,
+    "impressions": 192
    },
    {
     "query": "関西ラクロスリーグ",
-    "clicks": 37,
-    "impressions": 799
+    "clicks": 38,
+    "impressions": 818
    },
    {
     "query": "第３４回東海学生ラクロスリーグ戦女子日程",
@@ -1309,8 +1321,8 @@
    },
    {
     "query": "ラクロス 関東学生リーグ 2026",
-    "clicks": 21,
-    "impressions": 297
+    "clicks": 23,
+    "impressions": 301
    }
   ]
  }
