@@ -113,7 +113,7 @@ JLAの2026年度大会概要（2026年6月30日現在）によると、第17回�
 
 ### 4年生
 
-最後の公式戦の時期は、リーグ戦の結果によって変わります。引退の考え方は [ラクロス部の引退はいつ？](../lacrosse-club-retirement-timing/index.html) にまとめました。就活との重なりは [就活の年間スケジュール](../lacrosse-club-job-hunting-schedule/index.html)、授業との両立は [単位の両立](../lacrosse-club-credit-balance-guide/index.html) が参考になります。
+最後の公式戦の時期は、リーグ戦の結果によって変わります。引退の考え方は [ラクロス部の引退はいつ？](../lacrosse-club-retirement-timing/index.html) にまとめました。就活との重なりは [就活の年間スケジュール](../lacrosse-club-job-hunting-schedule/index.html)、練習やリーグ戦と重ならないインターンの時期は [ラクロス部のインターン両立の考え方](../lacrosse-club-internship-balance/index.html)<!-- index-lane-link -->、授業との両立は [単位の両立](../lacrosse-club-credit-balance-guide/index.html) が参考になります。
 
 ### 観戦したいファン
 
