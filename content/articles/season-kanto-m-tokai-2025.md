@@ -25,6 +25,8 @@ cta: sponsor
 - 戦績: 2勝0分3敗
 - 得失点差: +6
 
+関東男子リーグの別年度・別大学の例として、[駒澤大学の2024年シーズン全試合結果と最終成績](../season-kanto-m-komazawa-2024/index.html)も参照できます。<!-- index-lane-link -->
+
 ## 出典
 
 - [公益社団法人日本ラクロス協会](https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/)
