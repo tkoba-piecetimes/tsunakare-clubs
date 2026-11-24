@@ -1089,9 +1089,9 @@
   "home_slug": "kansai",
   "away_slug": "kobe",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 19,
+  "away_score": 2,
   "note": ""
  },
  {
@@ -1119,9 +1119,9 @@
   "home_slug": "mukogawa-joshi",
   "away_slug": "oosakataiiku",
   "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 7,
+  "away_score": 9,
   "note": ""
  },
  {
@@ -1148,6 +1148,21 @@
   "away": "京都大学",
   "home_slug": "kindai",
   "away_slug": "kyoto",
+  "venue": "鶴見緑地スタジアム",
+  "status": "played",
+  "home_score": 3,
+  "away_score": 10,
+  "note": ""
+ },
+ {
+  "id": "2026-11-22-kyoto-joshi-vs-kobe-jogakuin",
+  "date": "2026-11-22",
+  "time": "17:30",
+  "category": "2部",
+  "home": "京都女子大学",
+  "away": "神戸女学院大学",
+  "home_slug": "kyoto-joshi",
+  "away_slug": "kobe-jogakuin",
   "venue": "鶴見緑地スタジアム",
   "status": "scheduled",
   "home_score": null,

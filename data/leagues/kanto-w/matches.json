@@ -1419,9 +1419,9 @@
   "home_slug": "dokkyo",
   "away_slug": "tokyo-rika",
   "venue": "獨協大学",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 8,
+  "away_score": 9,
   "note": "3部A"
  },
  {
@@ -1644,9 +1644,9 @@
   "home_slug": "toukyoujoshitaiiku",
   "away_slug": "tokyo-joshi",
   "venue": "高野スポーツパーク",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 9,
+  "away_score": 4,
   "note": ""
  },
  {
@@ -1659,9 +1659,9 @@
   "home_slug": "seijoudaigaku-soukadaigakugoudouchiimu",
   "away_slug": "ibaraki",
   "venue": "高野スポーツパーク",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 21,
+  "away_score": 5,
   "note": ""
  },
  {
@@ -1674,9 +1674,9 @@
   "home_slug": "shukutoku",
   "away_slug": "seishin-joshi",
   "venue": "高野スポーツパーク",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 8,
+  "away_score": 12,
   "note": "11/1延期→11/21"
  },
  {
@@ -1689,9 +1689,9 @@
   "home_slug": "seibubunridaigaku-bunkyou",
   "away_slug": "saitama",
   "venue": "文教大学第3グラウンド",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
+  "status": "played",
+  "home_score": 5,
+  "away_score": 16,
   "note": "9/6延期→11/22"
  },
  {
