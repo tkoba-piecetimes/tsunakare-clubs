@@ -1425,6 +1425,21 @@
   "note": "1部2部入れ替え戦"
  },
  {
+  "id": "2026-11-28-hitotsubashi-vs-rikkyo",
+  "date": "2026-11-28",
+  "time": "14:00",
+  "category": "入れ替え戦",
+  "home": "一橋大学",
+  "away": "立教大学",
+  "home_slug": "hitotsubashi",
+  "away_slug": "rikkyo",
+  "venue": "江戸川臨海球技場E面",
+  "status": "scheduled",
+  "home_score": null,
+  "away_score": null,
+  "note": ""
+ },
+ {
   "id": "2026-11-28-hitotsubashi-vs-2bubburokku2kurai",
   "date": "2026-11-28",
   "time": "14:00",
