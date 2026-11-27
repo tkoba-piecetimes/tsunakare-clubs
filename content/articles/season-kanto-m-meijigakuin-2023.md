@@ -26,6 +26,8 @@ cta: sponsor
 - 戦績: 5勝0分0敗
 - 得失点差: +51
 
+明治学院大学は翌2024年シーズンの試合結果も、[明治学院大学の2024年シーズン記録（関東学生ラクロスリーグ戦 男子）](../season-kanto-m-meijigakuin-2024/index.html)で確認できます。<!-- index-lane-link -->
+
 ## 出典
 
 - [公益社団法人日本ラクロス協会](https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/)

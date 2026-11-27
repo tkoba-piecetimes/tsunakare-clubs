@@ -26,6 +26,8 @@ cta: sponsor
 - 戦績: 3勝1分1敗
 - 得失点差: +3
 
+青山学院大学の前年にあたるシーズンの全試合結果は、[青山学院大学の2024年シーズン記録（関東学生ラクロスリーグ戦 男子）](../season-kanto-m-aoyamagakuin-2024/index.html)で確認できます。<!-- index-lane-link -->
+
 ## 出典
 
 - [公益社団法人日本ラクロス協会](https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/)

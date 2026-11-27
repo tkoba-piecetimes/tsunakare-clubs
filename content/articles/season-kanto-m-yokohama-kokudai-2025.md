@@ -26,6 +26,8 @@ cta: sponsor
 - 戦績: 0勝1分4敗
 - 得失点差: -17
 
+横浜国立大学の前年にあたるシーズンの試合結果は、[横浜国立大学の2024年シーズン記録（関東学生ラクロスリーグ戦 男子）](../season-kanto-m-yokohama-kokudai-2024/index.html)で確認できます。<!-- index-lane-link -->
+
 ## 出典
 
 - [公益社団法人日本ラクロス協会](https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/)

@@ -26,6 +26,8 @@ cta: sponsor
 - 戦績: 4勝1分1敗
 - 得失点差: +19
 
+国士舘大学は8月27日に帝京大学と対戦しました。帝京大学側の同シーズンの全試合結果は、[帝京大学の2024年シーズン記録（関東学生ラクロスリーグ戦 男子）](../season-kanto-m-teikyo-2024/index.html)で確認できます。<!-- index-lane-link -->
+
 ## 出典
 
 - [公益社団法人日本ラクロス協会](https://www.lacrosse.gr.jp/event/2026-collegiate-leagues/)
