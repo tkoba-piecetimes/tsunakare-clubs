@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26",
+ "updated_at": "2026-11-27",
  "release_date": "2026-08-09",
  "ga": {
   "daily": [
@@ -649,18 +649,24 @@
     "date": "20261125",
     "users": 105,
     "pageviews": 266,
-    "sessions": 123
+    "sessions": 122
    },
    {
     "date": "20261126",
-    "users": 10,
-    "pageviews": 22,
-    "sessions": 12
+    "users": 120,
+    "pageviews": 348,
+    "sessions": 140
+   },
+   {
+    "date": "20261127",
+    "users": 13,
+    "pageviews": 63,
+    "sessions": 16
    }
   ],
-  "total_users": 9362,
-  "total_pageviews": 32888,
-  "total_sessions": 11409
+  "total_users": 9485,
+  "total_pageviews": 33277,
+  "total_sessions": 11552
  },
  "gsc": {
   "daily": [
@@ -1305,15 +1311,21 @@
     "clicks": 75,
     "impressions": 1219,
     "position": 5.7
+   },
+   {
+    "date": "2026-11-24",
+    "clicks": 55,
+    "impressions": 976,
+    "position": 6.4
    }
   ],
-  "total_clicks": 6044,
-  "total_impressions": 59961,
+  "total_clicks": 6099,
+  "total_impressions": 60937,
   "top_queries": [
    {
     "query": "ラクロス 大学 関東 順位",
     "clicks": 246,
-    "impressions": 825
+    "impressions": 829
    },
    {
     "query": "ラクロスマニア",
@@ -1322,13 +1334,13 @@
    },
    {
     "query": "ラクロス 大学 ランキング 男子",
-    "clicks": 55,
-    "impressions": 284
+    "clicks": 56,
+    "impressions": 289
    },
    {
     "query": "ラクロス 大学 ランキング 関西",
     "clicks": 48,
-    "impressions": 203
+    "impressions": 205
    },
    {
     "query": "ラクロス 関東 学生 リーグ 2026 結果",
@@ -1338,12 +1350,12 @@
    {
     "query": "関東学生 ラクロス 1部女子",
     "clicks": 45,
-    "impressions": 224
+    "impressions": 225
    },
    {
     "query": "関西ラクロスリーグ",
-    "clicks": 38,
-    "impressions": 895
+    "clicks": 40,
+    "impressions": 905
    },
    {
     "query": "第３４回東海学生ラクロスリーグ戦女子日程",
@@ -1353,12 +1365,12 @@
    {
     "query": "ラクロス 大学 女子 ランキング 関東",
     "clicks": 33,
-    "impressions": 161
+    "impressions": 162
    },
    {
     "query": "ラクロス 関東学生リーグ 2026",
     "clicks": 24,
-    "impressions": 319
+    "impressions": 322
    }
   ]
  }

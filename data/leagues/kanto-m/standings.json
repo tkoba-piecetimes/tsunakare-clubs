@@ -359,6 +359,20 @@
    "goals_for": 30
   },
   {
+   "team": "東京理科大学",
+   "slug": "tokyo-rika",
+   "points": 6,
+   "games": 2,
+   "wins": 2,
+   "draws": 0,
+   "losses": 0,
+   "gf": 17,
+   "ga": 4,
+   "rank": 2,
+   "goal_diff": "+13",
+   "goals_for": 17
+  },
+  {
    "team": "慶應義塾高校",
    "slug": "keio-hs",
    "points": 6,
@@ -368,37 +382,23 @@
    "losses": 1,
    "gf": 17,
    "ga": 10,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "+7",
    "goals_for": 17
-  },
-  {
-   "team": "東京理科大学",
-   "slug": "tokyo-rika",
-   "points": 3,
-   "games": 1,
-   "wins": 1,
-   "draws": 0,
-   "losses": 0,
-   "gf": 9,
-   "ga": 1,
-   "rank": 3,
-   "goal_diff": "+8",
-   "goals_for": 9
   },
   {
    "team": "筑波大学",
    "slug": "tsukuba",
    "points": 3,
-   "games": 3,
+   "games": 4,
    "wins": 1,
    "draws": 0,
-   "losses": 2,
-   "gf": 22,
-   "ga": 22,
+   "losses": 3,
+   "gf": 25,
+   "ga": 30,
    "rank": 4,
-   "goal_diff": "0",
-   "goals_for": 22
+   "goal_diff": "-5",
+   "goals_for": 25
   },
   {
    "team": "上智大学",
@@ -431,18 +431,32 @@
  ],
  "3部 Bブロック": [
   {
+   "team": "駒澤大学",
+   "slug": "komazawa",
+   "points": 15,
+   "games": 6,
+   "wins": 5,
+   "draws": 0,
+   "losses": 1,
+   "gf": 37,
+   "ga": 24,
+   "rank": 1,
+   "goal_diff": "+13",
+   "goals_for": 37
+  },
+  {
    "team": "明星大学",
    "slug": "meisei",
    "points": 12,
-   "games": 4,
+   "games": 5,
    "wins": 4,
    "draws": 0,
-   "losses": 0,
-   "gf": 35,
-   "ga": 3,
-   "rank": 1,
-   "goal_diff": "+32",
-   "goals_for": 35
+   "losses": 1,
+   "gf": 40,
+   "ga": 9,
+   "rank": 2,
+   "goal_diff": "+31",
+   "goals_for": 40
   },
   {
    "team": "日本大学",
@@ -454,23 +468,9 @@
    "losses": 3,
    "gf": 41,
    "ga": 25,
-   "rank": 2,
+   "rank": 3,
    "goal_diff": "+16",
    "goals_for": 41
-  },
-  {
-   "team": "駒澤大学",
-   "slug": "komazawa",
-   "points": 12,
-   "games": 5,
-   "wins": 4,
-   "draws": 0,
-   "losses": 1,
-   "gf": 31,
-   "ga": 19,
-   "rank": 3,
-   "goal_diff": "+12",
-   "goals_for": 31
   },
   {
    "team": "大東文化大学",

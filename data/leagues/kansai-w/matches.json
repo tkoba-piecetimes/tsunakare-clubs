@@ -1065,21 +1065,6 @@
   "note": "雨天中止"
  },
  {
-  "id": "2026-11-22-kansaidaigaku-1buburokku5kurai-vs-koubedaigaku-2buburokku3kurai",
-  "date": "2026-11-22",
-  "time": "10:00",
-  "category": "プレーオフ",
-  "home": "関西大学(1部ブロック5位)",
-  "away": "神戸大学(2部ブロック3位)",
-  "home_slug": "kansaidaigaku-1buburokku5kurai",
-  "away_slug": "koubedaigaku-2buburokku3kurai",
-  "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-11-22-kansai-vs-kobe",
   "date": "2026-11-22",
   "time": "10:00",
@@ -1095,21 +1080,6 @@
   "note": ""
  },
  {
-  "id": "2026-11-22-mukogawajoshidaigaku-1buburokku6kurai-vs-oosakataiikudaigaku-2buburokku2kurai",
-  "date": "2026-11-22",
-  "time": "12:30",
-  "category": "プレーオフ",
-  "home": "武庫川女子大学(1部ブロック6位)",
-  "away": "大阪体育大学(2部ブロック2位)",
-  "home_slug": "mukogawajoshidaigaku-1buburokku6kurai",
-  "away_slug": "oosakataiikudaigaku-2buburokku2kurai",
-  "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
-  "note": ""
- },
- {
   "id": "2026-11-22-mukogawa-joshi-vs-oosakataiiku",
   "date": "2026-11-22",
   "time": "12:30",
@@ -1122,21 +1092,6 @@
   "status": "played",
   "home_score": 7,
   "away_score": 9,
-  "note": ""
- },
- {
-  "id": "2026-11-22-kinkidaigaku-1buburokku7kurai-vs-kyoutodaigaku-2buburokku1kurai",
-  "date": "2026-11-22",
-  "time": "15:00",
-  "category": "プレーオフ",
-  "home": "近畿大学(1部ブロック7位)",
-  "away": "京都大学(2部ブロック1位)",
-  "home_slug": "kinkidaigaku-1buburokku7kurai",
-  "away_slug": "kyoutodaigaku-2buburokku1kurai",
-  "venue": "鶴見緑地スタジアム",
-  "status": "scheduled",
-  "home_score": null,
-  "away_score": null,
   "note": ""
  },
  {
